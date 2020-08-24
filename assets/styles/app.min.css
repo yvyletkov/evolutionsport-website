@@ -462,13 +462,14 @@ button {
 .bannerWrap .banner_children-camp {
   width: 100%;
   background-color: #f1f1f1;
+  z-index: 0;
 }
 
 .bannerWrap .banner_children-camp .banner_children-camp-bg {
   position: absolute;
   top: 0;
   left: -151px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .bannerWrap .banner_children-camp .banner-desc__title {
@@ -1102,6 +1103,10 @@ button {
 @media screen and (min-width: 1024px) {
   .select-dropDown__item:hover {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .tarifes-list-item-prices__new.tarifes-list-item-prices__new {
+    font-size: 21px;
   }
   #icons__about-ow {
     display: none;
