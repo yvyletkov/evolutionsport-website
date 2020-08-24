@@ -205,6 +205,17 @@ $(document).ready(function () {
                 '<img src="../img/red-arrow-left.png"" style="transform: rotate(180deg)">',
             ],
         });
+        $(".comand").owlCarousel({
+            margin:10,
+            items: 2,
+            nav: true,
+            pagination: true,
+            navText: [
+                '<img src="../img/arrow-blue-right.png" style="transform: rotate(180deg)">',
+                '<img src="../img/arrow-blue-right.png">',
+            ],
+        });
+
     }
 
     $(".health-center-carousel").owlCarousel({

@@ -2614,7 +2614,8 @@ button {
 .sea-features-carousel .owl-nav,
 .health-center-carousel .owl-nav,
 .advantages-row .owl-nav,
-.team-wrap .owl-nav {  /* added */
+.team-wrap .owl-nav,
+.comand .owl-nav {  /* added */
     padding: 0 17px;
     top: 37%;
     transform: translateY(-50%) translateX(-50%);
@@ -2625,13 +2626,22 @@ button {
     justify-content: space-between;
 }
 
+.comand .owl-nav {
+    padding: 0 3px;
+}
+
 .supaSlider .owl-nav span,
 .sea-features-carousel .owl-nav span,
 .health-center-carousel .owl-nav span,
 .advantages-row .owl-nav span,
-.team-wrap .owl-nav span {   /* added */
+.team-wrap .owl-nav span,
+.comand .owl-nav span {   /* added */
     font-size: 48px;
     font-stretch: ultra-expanded;
+}
+
+.comand .owl-nav span{
+    font-size: 30px;
 }
 
 .team-wrap .owl-nav {
@@ -5699,7 +5709,7 @@ button {
 
 .group-wrap {
     max-width: 1200px;
-    padding: 40px 10px;
+    padding: 40px 20px;
     margin: 0 auto;
 }
 
@@ -7275,8 +7285,8 @@ button {
     .SL6 .owl-nav .owl-next,
     .group-slider .owl-nav .owl-prev,
     .group-slider .owl-nav .owl-next {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .prices .supaSlider-insideSlider__item .children-supa__title,
@@ -7339,11 +7349,7 @@ button {
     }
 
     .group-outer {
-        overflow: hidden;
-    }
-
-    .group-slider .owl-nav {
-        width: 100%;
+        /*overflow: hidden;*/
     }
 
     .group-slider-item-desc {
@@ -7359,7 +7365,9 @@ button {
     }
 
     .group-slider .owl-nav {
-        top: 335px;
+        width: 107.5%;
+        top: 20%;
+        left: -15px;
     }
 
     .group-slider-item-desc-col {
@@ -7497,7 +7505,7 @@ button {
     }
 
     .shedule-wrap {
-        padding: 20px 30px;
+        padding: 0 30px 20px;
     }
 
 
@@ -7816,11 +7824,6 @@ button {
         display: flex;
         background-color: red;
         color: white;
-    }
-
-    .group-slider .owl-nav .owl-prev,
-    .group-slider .owl-nav .owl-next {
-        display: none;
     }
 
     .group__subtitle {
@@ -8910,15 +8913,15 @@ button {
 }
 
 .contacts-page-item__link.tel:before {
-    background: url('/img/icons/contacts-tel.png') center/contain no-repeat;
+    background: url('../../img/icons/contacts-tel.png') center/contain no-repeat;
 }
 
 .contacts-page-item__link.email:before {
-    background: url('/img/icons/contacts-mail.png') center/contain no-repeat;
+    background: url('../../img/icons/contacts-mail.png') center/contain no-repeat;
 }
 
 .contacts-page-item__link.site:before {
-    background: url('/img/icons/contacts-site.png') center/contain no-repeat;
+    background: url('../../img/icons/contacts-site.png') center/contain no-repeat;
 }
 
 .comand {
@@ -9057,11 +9060,24 @@ button {
     }
 
     .comand {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contacts-page-item {
         flex: 0 0 100%;
+    }
+
+    .comand-item__name {
+        padding-left: 0;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .comand-item__text {
+        padding-left: 0;
+        font-weight: light;
+        font-size: 11px;
+        color: #b4b3b3;
     }
 }
 
