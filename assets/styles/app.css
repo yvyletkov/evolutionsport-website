@@ -4820,7 +4820,7 @@ button {
     position: relative;
 }
 
-.shedule-outer:after {
+.shedule-outer:before {
     content: "Аренда";
     font-size: 100px;
     text-transform: uppercase;
@@ -4831,6 +4831,7 @@ button {
     position: absolute;
     bottom: 50%;
     right: 70%;
+
 }
 
 .fitnes-club .banner-desc__hidetext {
@@ -5971,7 +5972,7 @@ button {
     -ms-flex-align: center;
     align-items: center;
     background-color: #e8e8e8;
-    top: 40%;
+    top: 53%;
     left: 0;
     position: absolute;
     width: 100%;
@@ -5983,8 +5984,14 @@ button {
     font-weight: 900;
     font-family: "Geometria";
     font-size: 90px;
-    padding-right: 100px;
+    padding-right: 50px;
     color: #fff;
+}
+
+@media screen and (max-width: 1700px) {
+    .shedule__placeholder {
+        font-size: 0px;
+    }
 }
 
 .shedule-wrap {
@@ -5998,6 +6005,8 @@ button {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+    z-index: 10000;
 }
 
 .shedule-tabs__tab {
@@ -6037,11 +6046,12 @@ button {
     color: #fff;
 }
 
-.shedule-tabs__tab:not(:last-child) {
-    margin-right: 10px;
+.shedule-tabs__tab {
+    margin: 10px;
 }
 
 .shedule-main-item {
+    margin-top: 10px;
     padding: 40px;
     display: none;
     position: relative;
@@ -6063,37 +6073,78 @@ button {
 }
 
 .shedule-table {
-    display: table;
-    font-size: 14px;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.shedule-table-row {
-    display: table-row;
+.shedule-table-cell {
+    padding: 20px;
+    width: 33.333%;
+    height: auto;
+    border-bottom: 1px solid #b0b0b0;
 }
 
-.shedule-table-row:not(:first-child):not(:last-child) .shedule-table-row-cell {
-    border-bottom: 1px solid #cccccc;
+.shedule-table-cell__title {
+    font-size: 16px;
 }
 
-.shedule-table-row:nth-child(1) .shedule-table-row-cell {
-    border-bottom: 1px solid #000;
-    font-weight: 700;
+@media screen and (min-width: 769px) {
+    .shedule-table-cell:nth-child(3n-2), .shedule-table-cell:nth-child(3n-1) {
+        border-right: 1px solid #b0b0b0;
+    }
+
+    .shedule-table-cell:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
 }
 
-.shedule-table-row-cell {
-    display: table-cell;
-    text-align: center;
-    padding: 10px 5px;
-    line-height: 120%;
+@media screen and (max-width: 768px) {
+
+    .shedule-main-item {
+        padding: 20px 10px;
+    }
+
+    .shedule-table-cell {
+        width: 50%;
+    }
+    .shedule-table-cell:nth-child(2n-1) {
+        border-right: 1px solid #e3e3e3;
+    }
+
+    .shedule-table-cell:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
 }
 
-.shedule-table-row-cell span {
-    font-weight: 700;
+.shedule-table-cell__content {
+    margin-top: 30px;
 }
 
-.shedule-table-row-cell:not(:last-child) {
-    border-right: 1px solid #cccccc;
+#timetable .shedule-main-item__day-of-week {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#timetable .shedule-table {
+    margin: 20px 0 30px;
+}
+
+#timetable .shedule-table-cell__time {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#timetable .shedule-table-cell__content {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #timetable .shedule-main-item {
+        padding: 20px;
+    }
+
 }
 
 .team {
@@ -7320,7 +7371,7 @@ button {
     }
 
     .shedule-main {
-        min-width: 700px;
+        width: 100%;
     }
 
     .team-item {
