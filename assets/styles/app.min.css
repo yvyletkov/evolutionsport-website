@@ -1421,7 +1421,7 @@ button {
   width: 4px;
   height: 55px;
   display: block;
-  background-color: #4272b2;
+  background-color: #e33806;
   position: absolute;
   left: 0;
   top: 9px;
@@ -1488,7 +1488,7 @@ button {
   width: 5px;
   height: 100%;
   display: block;
-  background-color: #4272b2;
+  background-color: #e33806;
   top: 0px;
   left: -20px;
 }
@@ -4163,6 +4163,20 @@ button {
   box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.15);
 }
 
+.tarifes-list-item-more {
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+  color: #171717;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.tarifes-list-item-more:hover {
+  color:#171717;
+  text-decoration: none;
+}
+
 .tarifes-list-item_sale .tarifes-list-item__head {
   position: relative;
   background-color: #5e95a8;
@@ -4228,8 +4242,13 @@ button {
   line-height: 100%;
 }
 
+.tarifes-list-item__btn {
+  margin: 0 0 30px;
+}
+
 .tarifes-list-item-body {
-  padding: 25px;
+  margin: 0 35px 0;
+  padding: 25px 0 0;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4248,7 +4267,7 @@ button {
 .tarifes-list-item__when {
   font-size: 20px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .tarifes-list-item-ul {
@@ -4291,6 +4310,7 @@ button {
 .tarifes-list-item-prices__new {
   font-weight: 900;
   font-size: 26px;
+  margin: 10px 0;
 }
 
 .tarifes-list-item-prices__new span {
@@ -4885,6 +4905,7 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column-reverse;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -7332,7 +7353,7 @@ button {
   }
 
   .active .active__wrapper .active__box .active__item-img {
-    height:380px;
+    height:420px;
     width: 100%;
   }
 }
