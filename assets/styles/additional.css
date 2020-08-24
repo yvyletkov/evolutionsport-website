@@ -527,9 +527,10 @@
 }
 .calendar-block{
     height: 445px;
-    background: url(/img/index/calendar/calendar.png) center/contain no-repeat;
+    background: url(../../img/index/calendar/calendar.png) ;
     position: relative;
     z-index: 2;
+    width:338px;
 }
 .calendar-block__absolut{
     position: absolute;
