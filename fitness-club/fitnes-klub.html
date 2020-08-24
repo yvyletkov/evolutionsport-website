@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <!-- Подключаем слайдер-->
+    <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css"/>
+    <!-- -->
+    <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/gallery-responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
+    <link rel="stylesheet" href="../assets/styles/app.css"/>
+    <link rel="stylesheet" href="../assets/styles/additional.css"/>
+
+    <script src="../assets/scripts/jquery.min.js"></script>
+    <script src="../assets/scripts/slick.min.js"></script>
+    <script src="../assets/scripts/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../assets/scripts/datepicker/datepicker.min.js"></script>
+    <script src="../assets/scripts/owl.carousel.min.js"></script>
+    <script src="../assets/scripts/sweetalert2.js"></script>
+    <script src="../assets/scripts/main.js"></script>
+    <script src="../js/gallery-responsive.js"></script>
+
+    <title>Фитнес клуб</title>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="fitnes-club red fitnes">
+        <div class="bannerWrap">
+
+            <div class="bannerBgWrap">
+                <img class="bannerBg" src="../assets/images/fitnesBg.png" alt="Центр здоровья"/>
+            </div>
+
+            <div class="banner banner_onIndex">
+                <div class="banner-desc">
+                    <h1 class="banner-desc__title">Фитнес<br><span>КЛУБ</span></h1>
+                    <p class="banner-desc__hidetext">Lorem ipsum dolor sit amet, consectetur</p>
+                    <div class="select">
+                        <div class="btn-group">
+                            <button
+                                    type="button"
+                                    class="btn btn-danger dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    data-flip="false"
+                                    style="width: 295px"
+                            >
+                                Выбрать раздел
+                            </button>
+                            <div class="dropdown-menu" x-placement="bottom-start">
+                                <a class="dropdown-item" href="#">Абонементы и цены</a>
+                                <a class="dropdown-item" href="#">Бассейны</a>
+                                <a class="dropdown-item" href="#">Тренажерные залы</a>
+                                <a class="dropdown-item" href="#">Групповые программы</a>
+                                <a class="dropdown-item" href="#">Спортивные секции</a>
+                                <a class="dropdown-item" href="#">Банный комплекс</a>
+                                <a class="dropdown-item" href="#">Расписание групповых программ</a>
+                                <a class="dropdown-item" href="#">Тренеры</a>
+                                <a class="dropdown-item" href="#">Аренда спортивных сооружений</a>
+                                <a class="dropdown-item" href="#">Часто задаваемые вопросы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fitnes-club-banner_mobile">
+                <h1>Фитнес<br/>клуб</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Etiam ut urna feugiat.</h3>
+
+            </div>
+            <div class="fitnes-club-banner_mobile__dark-filter"></div>
+
+        </div>
+
+        <div class="children-supa supaCard">
+            <div class="supa-wrap supa-1200">
+                <p class="defaultTitle supaCard__title">Разделы</p>
+                <p class="defaultSubtitle supaCard__subtitle">Краткое описание</p>
+                <div class="supaSlider-insideSlider-wrap supaSlider-item">
+                    <div class="supaSlider-insideSliderBlock">
+                        <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);"
+                                                                             src="../assets/images/arrowSlider.png">
+                        </div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrowSlider.png">
+                        </div>
+                    </div>
+                    <div class="supaSlider-insideSlider supaSlider-insideSlider_chainHead">
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../img/fitnes-subscribe.jpg);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Абонементы и цены</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../img/fitnes-coaches.jpg);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Бассейны></p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../assets/images/silverCard.png);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Тренажерные залы</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../assets/images/silverCard.png);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Групповые программы</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../assets/images/silverCard.png);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Спортивные секции</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../assets/images/silverCard.png);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Банный комплекс</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../assets/images/silverCard.png);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Спортивные секции</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../img/fitnes-timetable.jpg">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Расписание групповых программ</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../img/fitnes-coaches.jpg);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Тренеры</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../img/fitnes-rent.jpg);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Аренда спортивных сооружений</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                        <div class="supaSlider-insideSlider__item">
+                            <div class="supaSlider-insideSlider__item__shadow"></div>
+                            <div class="supaSlider-insideSlider__item-content"
+                                 style="background-image: url(../img/fitnes-faq.jpg);">
+                                <p class="children-supa__suptitle">Надзаголовок</p>
+                                <p class="children-supa__title">Часто задаваемые вопросы</p>
+                                <p class="children-supa__text">Подзаголовок</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages advantages_32 advantages_grayCircle">
+            <div class="advantages-wrap">
+                <h3 class="advantages__title">Преимущества </h3>
+                <div class="advantages-row">
+                    <div class="advantages-row-item">
+                        <div class="advantages-row-item__img"><img src="../assets/images/icon/pool.png" alt=""/></div>
+                        <p class="advantages-row-item__title">3 крытых</br>бассейна</p>
+                        <p class="advantages-row-item__text">Lorem ipsum dolor,<br>sit amet</p>
+                    </div>
+                    <div class="advantages-row-item">
+                        <div class="advantages-row-item__img"><img src="../assets/images/icon/hammam.png" alt=""/></div>
+                        <p class="advantages-row-item__title">Хаммам</br>ipsum</p>
+                        <p class="advantages-row-item__text">Lorem ipsum dolor,<br>sit amet</p>
+                    </div>
+                    <div class="advantages-row-item">
+                        <div class="advantages-row-item__img"><img src="../assets/images/icon/sauna.png" alt=""/></div>
+                        <p class="advantages-row-item__title">Финская</br>сауна</p>
+                        <p class="advantages-row-item__text">Lorem ipsum dolor,<br>sit amet</p>
+                    </div>
+                    <div class="advantages-row-item">
+                        <div class="advantages-row-item__img"><img src="../assets/images/icon/gantelya.png" alt=""/>
+                        </div>
+                        <p class="advantages-row-item__title">4 тренажерных</br>зала</p>
+                        <p class="advantages-row-item__text">Lorem ipsum dolor,<br>sit amet</p>
+                    </div>
+                    <div class="advantages-row-item">
+                        <div class="advantages-row-item__img"><img src="../assets/images/icon/coach.png" alt=""/></div>
+                        <p class="advantages-row-item__title">Персональные</br>тренировки</p>
+                        <p class="advantages-row-item__text">Lorem ipsum dolor,<br>sit amet</p>
+                    </div>
+                    <div class="advantages-row-item">
+                        <div class="advantages-row-item__img"><img src="../assets/images/icon/hot-tub.png" alt=""/>
+                        </div>
+                        <p class="advantages-row-item__title">Джакузи</br>ipsum</p>
+                        <p class="advantages-row-item__text">Lorem ipsum dolor,<br>sit amet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="video-wrap">
+                <p class="defaultTitle video__title">Видео</p>
+                <p class="defaultSubtitle video__subtitle">Краткое описание</p>
+                <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-wrap children-stat">
+                <div class="stat-item">
+                    <p class="stat-item__sup">Сборов</p>
+                    <p class="stat-item__big">10</p>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-item__sup">Спортсменов</p>
+                    <p class="stat-item__big">50+</p>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-item__sup">Турниров</p>
+                    <p class="stat-item__big">15</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery gallery_fitnes">
+            <div class="gallery-wrap">
+                <div class="gallery-left-desc">
+                    <p class="gallery-left-desc__title">Фотогалерея</p>
+                    <p class="gallery-left-desc__text">Детский лагерь</p>
+                </div>
+
+                <div class="gallery__popup">
+                    <img src="" class="gallery__popup__img" alt=""/>
+                </div>
+
+            </div>
+
+            <div class="gallery-responsive">
+                <a class="fancybox" rel="group" href="../assets/images/fitnes-1.png">
+                    <img class="gallery-responsive__img" src="../assets/images/fitnes-1.png" alt=""/>
+                </a>
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-2.png" alt=""/>
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-3.png" alt=""/>
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-4.png" alt=""/>
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-5.png" alt=""/>
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-6.png" alt=""/>
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-7.png" alt=""/>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--scripts loaded here-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/tiny-slider.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/watersport.js"></script>
+<script src="../js/mirnij.js"></script>
+<script src="../js/resort.js"></script>
+<script src="../js/sbory.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
