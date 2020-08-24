@@ -7326,6 +7326,15 @@ button {
   .blue-title-mobile {
     display: none;
   }
+  
+  .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__text.swim__text {
+    max-width:768px
+  }
+
+  .active .active__wrapper .active__box .active__item-img {
+    height:380px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -8269,6 +8278,9 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .active .active__wrapper .active__box .active__item-img {
+    height: 100%;
+  }
   .gallery-left {
     padding: 0;
   }
@@ -8365,29 +8377,34 @@ button {
         background-image: url(../../img/sbory/sbory-mobile.jpg);
         height: 710px;
         background-repeat: no-repeat;
-        padding: 0px
+        padding: 0px;
+        z-index:0;
       }
 
       #fifty {
-          margin:15px 155px;
+          margin:15px 15px;
       }
 
       .hero-description {
-        margin-left: 45px;
         color:#ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto 20px;
     }
     
       #sbory .hero::before {
         position: absolute;
         content: "";
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.400);
-        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 86%;
         top: 100px;
+        z-index: -1;
       }
 
       .btn-group>.btn:first-child {
-        margin-left: 35px;
+        margin-left: 15px;
     }
 
       #row-sbory__about {
@@ -8408,14 +8425,22 @@ button {
           padding: 30px 0;
       }
 
-      .absolute-victory {
+      .absolute-victory.absolute-victory {
         font-size: 45px;
-        top: 115px;
+        top: 230px;
+      }
+
+      #sbory .hero h2 {
+        display:none;
       }
     
-      #sbory .hero h2 {
-        padding-left: calc(100% - 280px);
-        color: #fff;
+      #sbory .hero h1 {
+        padding: 200px 30px 30px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        z-index: 100;
+        font-size: 40px;
       }
     
       #sbory .hero h2 span {

@@ -84,7 +84,6 @@ $(document).ready(function () {
 
   if ($(".supaSlider-insideSlider").length) {
     $(".supaSlider-insideSlider").on("init", function (event, slick, currentSlide) {
-      console.log(1);
       event.stopPropagation();
       
       var cur = $(slick.$slides[slick.currentSlide]),
