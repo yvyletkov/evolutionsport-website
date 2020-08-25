@@ -5654,10 +5654,19 @@ a.article:hover {
     background-image: linear-gradient(46deg, #4f88cd 0%, #233e5f 100%);
     position: absolute;
     bottom: -134px;
-    right: 0;
+    right: 50%;
+    transform: translateX(200%);
     z-index: 3;
     text-align: right;
 }
+
+@media screen and (max-width: 1200px) {
+    .banner-weather {
+        transform: translateX(150%);
+
+    }
+}
+
 .banner-weather .banner-weather-box {
     display: -webkit-box;
     display: -webkit-flex;
