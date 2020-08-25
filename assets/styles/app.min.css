@@ -1101,6 +1101,13 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+  .row__title {
+    display: none;
+  }
+
+  .row__subtitle {
+    display: none;
+  }
   .select-dropDown__item:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
@@ -8286,6 +8293,42 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .row__title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .row__subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 16px;
+    font-weight: 400;
+  }
+
+  .contacts-right .blue-stripe.blue-title {
+    display: none;
+  }
+
+  .icons-footer {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .icons-footer img {
+    margin: 0 10px 0 0;
+  }
+
+  .contacts-description.contacts-description {
+    text-align: center;
+    padding-top: 0px;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .footer-phone {
+    text-align: center;
+  }
   .active .active__wrapper .active__box .active__item-img {
     height: 100%;
   }
