@@ -637,7 +637,7 @@
 
 @media screen and (max-width: 1000px) {
     .gallery-items-card {
-        width: calc(50% - 10px);
+        width: calc(100%);
     }
 }
 
