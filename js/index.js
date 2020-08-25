@@ -161,4 +161,82 @@ $(function () {
       },
     });
   }
+  if ($(".advantages-row").length) {
+    const whatYouWait = tns({
+      container: ".advantages-row",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        1024: {
+         items: 4,
+        }
+      },
+    });
+  }
+  if ($("#advantages__about").length) {
+    const advantages = tns({
+      container: "#advantages__about",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        1024: {
+         items: 4,
+        }
+      },
+    });
+  }
+  if ($(".sea-box").length) {
+    const advantages = tns({
+      container: ".sea-box",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          items: 1,
+        },
+        768: {
+          items: 1,
+        },
+        1024: {
+         disable: true,
+        }
+      },
+    });
+  }
 });

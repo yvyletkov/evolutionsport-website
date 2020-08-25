@@ -5014,6 +5014,9 @@ a.article:hover {
 }
 
 @media screen and (max-width: 1023px) {
+  .bannerWrap .banner_children-camp .banner-weather {
+    display: none;
+  }
   .calendar-block__year.calendar-block__year {
     right: 30px;
     top: 30px;
@@ -5025,6 +5028,10 @@ a.article:hover {
 
   .left-image {
     display: none;
+  }
+
+  .textBlock_lager .textBlock-images .textBlock-images-img:last-child {
+    display: none
   }
 
   .description-right {

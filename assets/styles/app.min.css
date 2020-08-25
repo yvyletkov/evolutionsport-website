@@ -436,7 +436,7 @@ button {
 
 .bannerWrap .banner {
   max-width: 1200px;
-  padding: 0 10px;
+  padding: 0 16px;
   height: 750px;
   width: 100%;
   position: relative;
@@ -1101,6 +1101,11 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+
+  .banner_children-camp-mobile {
+    display: none;
+  }
+  
   .row__title {
     display: none;
   }
@@ -1114,6 +1119,7 @@ button {
 
   .tarifes-list-item-prices__new.tarifes-list-item-prices__new {
     font-size: 21px;
+    width: 97px;
   }
   #icons__about-ow {
     display: none;
@@ -2611,6 +2617,7 @@ button {
 
 .carousel.children__carousel .carousel-slider-item .btn_accent {
   background-color: #437da9;
+  margin: 0 35px 0;
 }
 
 .video {
@@ -6391,7 +6398,7 @@ button {
 
 @media screen and (max-width: 1023px) {
   .wrapper {
-    margin-top: 100px;
+    margin-top: 75px;
   }
   .calendar_row {
     flex-direction: column;
@@ -6596,6 +6603,21 @@ button {
 }
 
 @media screen and (max-width: 1023px) {
+  .banner_children-wrap + .stat .stat-wrap {
+    display: flex;
+  }
+
+  .stat-item__big.stat-item__big {
+    font-size: 50px;
+  }
+
+  .textBlock-desc__title {
+    font-size: 24px;
+  }
+
+  .stat-item__small {
+    font-size: 10px;
+  }
   .textBlock_group {
     padding-top: 20px;
   }
@@ -6860,6 +6882,7 @@ button {
   }
   .bannerWrap .banner-desc__suptitle {
     font-size: 18px;
+    margin: 16px 0 0;
   }
   .carousel-slider_not {
     display: block;
@@ -6894,6 +6917,12 @@ button {
     font-size: 32px;
     max-width: 350px;
     margin: 0 auto;
+    text-transform: lowercase;
+    text-align: center;
+  }
+  
+  .sea .sea__wrapper .sea-title::first-letter {
+    text-transform: uppercase;
   }
   .sea .sea__wrapper .sea__wrapper-bg {
     display: none;
@@ -6961,11 +6990,27 @@ button {
   }
   .bannerWrap .banner_children-camp .banner-desc__title {
     font-size: 32px;
+    display: flex;
+    font-weight: 400;
+    margin: 0;
   }
+
+  .OD .bannerWrap .banner-desc__title span {
+    font-size: 32px;
+    margin: 0 0 0 15px;
+    font-weight: 400;
+  }
+
   .bannerWrap .banner_children-camp .banner-desc__text {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+
+  .bannerWrap .banner_children-camp .banner-desc__years {
+    margin: 0 0 10px;
+    font-size: 32px;
+  }
+
   .call .call__wrap .call-title {
     font-size: 32px;
     line-height: 125%;
@@ -7028,7 +7073,13 @@ button {
   .active .active__wrapper .active__box .active__item-title {
     margin-bottom: 20px;
     font-size: 32px;
+    text-transform: lowercase;
   }
+
+  .active .active__wrapper .active__box .active__item-title::first-letter {
+    text-transform: uppercase;
+  }
+
   .active .active__wrapper .active__box .active__item-text {
     margin-bottom: 20px;
     font-size: 16px;
@@ -7492,7 +7543,7 @@ button {
     width: calc(100% - 24px);
   }
   .bannerWrap .banner_children-camp .banner-item-img-mega {
-    display: block;
+    display: none;
     position: static;
     width: -webkit-calc(100% - 56px);
     width: calc(100% - 56px);
@@ -8237,6 +8288,22 @@ button {
 }
 
 @media screen and (max-width: 1023px) {
+  .advantages-wrap .tns-controls button[data-controls="prev"] {
+    left: 50px;
+  }
+  .advantages-wrap .tns-controls button[data-controls="next"] {
+    right: 50px;
+  }
+
+  .sea__wrapper .tns-controls button[data-controls="prev"] {
+    left: 0px;
+    top: 15px;
+  }
+
+  .sea__wrapper .tns-controls button[data-controls="next"] {
+    right: 0px;
+    top: 15px;
+  }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
     padding-right: 36px;
