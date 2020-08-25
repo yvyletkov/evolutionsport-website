@@ -8931,16 +8931,21 @@ button {
     position: relative;
 }
 
+.comand__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .comand__absolut {
     transform: rotate(-90deg);
     position: absolute;
-    top: 580px;
-    font-size: 154px;
-    left: -750px;
+    top: 515px;
+    left: -637px;
     font-weight: 900;
     color: #f3f3f3;
     z-index: 1;
     font-family: 'Geometria';
+    font-size: 135px;
 }
 
 .comand-item {
