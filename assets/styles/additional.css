@@ -111,6 +111,51 @@
     color: #fff;
     width: 310px;
 }
+
+@media screen and (max-width: 767px) {
+    .reviews-form-content{
+        margin-top: 30px;
+        width: 100%;
+        padding: 30px 15%;
+        background: #e8e8e8;
+        max-width: none;
+        margin-bottom: 0;
+    }
+    .reviews-form-content textarea,
+    .reviews-form-content textarea::placeholder,
+    .reviews-form-content input,
+    .reviews-form-content input::placeholder{
+        font-size: 12px;
+    }
+    .reviews-form-content input {
+        margin-top: 15px;
+    }
+    .reviews-form-content button {
+        width: 100%;
+        margin: 15px auto 0;
+    }
+    .supaCard .supaSlider-insideSlider__item-content {
+        border-radius: 0 !important;
+
+    }
+    .reviews .supaCard .children-supa__suptitle, .reviews .supaCard .children-supa__text {
+        font-size: 12px;
+    }
+    .reviews .supaCard .children-supa__suptitle,
+    .reviews .supaCard .children-supa__text{
+        margin-bottom: 10px;
+    }
+    .reviews .supaCard > span {
+        display: none;
+    }
+    .reviews .supaCard:before {
+        display: none;
+    }
+    .reviews .supaCard {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+}
 /*Отзывы Конец*/
 
 /*Документы*/
