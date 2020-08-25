@@ -78,8 +78,8 @@ $(function () {
             nav: false,
             navPosition: 'bottom',
             controlsText: [
-                '<img src="img/arrow-blue-left.png">',
-                '<img src="img/arrow-blue-right.png">'
+                '<img src="../img/arrow-blue-left.png">',
+                '<img src="../img/arrow-blue-right.png">'
             ],
         });
     }
@@ -93,8 +93,8 @@ $(function () {
             navPosition: 'bottom',
             animateIn: 'jello',
             controlsText: [
-                '<img src="img/arrow-blue-left.png">',
-                '<img src="img/arrow-blue-right.png">'
+                '<img src="../img/arrow-blue-left.png">',
+                '<img src="../img/arrow-blue-right.png">'
             ],
         });
     }

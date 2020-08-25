@@ -52,8 +52,8 @@ $(function () {
             nav: false,
             navPosition: "bottom",
             controlsText: [
-                '<img src="img/arrow-korpus-left.png">',
-                '<img src="img/arrow-korpus-right.png">'
+                '<img src="../img/arrow-korpus-left.png">',
+                '<img src="../img/arrow-korpus-right.png">'
             ],
         });
     }
@@ -65,8 +65,8 @@ $(function () {
             nested: 'outer',
             mouseDrag: true,
             controlsText: [
-                '<img src="img/arrow-thin-left.png">',
-                '<img src="img/arrow-thin-right.png">'
+                '<img src="../img/arrow-thin-left.png">',
+                '<img src="../img/arrow-thin-right.png">'
             ]
         });
     }
@@ -80,8 +80,8 @@ $(function () {
             navPosition: 'bottom',
             animateIn: 'jello',
             controlsText: [
-                '<img src="img/red-arrow-left.png">',
-                '<img src="img/red-arrow-right.png">'
+                '<img src="../img/red-arrow-left.png">',
+                '<img src="../img/red-arrow-right.png">'
             ],
         });
     }
@@ -93,8 +93,8 @@ $(function () {
             nav: false,
             navPosition: 'bottom',
             controlsText: [
-                '<img src="img/red-arrow-left.png">',
-                '<img src="img/red-arrow-right.png">'
+                '<img src="../img/red-arrow-left.png">',
+                '<img src="../img/red-arrow-right.png">'
             ],
         });
     }
