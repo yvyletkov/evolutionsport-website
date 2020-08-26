@@ -497,6 +497,15 @@ button {
   line-height: 100%;
 }
 
+#tarifes__list-ow .tns-controls button[data-controls="prev"] {
+  left: -7px;
+}
+
+#tarifes__list-ow .tns-controls button[data-controls="next"] {
+  right: -7px;
+}
+
+
 .bannerWrap .banner_children-camp .banner-desc__when {
   padding-bottom: 20px;
 }
@@ -1343,6 +1352,8 @@ button {
   .sea-box-item
   .sea-box-item-img {
   width: 54px;
+  position: relative;
+  left:15px;
 }
 
 .sea
@@ -1416,9 +1427,12 @@ button {
   justify-content: space-between;
 }
 
+#tarifes__list-mw {
+  padding: 0 19px;
+}
+
 .swim .swim__wrapper .swim__box-img {
   width: 50%;
-  padding-right: 20px;
 }
 
 .swim .swim__wrapper .swim__box .swim__title-wrapper {
@@ -4051,6 +4065,7 @@ button {
 }
 
 .tarifes-row {
+  margin-top: 25px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4063,11 +4078,16 @@ button {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .tarifes-row-item:not(:last-child) {
   margin-right: 40px;
+}
+
+.tarifes-row-item:last-child {
+  width:80px;
+  position: relative;
+  top: -5px;
 }
 
 .tarifes-row-item:not(.tarifes-row-item_disabled) {
@@ -4230,6 +4250,7 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .tarifes-list-item__head p {
@@ -4247,9 +4268,13 @@ button {
   line-height: 100%;
 }
 
+#tarifes__list {
+  padding-bottom: 15px;
+}
+
 .tarifes-list-item-body {
-  margin: 0 35px 0;
-  padding: 25px 0 0;
+  margin: 0 auto;
+  padding: 25px 25px 0;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4263,6 +4288,7 @@ button {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .tarifes-list-item__when {
@@ -4323,6 +4349,7 @@ button {
   font-weight: 900;
   font-size: 20px;
   color: #d0d0d0;
+  line-height: 49px;
 }
 
 .tarifes-list-item__btn {
@@ -4824,7 +4851,6 @@ button {
 .autumn .map-main-baloon__dot,
 .autumn .children-supa .children-supa__btn,
 .autumn .gallery-left-desc:after,
-.autumn .carousel.children__carousel .carousel-slider-item:after,
 .autumn .carousel.children__carousel .carousel-slider-item .btn_accent,
 .autumn .map-form-input_btn .btn,
 .autumn
@@ -4846,6 +4872,11 @@ button {
   .children-camp-about
   .textBlock-desc__title:after {
   background-color: #ca3207;
+}
+
+.autumn .carousel.children__carousel .carousel-slider-item:after,
+.autumn .textBlock_lager .textBlock-images .textBlock-images-img:first-child:after {
+  background-color: #f3a52b;
 }
 
 .autumn .map-main-baloon-main {
@@ -6605,6 +6636,7 @@ button {
 @media screen and (max-width: 1023px) {
   .banner_children-wrap + .stat .stat-wrap {
     display: flex;
+    padding: 20px 0;
   }
 
   .stat-item__big.stat-item__big {
@@ -6661,6 +6693,7 @@ button {
   }
   .bannerWrap .banner-desc__title span {
     font-size: inherit;
+    margin: 0 10px;
   }
   .bannerWrap .banner-desc__text {
     font-size: 16px;
@@ -6991,8 +7024,9 @@ button {
   .bannerWrap .banner_children-camp .banner-desc__title {
     font-size: 32px;
     display: flex;
-    font-weight: 400;
+    font-weight: bold;
     margin: 0;
+    text-transform: none;
   }
 
   .OD .bannerWrap .banner-desc__title span {
@@ -7151,14 +7185,16 @@ button {
     transform: translate(-50%, -50%) scale(1);
   }
   .tarifes-row {
-    display: block;
+    display: flex;
   }
   .tarifes-row-item:not(:last-child) {
-    margin-right: 0;
+    margin-right: 20px;
     margin-bottom: 20px;
+    width: 80px;
   }
   .tarifes-row-item-check {
     margin: 0 auto;
+    width: 80px;
   }
   .newYear-row {
     margin-bottom: 0;
@@ -7803,6 +7839,12 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+  .tarifes-row-item:last-child {
+    top: 0;
+  }
+  .tarifes-row-item.tarifes-row-item_disabled .tarifes-row-item__title {
+    width: 130px;
+  }
   .header-linklist__link:not(.header-linklist__link_menu):hover:after {
     width: 100%;
   }
@@ -8289,10 +8331,12 @@ button {
 
 @media screen and (max-width: 1023px) {
   .advantages-wrap .tns-controls button[data-controls="prev"] {
-    left: 50px;
+    left: -5px;
+    top: -40px;
   }
   .advantages-wrap .tns-controls button[data-controls="next"] {
-    right: 50px;
+    right: -5px;
+    top:-40px;
   }
 
   .sea__wrapper .tns-controls button[data-controls="prev"] {
@@ -8360,6 +8404,10 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .tarifes-row-item:last-child {
+    top: -10px;
+  }
+
   .row__title {
     font-size: 40px;
     text-align: center;
@@ -8459,7 +8507,7 @@ button {
     display: none;
   }
   .map {
-    padding: 17px 0 30px;
+    padding: 17px 0 0px;
   }
 }
 

@@ -176,13 +176,13 @@ $(function () {
       ],
       responsive: {
         320: {
-          items: 1,
+          items: 3,
         },
         768: {
-          items: 2,
+          items: 3,
         },
         1024: {
-         items: 4,
+         items: 3,
         }
       },
     });
@@ -202,13 +202,65 @@ $(function () {
       ],
       responsive: {
         320: {
-          items: 1,
+          items: 3,
         },
         768: {
           items: 2,
         },
         1024: {
          items: 4,
+        }
+      },
+    });
+  }
+  if ($("#advantages__what-you-wait").length) {
+    const advantages = tns({
+      container: "#advantages__what-you-wait",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          items: 3,
+        },
+        768: {
+          items: 3,
+        },
+        1024: {
+         items: 4,
+        }
+      },
+    });
+  }
+  if ($("#tarifes__list").length) {
+    const advantages = tns({
+      container: "#tarifes__list",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          disable:true,
+        },
+        768: {
+          disable:true,
+        },
+        1024: {
+         disable:true,
         }
       },
     });

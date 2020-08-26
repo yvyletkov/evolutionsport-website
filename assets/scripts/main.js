@@ -208,14 +208,18 @@ $(document).ready(function () {
   })
 
   $(document).on('click', '#tarifes-item-first', function(){
-    let sum = +$('.tarifes-list-item-prices__new').text().match(/\d+/g).join('');
+    const sum = +$('#new__price-first').text().match(/\d+/g).join('');
+    const oldSum = sum;
+    console.log(oldSum)
     if($('#tarifes-item-first').hasClass('tarifes-row-item_active')){
       document.querySelector('.tarifes-list-item-prices__new').textContent = `${sum - (18000 * 0.05)} руб`
     } else { document.querySelector('.tarifes-list-item-prices__new').textContent = `${sum + (18000 * 0.05)} руб` }
   })
 
   $(document).on('click', '#tarifes-item-second', function(){
-    let sum = +$('.tarifes-list-item-prices__new').text().match(/\d+/g).join('');
+    const sum = +$('#new__price-first').text().match(/\d+/g).join('');
+    const oldSum = sum;
+    console.log(oldSum)
     if($('#tarifes-item-second').hasClass('tarifes-row-item_active')){
       document.querySelector('.tarifes-list-item-prices__new').textContent = `${sum - (18000 * 0.1)} руб` ;
     } else { document.querySelector('.tarifes-list-item-prices__new').textContent = `${sum + (18000 * 0.1)} руб`}

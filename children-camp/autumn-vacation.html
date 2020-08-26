@@ -528,12 +528,12 @@
             <a class="nav-link phone-menu" href="#">8 (800) 777-18-26</a>
           </li>
           <li class="nav-item">
-            <div class="nav-link button-blue__mobile">
+            <a class="nav-link button-blue__mobile" href="tel:88007771826">
               <i class="fa fa-phone" aria-hidden="true"></i>
-            </div>
-            <div class="nav-link button-blue">
+            </a>
+            <a class="nav-link button-blue" href="tel:88007771826">
               <i class="fa fa-phone"></i> Перезвоните мне
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -542,8 +542,10 @@
 
 <div class="wrapper">
     <div class="autumn">
+      <img class="banner_children-camp-mobile" src="../assets/images/child_camp/autumn_camp.jpg">
         <section class="bannerWrap banner_children-wrap banner_children-wrap_cur">
-            <div class="banner banner_children-camp"><img class="banner_children-camp-bg" src="../assets/images/child_camp/child_bg-grey.jpg" alt="Задний фон"/>
+            <div class="banner banner_children-camp">
+              <img class="banner_children-camp-bg" src="../assets/images/child_camp/child_bg-grey.jpg" alt="Задний фон"/>
                 <div class="banner-desc">
                     <h1 class="banner-desc__title">Осенний<br><span>лагерь</span></h1>
                     <p class="banner-desc__text">Крым, первая береговая линия</p>
@@ -609,15 +611,15 @@
         <section class="advantages advantages_3 advantages-marginTop040">
             <div class="advantages-wrap">
                 <div class="advantages-row">
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/doc-1.png" alt=""/></div>
                         <h2 class="advantages-row-item__text"><strong>Государственная<br>компенсация</strong> стоимости<br>поездки в наш лагерь  </h2><a class="advantages-row-item__more" href="#">Подробнее</a>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/doc-2.png" alt=""/></div>
                         <h2 class="advantages-row-item__text"><strong>Страховка</strong><br>отказа<br>от путевки</h2><a class="advantages-row-item__more" href="#">Подробнее</a>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/doc-3.png" alt=""/></div>
                         <h2 class="advantages-row-item__text">Мы в<br>официальном<br><strong>реестре</strong></h2><a class="advantages-row-item__more" href="#">Подробнее</a>
                     </div>
@@ -628,28 +630,8 @@
         <section class="tarifes">
             <div class="tarifes-wrap">
                 <h2 class="defaultTitle tarifes__title">Тарифы</h2>
-                <div class="tarifes-row">
-                    <div class="tarifes-row-item" id="tarifes-item-first">
-                        <p class="tarifes-row-item__title">Приведи друга</p>
-                        <div class="tarifes-row-item-check">
-                            <div class="tarifes-row-item-check__slide">-5%</div>
-                        </div>
-                    </div>
-                    <div class="tarifes-row-item tarifes-row-item_active" id="tarifes-item-second">
-                        <p class="tarifes-row-item__title">Раннее бронирование</p>
-                        <div class="tarifes-row-item-check">
-                            <div class="tarifes-row-item-check__slide">-10%</div>
-                        </div>
-                    </div>
-                    <div class="tarifes-row-item tarifes-row-item_disabled" id="tarifes-item-third">
-                        <p class="tarifes-row-item__title">Последняя путевка</p>
-                        <div class="tarifes-row-item-check">
-                            <div class="tarifes-row-item-check__slide">-5%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarifes-list">
-                    <div class="tarifes-list-item">
+                <div class="tarifes-list" id="tarifes__list">
+                    <!-- <div class="item">
                         <div class="tarifes-list-item__head">
                             <p>Моя победа<br><span>1 смена</span></p>
                         </div>
@@ -663,12 +645,12 @@
                                 <li class="tarifes-list-item-ul__li">Программа лагеря</li>
                             </ul><a class="tarifes-list-item__more" href="#">Подробнее</a>
                             <div class="tarifes-list-item-prices">
-                                <p class="tarifes-list-item-prices__old">18 000</p>
-                                <p class="tarifes-list-item-prices__new">54 600&nbsp;<span>руб</span></p>
+                                <p class="tarifes-list-item-prices__old">18000</p>
+                                <p class="tarifes-list-item-prices__new" id="tarifes-item-first">54600&nbsp;<span>руб</span></p>
                             </div><a class="btn btn_darkblue tarifes-list-item__btn" href="#">Забронировать</a>
                         </div>
-                    </div>
-                    <div class="tarifes-list-item">
+                    </div> -->
+                    <!-- <div class="item">
                         <div class="tarifes-list-item__head">
                             <p>Русские традиции<br><span>2 смена</span></p>
                         </div>
@@ -685,8 +667,8 @@
                                 <p class="tarifes-list-item-prices__zapros">под запрос</p>
                             </div><a class="btn btn_darkblue tarifes-list-item__btn" href="#">Узнать стоимость</a>
                         </div>
-                    </div>
-                    <div class="tarifes-list-item tarifes-list-item_sale">
+                    </div> -->
+                    <!-- <div class="item tarifes-list-item_sale">
                         <div class="tarifes-list-item__head">
                             <p>Спортивная лига<br><span>3 смена</span></p>
                         </div>
@@ -700,12 +682,12 @@
                                 <li class="tarifes-list-item-ul__li">Программа лагеря</li>
                             </ul><a class="tarifes-list-item__more" href="#">Подробнее</a>
                             <div class="tarifes-list-item-prices">
-                                <p class="tarifes-list-item-prices__old">18 000</p>
-                                <p class="tarifes-list-item-prices__new">54 600&nbsp;<span>руб</span></p>
+                                <p class="tarifes-list-item-prices__old">18000</p>
+                                <p class="tarifes-list-item-prices__new">54600&nbsp;<span>руб</span></p>
                             </div><a class="btn btn_darkblue tarifes-list-item__btn" href="#">Забронировать</a>
                         </div>
-                    </div>
-                    <div class="tarifes-list-item">
+                    </div> -->
+                    <div class="item">
                         <div class="tarifes-list-item__head">
                             <p>Моя игра<br><span>4 смена</span></p>
                         </div>
@@ -719,35 +701,55 @@
                                 <li class="tarifes-list-item-ul__li">Программа лагеря</li>
                             </ul><a class="tarifes-list-item__more" href="#">Подробнее</a>
                             <div class="tarifes-list-item-prices">
-                                <p class="tarifes-list-item-prices__old">18 000</p>
-                                <p class="tarifes-list-item-prices__new">54 600&nbsp;<span>руб</span></p>
+                                <p class="tarifes-list-item-prices__old">14400</p>
+                                <p class="tarifes-list-item-prices__new">14400&nbsp;<span>руб</span></p>
                             </div><a class="btn btn_darkblue tarifes-list-item__btn" href="#">Забронировать</a>
                         </div>
                     </div>
                 </div>
+                <div class="tarifes-row">
+                  <div class="tarifes-row-item" id="tarifes-item-first">
+                      <p class="tarifes-row-item__title">Приведи друга</p>
+                      <div class="tarifes-row-item-check">
+                          <div class="tarifes-row-item-check__slide">-5%</div>
+                      </div>
+                  </div>
+                  <div class="tarifes-row-item" id="tarifes-item-second">
+                      <p class="tarifes-row-item__title">Раннее бронирование</p>
+                      <div class="tarifes-row-item-check">
+                          <div class="tarifes-row-item-check__slide">-10%</div>
+                      </div>
+                  </div>
+                  <div class="tarifes-row-item tarifes-row-item_disabled" id="tarifes-item-third">
+                      <p class="tarifes-row-item__title">Последняя путевка</p>
+                      <div class="tarifes-row-item-check">
+                          <div class="tarifes-row-item-check__slide">-5%</div>
+                      </div>
+                  </div>
+              </div>
             </div>
         </section>
 
         <section class="advantages advantages_4 advantages_full">
             <div class="advantages-wrap">
                 <h2 class="defaultTitle advantages__title">Что ждет ваших детей </h2>
-                <div class="advantages-row">
-                    <div class="advantages-row-item">
+                <div class="advantages-row" id="advantages__what-you-wait">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/deti-1.png" alt=""/></div>
                         <p class="advantages-row-item__title">Cпорт и игры</p>
                         <p class="advantages-row-item__text">Развитие навыков<br>и личных качеств</p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/deti-2.png" alt=""/></div>
                         <p class="advantages-row-item__title">Творчество</p>
                         <p class="advantages-row-item__text">Каждый день творчество<br>и мастер-классы</p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/deti-3.png" alt=""/></div>
                         <p class="advantages-row-item__title">Навыки</p>
                         <p class="advantages-row-item__text">Развитие навыков<br>и личных качеств</p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/deti-4.png" alt=""/></div>
                         <p class="advantages-row-item__title">Климат</p>
                         <p class="advantages-row-item__text">Оздоровление<br>климатом и морем</p>
@@ -777,43 +779,43 @@
         <section class="advantages children__adv">
             <div class="advantages-wrap" style="background-image: url('../assets/images/adv-bg.png');">
                 <h3 class="advantages__title">Преимущества     </h3>
-                <div class="advantages-row">
-                    <div class="advantages-row-item">
+                <div class="advantages-row" id="advantages__about">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-1.png" alt=""/></div>
                         <p class="advantages-row-item__title">Режим<br> работы</p>
                         <p class="advantages-row-item__text">Центр<br>работает<br>365 дней в году </p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-2.png" alt=""/></div>
                         <p class="advantages-row-item__title">Спортивная<br>инфраструктура</p>
                         <p class="advantages-row-item__text">17 спортивных<br>сооружений<br>на территории </p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-3.png" alt=""/></div>
                         <p class="advantages-row-item__title">Профессиональные<br>аниматоры</p>
                         <p class="advantages-row-item__text">Команда<br>аниматоров,<br>любящих свое дело </p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-4.png" alt=""/></div>
                         <p class="advantages-row-item__title">Лучшая<br>локация</p>
                         <p class="advantages-row-item__text">Приморско-степной<br>климат в Крыму<br>признан лечебным</p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-5.png" alt=""/></div>
                         <p class="advantages-row-item__title">Доступная<br>инфраструктура</p>
                         <p class="advantages-row-item__text">64 га<br>доступной<br>территории</p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-6.png" alt=""/></div>
                         <p class="advantages-row-item__title">Собственный<br>пляж</p>
                         <p class="advantages-row-item__text">Пологий<br>вход в море<br>и песок</p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-7.png" alt=""/></div>
                         <p class="advantages-row-item__title">5-ти разовое<br>питание</p>
                         <p class="advantages-row-item__text">В корпусе проживания<br>в соответствии с<br>нормами СанПиН</p>
                     </div>
-                    <div class="advantages-row-item">
+                    <div class="item">
                         <div class="advantages-row-item__img"><img src="../assets/images/4adv/adv-or-8.png" alt=""/></div>
                         <p class="advantages-row-item__title">Безопасносная<br>территория</p>
                         <p class="advantages-row-item__text">Ограничение<br>движения транспорта<br>на территории</p>
