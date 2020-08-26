@@ -187,6 +187,32 @@ $(function () {
       },
     });
   }
+  if ($("#advantages__what-wait").length) {
+    const whatWait = tns({
+      container: "#advantages__what-wait",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          items: 3,
+        },
+        768: {
+          items: 4,
+        },
+        1024: {
+         items: 4,
+        }
+      },
+    });
+  }
   if ($("#advantages__about").length) {
     const advantages = tns({
       container: "#advantages__about",

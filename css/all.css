@@ -642,8 +642,7 @@ a.article:hover {
 .url__pages {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color: rgb(77, 77, 77);
-  padding-left: 20px;
+  color: #b8b8b8;
 }
 
 .url__pages:hover {
@@ -7648,7 +7647,7 @@ a.article:hover {
 
 .map {
   padding-top: 35px;
-  padding-bottom: 70px;
+  padding-bottom: 0px;
 }
 
 .room-categories .tab-content {

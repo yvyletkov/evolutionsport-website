@@ -480,6 +480,7 @@ button {
   color: #000;
   position: relative;
   z-index: 2;
+  margin: 16px 0 0 0;
 }
 
 .bannerWrap .banner_children-camp .banner-desc__text {
@@ -831,6 +832,13 @@ button {
 
 .bannerWrap .banner-desc__order img {
   margin-bottom: 10px;
+}
+
+.swim__title_mobile {
+  text-align: center;
+  padding: 30px 12px 0;
+  font-weight: bold;
+  font-size: 29px;
 }
 
 .bannerWrap .banner-desc__suptitle {
@@ -4414,6 +4422,15 @@ button {
 }
 
 .map-form__title {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.map-form__subtitle {
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
@@ -4433,6 +4450,10 @@ button {
   justify-content: center;
 }
 
+.map-form-row:last-child {
+  display: none;
+}
+
 .map-form-input {
   height: 60px;
   margin: 5px;
@@ -4440,6 +4461,7 @@ button {
   -webkit-flex: 0 1 378px;
   -ms-flex: 0 1 378px;
   flex: 0 1 378px;
+  width: 300px;
 }
 
 .map-form-input_btn {
@@ -4989,6 +5011,7 @@ button {
 }
 
 .OD .bannerWrap .banner-desc__suptitle {
+  font-weight: bold;
   margin-bottom: 0;
 }
 
@@ -7032,7 +7055,7 @@ button {
   .OD .bannerWrap .banner-desc__title span {
     font-size: 32px;
     margin: 0 0 0 15px;
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .bannerWrap .banner_children-camp .banner-desc__text {
@@ -7140,6 +7163,8 @@ button {
   }
   .map-form-row {
     display: block;
+    width: 280px;
+    margin: 0 auto;
   }
   .newYear-row {
     display: block;
@@ -7839,6 +7864,10 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+
+  .swim__title_mobile {
+    display: none;
+  }
   .tarifes-row-item:last-child {
     top: 0;
   }
@@ -8075,7 +8104,7 @@ button {
 /*Новое меню*/
 
 .norm-menu-wrap {
-  background-color: white;
+  background-color: #fafafa;
   box-shadow: 0px 0px 32px 0px rgba(23, 23, 23, 0.36);
   overflow-y: scroll;
   position: absolute;
@@ -8115,18 +8144,11 @@ button {
   font-size: 20px;
   font-weight: 900;
   text-align: center;
-  /* color: rgb(77,77,77) */
-}
-
-.norm-menu a:hover {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .norm-menu:before {
   content: "";
-  background-color: rgb(167, 166, 166);
+  background-color: #f3f3f3;
   position: absolute;
   left: 0;
   top: 0;
@@ -8183,30 +8205,25 @@ button {
 .norm-menu-items-item.list-wrap .norm-menu-items-item__title span {
   cursor: pointer;
   position: absolute;
-  right: 0;
+  right: -10px;
   width: 25px;
   height: 25px;
-  background: url("../images/icon/menu-arr.png") center no-repeat;
-  color: rgb(77, 77, 77);
+  background: url("../../assets/images/icon/right-chevron_copy.png") center no-repeat;
+  color: #b8b8b8;
+  margin: 0 35px;
 }
 
 .norm-menu-items-item.active .norm-menu-items-item__title {
-  font-weight: 900;
-  text-transform: uppercase;
+  color:#171717;
 }
 
-.norm-menu-items-item.active .norm-menu-items-item__title:before {
-  content: "";
-  width: 2px;
-  height: 11px;
-  position: absolute;
-  top: 4px;
-  left: -6px;
-  background: #000;
+.norm-menu-items-item.active .norm-menu-items-item__title .url__pages {
+  color:#171717;
 }
 
 .norm-menu-items-item.active .norm-menu-items-item__title span {
   transform: rotate(90deg);
+  background: url("../images/icon/menu-arr.png") center no-repeat;
 }
 
 .norm-menu-items-item.active .norm-menu-items-item-list {
@@ -8228,7 +8245,7 @@ button {
 }
 
 .norm-menu-items-item-list__item:hover {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
   color: #171717;
 }
@@ -8404,6 +8421,19 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .sea .sea__wrapper {
+    padding-top: 0;
+  }
+  .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__title {
+    display: none;
+  }
+  .swim .swim__wrapper .swim__box .swim__title-wrapper {
+    padding: 0
+  }
+  .map-main-baloon__dot {
+    width: 3px;
+    height: 3px;
+  }
   .tarifes-row-item:last-child {
     top: -10px;
   }
@@ -8533,10 +8563,6 @@ button {
     .swim__box .swim__title-wrapper .swim__text {
       width: 200%;
       margin: 25px 0 0;
-    }
-
-    .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__title {
-      width: 200%
     }
 
     #sbory .hero {
