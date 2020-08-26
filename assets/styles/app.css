@@ -2615,7 +2615,8 @@ button {
 .health-center-carousel .owl-nav,
 .advantages-row .owl-nav,
 .team-wrap .owl-nav,
-.comand .owl-nav {  /* added */
+.comand .owl-nav,
+.documents-slider-mobile .owl-nav {  /* added */
     padding: 0 17px;
     top: 37%;
     transform: translateY(-50%) translateX(-50%);
@@ -2624,6 +2625,11 @@ button {
     left: 50%;
     width: calc(100% + 30px);
     justify-content: space-between;
+}
+
+.documents-slider-mobile .owl-nav {
+    padding: 0 25px;
+    top: 50%;
 }
 
 .comand .owl-nav {
@@ -2635,7 +2641,8 @@ button {
 .health-center-carousel .owl-nav span,
 .advantages-row .owl-nav span,
 .team-wrap .owl-nav span,
-.comand .owl-nav span {   /* added */
+.comand .owl-nav span,
+.documents-slider-mobile .owl-nav span {   /* added */
     font-size: 48px;
     font-stretch: ultra-expanded;
 }

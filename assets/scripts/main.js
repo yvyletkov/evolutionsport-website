@@ -428,6 +428,30 @@ $(document).ready(function () {
 /*Экскурсии Конец*/
 
 
+
+/*Документы*/
+$(document).ready(function () {
+    if (window.innerWidth < 768) {
+        $('.documents-slider-mobile').addClass('owl-carousel');
+        $('.documents-slider-mobile').owlCarousel({
+            items: 1,
+            nav: true,
+            center: true,
+            loop: true,
+            gutter: 20,
+            navText: [
+                '<img src="../img/arrow-thin-left.png">',
+                '<img src="../img/arrow-thin-right.png">'
+            ],
+        })
+    }
+    $(".fancybox").fancybox();
+})
+
+/*Документы конец*/
+
+
+
 /*Календарь*/
 function fillDate(date) {
     if (date.getDate() > 0 && date.getDate() < 10) {

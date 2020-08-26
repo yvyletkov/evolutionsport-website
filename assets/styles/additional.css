@@ -159,6 +159,18 @@
 /*Отзывы Конец*/
 
 /*Документы*/
+
+.defaultSubtitle.supaCard__subtitle {
+    color: #b7b7b7
+}
+
+.documents-slider-mobile {
+    display: none;
+}
+.documents {
+    overflow: hidden;
+}
+
 .documents-slider-wrap{
     background: #f8f8f8;
     position: relative;
@@ -235,6 +247,41 @@
 .documents .supaSlider-insideSliderBlock .supaSlider-insideSliderBlock__next{
     background-color: transparent;
 }
+
+.documents-slider-mobile__item-content {
+    text-align: center;
+    background: #f7eff8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+
+}
+.documents-slider-mobile__item-content p {
+    margin: 20px auto;
+    color: #c4c4c4;
+}
+.documents-slider-mobile__item-content .fancybox  {
+  width: 80%;
+}
+.documents-slider-mobile__item-content .fancybox img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .documents-slider-mobile {
+        display: block;
+    }
+    .documents-slider-wrap {
+        display: none;
+    }
+    .defaultSubtitle {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+}
+
 /*Документы Конец*/
 
 
