@@ -78,8 +78,8 @@ $(function () {
             nav: false,
             navPosition: 'bottom',
             controlsText: [
-                '<img src="../img/arrow-blue-left.png">',
-                '<img src="../img/arrow-blue-right.png">'
+                '<img src="../img/red-arrow-left.png">',
+                '<img src="../img/red-arrow-right.png">'
             ],
         });
     }

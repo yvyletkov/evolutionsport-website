@@ -79,6 +79,7 @@ $(function () {
             nav: false,
             navPosition: 'bottom',
             animateIn: 'jello',
+            preventScrollOnTouch: "force",
             controlsText: [
                 '<img src="../img/red-arrow-left.png">',
                 '<img src="../img/red-arrow-right.png">'
