@@ -279,6 +279,13 @@ body {
   background-image: url("../img/logo1.png");
 }
 
+.logo-dark__main {
+  width: 130px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/logo1.png");
+}
+
 .navbar-expand-lg
   .navbar-nav
   .nav-link.button-blue__mobile.button-blue__mobile {
@@ -288,6 +295,10 @@ body {
 }
 
 .navbar-black .logo-dark {
+  display: none;
+}
+
+.navbar-black .logo-dark__main {
   display: none;
 }
 
