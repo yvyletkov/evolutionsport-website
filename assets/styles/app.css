@@ -8623,7 +8623,7 @@ button {
     }
 
     .room-categories {
-        padding: 20px 0;
+        padding: 40px 0 20px;
     }
 
     .title-bold {
@@ -8698,16 +8698,29 @@ button {
     }
 
     .room-categories .row {
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        margin-top: 20px;
     }
 
     .room-categories .col-6 {
         max-width: none;
     }
 
+    .room-categories .tab-content {
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 10px 10px 0;
+    }
+
+    .room-categories .container {
+        padding: 0;
+    }
+
     #rooms-lists {
         max-height: none;
         overflow: auto;
+        padding-left: 10px;
+        padding-top: 15px;
     }
 
     .left-list a {
@@ -8770,12 +8783,28 @@ button {
         background: none;
     }
 
+    #resort .hero {
+        background-position: 59%;
+    }
+
+    .baths p {
+        margin-top: 12px;
+    }
+
+    .absolute-otdyh {
+        font-size: 90px;
+    }
+
     .hero { /*added*/
         margin-bottom: 100px;
     }
 
     .no-margin-bottom {
         margin-bottom: 0;
+    }
+
+    .resort-otdyh {
+        padding: 20px 0px;
     }
 
 
@@ -8912,6 +8941,10 @@ button {
 
 .curort-nav.menu-evolution.navbar-dark:not(.navbar-black) .navbar-nav .nav-link.button-blue {
     color: #000;
+}
+
+.campus-subtitle {
+    display: none;
 }
 
 .contacts-page {
@@ -9105,6 +9138,27 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+
+    #mirnij .description {
+        padding: 0 0 40px;
+    }
+
+    .blue-stripe-border {
+        display: none;
+    }
+
+    .campus-subtitle {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .room-categories .blue-stripe-title {
+        margin: 0 auto;
+    }
+
     .new-content {
         margin-top: 100px;
     }
