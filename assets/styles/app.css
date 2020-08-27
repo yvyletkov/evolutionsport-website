@@ -2050,7 +2050,7 @@ button {
 .advantages-row-item {
     width: -webkit-calc(20% - 20px);
     width: calc(20% - 20px);
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .advantages-row-item__more {
@@ -4814,6 +4814,30 @@ button {
 .owl-prev {
     pointer-events: all;
 }
+
+.fitness-sections-title {
+    color: #fff;
+    position: absolute;
+    font-size: 40px;
+    bottom: 50px;
+    left: 60px;
+    font-weight: bolder;
+}
+
+.fitness-sections-title__block {
+    width: fit-content;
+    background: #1e1e1e;
+}
+
+@media screen and (max-width: 1100px) {
+    .fitness-sections-title {
+        font-size: 25px;
+        bottom: 20px;
+        left: 30px;
+        font-weight: bolder;
+    }
+}
+
 
 .fitnes .banner-desc__title {
     color: #171717;
