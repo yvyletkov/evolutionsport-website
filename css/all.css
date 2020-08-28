@@ -5136,7 +5136,7 @@ a.article:hover {
   }
 
   .subtitle-normal.subtitle-normal {
-    margin: 0;
+    margin: 10px 0;
   }
 
   #row-sbory-ow {
@@ -7196,7 +7196,7 @@ a.article:hover {
 }
 
 .features {
-  padding: 40px 0 100px;
+  padding: 0px 0 60px;
   text-align: center;
 }
 
@@ -7373,34 +7373,9 @@ a.article:hover {
   color: #474747;
 }
 
-#infra-mw {
-  padding: 0 75px;
-}
-
 .infra {
-  padding: 40px 0;
+  padding: 60px 0;
   position: relative;
-}
-
-.infra::before {
-  position: absolute;
-  content: "";
-  width: 65px;
-  background-color: rgba(255, 255, 255, 0.4);
-  height: 765px;
-  top: 100px;
-  z-index: 1;
-}
-
-.infra::after {
-  position: absolute;
-  content: "";
-  width: 65px;
-  background-color: rgba(255, 255, 255, 0.4);
-  height: 765px;
-  top: 100px;
-  left:1080px;
-  z-index: 1;
 }
 
 .tleft {
@@ -7415,7 +7390,7 @@ a.article:hover {
 
 .infra-bold {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 20px;
 }
 
@@ -7472,8 +7447,8 @@ a.article:hover {
 }
 
 .baths {
-  padding-top: 40px;
-  padding-bottom: 0px !important;
+  padding-top: 60px;
+  padding-bottom: 60px !important;
 }
 
 .baths .blue-stripe-border {
@@ -7660,7 +7635,7 @@ a.article:hover {
 
 .relative {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .room-info-part {
