@@ -286,6 +286,10 @@ body {
   background-image: url("../../img/logo1.png");
 }
 
+.dropdown-menu.show {
+  width:275px;
+}
+
 .navbar-expand-lg
   .navbar-nav
   .nav-link.button-blue__mobile.button-blue__mobile {
@@ -7363,7 +7367,6 @@ a.article:hover {
 
 .left-part img:first-child {
   margin-bottom: 20px;
-  height: 498px;
 }
 
 #infra {

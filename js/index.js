@@ -145,6 +145,32 @@ $(function () {
       navPosition: "bottom",
       preventScrollOnTouch: "force",
       controlsText: [
+        '<img src="./img/arrow-thin-left.png">',
+        '<img src="./img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        768: {
+          items: 2,
+        },
+        1024: {
+          items: 3,
+        },
+        1200: {
+          items: 4,
+        },
+      },
+    });
+  }
+  if ($("#news-index-slider__meeting").length) {
+    const newsSlider = tns({
+      container: "#news-index-slider__meeting",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
       ],
