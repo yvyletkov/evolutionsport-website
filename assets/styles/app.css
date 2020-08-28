@@ -448,6 +448,7 @@ button {
 
 .bannerWrap.bannerWrap_reab .banner-desc__title {
     font-size: 58px;
+    line-height: 1.18;
 }
 
 .bannerWrap.banner_children-wrap {
