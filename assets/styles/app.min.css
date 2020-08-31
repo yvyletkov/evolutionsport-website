@@ -8113,11 +8113,12 @@ button {
   overflow-y: scroll;
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 275px;
   height: 100vh;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .norm-menu {
@@ -8129,11 +8130,18 @@ button {
   width: 100%;
   min-height: 100%;
   height: fit-content;
+  /* opacity: 0; */
+  /* visibility: hidden; */
 }
 
 .norm-menu-wrap.active {
-  display: flex;
+  /* display: flex; */
+  top:116px;
+  left:0px;
   width: 320px;
+  opacity: 1;
+  visibility: visible;
+  transition: top 0.5s linear;
 }
 
 .norm-menu > p {
@@ -8302,16 +8310,23 @@ button {
 }
 
 .infra .tns-controls button:first-child {
-  left: 0;
+  left: -65px;
 }
 
 .infra .tns-controls button:last-child {
-  right: 0;
+  right: -75px;
 }
 
 /*Хедер*/
 
 @media screen and (max-width: 1200px) {
+  .infra .tns-controls button:first-child {
+    left: -10px;
+  }
+  
+  .infra .tns-controls button:last-child {
+    right: -20px;
+  }
   .menu-evolution {
     padding: 25px 0;
   }
@@ -8426,6 +8441,68 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .baths p {
+    max-width: 760px;
+    text-align: justify;
+  }
+
+  .img-full__hd {
+    display: none;
+  }
+
+  .img__mobile {
+    display: block;
+    margin:20px 0;
+  }
+  .baths .tns-controls button:first-child {
+    left: -13px;
+  }
+  
+  .baths .tns-controls button:nth-child(2) {
+    right: -13px;
+    position: absolute;
+  }
+
+  .news-block .blue-stripe-border {
+    font-size: 30px;
+  }
+
+  .news-block .blue-stripe-border span {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  #ed-title__about-ow .tns-controls button[data-controls="prev"] {
+    left: -7px;
+  }
+  
+  #ed-title__about-ow .tns-controls button[data-controls="next"] {
+    right: -7px;
+  }
+
+  .hero .about-list {
+    margin: 0 auto 40px;
+    width:92px;
+    text-align: center;
+  }
+  #sport .hero h2 span {
+    font-size: 42px;
+  }
+
+  .news-block {
+    padding: 20px 0;
+  }
+  
+  .infra .tns-controls button:first-child {
+    left: 0;
+  }
+  
+  .infra .tns-controls button:last-child {
+    right: 0;
+  }
+  .infra__img-height {
+    height:387px;
+  }
 
   #infra-ow .tns-controls button[data-controls="next"] {
     top:-105px;
@@ -8706,6 +8783,7 @@ button {
   .baths .blue-stripe-border {
       margin: 20px 0;
       font-size: 19px;
+      text-align: center;
   }
 
   .baths p {
@@ -8755,6 +8833,9 @@ button {
 }
 
 @media screen and (max-width:426px) {
+    .baths .baths-title {
+      padding: 0px;
+    }
     .call .call__wrap .children-form .children-form-input, 
     .call .call__wrap .children-form .children-form-select-wrap {
       margin-left: 6px;
@@ -8790,6 +8871,7 @@ button {
         font-weight: bold;
         text-align: center;
         margin: 0 auto 20px;
+        text-align: center;
     }
     
       #sbory .hero::before {
@@ -8817,7 +8899,7 @@ button {
 
       .features .big-f {
           padding: 0 0 0 10px;
-          font-size: 80px;
+          font-size: 90px;
       }
 
       .features {
@@ -8849,6 +8931,28 @@ button {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  #sport .hero h2 span {
+    font-size: 42px;
+    text-align: center;
+  }
+  .title__ed {
+    margin: 17px auto;
+    width: 300px;
+    text-align: center;
+  }
+  .btn-group>.btn:first-child {
+    margin:0 17px;
+    border-radius:0;
+  }
+  .btn-group>.btn:not(:first-child){
+    margin: 17px;
+    border-radius:0;
+  }
+  .button__title {
+    margin: 0 auto;
+    width:270px;
+  }
+
   .blue-title-mobile {
     font-family: Roboto;
     font-size: 30px;

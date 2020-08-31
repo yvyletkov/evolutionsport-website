@@ -11,9 +11,9 @@ $(function () {
   });
 });
 
-$(document).on("click", "#sidebarCollapse", function (e) {
-  $(".norm-menu-wrap").toggleClass("active");
-});
+// $(document).on("click", "#sidebarCollapse", function (e) {
+//   $(".norm-menu-wrap").toggleClass("active");
+// });
 
 $(document).on("click", ".norm-menu__close", function (e) {
   $(".norm-menu-wrap").removeClass("active");
@@ -37,7 +37,8 @@ $(".norm-menu-items-item.list-wrap span").click(function (e) {
 // dateNow();
 
 // анимации иконки меню
-// $('#sidebarCollapse').click(function(){
-//     $(this).toggleClass('active');
-//     $('.norm-menu-wrap').toggleClass('active');
-// });
+$('#sidebarCollapse').click(function(){
+  console.log(this)
+    $(this).toggleClass('active');
+    $('.norm-menu-wrap').toggleClass('active');
+});

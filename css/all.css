@@ -385,6 +385,10 @@ body {
   box-shadow: 0 0 15px #b9b9b9;
 }
 
+.img__mobile {
+  display: none;
+}
+
 #sidebar {
   width: 250px;
   position: fixed;
@@ -667,7 +671,7 @@ a.article:hover {
   color: #171717;
 }
 
-/* #sidebarCollapse {
+#sidebarCollapse {
   position: relative;
   display: inline-block;
   width: 35px;
@@ -716,7 +720,7 @@ a.article:hover {
 }
 #sidebarCollapse.active span:after {
   transform: rotate(-45deg);
-} */
+}
 
 .evo-slider h3 {
   font-size: 76px;
@@ -2311,6 +2315,11 @@ a.article:hover {
   display: block;
 }
 
+#ed-title__about-iw {
+  right: -15px;
+  position: relative;
+}
+
 .room-categories {
   padding-top: 50px;
   padding-bottom: 80px;
@@ -2838,6 +2847,8 @@ a.article:hover {
   font-weight: 700;
   padding-top: 20px;
   padding-left: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100px;
 }
 
 .absolute-victory {
@@ -2884,6 +2895,10 @@ a.article:hover {
 
 .baths .baths-padding {
   padding: 0 0px 0 35px !important;
+}
+
+.baths .baths-title {
+  padding: 0 0px 0 18px;
 }
 
 .baths-padding .button-blue {
@@ -4753,7 +4768,6 @@ a.article:hover {
 }
 
 .about-list[class] {
-  margin-bottom: 100px;
   list-style: disc;
   margin-left: 15px;
 }
@@ -5036,6 +5050,9 @@ a.article:hover {
 }
 
 @media screen and (max-width: 1200px) {
+  .infra__img-height {
+    height:441px;
+  }
   #main-slider {
     margin-top: 64px;
   }
@@ -5133,6 +5150,14 @@ a.article:hover {
 
   #row-sbory-ow .tns-controls button[data-controls="prev"]{
     left: 0
+  }
+
+  #about__features-sports-ow .tns-controls button[data-controls="next"]{
+    right: 50px;
+  }
+
+  #about__features-sports-ow .tns-controls button[data-controls="prev"]{
+    left: 50px;
   }
 
   .subtitle-normal.subtitle-normal {
@@ -7366,7 +7391,7 @@ a.article:hover {
 }
 
 .left-part img:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 13px !important;
 }
 
 #infra {
@@ -7381,7 +7406,7 @@ a.article:hover {
 .tleft {
   font-size: 16px;
   color: #494949;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .tleft:nth-child(2n) {

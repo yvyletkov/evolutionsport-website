@@ -291,6 +291,58 @@ $(function () {
       },
     });
   }
+  if ($("#ed-title__about").length) {
+    const edTitleAbout = tns({
+      container: "#ed-title__about",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          items:1,
+        },
+        768: {
+          disable:true,
+        },
+        1024: {
+         disable:true,
+        }
+      },
+    });
+  }
+  if ($("#about__features-sports").length) {
+    const aboutFeatures = tns({
+      container: "#about__features-sports",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        320: {
+          items: 1,
+        },
+        768: {
+          disable:true,
+        },
+        1024: {
+         disable:true,
+        }
+      },
+    });
+  }
   if ($("#tarifes__list").length) {
     const advantages = tns({
       container: "#tarifes__list",
