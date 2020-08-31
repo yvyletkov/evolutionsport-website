@@ -240,6 +240,7 @@ body {
 
 .textBlock-images__img_mobile {
     margin: 0 auto;
+    margin-bottom: 10px;
     display: none;
     width: 100%;
 }

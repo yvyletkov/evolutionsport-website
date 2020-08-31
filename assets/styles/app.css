@@ -7,6 +7,12 @@
     font-weight: 900;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Cambria';
+    url('../../fonts/cambriabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
@@ -428,6 +434,12 @@ button {
     height: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+    .bannerBg {
+        display: none;
+    }
+}
+
 .bannerWrap {
     width: 100%;
     position: relative;
@@ -464,6 +476,7 @@ button {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-flow: wrap;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -831,6 +844,10 @@ button {
     margin-bottom: 10px;
 }
 
+#rehabilitation .bannerWrap .banner-desc__title {
+    font-size: 57px;
+}
+
 .bannerWrap .banner-desc__title span {
     font-family: 'Roboto', serif;
     font-weight: 900;
@@ -921,6 +938,13 @@ button {
     font-family: "Geometria";
     right: -webkit-calc(50% - 60px);
     right: calc(50% - 60px);
+}
+
+#rehabilitation .bannerWrap .banner__placeholder {
+    bottom: 375px;
+    z-index: -1;
+    right: -webkit-calc(61% - 60px);
+    right: calc(61% - 60px);
 }
 
 .bannerWrap .banner-form {
@@ -2617,7 +2641,7 @@ button {
 .advantages-row .owl-nav,
 .team-wrap .owl-nav,
 .comand .owl-nav,
-.documents-slider-mobile .owl-nav {  /* added */
+.documents-slider-mobile .owl-nav { /* added */
     padding: 0 17px;
     top: 37%;
     transform: translateY(-50%) translateX(-50%);
@@ -2643,12 +2667,12 @@ button {
 .advantages-row .owl-nav span,
 .team-wrap .owl-nav span,
 .comand .owl-nav span,
-.documents-slider-mobile .owl-nav span {   /* added */
+.documents-slider-mobile .owl-nav span { /* added */
     font-size: 48px;
     font-stretch: ultra-expanded;
 }
 
-.comand .owl-nav span{
+.comand .owl-nav span {
     font-size: 30px;
 }
 
@@ -3483,7 +3507,6 @@ button {
 }
 
 
-
 .gallery_fitnes .galeryGrid-col {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3568,6 +3591,7 @@ button {
     display: flex;
     max-width: 1200px;
 }
+
 @media screen and (max-width: 1024px) {
     .gallery-wrap {
         padding: 40px 10px 10px;
@@ -6149,6 +6173,7 @@ button {
     .shedule-table-cell {
         width: 50%;
     }
+
     .shedule-table-cell:nth-child(2n-1) {
         border-right: 1px solid #e3e3e3;
     }
@@ -6420,7 +6445,6 @@ button {
 @media screen and (max-width: 1023px) {
 
 
-
     .fitnes-club-banner_mobile {
         display: flex;
         width: 100%;
@@ -6431,6 +6455,7 @@ button {
         align-items: center;
         flex-direction: column;
     }
+
     .fitnes-club-banner_mobile:after {
         content: "";
         position: absolute;
@@ -6506,10 +6531,11 @@ button {
         height: auto;
     }
 
-    .bannerWrap .banner-desc__title {
+    .bannerWrap .banner-desc__title, #rehabilitation .bannerWrap .banner-desc__title {
         font-size: 40px;
         text-align: center;
     }
+
 
     .bannerWrap .banner-desc__title span {
         font-size: inherit;
@@ -6518,6 +6544,10 @@ button {
     .bannerWrap .banner-desc__text {
         font-size: 16px;
         margin-bottom: 20px;
+    }
+
+    #rehabilitation .bannerWrap .banner-desc__text {
+        font-weight: bold;
     }
 
     .bannerWrap {
@@ -6617,6 +6647,7 @@ button {
     .defaultSubtitle.SL6__subtitle {
         display: none;
     }
+
     .directions-row-item__title {
         font-size: 24px;
     }
@@ -7481,12 +7512,33 @@ button {
     .banner.banner_onIndex {
         display: none;
     }
+
+    .bannerBgWrap.not-hidden {
+        display: block;
+    }
+
+    .banner.banner_onIndex.not-hidden {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 767px) {
 
+    .carousel {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .textBlock-wrap.not-hidden {
+        display: block;
+    }
+
     .video-wrap {
-        padding: 20px 10px 40px;
+        padding: 20px 10px 20px;
+    }
+
+    .stat-wrap {
+        margin-bottom: 20px;
     }
 
 
@@ -7522,12 +7574,24 @@ button {
     .bannerWrap .banner-form {
         width: 100%;
         padding: 20px 60px;
+        order: 2;
+        margin-top: 40px;
+        box-shadow: none;
+    }
+
+    .bannerWrap .banner-desc-ul {
+        padding-left: 0;
+    }
+
+    #rehabilitation .bannerWrap .banner-form {
+        margin-top: 15px;
     }
 
     .advantages-row-item__title {
         font-size: 14px;
     }
-    .advantages-row-item__text{
+
+    .advantages-row-item__text {
         font-size: 10px;
     }
 
@@ -7540,6 +7604,7 @@ button {
     .gallery-left-desc:after {
         display: none;
     }
+
     .gallery-left-desc__title {
         text-transform: none;
         font-size: 32px;
@@ -7574,18 +7639,25 @@ button {
     .bany-timetable-content-col {
         font-size: 11px;
     }
+
     .results-row-imgbox {
         display: none;
     }
 
     .textBlock-desc__title {
+        font-size: 32px;
         text-align: center;
         font-weight: 700;
         padding-left: 0;
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         line-height: 120%;
     }
+
+    #rehabilitation .textBlock-desc__title {
+        margin-bottom: 20px;
+    }
+
 
     .textBlock-desc__title div {
         font-size: 16px;
@@ -7657,12 +7729,15 @@ button {
     }
 
     .textBlock-desc {
+        padding: ;
         padding-bottom: 0 !important;
+
     }
 
     .textBlock-wrap {
         display: none;
-        padding-bottom: 0;
+        padding: 20px 10px 0;
+
     }
 
     .textBlock-images.group-lessons {
@@ -7702,7 +7777,7 @@ button {
     }
 
     .stat-item__big {
-        font-size: 72px;
+        font-size: 52px !important;
     }
 
     .textBlock_rtl .textBlock-desc {
@@ -7731,14 +7806,14 @@ button {
     }
 
     .directions-row-item ul li {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .textBlock-desc__text,
     .sea .sea__wrapper .sea-items .sea-item .sea-item-text,
     .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__text {
         text-align: justify;
-        /*padding: 0 15px;*/
+        margin-bottom: 12px;
     }
 
     .carousel.children__carousel .carousel__title.full_time::before,
@@ -7810,6 +7885,11 @@ button {
 
     .banner-desc {
         position: relative;
+        order: 1;
+    }
+
+    .banner-img {
+        order: 0;
     }
 
     .banner-desc__order {
@@ -8807,7 +8887,6 @@ button {
     .resort-otdyh {
         padding: 20px 0px;
     }
-
 
 
     .absolute-victory {
