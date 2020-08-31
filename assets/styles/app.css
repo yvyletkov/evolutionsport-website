@@ -823,6 +823,7 @@ button {
     color: #fff;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.49);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.49);
+
 }
 
 .bannerWrap .banner-desc__order img {
@@ -6527,7 +6528,7 @@ button {
     }
 
     .bannerWrap .banner {
-        display: block;
+        display: flex;
         height: auto;
     }
 
@@ -6586,6 +6587,7 @@ button {
         padding-right: 0;
         margin: 0 auto;
         max-width: 350px;
+        margin-bottom: -12px;
     }
 
     .textBlock-wrap {
@@ -7524,6 +7526,35 @@ button {
 
 @media screen and (max-width: 767px) {
 
+    .indications-desc__title:before {
+        position: relative;
+        content: "";
+        width: 40px;
+        height: 2px;
+        display: block;
+        background-color: black;
+        left: -50px;
+        top: 16px;
+    }
+
+    .indications-desc__title {
+        padding-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .indications-desc__title:after {
+        content: none;
+    }
+
+    .results-row-desc {
+        padding-left: 25px;
+    }
+
+    .bannerWrap .banner-desc__suptitle {
+        text-align: center;
+    }
+
+
     .carousel {
         padding-top: 40px;
         padding-bottom: 20px;
@@ -7538,7 +7569,7 @@ button {
     }
 
     .stat-wrap {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
 
@@ -7895,9 +7926,15 @@ button {
     .banner-desc__order {
         position: absolute;
         top: -webkit-calc(100% + 155px);
-        top: calc(100% + 155px);
+        top: -110px;
         z-index: 4;
-        left: 20px;
+        left: -15px;
+    }
+
+    .bannerWrap .banner-desc__order {
+        width: 85px;
+        height: 85px;
+        font-size: 9px
     }
 
     .results-row-imgbox-img:after {
