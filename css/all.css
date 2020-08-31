@@ -700,7 +700,7 @@ a.article:hover {
   bottom: -5px;
 }
 
-#sidebarCollapse span,
+/* #sidebarCollapse span,
 #sidebarCollapse span:before,
 #sidebarCollapse span:after {
   transition: all 500ms ease-in-out;
@@ -720,7 +720,7 @@ a.article:hover {
 }
 #sidebarCollapse.active span:after {
   transform: rotate(-45deg);
-}
+} */
 
 .evo-slider h3 {
   font-size: 76px;
@@ -869,6 +869,11 @@ a.article:hover {
 
 .about-btn {
   color: #fff;
+}
+
+.button__group-center {
+  width: 270px;
+  display: flex;
 }
 
 .card-body {
@@ -1206,6 +1211,10 @@ a.article:hover {
   font-weight: 900;
   text-align: center;
   color: #fff;
+}
+
+#about__features-sports {
+  display: flex;
 }
 
 .about-us {
@@ -7370,6 +7379,7 @@ a.article:hover {
 
 .icon-description {
   display: block;
+  width:200px;
 }
 
 .icon-description .icon-title {
@@ -7473,7 +7483,14 @@ a.article:hover {
 
 .baths {
   padding-top: 60px;
-  padding-bottom: 60px !important;
+  padding-bottom: 60px;
+}
+
+.about-icon__main {
+  margin-bottom: 40px;
+  display: flex;
+  text-align: center;
+  width: 250px;
 }
 
 .baths .blue-stripe-border {

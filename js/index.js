@@ -92,16 +92,10 @@ $(function () {
       ],
       responsive: {
         768: {
-          disable: true,
+          items: 5,
         },
         320: {
-          items: 1,
-        },
-        425: {
-          items: 1,
-        },
-        375: {
-          items: 1,
+          items: 3,
         },
       },
     });
@@ -306,33 +300,7 @@ $(function () {
       ],
       responsive: {
         320: {
-          items:1,
-        },
-        768: {
-          disable:true,
-        },
-        1024: {
-         disable:true,
-        }
-      },
-    });
-  }
-  if ($("#about__features-sports").length) {
-    const aboutFeatures = tns({
-      container: "#about__features-sports",
-      items: 1,
-      gutter: 20,
-      loop: true,
-      nav: false,
-      navPosition: "bottom",
-      preventScrollOnTouch: "force",
-      controlsText: [
-        '<img src="../img/arrow-thin-left.png">',
-        '<img src="../img/arrow-thin-right.png">',
-      ],
-      responsive: {
-        320: {
-          items: 1,
+          items:3,
         },
         768: {
           disable:true,

@@ -8113,7 +8113,7 @@ button {
   overflow-y: scroll;
   position: absolute;
   z-index: 2;
-  top: 50px;
+  top: 0px;
   left: 0;
   width: 275px;
   height: 100vh;
@@ -8136,12 +8136,12 @@ button {
 
 .norm-menu-wrap.active {
   /* display: flex; */
-  top:116px;
+  top:0px;
   left:0px;
   width: 320px;
   opacity: 1;
   visibility: visible;
-  transition: top 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .norm-menu > p {
@@ -8441,6 +8441,10 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .features .big-f {
+    padding: 0;
+    font-size: 65px;
+  }
   .baths p {
     max-width: 760px;
     text-align: justify;
@@ -8474,10 +8478,16 @@ button {
 
   #ed-title__about-ow .tns-controls button[data-controls="prev"] {
     left: -7px;
+    top: -30px;
   }
   
   #ed-title__about-ow .tns-controls button[data-controls="next"] {
     right: -7px;
+    top:-30px;
+  }
+
+  #ed-title__about-item1 {
+    padding-right: 10px !important;
   }
 
   .hero .about-list {
@@ -8884,10 +8894,6 @@ button {
         z-index: -1;
       }
 
-      .btn-group>.btn:first-child {
-        margin-left: 15px;
-    }
-
       #row-sbory__about {
         display: flex;
         flex-direction: column;
@@ -8899,7 +8905,7 @@ button {
 
       .features .big-f {
           padding: 0 0 0 10px;
-          font-size: 90px;
+          font-size: 65px;
       }
 
       .features {
@@ -8931,6 +8937,9 @@ button {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .button__group-center {
+    margin: 0 auto;
+  }
   #sport .hero h2 span {
     font-size: 42px;
     text-align: center;
@@ -8941,8 +8950,8 @@ button {
     text-align: center;
   }
   .btn-group>.btn:first-child {
-    margin:0 17px;
     border-radius:0;
+    margin:17px;
   }
   .btn-group>.btn:not(:first-child){
     margin: 17px;
