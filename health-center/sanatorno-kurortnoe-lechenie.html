@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
     <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/gallery-responsive.css"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
@@ -28,221 +29,18 @@
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
-    <script src="../assets/scripts/ajax.js"></script>
-    <title></title>
+    <script src="../js/gallery-responsive.js"></script>
+    <title>Санаторно-курортное лечение</title>
 
 </head>
-<body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution">
-    <div class="container">
-        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-            <div class="norm-menu-wrap">
-                <div class="norm-menu">
-                    <div class="norm-menu__close">
-                        Скрыть
-                        <img src="../assets/images/icon/close.png" alt="">
-                    </div>
-                    <a href="/" class="norm-menu__logo">
-                        <img src="../assets/images/logo-menu.png" alt="">
-                    </a>
-                    <div class="norm-menu-items">
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="/">Главная</a>
-                            </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="kurortnyij-otdyix/">Курортный отдых</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/mirnyij/">Мирный</a>
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/pogranichnyij/">Пограничный</a>
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/sportivnyij/">Спортивный</a>
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/zvezdnyij/">Звездный</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="sportivnyie-sboryi/">Спортивные сборы</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/vodnyie-vidyi-sporta/">Водные виды спорта</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/futbol/">Футбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/edinoborstva/">Единоборства</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/fextovanie/">Фехтование</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/gandbol/">Гандбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/tennis/">Теннис</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/tanczyi/">Танцы</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/gimnastika/">Гимнастика</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/volejbol/">Волейбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/basketbol/">Баскетбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/pauerlifting/">Пауерлифтинг</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/metatelnyie-vidyi-sporta/">Метательные виды спорта</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/legkaya-atletika/">Легкая атлетика</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/strelba-iz-luka/">Стрельба из лука</a>                    </div>
+<body id="spa-treatment">
 
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="czentr-zdorovya/">Центр здоровья</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/">Реабилитация</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/sanatorno-kurortnoe-lechenie/">Санаторно-курортное лечение</a>                            <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/detskij-czerebralnyij-paralich/">Детский церебральный паралич</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/oporno-dvigatelnyij-apparat/">Опорно-двигательный аппарат</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/cherepno-mozgovaya-travma/">Черепно-мозговая травма</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/insult/">Инсульт</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/aktivnoe-dolgoletie/">Активное долголетие</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/parasport/">Параспорт</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="detskij-lager/">Детский лагерь</a>
-                                <span></span>
-
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/zimnij-lager/">Зимний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/vesennij-lager/">Весенний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/letnij-lager/">Летний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/osennij-lager/">Осенний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-zimnix-kanikulax/">Дневной лагерь на зимних каникулах</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-vesennix-kanikulax/">Дневной лагерь на весенних каникулах</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-letnix-kanikulax/">Дневной лагерь на летних каникулах</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-osennix-kanikulax/">Дневной лагерь на осенних каникулах</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="fitnes-klub/">Фитнес клуб</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/abonementyi-i-czenyi/">Абонементы и цены</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/bassejn/">Бассейн</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/trenazhernyie-zalyi/">Тренажерные залы</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/gruppovyie-programmyi/">Групповые программы</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/sportivnyie-sekczii/">Спортивные секции</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/bannyij-kompleks/">Банный комплекс</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/raspisanie/">Расписание групповых программ</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/treneryi/">Тренеры</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/arenda-sportivnyix-sooruzhenij/">Аренда спортивных сооружений</a>                    </div>
-
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="infrastruktura/">Инфраструктура</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/karta-territorii/">Карта территории</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/prozhivanie/">Проживание</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/bassejnyi/">Бассейны</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/futbolnyie-polya/">Футбольные поля</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/kryityie-sportivnyie-zalyi/">Крытые спортивные залы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/stadionyi/">Стадионы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/trenazhernyie-zalyi/">Тренажерные залы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/plyazhnyie-sportivnyie-ploshhadki/">Пляжные спортивные площадки</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/plyazh/">Пляж</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/bannyij-kompleks/">Банный комплекс</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/konferencz-zalyi/">Конференц-залы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/magazinyi/">Магазины</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="uslugi/">Услуги</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="uslugi/transfer/">Трансфер</a>
-                                <a class="norm-menu-items-item-list__item" href="uslugi/animacziya/">Анимация</a>
-                                <a class="norm-menu-items-item-list__item" href="uslugi/serfing/">Серфинг</a>
-                                <a class="norm-menu-items-item-list__item" href="uslugi/ekskursij/">Экскурсии</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="turniryi/">Турниры</a>
-                            </div>
-                        </div>
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="kontaktyi/">Контакты</a>
-                            </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="o-czentre/">О центре</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/oficzialnyie-dokumentyi/">Официальные документы</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/karta-territorii/">Карта территории</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/galereya/">Галерея</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/komanda/">Команда</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/novosti/">Новости</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/otzyivyi/">Отзывы</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/vakansij/">Вакансии</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="czentr-meropriyatij/">Центр мероприятий</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="norm-menu-socials">
-                        <a href="#" class="norm-menu-socials__item">
-                            <img src="../assets/images/icon/vk.png" alt="">
-                        </a>
-                        <a href="#" class="norm-menu-socials__item">
-                            <img src="../assets/images/icon/inst.png" alt="">
-                        </a>
-                        <a href="#" class="norm-menu-socials__item">
-                            <img src="../assets/images/icon/fb.png" alt="">
-                        </a>
-                    </div>
-                    <p>Звоните нам</p>
-                    <a href="tel:88007771826">8 (800) 777-18-26</a>
-                </div>
-            </div>
-
-            <ul class="navbar-nav left-menu">
-                <li class="nav-item">
-                    <a class="nav-link" id="sidebarCollapse"><i class="fa fa-bars" aria-hidden="true"></i>Меню</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link underlines" href="#">Прямая трансляция</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Календарь событий</a>
-                </li>
-            </ul>
-
-            <a class="navbar-brand d-none d-lg-block" href="/">
-                <!--<img src="../img/logo-white.png" alt="">-->
-                <img src="../img/logo.png" class="logo-dark">
-                <img src="../img/logo-small.png" class="logo-white">
-            </a>
-
-            <ul class="navbar-nav right-menu">
-                <li class="nav-item">
-                    <a class="nav-link phone-menu" href="#">8 (800) 777-18-26</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link button-blue" href="#"><i class="fa fa-phone"></i> Перезвоните мне</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="wrapper">
-    <div class="bannerWrap">
+<main class="wrapper">
+    <section class="bannerWrap">
         <div class="bannerBgWrap"><img class="bannerBg" src="../assets/images/skBg.png" alt="Центр здоровья"/></div>
         <div class="banner banner_program">
             <div class="banner-desc">
-                <h1 class="banner-desc__title">Санаторно-<br>курортное<br>лечение</h1>
+                <h1 class="banner-desc__title">Санаторно-курортное<br>лечение</h1>
                 <p class="banner-desc__text">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Etiam ut urna feugiat.</p>
             </div>
             <div class="banner-img"><img src="../assets/images/skImg.png" alt="Дышит в трубку"/></div>
@@ -294,34 +92,33 @@
                 <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
             </form>
         </div>
-    </div>
-    <div class="carousel">
+    </section>
+    <section class="carousel">
         <div class="carousel-wrap">
             <h2 class="defaultTitle carousel__title">Программы</h2>
             <p class="defaultSubtitle carousel__subtitle">Отражение сущности объекта</p>
-            <div class="carousel__title"></div>
-            <div class="carousel-slider"><a class="carousel-slider-item" style="background-image: url('assets/images/sk-1.png');" href="#">
+            <div class="carousel-slider"><a class="carousel-slider-item" style="background-image: url('../assets/images/sk-1.png');" href="#">
                 <div class="carousel-slider-item__title">Движение - это жизнь</div>
                 <p class="carousel-slider-item__text">Программа лечения заболевания периферической нервной системы</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('assets/images/sk-2.png');" href="#">
+                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/sk-2.png');" href="#">
                 <div class="carousel-slider-item__title">Легкое дыхание</div>
                 <p class="carousel-slider-item__text">Программа лечения заболеваний органов дыхания и ЛОР – органов</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('assets/images/sk-3.png');" href="#">
+                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/sk-3.png');" href="#">
                 <div class="carousel-slider-item__title">Легкая походка</div>
                 <p class="carousel-slider-item__text">Программа коррекции хронической патологии опорно-двигательного аппарата</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('assets/images/sk-1.png');" href="#">
+                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/sk-1.png');" href="#">
                 <div class="carousel-slider-item__title">Движение - это жизнь</div>
                 <p class="carousel-slider-item__text">Программа лечения заболевания периферической нервной системы</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('assets/images/sk-2.png');" href="#">
+                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/sk-2.png');" href="#">
                 <div class="carousel-slider-item__title">Легкое дыхание</div>
                 <p class="carousel-slider-item__text">Программа лечения заболеваний органов дыхания и ЛОР – органов</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('assets/images/sk-3.png');" href="#">
+                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/sk-3.png');" href="#">
                 <div class="carousel-slider-item__title">Легкая походка</div>
                 <p class="carousel-slider-item__text">Программа коррекции хронической патологии опорно-двигательного аппарата</p>
                 <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a></div>
         </div>
-    </div>
-    <div class="stat">
+    </section>
+    <section class="stat">
         <div class="stat-wrap">
             <div class="stat-item">
                 <p class="stat-item__big">10+</p>
@@ -336,27 +133,28 @@
                 <p class="stat-item__small">гостей<br>возвращаются<br>к нам</p>
             </div>
         </div>
-    </div>
-    <div class="textBlock textBlock_rtl textBlock_reab textBlock_lager textBlock_sk">
-        <div class="textBlock-wrap">
+    </section>
+
+    <section class="textBlock textBlock_index">
+        <div class="textBlock-wrap not-hidden">
             <div class="textBlock-images">
-                <div class="textBlock-images-img"><img class="textBlock-images__img" src="../assets/images/skc-1.png" alt=""/></div>
-                <div class="textBlock-images-img"><img class="textBlock-images__img" src="../assets/images/skc-2.png" alt=""/></div>
-                <p class="textBlock-images__text textBlock-images__text_lech">Лечение</p>
-            </div>
-            <div class="textBlock-desc">
-                <h2 class="textBlock-desc__title">Центр<br>здоровья</h2>
+                <img class="textBlock-images__img" src="../assets/images/skc-1.png" alt=""/>
+                <img class="textBlock-images__img" src="../assets/images/skc-2.png" alt=""/></div>
+            <div class="textBlock-desc" style="align-self: flex-end; padding-bottom: 20px;">
+                <h2 class="textBlock-desc__title">Санаторно-курортное<br/>лечение</h2>
+                <img class="textBlock-images__img_mobile" src="../assets/images/spa-treatment-mobile.png" alt="Реабилитационный центр">
                 <p class="textBlock-desc__text">Центр Здоровья в Крыму «Эволюция» является уникальной здравницей, где каждый может улучшить здоровье и повысить качество жизни. «Эволюция» специализируется на лечении заболеваний органов дыхания, опорно-двигательного аппарата и периферической нервной системы. Все программы подходят для взрослых и детей от 4 лет. Впечатляющие ресурсы центра, в том числе  собственный песчаный пляж длиной 1 км и целебный воздух западного побережья способствует повышению иммунитета и улучшению общего состояния здоровья. Медицинская база нашего центра позволяет принимать большое количество гостей, приезжающих с целью оздоровления и отдыха.</p>
             </div>
         </div>
-    </div>
-    <div class="video">
+    </section>
+
+    <section class="video">
         <div class="video-wrap">
             <p class="defaultTitle video__title">Видео</p>
             <p class="defaultSubtitle video__subtitle">Краткое описание</p><iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="supa">
+    </section>
+    <section class="supa">
         <div class="supa-wrap">
             <p class="defaultTitle supa__title">Проживание</p>
             <p class="defaultSubtitle supa__subtitle">С кратким описанием</p>
@@ -427,8 +225,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="advantages advantages_5 advantages_gray">
+    </section>
+    <section class="advantages advantages_5 advantages_gray">
         <div class="advantages-wrap">
             <h3 class="advantages__title">Преимущества</h3>
             <div class="advantages-row">
@@ -459,48 +257,69 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="sea">
-        <div class="sea__wrapper"><img class="sea__wrapper-bg" src="../assets/images/child_camp/sea/sea-bg.png" alt=""/>
-            <p class="sea-title">ДЛЯ ТЕХ, КТО ЦЕНИТ<br>ЧИСТЫЙ ПЛЯЖ</p>
+    </section>
+    <section class="sea">
+        <div class="sea__wrapper"><img class="sea__wrapper-bg" src="../assets/images/child_camp/sea/sea-bg.png"
+                                       alt=""/>
+            <p class="sea-title">Для тех, кто ценит<br>чистый пляж</p>
             <div class="sea-items">
                 <div class="sea-item">
-                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. </div><img class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea1.jpg" alt="Море и Зонтики"/>
+                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря
+                        прекрасно
+                        подходит для спокойного и комфортного отдыха. На пляже есть шезлонги, пляжные зонты,
+                        солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты.
+                    </div>
+                    <img id="sea-item-img-1" class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea1.jpg"
+                         alt="Море и Зонтики"/>
                 </div>
                 <div class="sea-item">
-                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. </div><img class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea2.jpg" alt="Море и Зонтики"/>
+                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря
+                        прекрасно
+                        подходит для спокойного и комфортного отдыха. На пляже есть шезлонги, пляжные зонты,
+                        солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты.
+                    </div>
+                    <img id="sea-item-img-2" class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea2.jpg"
+                         alt="Море и Зонтики"/>
                     <div class="sea-box">
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-wifi.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-wifi.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Wi-Fi</p>
                                 <p class="sea-box-text">Бесплатный Wi-Fi на<br>всей территории пляжа</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-shower.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-shower.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Душ</p>
                                 <p class="sea-box-text">Душевые кабинки<br>на всей территории</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-cab.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-cab.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Кабинки</p>
                                 <p class="sea-box-text">Имеются кабинки<br>для переодевания</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-toilet.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-toilet.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Биотуалет</p>
                                 <p class="sea-box-text">На пляже<br>есть биотуалеты</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-umbrella.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-umbrella.png"
+                                                       alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Шезлонги</p>
                                 <p class="sea-box-text">Шезлонги на<br>всей территории пляжа</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-toys-land.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-toys-land.png"
+                                                       alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Площадки</p>
                                 <p class="sea-box-text">Имеется<br>детская площадка</p>
@@ -510,34 +329,55 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <div class="sea-features-carousel-wrapper">
+            <div class="sea-features-carousel owl-carousel">
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-wifi.png" alt=""/>
+                    <p class="sea-features-carousel__title">Wi-Fi</p>
+                    <p class="sea-features-carousel__text">Бесплатный Wi-Fi на всей территории пляжа</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-shower.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Душ</p>
+                    <p class="sea-features-carousel__text">Душевые кабинки<br>на всей территории</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-cab.png" alt=""/>
+                    <p class="sea-features-carousel__title">Кабинки</p>
+                    <p class="sea-features-carousel__text">Имеются кабинки<br>для переодевания</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-toilet.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Биотуалет</p>
+                    <p class="sea-features-carousel__text">На пляже<br>есть биотуалеты</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-umbrella.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Шезлонги</p>
+                    <p class="sea-features-carousel__text">Шезлонги на<br>всей территории пляжа</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-toys-land.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Площадки</p>
+                    <p class="sea-features-carousel__text">Имеется<br>детская площадка</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
 
 <!--scripts loaded here-->
-<div class="container contacts nopadding-top">
-    <div class="row">
-        <div class="col-md-6 col-xs-12">
-            <img src="../img/index/map-foot.jpg" class="img-fluid">
-            <!--div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/evolyutsiya/1232432804/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Эволюция</a><a href="https://yandex.ru/maps/977/republic-of-crimea/category/sports_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Спортивный комплекс в Республике Крым</a><a href="https://yandex.ru/maps/977/republic-of-crimea/category/sports_field/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивная база в Республике Крым</a><iframe src="https://yandex.ru/map-widget/v1/-/CKacmA~k" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div-->
-        </div>
-        <div class="col-md-6 col-xs-12 contacts-right">
-            <div class="blue-stripe blue-title">Контакты<span>нашего центра</span></div>
-            <div class="contacts-description">
-                г. Евпатория, Крым
-                <span>297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул. Аллея Дружбы, 1</span>
-            </div>
-            <div class="icons-footer">
-                <a href="https://pornhub.com"><img src="../img/icons/vk.png"></a>
-                <a href="https://pornhub.com"><img src="../img/icons/inst.png"></a>
-                <a href="https://pornhub.com"><img src="../img/icons/fb.png"></a>
-            </div>
-            <div class="footer-phone">
-                Звонить по номеру телефона
-                <a href="tel:88007771826">8 (800) 777-18-26</a>
-            </div>
-        </div>
-    </div>
-</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="../js/tiny-slider.js"></script>

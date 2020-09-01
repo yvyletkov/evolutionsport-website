@@ -7,9 +7,10 @@
     font-weight: 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Cambria';
-    url('../../fonts/cambriabold.ttf') format('truetype');
+url('../../fonts/cambriabold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -3215,6 +3216,13 @@ button {
 .indications-desc__title_with {
     position: relative;
     margin-bottom: 16px;
+    max-width: 110px
+}
+
+@media screen and (max-width: 1024px) {
+    .indications-desc__title_with {
+        max-width: none;
+    }
 }
 
 .indications-desc__title_with:after {
@@ -3442,7 +3450,9 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
-    .gallery {background: none !important;}
+    .gallery {
+        background: none !important;
+    }
 }
 
 .gallery:not(:last-child) {
@@ -6551,7 +6561,7 @@ button {
         margin-bottom: 20px;
     }
 
-    #rehabilitation .bannerWrap .banner-desc__text {
+    #rehabilitation .bannerWrap .banner-desc__text, #spa-treatment .bannerWrap .banner-desc__text {
         font-weight: bold;
     }
 
@@ -6643,7 +6653,6 @@ button {
     #health-center-slider.directions-row {
         margin-top: 20px;
     }
-
 
 
     .directions-row-item {
@@ -7549,6 +7558,10 @@ button {
 
 @media screen and (max-width: 767px) {
 
+    #spa-treatment .advantages-wrap {
+        padding: 30px 16px 20px
+    }
+
     .indications-desc__title:before {
         position: relative;
         content: "";
@@ -7598,6 +7611,7 @@ button {
         text-align: center;
         line-height: 100%;
         margin-top: 10px;
+        margin-bottom: 15px;
     }
 
 
@@ -7662,7 +7676,7 @@ button {
         padding-left: 0;
     }
 
-    #rehabilitation .bannerWrap .banner-form {
+    #rehabilitation .bannerWrap .banner-form, #spa-treatment .bannerWrap .banner-form {
         margin-top: 15px;
     }
 
@@ -7733,10 +7747,9 @@ button {
         line-height: 120%;
     }
 
-    #rehabilitation .textBlock-desc__title {
+    #rehabilitation .textBlock-desc__title, #spa-treatment .textBlock-desc__title {
         margin-bottom: 20px;
     }
-
 
     .textBlock-desc__title div {
         font-size: 16px;
@@ -7808,10 +7821,13 @@ button {
     }
 
     .textBlock-desc {
-        padding: ;
         padding-bottom: 0 !important;
-
     }
+
+    #rehabilitation .textBlock-desc, #spa-treatment .textBlock-desc {
+        padding-bottom: 18px !important;
+    }
+
 
     .textBlock-wrap {
         display: none;

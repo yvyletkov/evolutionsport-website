@@ -5857,6 +5857,10 @@ a.article:hover {
         padding: 10px 10px 0;
     }
 
+    #spa-treatment .sea .sea__wrapper {
+        padding: 30px 10px 0;
+    }
+
     #sea-item-img-1 {
         height: 190px;
         object-fit: cover;
