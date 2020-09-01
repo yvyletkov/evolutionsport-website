@@ -280,6 +280,10 @@
         margin-bottom: 10px;
         margin-top: 10px;
     }
+    #parasport .defaultSubtitle {
+        margin-bottom: -20px;
+        margin-top: 0px;
+    }
 
 }
 
