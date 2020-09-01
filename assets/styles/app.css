@@ -2705,8 +2705,8 @@ button {
     text-transform: uppercase;
     font-weight: 900;
     z-index: -1;
-    bottom: 40px;
-    left: -23px;
+    bottom: -32px;
+    left: 34px;
     font-family: "Geometria";
     font-size: 58px;
     color: #f3f3f3;
@@ -2998,7 +2998,7 @@ button {
     transform-origin: center center;
     color: #f8f7f7;
     font-size: 70px;
-    z-index: 2;
+    z-index: 0;
     text-transform: uppercase;
     font-weight: 900;
     font-family: "Geometria";
@@ -3442,7 +3442,7 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
-    .gallery {background: none;}
+    .gallery {background: none !important;}
 }
 
 .gallery:not(:last-child) {
@@ -6991,6 +6991,14 @@ button {
     .results-wrap,
     .columns-wrap {
         padding: 30px 16px;
+    }
+
+    .columns-wrap {
+        padding-top: 0;
+    }
+
+    .results-wrap {
+        padding-bottom: 10px;
     }
 
     .columns-row {

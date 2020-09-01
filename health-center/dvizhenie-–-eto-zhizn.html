@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
     <link rel="stylesheet" href="../assets/styles/app.css"/>
     <link rel="stylesheet" href="../assets/styles/additional.css"/>
+    <link rel="stylesheet" href="../css/gallery-responsive.css"/>
 
     <script src="../assets/scripts/jquery.min.js"></script>
     <script src="../assets/scripts/slick.min.js"></script>
@@ -28,6 +29,8 @@
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
+    <script src="../js/gallery-responsive.js"></script>
+
     <title>Движение – это жизнь</title>
 
 </head>
@@ -292,69 +295,104 @@
     </section>
     <section class="gallery">
         <div class="gallery-wrap">
-            <div class="gallery-left">
-                <div class="gallery-left-desc">
-                    <p class="gallery-left-desc__title">Фотогалерея</p>
-                    <p class="gallery-left-desc__text">Детский церебральный паралич</p>
-                </div>
-                <div class="gallery-left-grid">
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                </div>
+            <div class="gallery-left-desc">
+                <p class="gallery-left-desc__title">Фотогалерея</p>
+                <p class="gallery-left-desc__text">Фитнес-клуб</p>
             </div>
-            <div class="gallery-right">
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
+
+            <div class="gallery__popup">
+                <img src="" class="gallery__popup__img" alt=""/>
             </div>
+
         </div>
+
+        <div class="gallery-responsive">
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-1.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-1.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-2.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-2.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-3.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-3.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-4.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-4.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-5.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-5.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-6.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-6.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-7.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-7.png" alt=""/>
+            </a>
+        </div>
+
     </section>
     <section class="sea">
-        <div class="sea__wrapper"><img class="sea__wrapper-bg" src="../assets/images/child_camp/sea/sea-bg.png" alt=""/>
-            <p class="sea-title">ДЛЯ ТЕХ, КТО ЦЕНИТ<br>ЧИСТЫЙ ПЛЯЖ</p>
+        <div class="sea__wrapper"><img class="sea__wrapper-bg" src="../assets/images/child_camp/sea/sea-bg.png"
+                                       alt=""/>
+            <p class="sea-title">Для тех, кто ценит<br>чистый пляж</p>
             <div class="sea-items">
                 <div class="sea-item">
-                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. </div><img class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea1.jpg" alt="Море и Зонтики"/>
+                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря
+                        прекрасно
+                        подходит для спокойного и комфортного отдыха. На пляже есть шезлонги, пляжные зонты,
+                        солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты.
+                    </div>
+                    <img id="sea-item-img-1" class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea1.jpg"
+                         alt="Море и Зонтики"/>
                 </div>
                 <div class="sea-item">
-                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. </div><img class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea2.jpg" alt="Море и Зонтики"/>
+                    <div class="sea-item-text">Собственный песчаный пляж длиной 1000 м на берегу Черного моря
+                        прекрасно
+                        подходит для спокойного и комфортного отдыха. На пляже есть шезлонги, пляжные зонты,
+                        солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты.
+                    </div>
+                    <img id="sea-item-img-2" class="sea-item-img" src="../assets/images/child_camp/sea/sea-sea2.jpg"
+                         alt="Море и Зонтики"/>
                     <div class="sea-box">
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-wifi.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-wifi.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Wi-Fi</p>
                                 <p class="sea-box-text">Бесплатный Wi-Fi на<br>всей территории пляжа</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-shower.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-shower.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Душ</p>
                                 <p class="sea-box-text">Душевые кабинки<br>на всей территории</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-cab.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-cab.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Кабинки</p>
                                 <p class="sea-box-text">Имеются кабинки<br>для переодевания</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-toilet.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-toilet.png" alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Биотуалет</p>
                                 <p class="sea-box-text">На пляже<br>есть биотуалеты</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-umbrella.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-umbrella.png"
+                                                       alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Шезлонги</p>
                                 <p class="sea-box-text">Шезлонги на<br>всей территории пляжа</p>
                             </div>
                         </div>
-                        <div class="sea-box-item"><img class="sea-box-item-img" src="../assets/images/child_camp/sea/sea-toys-land.png" alt=""/>
+                        <div class="sea-box-item"><img class="sea-box-item-img"
+                                                       src="../assets/images/child_camp/sea/sea-toys-land.png"
+                                                       alt=""/>
                             <div class="sea-box-title-inner">
                                 <p class="sea-box-title">Площадки</p>
                                 <p class="sea-box-text">Имеется<br>детская площадка</p>
@@ -364,11 +402,56 @@
                 </div>
             </div>
         </div>
+        <div class="sea-features-carousel-wrapper">
+            <div class="sea-features-carousel owl-carousel">
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-wifi.png" alt=""/>
+                    <p class="sea-features-carousel__title">Wi-Fi</p>
+                    <p class="sea-features-carousel__text">Бесплатный Wi-Fi на всей территории пляжа</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-shower.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Душ</p>
+                    <p class="sea-features-carousel__text">Душевые кабинки<br>на всей территории</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-cab.png" alt=""/>
+                    <p class="sea-features-carousel__title">Кабинки</p>
+                    <p class="sea-features-carousel__text">Имеются кабинки<br>для переодевания</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-toilet.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Биотуалет</p>
+                    <p class="sea-features-carousel__text">На пляже<br>есть биотуалеты</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-umbrella.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Шезлонги</p>
+                    <p class="sea-features-carousel__text">Шезлонги на<br>всей территории пляжа</p>
+                </div>
+
+                <div class="sea-features-carousel__item">
+                    <img class="sea-features-carousel__img" src="../assets/images/child_camp/sea/sea-toys-land.png"
+                         alt=""/>
+                    <p class="sea-features-carousel__title">Площадки</p>
+                    <p class="sea-features-carousel__text">Имеется<br>детская площадка</p>
+                </div>
+            </div>
+        </div>
+
     </section>
     <section class="children-supa">
         <div class="supa-wrap">
             <p class="defaultTitle supa__title">Также для комфортного отдыха</p>
-            <p class="defaultSubtitle">Подзаголовок</p>
+            <p class="defaultSubtitle">Доступные услуги</p>
             <div class="supaSlider-insideSlider-wrap supaSlider-item">
                 <p class="children-supa__placeholder">Трансфер</p><div class="supaSlider-insideSliderBlock">
                 <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);" src="../assets/images/arrowSlider.png"></div>
