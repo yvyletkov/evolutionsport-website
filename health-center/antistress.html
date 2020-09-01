@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
     <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/gallery-responsive.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
@@ -28,6 +29,7 @@
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
+    <script src="../js/gallery-responsive.js"></script>
     <title>Антистресс</title>
 
 </head>
@@ -290,27 +292,41 @@
     </section>
     <section class="gallery">
         <div class="gallery-wrap">
-            <div class="gallery-left">
-                <div class="gallery-left-desc">
-                    <p class="gallery-left-desc__title">Фотогалерея</p>
-                    <p class="gallery-left-desc__text">Детский церебральный паралич</p>
-                </div>
-                <div class="gallery-left-grid">
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                    <div class="gallery-left-grid-img"><img src="../assets/images/girl.png" alt=""/></div>
-                </div>
+            <div class="gallery-left-desc">
+                <p class="gallery-left-desc__title">Фотогалерея</p>
+                <p class="gallery-left-desc__text">Активное долголетие</p>
             </div>
-            <div class="gallery-right">
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
-                <div class="gallery-right-img"> <img src="../assets/images/dcpBan.png" alt=""/></div>
+
+            <div class="gallery__popup">
+                <img src="" class="gallery__popup__img" alt=""/>
             </div>
+
         </div>
+
+        <div class="gallery-responsive">
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-1.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-1.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-2.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-2.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-3.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-3.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-4.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-4.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-5.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-5.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-6.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-6.png" alt=""/>
+            </a>
+            <a class="fancybox" rel="group" href="../assets/images/fitnes-7.png">
+                <img class="gallery-responsive__img" src="../assets/images/fitnes-7.png" alt=""/>
+            </a>
+        </div>
+
     </section>
     <section class="sea">
         <div class="sea__wrapper"><img class="sea__wrapper-bg" src="../assets/images/child_camp/sea/sea-bg.png"

@@ -99,6 +99,21 @@ $(function () {
         });
     }
 
+    if ($('#parasport-slider').length && window.matchMedia("(max-width: 768px)").matches) {
+        var parasportSlider = tns({
+            container: '#parasport-slider',
+            items: 1,
+            loop: true,
+            nav: false,
+            navPosition: 'bottom',
+            controlsText: [
+                '<img style="transform: scale(0.7);margin-left:13px;" src="../img/arrow-blue-left.png">',
+                '<img style="transform: scale(0.7);margin-right:13px;"src="../img/arrow-blue-right.png">'
+            ],
+            preventScrollOnTouch: 'auto',
+        });
+    }
+
     if (window.matchMedia("(max-width: 1023px)").matches) {
         document.querySelector(".advantages-row").classList.toggle("owl-carousel");
         $('.advantages-row').owlCarousel({
@@ -110,6 +125,7 @@ $(function () {
                 '<img src="../assets/images/carousel_arrow.png">',
                 '<img src="../assets/images/carousel_arrow.png" style="transform: rotate(180deg)">'
             ],
+            dots: false,
         })
     }
     else {

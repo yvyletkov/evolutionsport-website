@@ -186,7 +186,7 @@ $(document).ready(function () {
     }
 
     $(".sea-features-carousel").owlCarousel({
-        items: 3,
+        items: 1,
         nav: true,
         pagination: false,
         navText: [

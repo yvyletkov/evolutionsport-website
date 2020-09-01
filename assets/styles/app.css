@@ -3441,6 +3441,10 @@ button {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1024px) {
+    .gallery {background: none;}
+}
+
 .gallery:not(:last-child) {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(80%, rgba(255, 255, 255, 0.3)), to(#fff)), url("../images/galBg.png") no-repeat right bottom;
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, #fff 100%), url("../images/galBg.png") no-repeat right bottom;
@@ -6250,7 +6254,7 @@ button {
 /* Кирилл */
 @media screen and (max-width: 1023px) {
     .wrapper {
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
     .calendar_row {
@@ -6630,8 +6634,17 @@ button {
     .directions-row {
         display: block;
         margin-top: 30px;
-        /*padding: 20px;*/
     }
+
+    #health-center-slider {
+        margin-top: 20px;
+    }
+
+    #health-center-slider.directions-row {
+        margin-top: 20px;
+    }
+
+
 
     .directions-row-item {
         margin: 0;
@@ -6839,6 +6852,7 @@ button {
 
     .results-row-desc-ul__li {
         font-size: 16px;
+        margin-left: 30px;
     }
 
     .results-row-desc {
@@ -6851,7 +6865,7 @@ button {
 
     .gallery-left,
     .gallery-right {
-        padding: 20px 0;
+        padding: 0 0 20px;
         max-width: 350px;
         margin: 0 auto;
         width: 100%;
@@ -7000,7 +7014,7 @@ button {
     }
 
     .children-supa .supa__title {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .supaSlider-item {
@@ -7580,6 +7594,7 @@ button {
 
 
     .carousel {
+        padding: 0 20px;
         padding-top: 40px;
         padding-bottom: 20px;
     }
@@ -7594,6 +7609,7 @@ button {
 
     .stat-wrap {
         margin-bottom: 0;
+        margin-top: 20px;
     }
 
 
@@ -8664,11 +8680,11 @@ button {
 
 @media screen and (max-width: 1023px) {
 
-    #health-center-directions {
+    #health-center-directions, #parasport-derections {
         display: none;
     }
 
-    #health-center-slider {
+    #health-center-slider, #parasport-slider {
         display: block;
     }
 
