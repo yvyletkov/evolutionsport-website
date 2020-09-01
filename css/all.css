@@ -331,6 +331,20 @@ body {
   display: block;
 }
 
+.hero h1 {
+  padding-top: 290px;
+  font-size: 76px;
+  line-height: 80px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero h1 span {
+  text-transform: uppercase;
+  font-weight: 900;
+  display: block;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -2061,7 +2075,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 
@@ -2320,7 +2333,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 
@@ -2891,7 +2903,6 @@ a.article:hover {
 
 .blue-stripe-border span {
   display: block;
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -3103,7 +3114,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 
@@ -3382,7 +3392,6 @@ a.article:hover {
 
 .blue-stripe-border span {
   display: block;
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -3817,7 +3826,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 
@@ -5690,7 +5698,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 
@@ -5949,7 +5956,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 
@@ -6578,7 +6584,6 @@ a.article:hover {
 
 .blue-stripe-border span {
   display: block;
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -6821,7 +6826,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 
@@ -7113,16 +7117,16 @@ a.article:hover {
   width: 100%;
 }
 
-#sport .hero {
+#sport .hero.container-fluid.container-fluid__watersports{
   background-image: url("../img/watersport/hero.jpg");
 }
 
-#sport .hero h2 {
+#sport .hero h1 {
   color: #171717;
   text-transform: uppercase;
 }
 
-#sport .hero h2 span {
+#sport .hero h1 span {
   font-size: 72px;
   color: #171717;
   font-weight: bold;
@@ -7148,7 +7152,6 @@ a.article:hover {
 
 .blue-stripe-border span {
   display: block;
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -7379,7 +7382,6 @@ a.article:hover {
 
 .icon-description {
   display: block;
-  width:200px;
 }
 
 .icon-description .icon-title {
@@ -7391,6 +7393,25 @@ a.article:hover {
 }
 
 .icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.icon-description__main {
+  display: block;
+  width:106px;
+}
+
+.icon-description__main .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.icon-description__main .icon-subtitle {
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -7635,7 +7656,6 @@ a.article:hover {
 
 .description .blue-stripe-border span {
   font-weight: 400;
-  font-style: italic;
   display: block;
 }
 

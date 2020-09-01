@@ -303,11 +303,8 @@ $(function () {
           items:3,
         },
         768: {
-          disable:true,
+          items:5,
         },
-        1024: {
-         disable:true,
-        }
       },
     });
   }
