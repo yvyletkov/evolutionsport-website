@@ -1183,10 +1183,6 @@ a.article:hover {
   width: 100%;
 }
 
-#sport .hero.container-fluid {
-  background-image: url("../img/football/hero.jpg");
-}
-
 #sport .hero h2 span {
   font-size: 72px;
 }
@@ -1207,7 +1203,7 @@ a.article:hover {
   width: 100%;
 }
 
-#sport .hero.container-fluid {
+#sport .hero.container-fluid.container-fluid__handball {
   background-image: url("../img/handball/hero.jpg");
 }
 
@@ -5647,6 +5643,10 @@ a.article:hover {
 
 #sport .hero.container-fluid.container-fluid__fights {
   background-image: url("../img/martial/hero.jpg");
+}
+
+#sport .hero.container-fluid.container-fluid__football {
+  background-image: url("../img/football/hero.jpg");
 }
 
 #sport .hero h2 span {
