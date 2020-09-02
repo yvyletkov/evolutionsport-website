@@ -6178,6 +6178,10 @@ a.article:hover {
   background-image: url("../img/powerlifting/hero.jpg");
 }
 
+#sport .hero.container-fluid.container-fluid__volleyball {
+  background-image: url("../img/volleyball/volleyball.jpg");
+}
+
 #sport .hero h2 span {
   font-size: 72px;
 }
