@@ -405,14 +405,28 @@
     display: none;
 }
 .bany .supaSlider .owl-nav{
-    width: -webkit-calc(100% + 80px);
-    width: calc(100% + 80px);
+    width: -webkit-calc(100% + 90px);
+    width: calc(100% + 90px);
+    top: 42%;
 }
+@media screen and (max-width: 1200px) {
+    .bany .supaSlider .owl-nav{
+        width: -webkit-calc(100% + 40px);
+        width: calc(100% + 40px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bany .supaSlider .owl-nav{
+        top: 21.5%;
+    }
+}
+
 .bany .supa .owl-nav button.owl-next, 
 .bany .supa .owl-nav button.owl-prev{
     width: 56px;
     height: 56px;
-    background-image: url(/img/arrow-blue-right.png);
+    background-image: url(../../img/arrow-blue-right.png);
 }
 .bany-timetable{
     padding: 40px 0;
@@ -422,6 +436,14 @@
     border: 1px solid #a5a5a5;
     box-shadow: 0px 0px 16px 0px rgba(23, 23, 23, 0.18);
     font-weight: 600;
+}
+@media screen and (max-width: 1024px) {
+    .bany-timetable-content{
+        margin-top: 20px;
+    }
+    .bany-timetable {
+        padding-top: 20px;
+    }
 }
 .bany-timetable-content-row{
     display: flex;
@@ -828,3 +850,40 @@
     transform: translateY(-50%);
 }
 /*Центр мероприятий Конец*/
+
+
+.pool-img-mobile {
+    display: none;
+    width: 100%;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 1024px) {
+    #infrastructure .tns-controls {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: calc(50% - 28px);
+        z-index: 2;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    #infrastructure .tns-controls button {
+        pointer-events: all;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    #infrastructure .tns-controls button:first-child {
+        left: -10px;
+        position: absolute;
+    }
+    #infrastructure .tns-controls button:last-child{
+        right: -10px;
+        position: absolute;
+    }
+    .pool-img-mobile {
+        display: block;
+    }
+}

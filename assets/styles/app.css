@@ -2630,7 +2630,7 @@ button {
 
 .supaSlider {
     position: relative;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .supaSlider .owl-dots {
@@ -4913,7 +4913,6 @@ button {
     position: absolute;
     bottom: 50%;
     right: 70%;
-
 }
 
 .fitnes-club .banner-desc__hidetext {
@@ -7789,7 +7788,7 @@ button {
     }
 
     .supaSlider-insideSlider .slick-list {
-        padding: 0px 0 50px !important;
+        padding: 0px 0 15px !important;
     }
 
     .children-supa .supaSlider-insideSliderBlock {
@@ -9086,7 +9085,7 @@ button {
 }
 
 .new-content {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .curort-nav.menu-evolution.navbar-dark:not(.navbar-black) .navbar-nav .nav-link,
