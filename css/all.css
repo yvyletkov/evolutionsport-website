@@ -5864,6 +5864,7 @@ a.article:hover {
     #sea-item-img-1 {
         height: 190px;
         object-fit: cover;
+        margin-bottom: 25px;
     }
 }
 

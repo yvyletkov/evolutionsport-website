@@ -215,6 +215,16 @@ $(document).ready(function () {
                 '<img src="../img/arrow-blue-right.png">',
             ],
         });
+        $(".plyazh .results-row").owlCarousel({
+            margin: 10,
+            items: 1,
+            nav: true,
+            pagination: true,
+            navText: [
+                '<img src="../img/arrow-blue-right.png" style="transform: rotate(180deg)">',
+                '<img src="../img/arrow-blue-right.png">',
+            ],
+        });
 
     }
 

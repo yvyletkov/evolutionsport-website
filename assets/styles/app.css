@@ -1279,15 +1279,15 @@ button {
 }
 
 .sea .sea__wrapper .sea-items .sea-item .sea-item-img {
-    -webkit-box-shadow: 0px 0px 29px 0px rgba(23, 23, 23, 0.25);
-    box-shadow: 0px 0px 29px 0px rgba(23, 23, 23, 0.25);
+    -webkit-box-shadow: 0px 0px 29px 0px rgba(23, 23, 23, 0.15);
+    box-shadow: 0px 0px 29px 0px rgba(23, 23, 23, 0.15);
     width: 100%;
 }
 
 .sea .sea__wrapper .sea-items .sea-item .sea-item-text {
     font-size: 17px;
     line-height: 18px;
-    margin-bottom: 55px;
+    margin-bottom: 32px;
 }
 
 .sea-box {
@@ -1317,6 +1317,12 @@ button {
     margin-bottom: 25px;
     max-width: 300px;
     width: 50%;
+}
+
+@media screen and  (min-width: 1300px) {
+    .sea .sea__wrapper .sea-items .sea-item .sea-box .sea-box-item:nth-child(2n) {
+        padding-left: 32px;
+    }
 }
 
 .sea .sea__wrapper .sea-items .sea-item .sea-box .sea-box-item .sea-box-item-img {
@@ -2654,6 +2660,17 @@ button {
     justify-content: space-between;
 }
 
+.results-row .owl-nav {
+    padding: 0 2px;
+    top: 39%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    display: flex;
+    left: 50%;
+    width: calc(100% + 30px);
+    justify-content: space-between;
+}
+
 .documents-slider-mobile .owl-nav {
     padding: 0 25px;
     top: 50%;
@@ -2669,7 +2686,8 @@ button {
 .advantages-row .owl-nav span,
 .team-wrap .owl-nav span,
 .comand .owl-nav span,
-.documents-slider-mobile .owl-nav span { /* added */
+.documents-slider-mobile .owl-nav span,
+.results-row .owl-nav span { /* added */
     font-size: 48px;
     font-stretch: ultra-expanded;
 }
@@ -3357,6 +3375,12 @@ button {
 .results-row-imgbox {
     position: relative;
     width: 50%;
+}
+
+@media screen and  (max-width: 768px) {
+    .results-row-imgbox p.results__small-text {
+        font-size: 13px !important;
+    }
 }
 
 .results-row-imgbox__placeholder {
@@ -7714,10 +7738,6 @@ button {
         font-size: 11px;
     }
 
-    .results-row-imgbox {
-        display: none;
-    }
-
     .textBlock-desc__title {
         font-size: 32px;
         text-align: center;
@@ -7891,6 +7911,11 @@ button {
         text-align: justify;
         margin-bottom: 12px;
         margin-top: 12px;
+    }
+
+    .textBlock-desc__text,
+    .sea .sea__wrapper .sea-items .sea-item .sea-item-text {
+        margin-bottom: 25px;
     }
 
     .carousel.children__carousel .carousel__title.full_time::before,

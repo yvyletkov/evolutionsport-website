@@ -370,6 +370,10 @@
     max-width: 530px;
     margin: 10px auto 0;
 }
+.plyazh .results-row-imgbox p.results__small-text{
+    font-size: 14px;
+}
+
 .plyazh .results-row-imgbox-img:before{
     height: 90%;
 }
@@ -868,6 +872,9 @@
         left: 0;
         right: 0;
         margin: 0 auto;
+    }
+    #infrastructure.conf .tns-controls {
+        top: calc(70%);
     }
     #infrastructure .tns-controls button {
         pointer-events: all;
