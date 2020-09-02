@@ -575,7 +575,7 @@ a.article:hover {
   width: 100%;
 }
 
-#sport .hero.container-fluid {
+#sport .hero.container-fluid.container-fluid__basketball {
   background-image: url("../img/basketball/hero.jpg");
 }
 
