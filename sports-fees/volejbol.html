@@ -1,545 +1,871 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="shortcut icon" href="../apple-touch-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- Подключаем слайдер-->
-    <link type="text/css" rel="stylesheet" href="css/tiny-slider.css" />
+    <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css" />
     <!-- -->
-    <link rel="stylesheet" href="assets/scripts/fancybox/jquery.fancybox.min.css"/>
-    <link rel="stylesheet" href="assets/scripts/datepicker/datepicker.min.css"/>
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../css/all.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/styles/sweetalert2.css"/>
-    <link rel="stylesheet" href="assets/styles/app.min.css"/>
-    <link rel="stylesheet" href="assets/styles/additional.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/sweetalert2.css" />
+    <link rel="stylesheet" href="../assets/styles/app.min.css" />
+    <link rel="stylesheet" href="../assets/styles/additional.css" />
 
-    <script src="assets/scripts/jquery.min.js"></script>
-    <script src="assets/scripts/slick.min.js"></script>
-    <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>
-    <script src="assets/scripts/datepicker/datepicker.min.js"></script>
-    <script src="assets/scripts/owl.carousel.min.js"></script>
-    <script src="assets/scripts/sweetalert2.js"></script>
-    <script src="assets/scripts/main.js"></script>
-    <script src="assets/scripts/ajax.js"></script>
-    <title>Главная</title>
+    <script src="../assets/scripts/jquery.min.js"></script>
+    <script src="../assets/scripts/slick.min.js"></script>
+    <script src="../assets/scripts/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../assets/scripts/datepicker/datepicker.min.js"></script>
+    <script src="../assets/scripts/owl.carousel.min.js"></script>
+    <script src="../assets/scripts/sweetalert2.js"></script>
+    <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/ajax.js"></script>
+    <title>Волейбол</title>
 
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution">
-    <div class="container">
-        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-            <div class="norm-menu-wrap">
-                <div class="norm-menu">
-                    <div class="norm-menu__close">
-                        Скрыть
-                        <img src="assets/images/icon/close.png" alt="">
+    <div class="root" id=sport>
+        <header class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution">
+            <div class="container">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+                    <div class="norm-menu-wrap">
+                        <div class="norm-menu">
+                            <div class="norm-menu__close">
+                                <img src="../img/icons/close.svg" alt="значек закрытия" class="menu_close" />
+                            </div>
+                            <a href="/" class="norm-menu__logo">
+                                <img src="../assets/images/logo-menu.png" alt="logo" />
+                            </a>
+                            <div class="norm-menu-items">
+                                <div class="norm-menu-items-item">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="/">Главная</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="kurortnyij-otdyix/">Курортный отдых</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="kurortnyij-otdyix/mirnyij/">Мирный</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="kurortnyij-otdyix/pogranichnyij/">Пограничный</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="kurortnyij-otdyix/sportivnyij/">Спортивный</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="kurortnyij-otdyix/zvezdnyij/">Звездный</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="sportivnyie-sboryi/">Спортивные сборы</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/vodnyie-vidyi-sporta/">Водные
+                                            виды спорта</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/futbol/">Футбол</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/edinoborstva/">Единоборства</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/fextovanie/">Фехтование</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/gandbol/">Гандбол</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/tennis/">Теннис</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/tanczyi/">Танцы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/gimnastika/">Гимнастика</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/volejbol/">Волейбол</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/basketbol/">Баскетбол</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/pauerlifting/">Пауерлифтинг</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/metatelnyie-vidyi-sporta/">Метательные виды
+                                            спорта</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/legkaya-atletika/">Легкая
+                                            атлетика</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="sportivnyie-sboryi/strelba-iz-luka/">Стрельба из
+                                            лука</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="czentr-zdorovya/">Центр здоровья</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/reabilitacziya/">Реабилитация</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/sanatorno-kurortnoe-lechenie/">Санаторно-курортное
+                                            лечение</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/reabilitacziya/detskij-czerebralnyij-paralich/">Детский
+                                            церебральный
+                                            паралич</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/reabilitacziya/oporno-dvigatelnyij-apparat/">Опорно-двигательный
+                                            аппарат</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/reabilitacziya/cherepno-mozgovaya-travma/">Черепно-мозговая
+                                            травма</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/reabilitacziya/insult/">Инсульт</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/reabilitacziya/aktivnoe-dolgoletie/">Активное
+                                            долголетие</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="czentr-zdorovya/reabilitacziya/parasport/">Параспорт</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="detskij-lager/">Детский лагерь</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/zimnij-lager/">Зимний лагерь</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/vesennij-lager/">Весенний лагерь</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/letnij-lager/">Летний лагерь</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/osennij-lager/">Осенний лагерь</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/dnevnoj-lager-na-zimnix-kanikulax/">Дневной лагерь на
+                                            зимних каникулах</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/dnevnoj-lager-na-vesennix-kanikulax/">Дневной лагерь на
+                                            весенних каникулах</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/dnevnoj-lager-na-letnix-kanikulax/">Дневной лагерь на
+                                            летних каникулах</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="detskij-lager/dnevnoj-lager-na-osennix-kanikulax/">Дневной лагерь на
+                                            осенних каникулах</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="fitnes-klub/">Фитнес клуб</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/abonementyi-i-czenyi/">Абонементы и
+                                            цены</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/bassejn/">Бассейн</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/trenazhernyie-zalyi/">Тренажерные
+                                            залы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/gruppovyie-programmyi/">Групповые
+                                            программы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/sportivnyie-sekczii/">Спортивные
+                                            секции</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/bannyij-kompleks/">Банный комплекс</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/raspisanie/">Расписание групповых
+                                            программ</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/treneryi/">Тренеры</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="fitnes-klub/arenda-sportivnyix-sooruzhenij/">Аренда
+                                            спортивных сооружений</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="infrastruktura/">Инфраструктура</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/karta-territorii/">Карта
+                                            территории</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/prozhivanie/">Проживание</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/bassejnyi/">Бассейны</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/futbolnyie-polya/">Футбольные
+                                            поля</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/kryityie-sportivnyie-zalyi/">Крытые
+                                            спортивные залы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/stadionyi/">Стадионы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/trenazhernyie-zalyi/">Тренажерные
+                                            залы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/plyazhnyie-sportivnyie-ploshhadki/">Пляжные спортивные
+                                            площадки</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/plyazh/">Пляж</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/bannyij-kompleks/">Банный
+                                            комплекс</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/konferencz-zalyi/">Конференц-залы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="infrastruktura/magazinyi/">Магазины</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="uslugi/">Услуги</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item" href="uslugi/transfer/">Трансфер</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="uslugi/animacziya/">Анимация</a>
+                                        <a class="norm-menu-items-item-list__item" href="uslugi/serfing/">Серфинг</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="uslugi/ekskursij/">Экскурсии</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="turniryi/">Турниры</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="kontaktyi/">Контакты</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item list-wrap">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="o-czentre/">О центре</a>
+                                        <span></span>
+                                    </div>
+                                    <div class="norm-menu-items-item-list">
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="o-czentre/oficzialnyie-dokumentyi/">Официальные
+                                            документы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="o-czentre/karta-territorii/">Карта территории</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="o-czentre/galereya/">Галерея</a>
+                                        <a class="norm-menu-items-item-list__item" href="o-czentre/komanda/">Команда</a>
+                                        <a class="norm-menu-items-item-list__item" href="o-czentre/novosti/">Новости</a>
+                                        <a class="norm-menu-items-item-list__item" href="o-czentre/otzyivyi/">Отзывы</a>
+                                        <a class="norm-menu-items-item-list__item"
+                                            href="o-czentre/vakansij/">Вакансии</a>
+                                    </div>
+                                </div>
+                                <div class="norm-menu-items-item">
+                                    <div class="norm-menu-items-item__title">
+                                        <a class="url__pages" href="czentr-meropriyatij/">Центр мероприятий</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="norm-menu-socials">
+                                <a href="#" class="norm-menu-socials__item">
+                                    <img src="assets/images/icon/vk.png" alt="" />
+                                </a>
+                                <a href="#" class="norm-menu-socials__item">
+                                    <img src="assets/images/icon/inst.png" alt="" />
+                                </a>
+                                <a href="#" class="norm-menu-socials__item">
+                                    <img src="assets/images/icon/fb.png" alt="" />
+                                </a>
+                            </div>
+                            <p>Звоните нам</p>
+                            <a href="tel:88007771826">8 (800) 777-18-26</a>
+                        </div>
                     </div>
-                    <a href="/" class="norm-menu__logo">
-                        <img src="assets/images/logo-menu.png" alt="">
+
+                    <ul class="navbar-nav left-menu">
+                        <li class="nav-item">
+                            <a id="sidebarCollapse">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link underlines" href="#">Прямая трансляция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Календарь событий</a>
+                        </li>
+                    </ul>
+
+                    <a class="navbar-brand d-none d-lg-block" href="/">
+                        <div class="logo-dark"></div>
+                        <img src="../img/logo-small.png" class="logo-white" alt="logo-white" />
                     </a>
-                    <div class="norm-menu-items">
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="/">Главная</a>
-                            </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="kurortnyij-otdyix/">Курортный отдых</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/mirnyij/">Мирный</a>
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/pogranichnyij/">Пограничный</a>
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/sportivnyij/">Спортивный</a>
-                                <a class="norm-menu-items-item-list__item" href="kurortnyij-otdyix/zvezdnyij/">Звездный</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="sportivnyie-sboryi/">Спортивные сборы</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/vodnyie-vidyi-sporta/">Водные виды спорта</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/futbol/">Футбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/edinoborstva/">Единоборства</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/fextovanie/">Фехтование</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/gandbol/">Гандбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/tennis/">Теннис</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/tanczyi/">Танцы</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/gimnastika/">Гимнастика</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/volejbol/">Волейбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/basketbol/">Баскетбол</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/pauerlifting/">Пауерлифтинг</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/metatelnyie-vidyi-sporta/">Метательные виды спорта</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/legkaya-atletika/">Легкая атлетика</a>
-                                <a class="norm-menu-items-item-list__item" href="sportivnyie-sboryi/strelba-iz-luka/">Стрельба из лука</a>                    </div>
 
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="czentr-zdorovya/">Центр здоровья</a>
-                                <span></span>
+                    <ul class="navbar-nav right-menu">
+                        <li class="nav-item">
+                            <a class="nav-link phone-menu" href="#">8 (800) 777-18-26</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link button-blue__mobile"><i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/">Реабилитация</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/sanatorno-kurortnoe-lechenie/">Санаторно-курортное лечение</a>                            <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/detskij-czerebralnyij-paralich/">Детский церебральный паралич</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/oporno-dvigatelnyij-apparat/">Опорно-двигательный аппарат</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/cherepno-mozgovaya-travma/">Черепно-мозговая травма</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/insult/">Инсульт</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/aktivnoe-dolgoletie/">Активное долголетие</a>
-                                <a class="norm-menu-items-item-list__item" href="czentr-zdorovya/reabilitacziya/parasport/">Параспорт</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="detskij-lager/">Детский лагерь</a>
-                                <span></span>
-
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/zimnij-lager/">Зимний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/vesennij-lager/">Весенний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/letnij-lager/">Летний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/osennij-lager/">Осенний лагерь</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-zimnix-kanikulax/">Дневной лагерь на зимних каникулах</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-vesennix-kanikulax/">Дневной лагерь на весенних каникулах</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-letnix-kanikulax/">Дневной лагерь на летних каникулах</a>
-                                <a class="norm-menu-items-item-list__item" href="detskij-lager/dnevnoj-lager-na-osennix-kanikulax/">Дневной лагерь на осенних каникулах</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="fitnes-klub/">Фитнес клуб</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/abonementyi-i-czenyi/">Абонементы и цены</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/bassejn/">Бассейн</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/trenazhernyie-zalyi/">Тренажерные залы</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/gruppovyie-programmyi/">Групповые программы</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/sportivnyie-sekczii/">Спортивные секции</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/bannyij-kompleks/">Банный комплекс</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/raspisanie/">Расписание групповых программ</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/treneryi/">Тренеры</a>
-                                <a class="norm-menu-items-item-list__item" href="fitnes-klub/arenda-sportivnyix-sooruzhenij/">Аренда спортивных сооружений</a>                    </div>
-
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="infrastruktura/">Инфраструктура</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/karta-territorii/">Карта территории</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/prozhivanie/">Проживание</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/bassejnyi/">Бассейны</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/futbolnyie-polya/">Футбольные поля</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/kryityie-sportivnyie-zalyi/">Крытые спортивные залы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/stadionyi/">Стадионы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/trenazhernyie-zalyi/">Тренажерные залы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/plyazhnyie-sportivnyie-ploshhadki/">Пляжные спортивные площадки</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/plyazh/">Пляж</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/bannyij-kompleks/">Банный комплекс</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/konferencz-zalyi/">Конференц-залы</a>
-                                <a class="norm-menu-items-item-list__item" href="infrastruktura/magazinyi/">Магазины</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="uslugi/">Услуги</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="uslugi/transfer/">Трансфер</a>
-                                <a class="norm-menu-items-item-list__item" href="uslugi/animacziya/">Анимация</a>
-                                <a class="norm-menu-items-item-list__item" href="uslugi/serfing/">Серфинг</a>
-                                <a class="norm-menu-items-item-list__item" href="uslugi/ekskursij/">Экскурсии</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="turniryi/">Турниры</a>
-                            </div>
-                        </div>
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="kontaktyi/">Контакты</a>
-                            </div>
-                        </div>
-                        <div class="norm-menu-items-item list-wrap">
-                            <div class="norm-menu-items-item__title">
-                                <a href="o-czentre/">О центре</a>
-                                <span></span>
-                            </div>
-                            <div class="norm-menu-items-item-list">
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/oficzialnyie-dokumentyi/">Официальные документы</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/karta-territorii/">Карта территории</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/galereya/">Галерея</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/komanda/">Команда</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/novosti/">Новости</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/otzyivyi/">Отзывы</a>
-                                <a class="norm-menu-items-item-list__item" href="o-czentre/vakansij/">Вакансии</a>                    </div>
-                        </div>
-                        <div class="norm-menu-items-item">
-                            <div class="norm-menu-items-item__title">
-                                <a href="czentr-meropriyatij/">Центр мероприятий</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="norm-menu-socials">
-                        <a href="#" class="norm-menu-socials__item">
-                            <img src="assets/images/icon/vk.png" alt="">
-                        </a>
-                        <a href="#" class="norm-menu-socials__item">
-                            <img src="assets/images/icon/inst.png" alt="">
-                        </a>
-                        <a href="#" class="norm-menu-socials__item">
-                            <img src="assets/images/icon/fb.png" alt="">
-                        </a>
-                    </div>
-                    <p>Звоните нам</p>
-                    <a href="tel:88007771826">8 (800) 777-18-26</a>
-                </div>
-            </div>
-
-            <ul class="navbar-nav left-menu">
-                <li class="nav-item">
-                    <a class="nav-link" id="sidebarCollapse"><i class="fa fa-bars" aria-hidden="true"></i>Меню</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link underlines" href="#">Прямая трансляция</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Календарь событий</a>
-                </li>
-            </ul>
-
-            <a class="navbar-brand d-none d-lg-block" href="/">
-                <!--<img src="img/logo-white.png" alt="">-->
-                <img src="img/logo.png" class="logo-dark">
-                <img src="img/logo-small.png" class="logo-white">
-            </a>
-
-            <ul class="navbar-nav right-menu">
-                <li class="nav-item">
-                    <a class="nav-link phone-menu" href="#">8 (800) 777-18-26</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link button-blue" href="#"><i class="fa fa-phone"></i> Перезвоните мне</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<section class="camp-grid">
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <h2>Детский<span>лагерь</span></h2>
-                <h4>Крым, первая береговая линия</h4>
-            </div>
-            <div class="col-9">
-                <div class="gallery-grid">
-                    <img src="img/camp/camp-slide-01.jpg">
-                    <img src="img/camp/camp-slide-01.jpg">
-                    <img src="img/camp/camp-slide-01.jpg">
-                    <img src="img/camp/camp-slide-01.jpg">
-                    <img src="img/camp/camp-slide-01.jpg">
-                    <img src="img/camp/camp-slide-01.jpg">
-                    <img src="img/camp/camp-slide-01.jpg">
-                    <img src="img/camp/camp-slide-01.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="main-content">
-    <div class="about-us container">
-        <h2 class="title-bold">О центре</h2>
-        <h4 class="subtitle-normal">Что нужно знать о нас?</h4>
-        <div class="row">
-            <div class="col-md-4 icons-left">
-                <div class="about-icon">
-                    <div class="icon-img-cont">
-                        <img src="img/index/icons/icon-1.png">
-                    </div>
-                    <div class="icon-description">
-                        <span class="icon-title">Море</span>
-                        <span class="icon-subtitle">Чистейшее море<br>в шаговой доступности</span>
-                    </div>
-                </div>
-                <div class="about-icon">
-                    <div class="icon-img-cont">
-                        <img src="img/index/icons/icon-2.png">
-                    </div>
-                    <div class="icon-description">
-                        <span class="icon-title">Площадь</span>
-                        <span class="icon-subtitle">64 Га общая<br>площадь центра</span>
-                    </div>
-                </div>
-                <div class="about-icon">
-                    <div class="icon-img-cont">
-                        <img src="img/index/icons/icon-3.png">
-                    </div>
-                    <div class="icon-description">
-                        <span class="icon-title">Сооружения</span>
-                        <span class="icon-subtitle">17 спортивных<br>сооружений</span>
-                    </div>
-                </div>
-                <div class="about-icon">
-                    <div class="icon-img-cont">
-                        <img src="img/index/icons/icon-4.png">
-                    </div>
-                    <div class="icon-description">
-                        <span class="icon-title">Пляж</span>
-                        <span class="icon-subtitle">Собственный<br>песчаный пляж</span>
-                    </div>
-                </div>
-                <div class="about-icon">
-                    <div class="icon-img-cont">
-                        <img src="img/index/icons/icon-5.png">
-                    </div>
-                    <div class="icon-description">
-                        <span class="icon-title">Корпуса</span>
-                        <span class="icon-subtitle">6 корпусов<br>размещения</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 content-right">
-                <div class="left-image">
-                    <img src="img/index/about-img.jpg" class="box-image">
-                    <span class="absolute-image-description">Эволюция</span>
-                </div>
-                <div class="description-right">
-                    <h3 class="blue-stripe">Добро пожаловать<span>в Эволюцию</span></h3>
-                    <p class="about-description">Эволюция является одним из крупнейших центров на первой береговой линии Черного моря, где можно пройти учебно-тренировочные сборы, организовать курортный отдых и отправить детей в детский лагерь, провести конференции, а также пройти санаторно-курортное лечение. Территория достижений Эволюция располагается в г. Евпатория, Крым. Центр имеет собственный чистый песчаный пляж длинной 1 км <span data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">со статусом «Голубой флаг»</span>, озеро, парковую зону, 17 спортивных сооружений, медицинский центр и 6 корпусов размещения для всех наших гостей.</p>
-                    <img src="img/index/about-2.jpg" class="left-square">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about-us-slide container my-3 nopadding-top">
-        <h2 class="title-bold">В нашем центре</h2>
-        <h4 class="subtitle-normal">Отражение сущности объекта</h4>
-        <div id="about-us-slide">
-            <div class="item">
-                <div class="about-card card-body" style="background-image:url(img/index/slide-01.jpg)">
-                    <h3 class="blue-stripe">Фитнес-клуб<span>для гостей<br>и туристов</span></h3>
-                    <ul class="about-list">
-                        <li>Абонементы и цены</li>
-                        <li>Расписание</li>
-                        <li>Программы</li>
-                        <li>Тренеры</li>
-                        <li>И т.д.</li>
+                            <div class="nav-link button-blue">
+                                <i class="fa fa-phone"></i> Перезвоните мне</div>
+                        </li>
                     </ul>
-                    <a href="#" class="about-btn">Подробнее →</a>
                 </div>
             </div>
-            <div class="item">
-                <div class="about-card card-body" style="background-image:url(img/index/slide-01.jpg)">
-                    <h3 class="blue-stripe">Фитнес-клуб<span>для гостей<br>и туристов</span></h3>
-                    <ul class="about-list">
-                        <li>Абонементы и цены</li>
-                        <li>Расписание</li>
-                        <li>Программы</li>
-                        <li>Тренеры</li>
-                        <li>И т.д.</li>
-                    </ul>
-                    <a href="#" class="about-btn">Подробнее →</a>
+        </header>
+
+        <section class="hero container-fluid container-fluid__gymnastics">
+            <div class="container p-0">
+                <h1><span>Волейбол</span></h1>
+                <p class="hero-description title__ed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut
+                    urna
+                    feugiat.</p>
+                <div class="btn-group d-md-flex d-block button__title">
+                    <a href="#" class="btn button-red">Профессиональный</a>
+                    <a href="#" class="btn button-red">Детский</a>
                 </div>
             </div>
-            <div class="item">
-                <div class="about-card card-body" style="background-image:url(img/index/slide-01.jpg)">
-                    <h3 class="blue-stripe">Фитнес-клуб<span>для гостей<br>и туристов</span></h3>
-                    <ul class="about-list">
-                        <li>Абонементы и цены</li>
-                        <li>Расписание</li>
-                        <li>Программы</li>
-                        <li>Тренеры</li>
-                        <li>И т.д.</li>
-                    </ul>
-                    <a href="#" class="about-btn">Подробнее →</a>
+        </section>
+
+        <div class="main-content">
+            <section class="container-fluid baths">
+                <div class="container">
+                    <div class="row relative">
+                        <span class="absolute-sport">Путь к победе</span>
+                        <div class="col-md-6 col-12">
+                            <img src="../img/sbory/edinoborstva2.jpg" class="img-fluid img-shadow img-full__hd"
+                                alt="Дети в кимоно">
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="baths-title">
+                                <h3 class="blue-stripe-border">Cпортивные сборы<span>по волейболу</span></h3>
+                                <img src="../img/sbory/edinoborstva2.jpg" class="img-fluid img-shadow img__mobile"
+                                    alt="Дети в кимоно">
+                                <p>Учебно-тренировочные сборы по волейболу можно провести в Крыму на территории центра
+                                    спорта «Эволюция». Внушительные размеры спортивных залов способны вместить в себя
+                                    большое количество любителей и профессионалов волейбола. Также залы оборудованы
+                                    музыкальной системой и кондиционерами. <strong>На осенние, зимние и весенние периоды
+                                        действуют пониженные
+                                        тарифы.</strong></p>
+                            </div>
+                            <div class="col-12 red-form ml-md-3 mt-md-0 mt-xl-5 pl-0 pr-0">
+                                <form class="price-form calc-form" method="post">
+                                    <select class="input-image date">
+                                        <option value="" disabled selected>Выберите дату</option>
+                                        <option value="2">312</option>
+                                        <option value="3">123</option>
+                                        <option value="4">123</option>
+                                    </select>
+                                    <input class="input-image users" type="text" placeholder="Количество спортсменов" />
+                                    <input class="input-image trainers" type="text" placeholder="Количество тренеров" />
+                                    <select class="input-image stadium">
+                                        <option value="1" disabled selected>Спортсооружения</option>
+                                        <option value="2">312</option>
+                                        <option value="3">123</option>
+                                        <option value="4">123</option>
+                                    </select>
+                                    <button class="button-blue" type="submit">Рассчитать стоимость</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="about-card card-body" style="background-image:url(img/index/slide-01.jpg)">
-                    <h3 class="blue-stripe">Фитнес-клуб<span>для гостей<br>и туристов</span></h3>
-                    <ul class="about-list">
-                        <li>Абонементы и цены</li>
-                        <li>Расписание</li>
-                        <li>Программы</li>
-                        <li>Тренеры</li>
-                        <li>И т.д.</li>
-                    </ul>
-                    <a href="#" class="about-btn">Подробнее →</a>
+            </section>
+
+            <section class="features-center container">
+                <h2 class="title-bold">Преимущества</h2>
+                <div class="row" id="ed-title__about">
+                    <div class="col">
+                        <div class="about-icon">
+                            <div class="icon-img-cont">
+                                <img src="../img/sbory/icons/icon-01.png" alt="Значек моря">
+                            </div>
+                            <div class="icon-description">
+                                <span class="icon-title">Море</span>
+                                <span class="icon-subtitle">Песчаный пляж<br>50м</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="about-icon">
+                            <div class="icon-img-cont">
+                                <img src="../img/sbory/icons/icon-02.png" alt="Значек площади">
+                            </div>
+                            <div class="icon-description">
+                                <span class="icon-title">Площадь</span>
+                                <span class="icon-subtitle">64 га общая<br>площадь центра</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="about-icon">
+                            <div class="icon-img-cont">
+                                <img src="../img/sbory/icons/icon-03.png" alt="Значек сосоружений">
+                            </div>
+                            <div class="icon-description">
+                                <span class="icon-title">Сооружения</span>
+                                <span class="icon-subtitle">17 спортивных<br>сооружений </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="about-icon">
+                            <div class="icon-img-cont">
+                                <img src="../img/sbory/icons/icon-04.png" alt="Значек пляжа">
+                            </div>
+                            <div class="icon-description">
+                                <span class="icon-title">Пляж</span>
+                                <span class="icon-subtitle">Собственный<br>песчаный пляж</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="about-icon">
+                            <div class="icon-img-cont">
+                                <img src="../img/sbory/icons/icon-05.png" alt="Значек корпуса">
+                            </div>
+                            <div class="icon-description">
+                                <span class="icon-title">Корпуса</span>
+                                <span class="icon-subtitle">6 корпусов<br>размещения</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="container infra">
+                <h2 class="title-bold">Три зала</h2>
+                <h4 class="subtitle-normal">Отражение сущности объекта</h4>
+                <div class="absolute-infra">Залы</div>
+                <div id="infra">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-xl-5 col-md-5 left-part d-md-block d-none">
+                                <img src="../img/martial/sportzal.jpg" alt="Спортзал"
+                                    class="col-12 img-fluid w100 mb-md-5 mb-xl-0 mb-xl-3 infra__img-height">
+                                <img src="../img/martial/infra-001.jpg" alt="Маты" class="col-12 5 img-fluid w100">
+                            </div>
+                            <div class="col-xl-7 col-md-7 col-xl-6 right-part col-12">
+                                <h4 class="infra-bold text-md-left text-center">Спортивный зал<br><strong>малый</strong>
+                                </h4>
+                                <div class="row">
+                                    <div class="col-12 order-2 order-sm-2 order-md-1">
+                                        <div class="d-flex col-12 pl-md-0 pt-3 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Площадь</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                36 м х 18 м
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Высота потолков</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                8 м
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Покрытие</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                Teraflex
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Балкон для зрителей</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                На 30 мест
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Освещенность</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                100 Lx
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Зеркальная стена</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                28 м
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-12 pt-lg-4 pt order-1 order-sm-1 order-md-2 pl-5 pr-5 pl-md-3 pr-md-3">
+                                        <img src="../img/martial/sportzal-2.jpg" alt="Спортзал" class="img-fluid w100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-xl-5 col-md-5 left-part d-md-block d-none">
+                                <img src="../img/martial/sportzal.jpg" alt="Спортзал"
+                                    class="col-12 img-fluid w100 mb-md-5 mb-xl-0 mb-xl-3 infra__img-height">
+                                <img src="../img/martial/infra-001.jpg" alt="Маты" class="col-12 5 img-fluid w100">
+                            </div>
+                            <div class="col-xl-7 col-md-7 col-xl-6 right-part col-12">
+                                <h4 class="infra-bold text-md-left text-center">
+                                    Физкультурно-оздоровительный<br><strong>комплекс</strong></h4>
+                                <div class="row">
+                                    <div class="col-12 order-2 order-sm-2 order-md-1">
+                                        <div class="d-flex col-12 pl-md-0 pt-3 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Площадь</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                48 м х 43 м
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Высота потолков</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                14 м
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Покрытие</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                «Linotop Sport», Германия
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Трибуна для зрителей</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                На 310 мест
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Освещенность</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                800 Lx
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-12 pl-md-0 pt-1 pt-md-0 pr-md-0 pr-5 pl-5">
+                                            <div class="col-6 pl-0">Вентиляция</div>
+                                            <div class="col-6 tleft pl-0 pr-0">
+                                                Приточно-вытяжная
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-12 pt-lg-4 pt order-1 order-sm-1 order-md-2 pl-5 pr-5 pl-md-3 pr-md-3">
+                                        <img src="../img/martial/sportzal-2.jpg" alt="Спортзал" class="img-fluid w100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="container features">
+                <div class="row" id="about__features-sports">
+                    <div class="col">
+                        <h2 class="small-f">сборов</h2>
+                        <p class="big-f">10</p>
+                    </div>
+                    <div class="col">
+                        <p class="small-f">спортсменов</p>
+                        <p class="big-f">50+</p>
+                    </div>
+                    <div class="col">
+                        <p class="small-f">турниров</p>
+                        <p class="big-f">15</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-block container-fluid grey relative">
+                <div class="absolute-victory__video">Видео</div>
+                <div class="container">
+                    <h2 class="title-bold">Видео</h2>
+                    <h4 class="subtitle-normal">Краткое описание</h4>
+                    <div class="relative">
+                        <img class="img-fluid img-shadow" src="../img/watersport/grey-video.jpg" alt="Сервый фон">
+                        <a data-toggle="modal" data-src="https://www.youtube.com/embed/18r8xG6_hYo"
+                            data-target="#myModal" class="play-arrow video-btn"><img
+                                src="../img/watersport/play-btn.png" alt="Начать воспроизведение"></a>
+                    </div>
+                </div>
+                <!-- Modal Video -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <!-- 16:9 aspect ratio -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" id="video" allow="autoplay"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="supa">
+                <div class="supa-wrap">
+                    <h2 class="defaultTitle supa__title">Проживание</h2>
+                    <p class="defaultSubtitle supa__subtitle">С кратким описанием</p>
+                    <div class="supaSlider owl-carousel">
+                        <div class="supaSlider-item">
+                            <div class="supaSlider-insideSliderBlock">
+                                <div class="supaSlider-insideSliderBlock__prev"><img
+                                        src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);"
+                                        alt="предыдущий слайд" /></div>
+                                <div class="supaSlider-insideSliderBlock-num">
+                                    <div class="supaSlider-insideSliderBlock-num__current">01</div>
+                                    <div class="supaSlider-insideSliderBlock-num__all">04</div>
+                                </div>
+                                <div class="supaSlider-insideSliderBlock__next"><img
+                                        src="../assets/images/arrow-supaSlider.png" alt="следующий слайд" /></div>
+                            </div>
+                            <div class="supaSlider-insideSlider">
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                            </div>
+                            <div class="supaSlider-item-desc">
+                                <div class="supaSlider-item-desc-top">
+                                    <p class="supaSlider-item-desc-top__title">Корпус<br>Реабилитационный</p>
+                                    <div class="supaSlider-item-desc-top-right">
+                                        <div class="supaSlider-item-desc-top-right__icon"><img
+                                                src="../assets/images/wave_gray.png" alt="" /></div>
+                                        <p class="supaSlider-item-desc-top-right__text">200 м. до моря</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-item-desc-main">
+                                    <p class="supaSlider-item-desc-main__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices
+                                        gravida. Risus commodo viverra maecenas vel. </p>
+                                </div>
+                                <div class="supaSlider-item-desc__placeholder">Проживание</div>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item">
+                            <div class="supaSlider-insideSliderBlock">
+                                <div class="supaSlider-insideSliderBlock__prev"><img
+                                        src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);"
+                                        alt="" /></div>
+                                <div class="supaSlider-insideSliderBlock-num">
+                                    <div class="supaSlider-insideSliderBlock-num__current">01</div>
+                                    <div class="supaSlider-insideSliderBlock-num__all">04</div>
+                                </div>
+                                <div class="supaSlider-insideSliderBlock__next"><img
+                                        src="../assets/images/arrow-supaSlider.png" alt="" /></div>
+                            </div>
+                            <div class="supaSlider-insideSlider">
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                                <div class="supaSlider-insideSlider__item"><img src="../assets/images/room-slider.png"
+                                        loading=lazy alt="Фото апартаментов" />
+                                </div>
+                            </div>
+                            <div class="supaSlider-item-desc">
+                                <div class="supaSlider-item-desc-top">
+                                    <p class="supaSlider-item-desc-top__title">Корпус<br>Реабилитационный</p>
+                                    <div class="supaSlider-item-desc-top-right">
+                                        <div class="supaSlider-item-desc-top-right__icon"><img
+                                                src="../assets/images/wave_gray.png" alt="" /></div>
+                                        <p class="supaSlider-item-desc-top-right__text">200 м. до моря</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-item-desc-main">
+                                    <p class="supaSlider-item-desc-main__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices
+                                        gravida. Risus commodo viverra maecenas vel. </p>
+                                </div>
+                                <div class="supaSlider-item-desc__placeholder">Проживание</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid baths">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="baths-title">
+                                <h3 class="blue-stripe-border">Восстановление<span>Банный комплекс</span></h3>
+                                <p>Банный комплекс — отличное место, где можно полностью расслабиться. Финская сауна,
+                                    турецкий хамам,
+                                    квантовая камера, ушат с ледяной водой, зона отдыха – <strong>гарантия вашего
+                                        релакса.</strong></p>
+                                <div class="absolute-relax">Релакс</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div id="baths-slider">
+                                <div class="item">
+                                    <img src="../img/resort/bath-1.jpg" alt="Фото хаммама" class="img-fluid img-shadow">
+                                    <span class="bath-absolute">Хаммам</span>
+                                </div>
+                                <div class="item">
+                                    <img src="../img/resort/bath-1.jpg" alt="Фото бани" class="img-fluid img-shadow">
+                                    <span class="bath-absolute">Баня</span>
+                                </div>
+                                <div class="item">
+                                    <img src="../img/resort/bath-1.jpg" alt="Фото душа" class="img-fluid img-shadow">
+                                    <span class="bath-absolute">Душ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid news-block grey">
+                <div class="container">
+                    <h3 class="blue-stripe-border">Новости<span>Выберите нужную дату</span></h3>
+                    <div class="relative"><span class="absolute-news-title">Новости</span></div>
+                    <div id="news-index-slider__meeting" class="content-slider">
+                        <div class="item">
+                            <img class="img-fluid" src="../img/index/news/news-01.jpg"
+                                alt="Спортивные сборы в Крыму 2020">
+                            <div class="news-details">
+                                Гостям и спортсменам 1
+                                <span class="news-subtitle">Совместите спорт и отдых</span>
+                                <a href="#" class="button-red">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-fluid" src="../img/index/news/news-01.jpg"
+                                alt="Спортивные сборы в Крыму 2020">
+                            <div class="news-details">
+                                Гостям и спортсменам 1
+                                <span class="news-subtitle">Совместите спорт и отдых</span>
+                                <a href="#" class="button-red">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-fluid" src="../img/index/news/news-01.jpg"
+                                alt="Спортивные сборы в Крыму 2020">
+                            <div class="news-details">
+                                Гостям и спортсменам 1
+                                <span class="news-subtitle">Совместите спорт и отдых</span>
+                                <a href="#" class="button-red">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-fluid" src="../img/index/news/news-01.jpg"
+                                alt="Спортивные сборы в Крыму 2020">
+                            <div class="news-details">
+                                Гостям и спортсменам 1
+                                <span class="news-subtitle">Совместите спорт и отдых</span>
+                                <a href="#" class="button-red">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-fluid" src="../img/index/news/news-01.jpg"
+                                alt="Спортивные сборы в Крыму 2020">
+                            <div class="news-details">
+                                Гостям и спортсменам 1
+                                <span class="news-subtitle">Совместите спорт и отдых</span>
+                                <a href="#" class="button-red">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-    <div class="container-fluid calendar grey">
-        <div class="container">
+
+        <!--scripts loaded here-->
+        <footer class="container contacts nopadding-top">
             <div class="row">
-                <div class="col-3">
-
+                <div class="col-md-6 col-xs-12">
+                    <div style="position:relative;overflow:hidden;">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A446999efda47433efc6ec2b79d186280c8090bd2d66371537693adfb6661c264&amp;source=constructor"
+                            class="minimap"></iframe>
+                    </div>
                 </div>
-                <div class="col-9">
-                    <div class="blue-stripe blue-title">Календарь событий<span>Выберите нужную дату</span></div>
-                    <div id="calendar-index-slider" class="content-slider">
-                        <div class="item">
-                            <a href="#"><img class="img-fluid" src="img/index/calendar/calendar-01.jpg" alt="Акция! Специальное предолжение на Cooper Pass"></a>
-                            <div class="news-details">
-                                Акция! Специальное предложение на Cooper Pass
-                                <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-fluid" src="img/index/calendar/calendar-01.jpg" alt="Акция! Специальное предолжение на Cooper Pass"></a>
-                            <div class="news-details">
-                                Акция! Специальное предложение на Cooper Pass
-                                <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-fluid" src="img/index/calendar/calendar-01.jpg" alt="Акция! Специальное предолжение на Cooper Pass"></a>
-                            <div class="news-details">
-                                Акция! Специальное предложение на Cooper Pass
-                                <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-fluid" src="img/index/calendar/calendar-01.jpg" alt="Акция! Специальное предолжение на Cooper Pass"></a>
-                            <div class="news-details">
-                                Акция! Специальное предложение на Cooper Pass
-                                <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
-                            </div>
-                        </div>
+                <div class="col-md-6 col-xs-12 contacts-right">
+                    <div class="blue-stripe blue-title">Контакты<span>нашего центра</span></div>
+                    <div class="contacts-description">
+                        г. Евпатория, Крым
+                        <span>297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул. Аллея Дружбы, 1</span>
+                    </div>
+                    <div class="icons-footer">
+                        <a href="#"><img src="../img/icons/vk.png" alt="vk"></a>
+                        <a href="#"><img src="../img/icons/inst.png" alt="instagram"></a>
+                        <a href="#"><img src="../img/icons/fb.png" alt="facebook"></a>
+                    </div>
+                    <div class="footer-phone">
+                        Звонить по номеру телефона
+                        <a href="tel:88007771826">8 (800) 777-18-26</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
-    <div class="container map">
-        <h2 class="title-bold">Карта территории</h2>
-        <h4 class="subtitle-normal">С отметками</h4>
-        <img src="img/index/map.jpg">
-    </div>
-    <div class="container photogallery">
-        <div class="blue-stripe blue-title">Фотогалерея<span>Выберите нужную дату</span></div>
-        <div class="row">
-            <div class="col-2 first-gallery">
-                <img src="img/index/gallery/gallery-01.jpg">
-                <span class="absolute-image-description">Фото</span>
-            </div>
-            <div class="col-2 two-gallery">
-                <img src="img/index/gallery/gallery-02.jpg">
-                <img src="img/index/gallery/gallery-03.jpg">
-            </div>
-            <div class="col-2 three-gallery">
-                <img src="img/index/gallery/gallery-04.jpg">
-                <img src="img/index/gallery/gallery-05.jpg">
-            </div>
-            <div class="col-4 four-gallery">
-                <img src="img/index/gallery/gallery-06.jpg">
-                <img src="img/index/gallery/gallery-07.jpg" class="inline-images">
-                <img src="img/index/gallery/gallery-08.jpg" class="inline-images">
-                <div class="read-more-gallery"><a href="#">Смотреть все фото →</a></div>
-            </div>
-            <div class="col-2 five-gallery">
-                <img src="img/index/gallery/gallery-09.jpg">
-                <img src="img/index/gallery/gallery-10.jpg">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid news-block grey">
-        <div class="container">
-            <div class="blue-stripe blue-title">Новости<span>Выберите нужную дату</span></div>
-            <div class="title-absolute"><span class="absolute-news-title">Новости</span></div>
-            <div id="news-index-slider" class="content-slider">
-                <div class="item">
-                    <img class="img-fluid" src="img/index/news/news-01.jpg" alt="Спортивные сборы в Крыму 2020">
-                    <div class="news-details">
-                        Гостям и спортсменам 1
-                        <span class="news-subtitle">Совместите спорт и отдых</span>
-                        <a href="#" class="button-blue">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="img-fluid" src="img/index/news/news-01.jpg" alt="Спортивные сборы в Крыму 2020">
-                    <div class="news-details">
-                        Гостям и спортсменам 1
-                        <span class="news-subtitle">Совместите спорт и отдых</span>
-                        <a href="#" class="button-blue">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="img-fluid" src="img/index/news/news-01.jpg" alt="Спортивные сборы в Крыму 2020">
-                    <div class="news-details">
-                        Гостям и спортсменам 1
-                        <span class="news-subtitle">Совместите спорт и отдых</span>
-                        <a href="#" class="button-blue">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="img-fluid" src="img/index/news/news-01.jpg" alt="Спортивные сборы в Крыму 2020">
-                    <div class="news-details">
-                        Гостям и спортсменам 1
-                        <span class="news-subtitle">Совместите спорт и отдых</span>
-                        <a href="#" class="button-blue">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="img-fluid" src="img/index/news/news-01.jpg" alt="Спортивные сборы в Крыму 2020">
-                    <div class="news-details">
-                        Гостям и спортсменам 1
-                        <span class="news-subtitle">Совместите спорт и отдых</span>
-                        <a href="#" class="button-blue">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--scripts loaded here-->
-<div class="container contacts nopadding-top">
-    <div class="row">
-        <div class="col-md-6 col-xs-12">
-            <img src="img/index/map-foot.jpg" class="img-fluid">
-            <!--div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/evolyutsiya/1232432804/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Эволюция</a><a href="https://yandex.ru/maps/977/republic-of-crimea/category/sports_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Спортивный комплекс в Республике Крым</a><a href="https://yandex.ru/maps/977/republic-of-crimea/category/sports_field/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивная база в Республике Крым</a><iframe src="https://yandex.ru/map-widget/v1/-/CKacmA~k" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div-->
-        </div>
-        <div class="col-md-6 col-xs-12 contacts-right">
-            <div class="blue-stripe blue-title">Контакты<span>нашего центра</span></div>
-            <div class="contacts-description">
-                г. Евпатория, Крым
-                <span>297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул. Аллея Дружбы, 1</span>
-            </div>
-            <div class="icons-footer">
-                <a href="https://pornhub.com"><img src="img/icons/vk.png"></a>
-                <a href="https://pornhub.com"><img src="img/icons/inst.png"></a>
-                <a href="https://pornhub.com"><img src="img/icons/fb.png"></a>
-            </div>
-            <div class="footer-phone">
-                Звонить по номеру телефона
-                <a href="tel:88007771826">8 (800) 777-18-26</a>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="js/tiny-slider.js"></script>
-<script src="js/index.js"></script>
-<script src="js/watersport.js"></script>
-<script src="js/mirnij.js"></script>
-<script src="js/resort.js"></script>
-<script src="js/sbory.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/watersport.js"></script>
+    <script src="../js/mirnij.js"></script>
+    <script src="../js/resort.js"></script>
+    <script src="../js/sbory.js"></script>
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
