@@ -1159,7 +1159,7 @@ a.article:hover {
   box-shadow: 0 0 15px #bfc0c2;
 }
 
-#sport .hero.container-fluid {
+#sport .hero.container-fluid.container-fluid__fencing {
   background-image: url("../img/fencing/hero.jpg");
 }
 
