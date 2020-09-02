@@ -6174,7 +6174,7 @@ a.article:hover {
   z-index: 0;
 }
 
-#sport .hero.container-fluid {
+#sport .hero.container-fluid.container-fluid__powerlifting {
   background-image: url("../img/powerlifting/hero.jpg");
 }
 
