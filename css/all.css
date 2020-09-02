@@ -3327,9 +3327,10 @@ a.article:hover {
   z-index: 0;
 }
 
-#sport .hero.container-fluid {
+#sport .hero.container-fluid.container-fluid__tennis {
   background-image: url("../img/tennis/hero.jpg");
 }
+
 
 #sport .hero h2 span {
   font-size: 72px;
