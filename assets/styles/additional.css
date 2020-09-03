@@ -890,7 +890,12 @@
         right: -10px;
         position: absolute;
     }
+
+}
+@media screen and (max-width: 768px) {
     .pool-img-mobile {
         display: block;
     }
 }
+
+

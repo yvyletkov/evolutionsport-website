@@ -2660,6 +2660,12 @@ button {
     justify-content: space-between;
 }
 
+.supaSlider .owl-nav {
+    top: 44%;
+    width: calc(100% + 80px);
+
+}
+
 .results-row .owl-nav {
     padding: 0 2px;
     top: 39%;
@@ -9050,7 +9056,7 @@ button {
     }
 
     .infra-bold {
-        padding-left: 15px;
+        text-align: center;
     }
 
     #infra .left-part {
@@ -9059,7 +9065,8 @@ button {
 
     #infra .right-part {
         max-width: none;
-        flex: 0 0 100%
+        flex: 0 0 100%;
+        text-align: justify;
     }
 }
 
