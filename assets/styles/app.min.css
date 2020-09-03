@@ -8114,7 +8114,7 @@ button {
   position: absolute;
   z-index: 2;
   top: 0px;
-  left: 0;
+  left: -320px;
   width: 275px;
   height: 100vh;
   /* display: none; */
@@ -8441,6 +8441,9 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .hero h1 {
+    padding-top: 100px;
+  }
   .features .big-f {
     padding: 0;
     font-size: 65px;
@@ -8928,6 +8931,7 @@ button {
         font-weight: bold;
         z-index: 100;
         font-size: 40px;
+        line-height: 40px;
       }
     
       #sbory .hero h2 span {
@@ -8951,7 +8955,6 @@ button {
   }
   .btn-group>.btn:first-child {
     border-radius:0;
-    margin:17px;
   }
   .btn-group>.btn:not(:first-child){
     margin: 17px;

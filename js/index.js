@@ -25,8 +25,34 @@ $(function () {
       },
     });
   }
+  if ($("#about-us-slide__tourn").length) {
+    const aboutSliderTourn = tns({
+      container: "#about-us-slide__tourn",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-blue-left.png">',
+        '<img src="../img/arrow-blue-right.png">',
+      ],
+      responsive: {
+        768: {
+          items: 2,
+        },
+        1024: {
+          items: 3,
+        },
+        320: {
+          items: 1,
+        },
+      },
+    });
+  }
   if ($("#about-us-slide-sbory").length) {
-    const aboutSlider = tns({
+    const aboutSliderSbory = tns({
       container: "#about-us-slide-sbory",
       items: 1,
       gutter: 20,
@@ -112,6 +138,35 @@ $(function () {
       controlsText: [
         '<img src="img/arrow-thin-left.png">',
         '<img src="img/arrow-thin-right.png">',
+      ],
+      responsive: {
+        768: {
+          items: 1,
+        },
+        1024: {
+          items: 2,
+        },
+        1440: {
+          items: 3,
+        },
+        320: {
+          items: 1,
+        }
+      },
+    });
+  }
+  if ($("#calendar-index-slider__tourn").length) {
+    const calendarSliderTourn = tns({
+      container: "#calendar-index-slider__tourn",
+      items: 1,
+      gutter: 20,
+      loop: true,
+      nav: false,
+      navPosition: "bottom",
+      preventScrollOnTouch: "force",
+      controlsText: [
+        '<img src="../img/arrow-thin-left.png">',
+        '<img src="../img/arrow-thin-right.png">',
       ],
       responsive: {
         768: {

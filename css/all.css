@@ -575,6 +575,10 @@ a.article:hover {
   width: 100%;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 #sport .hero.container-fluid.container-fluid__basketball {
   background-image: url("../img/basketball/hero.jpg");
 }
@@ -694,6 +698,7 @@ a.article:hover {
 
 #sidebarCollapse span { 
     position: absolute; left: 0; top: 17px; 
+    margin:0 0 0 15px;
 }
 
 #sidebarCollapse span,
@@ -1209,6 +1214,11 @@ a.article:hover {
 
 #sport .hero h2 span {
   font-size: 72px;
+}
+
+.sbory__header.sbory__header {
+  text-transform: uppercase;
+  color: #171717;
 }
 
 .w100 {
@@ -4264,6 +4274,23 @@ a.article:hover {
   padding-top: 146px;
 }
 
+#about-us-slide__tourn {
+  padding: 15px 0 0 0;
+}
+
+.about-us-slide__tourn_href {
+  position: absolute;
+  left: 45px;
+  bottom: 25px;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.about-us-slide__tourn_href:hover {
+  text-decoration: none;
+  color:#ffffff;
+}
+
 .about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
   vertical-align: middle;
 }
@@ -5163,7 +5190,7 @@ a.article:hover {
   }
 
   #row-sbory-ow .tns-controls button[data-controls="prev"]{
-    left: 0
+    left: -10px;
   }
 
   #about__features-sports-ow .tns-controls button[data-controls="next"]{

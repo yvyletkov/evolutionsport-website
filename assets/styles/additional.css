@@ -498,7 +498,7 @@
 
 /*Турниры*/
 .tournament .hero{
-    background-image: url(/img/tournament.jpg);
+    background-image: url(../../img/tournament.jpg);
 }
 .tournament .hero h2{
     color: #000;
