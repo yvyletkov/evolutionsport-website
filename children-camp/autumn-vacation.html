@@ -953,12 +953,9 @@
                         </div>
                     </div>
                 </div>
-                <form class="map-form">
+                <form class="map-form" name="map">
                     <p class="map-form__subtitle">А вы с какого региона?</p>
                     <div class="map-form-row">
-                        <!-- <div class="map-form-input">
-                            <input type="text" placeholder="Выбрать город"/>
-                        </div> -->
                         <select name="region" id="input-select" class="map-form-input" x-placement="bottom-start">
                           <option value="" selected style="display: none">Выберите регион</option>
                           <option value="Адыгея">Республика Адыгея</option>
@@ -1049,10 +1046,10 @@
                     <p class="map-form__title">Оставьте след на карте, приезжай к нам в лагерь </p>
                     <div class="map-form-row">
                         <div class="map-form-input">
-                            <input required placeholder="Введите ваш телефон" type="text" id="phone__where-from"/>
+                            <input name="phone" required placeholder="Введите ваш телефон" type="text" id="phone__where-from"/>
                         </div>
                         <div class="map-form-input">
-                            <input type="email" placeholder="Введите почту" required id="emailWhereFrom"/>
+                            <input name="email" type="email" placeholder="Введите почту" required id="emailWhereFrom"/>
                         </div>
                         <div class="map-form-input map-form-input_btn">
                             <button class="btn" type="submit" id="goToPlace">Поеду к вам</button>
