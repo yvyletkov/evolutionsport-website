@@ -7292,6 +7292,11 @@ button {
         height: auto;
     }
 
+    #children-animation .textBlock-images {
+        display: block;
+    }
+
+
     .textBlock_lager .textBlock-images .textBlock-images-img {
         width: 100%;
         margin: 10px 0;
@@ -7569,6 +7574,35 @@ button {
 
 @media screen and (max-width: 767px) {
 
+    #serfing form h4, #serfing form h5 {
+        display: none;
+    }
+
+    #serfing .textBlock-images {
+        display: block;
+        padding: 20px 0;
+    }
+
+    #serfing .textBlock-wrap {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column;
+    }
+
+    #serfing .textBlock_rtl .textBlock-desc {
+        display: block;
+        padding: 0 10px;
+    }
+
+    #serfing .textBlock-desc__title {
+        font-size: 16px !important;
+        text-align: left;
+    }
+
+    #serfing .transfer .reviews-form-content {
+        margin-bottom: 10px;
+    }
+
     #spa-treatment .advantages-wrap {
         padding: 30px 16px 20px
     }
@@ -7844,8 +7878,12 @@ button {
     .textBlock-wrap {
         display: none;
         padding: 20px 10px 0;
-
     }
+
+    #children-animation .textBlock-wrap {
+        display: block;
+    }
+
 
     .textBlock-images.group-lessons {
         display: block;
@@ -7889,6 +7927,13 @@ button {
 
     .textBlock_rtl .textBlock-desc {
         display: none;
+    }
+
+    #children-animation .textBlock_rtl .textBlock-desc {
+        display: block;
+    }
+    #children-animation .textBlock_rtl .textBlock-desc {
+        padding: 0 10px 0 10px;
     }
 
     .supaSlider-item {
@@ -8759,6 +8804,10 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+    #children-animation .bannerWrap {
+        display: none;
+    }
+
     .menu-evolution {
         padding: 15px 0;
     }
