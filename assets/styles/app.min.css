@@ -856,6 +856,7 @@ button {
 
 @media screen and (min-width: 425px) and (max-width: 1023px){
   .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__text.swim__text  {
+    margin:0 auto;
     padding-top:25px;
     max-width: 345px;
   }
@@ -8719,7 +8720,7 @@ button {
     bottom: -20px;
 }
   .sea .sea__wrapper {
-    padding-top: 0;
+    padding: 40px 10px;
   }
   .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__title {
     display: none;

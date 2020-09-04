@@ -522,7 +522,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link underlines" href="#">Прямая трансляция</a>
+                <a class="nav-link" href="#">Прямая трансляция</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Календарь событий</a>
@@ -843,11 +843,11 @@
               Введите свой номер телефона, и мы перезвоним Вам в течение 10
               минут. Или выберете удобное время
             </div>
-            <form class="children-form order-form">
+            <form class="children-form order-form" name="form__callback">
               <input
                 type="hidden"
                 name="formName"
-                value="Разрешите менеджеру вам помочь"
+                value="can i help you"
               />
               <input
                 class="children-form-input"
@@ -857,11 +857,13 @@
                 minlength="11"
                 maxlength="18"
                 required
-                placeholder="+7"
+                placeholder="+7 999 999 99 99"
               />
               <div class="children-form-select-wrap">
                 <select class="children-form-select" name="time" required>
-                  <option value="">Прямо сейчас</option>
+                  <option disabled hidden selected>Выберете удобное для вас время</option>
+                  <option value="now">Прямо сейчас</option>
+                  <option value="tomorrow">Завтра</option>
                 </select>
               </div>
               <button class="children-form-btn" type="submit">
@@ -1358,5 +1360,6 @@
     <script src="../js/resort.js"></script>
     <script src="../js/sbory.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/callback.js"></script>
   </body>
 </html>

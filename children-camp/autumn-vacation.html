@@ -507,7 +507,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link underlines" href="#">Прямая трансляция</a>
+            <a class="nav-link" href="#">Прямая трансляция</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Календарь событий</a>
@@ -708,15 +708,32 @@
             <div class="call__wrap">
                 <h2 class="call-title">разрешите менеджеру вам помочь?</h2>
                 <p class="call-text">Введите свой номер телефона, и мы перезвоним Вам в течение 10 минут. Или выберете удобное время</p>
-                <form class="children-form order-form">
-                    <input type="hidden" name="formName" value="Разрешите менеджеру вам помочь">
-                    <input required class="children-form-input" placeholder="Введите ваш номер телефона" type="text" id="phone__help"/>
-                    <div class="children-form-select-wrap">
-                        <select class="children-form-select" name="time" required>
-                            <option value="">Прямо сейчас</option>
-                        </select>
-                    </div>
-                    <button class="children-form-btn" type="submit">Жду звонка</button>
+                <form class="children-form order-form" name="form__callback">
+                  <input
+                    type="hidden"
+                    name="formName"
+                    value="can i help you"
+                  />
+                  <input
+                    class="children-form-input"
+                    type="tel"
+                    name="phone"
+                    pattern="^(\+7(\([0-9]{3}\) *[0-9]{3}-[0-9]{2}-[0-9]{2}| [0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}|[0-9]{10})|8[0-9]{10})$"
+                    minlength="11"
+                    maxlength="18"
+                    required
+                    placeholder="+7 999 999 99 99"
+                  />
+                  <div class="children-form-select-wrap">
+                    <select class="children-form-select" name="time" required>
+                      <option disabled hidden selected>Выберете удобное для вас время</option>
+                      <option value="now">Прямо сейчас</option>
+                      <option value="tomorrow">Завтра</option>
+                    </select>
+                  </div>
+                  <button class="children-form-btn" type="submit">
+                    Жду звонка
+                  </button>
                 </form>
                 <p class="call-text-down">Нажимая на кнопку «Жду звонка», Вы принимаете условия</p><a class="call-text-down-link" href="#">Пользовательского соглашения</a>
             </div>
@@ -1248,6 +1265,6 @@
 <script src="../js/resort.js"></script>
 <script src="../js/sbory.js"></script>
 <script src="../js/main.js"></script>
-<script src="../assets/scripts/autumnCamp.js"></script>
+<script src="../js/callback.js"></script>
 </body>
 </html>
