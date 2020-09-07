@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css" />
   <link rel="stylesheet" href="../css/all.css">
+  
 
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
@@ -309,20 +310,16 @@
                     <strong>На осенние, зимние и весенние периоды действуют пониженные тарифы.</strong></p>
               </div>
               <div class="col-12 red-form ml-md-3 mt-md-0 mt-xl-5 pl-0 pr-0">
-                <form class="price-form calc-form" method="post">
-                  <select class="input-image date">
-                    <option value="" disabled selected>Выберите дату</option>
-                    <option value="2">312</option>
-                    <option value="3">123</option>
-                    <option value="4">123</option>
-                  </select>
-                  <input class="input-image users" type="text" placeholder="Количество спортсменов" />
-                  <input class="input-image trainers" type="text" placeholder="Количество тренеров" />
-                  <select class="input-image stadium">
-                    <option value="1" disabled selected>Спортсооружения</option>
-                    <option value="2">312</option>
-                    <option value="3">123</option>
-                    <option value="4">123</option>
+                <form class="price-form calc-form">
+                  <input name="form-name" value="price-meeting" hidden>
+                  <input name="date" type="text" class="input-image date" placeholder="Выберите дату" required/>
+                  <input name="athletes" type="number" min="1" max="100" step="1" class="input-image users" placeholder="Количество спортсменов" required />
+                  <input name="trainers"class="input-image trainers" type="number" min="1" max="100" step="1" placeholder="Количество тренеров" required />
+                  <select name="sports_facilities" class="input-image stadium" required>
+                    <option value="" disabled selected hidden>Спортсооружения</option>
+                    <option value="nothing">Не нужны</option>
+                    <option value="water">Водные</option>
+                    <option value="terrestrial">Наземные</option>
                   </select>
                   <button class="button-blue" type="submit">Рассчитать стоимость</button>
                 </form>
@@ -782,6 +779,7 @@
   <script src="../js/resort.js"></script>
   <script src="../js/sbory.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/requests.js"></script>
 </body>
 
 </html>

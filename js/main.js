@@ -37,8 +37,20 @@ $(".norm-menu-items-item.list-wrap span").click(function (e) {
 // dateNow();
 
 // анимации иконки меню
-$('#sidebarCollapse').click(function(){
-  console.log(this)
-    $(this).toggleClass('active');
-    $('.norm-menu-wrap').toggleClass('active');
+$("#sidebarCollapse").click(function () {
+  console.log(this);
+  $(this).toggleClass("active");
+  $(".norm-menu-wrap").toggleClass("active");
 });
+
+$(".input-image.date")
+  .datepicker({
+    dateFormat: "mm-dd-yy",
+    changeMonth: true,
+    changeYear: true,
+    yearRange: "1900:2100",
+    autoclose: true,
+  })
+  .keyup(function () {
+    this.value = this.value.replace(/[^\d]/g, "");
+  });

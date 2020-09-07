@@ -11,10 +11,7 @@ async function mainApi(info) {
     if (!res.ok) {
       throw new Error(`error ${res.status}`);
     }
-
-    const data = await res.json();
-
-    return data;
+    return res;
   } catch (err) {
     console.log(err);
   }
@@ -25,16 +22,20 @@ $(".children-form").on("submit", function (event) {
   const data = $(".children-form").serializeArray();
   mainApi(data)
     .then((res) => {
-      $(".call-title").html("Спасибо!");
-      $(".call-text")
-        .html("Наши менеджеры свяжутся с вами в указанное время")
-        .css("margin-bottom", "0");
-      $(
-        ".children-form.order-form, .call-text-down, .call-text-down-link"
-      ).slideUp({ duration: "fast", easing: "linear" });
-      console.log(res);
+      if (res.ok) {
+        swal({
+          type: "success",
+          title: 'Спасибо! Ваша заявка будет обработана',
+          text: 'Наш менеджер с вами свяжется в указанное время',
+        })
+      }
     })
     .catch((err) => {
+      swal({
+        type: "error",
+        title: 'Извините, ваша заявка не отправлена',
+        text: 'Что-то пошло не так мы уже работаем над ошибкой'
+      })
       console.log(err);
     });
 });
@@ -44,16 +45,44 @@ $(".map-form").on("submit", function (event) {
   const data = $(".map-form").serializeArray();
   mainApi(data)
     .then((res) => {
-      $(".map-form__subtitle").html("Спасибо!");
-      $(".map-form__title")
-        .html("За обратную связь")
-        .css("margin-bottom", "0");
-      $(
-        ".map-form-row"
-      ).slideUp({ duration: "fast", easing: "linear" });
-      console.log(res);
+      if (res.ok) {
+        swal({
+          type: "success",
+          title: 'Спасибо!',
+          text: 'Ваша заявка будет обработана и наш менеджер с вами свяжется',
+        })
+      }
     })
     .catch((err) => {
+      swal({
+        type: "error",
+        title: 'Извините, ваша заявка не отправлена',
+        text: 'Что-то пошло не так мы уже работаем над ошибкой'
+      })
+      console.log(err);
+    });
+});
+
+$(".price-form").on("submit", function (event) {
+  event.preventDefault();
+  const data = $(".price-form").serializeArray();
+  mainApi(data)
+    .then((res) => {
+      if (res.ok) {
+        swal({
+          type: "success",
+          title: 'Спасибо!',
+          text: 'Ваша заявка будет обработана и наш менеджер с вами свяжется',
+        })
+        this.reset();
+      }
+    })
+    .catch((err) => {
+      swal({
+        type: "error",
+        title: 'Извините, ваша заявка не отправлена',
+        text: 'Что-то пошло не так мы уже работаем над ошибкой'
+      })
       console.log(err);
     });
 });
