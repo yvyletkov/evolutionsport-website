@@ -489,31 +489,341 @@
     </section>
 </main>
 
-<!--scripts loaded here-->
-<div class="container contacts nopadding-top">
-    <div class="row">
-        <div class="col-md-6 col-xs-12">
-            <img src="../img/index/map-foot.jpg" class="img-fluid">
-            <!--div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/evolyutsiya/1232432804/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Эволюция</a><a href="https://yandex.ru/maps/977/republic-of-crimea/category/sports_center/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Спортивный комплекс в Республике Крым</a><a href="https://yandex.ru/maps/977/republic-of-crimea/category/sports_field/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивная база в Республике Крым</a><iframe src="https://yandex.ru/map-widget/v1/-/CKacmA~k" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div-->
+<!--Popup SAN RESORT TREATMENT window with contact form-->
+<style>
+    .popup-wrapper {
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .popup {
+        box-sizing: border-box;
+        width: 485px;
+        padding: 0 20px;
+        background: #f6f6f6;
+        position: relative;
+        box-shadow: -7px 9px 50px -4px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+    }
+
+    @media screen and (max-width: 768px) {
+        .popup {
+            width: 100%;
+        }
+
+        .popup-wrapper {
+            background: rgba(0, 0, 0, .7);
+        }
+    }
+
+    .popup__close-btn {
+        cursor: pointer;
+        color: #989898;
+        position: absolute;
+        top: 3px;
+        right: 9px;
+        font-size: 18px;
+    }
+
+    .popup__close-btn:hover {
+        color: #212121;
+    }
+
+    .popup__close-btn span {
+        margin-right: 5px;
+        vertical-align: 3px;
+        font-size: 9px;
+    }
+
+    .popup__content {
+        margin-top: 36px;
+        margin-bottom: 27px;
+    }
+
+    .popup__content p {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .popup__checkboxes-wrapper {
+        color: #cecece;
+    }
+
+    .popup__checkboxes-wrapper, .popup__form-wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .popup__form-wrapper {
+        width: 195px;
+        flex-direction: column;
+    }
+
+    .popup-checkbox {
+        position: absolute;
+        opacity: 0;
+        display: inline-block;
+    }
+
+    .popup-checkbox + label {
+        font-family: "Roboto", sans-serif;
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        font-size: 11px;
+        margin-right: 20px;
+    }
+
+    .popup-checkbox + label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 16px;
+        height: 14px;
+        background: white;
+        border: 1px solid #b8b8b8;
+    }
+
+    .popup-checkbox:hover + label:before {
+        background: #b8b8b8;
+    }
+
+    .popup-checkbox:checked + label:before {
+        background: #494949;
+        border: none;
+    }
+
+    .popup-checkbox:disabled + label {
+        color: #b8b8b8;
+        cursor: auto;
+    }
+
+    .popup-checkbox:disabled + label:before {
+        box-shadow: none;
+        background: #ddd;
+    }
+
+    .popup-checkbox:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: 7px;
+        background: white;
+        width: 2px;
+        height: 2px;
+        box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+        transform: rotate(45deg);
+    }
+
+    .popup__btn, .popup__btn_submit {
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        font-size: 11px;
+        width: 195px;
+        height: 27px;
+        background: #2c87c3;
+        margin: 0 auto;
+        margin-bottom: 46px;
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup__btn:hover, .popup__btn_submit:hover {
+        background: #297cb3;
+    }
+
+    .hidden {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+
+    .popup__form__input {
+        font-size: 12px;
+        padding-bottom: 7px;
+        padding-left: 0;
+        background: none;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #989898;
+        width: 195px;
+    }
+
+    .popup__form__input::placeholder {
+        font-size: 10px;
+    }
+
+    .popup__form__footer-text {
+        position: absolute;
+        text-align: center;
+        bottom: -20px;
+    }
+
+    .thanks-content {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px
+    }
+
+    .thanks-content + span {
+        font-weight: normal;
+        font-size: 13px;
+        margin-top: 60px;
+        line-height: 1.4;
+    }
+</style>
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup__header">
+            <div class="popup__close-btn"><span>Скрыть</span>×</div>
         </div>
-        <div class="col-md-6 col-xs-12 contacts-right">
-            <div class="blue-stripe blue-title">Контакты<span>нашего центра</span></div>
-            <div class="contacts-description">
-                г. Евпатория, Крым
-                <span>297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул. Аллея Дружбы, 1</span>
-            </div>
-            <div class="icons-footer">
-                <a href="https://pornhub.com"><img src="../img/icons/vk.png"></a>
-                <a href="https://pornhub.com"><img src="../img/icons/inst.png"></a>
-                <a href="https://pornhub.com"><img src="../img/icons/fb.png"></a>
-            </div>
-            <div class="footer-phone">
-                Звонить по номеру телефона
-                <a href="tel:88007771826">8 (800) 777-18-26</a>
-            </div>
+        <div class="popup__content">
+            <p>Вы уже были в санаториях?</p>
         </div>
+        <div class="popup__checkboxes-wrapper">
+            <input name="form-name" value="Sanatorium treatment quiz" type="hidden">
+            <input class="popup-checkbox" id="yes-checkbox" type="radio" name="answer">
+            <label for="yes-checkbox">Да, был/была</label>
+            <input class="popup-checkbox" id="no-checkbox" type="radio" name="answer">
+            <label for="no-checkbox">Нет, не был/не была</label>
+        </div>
+        <div class="popup__form-wrapper hidden">
+            <form class="popup__form">
+                <input class="popup__form__input" placeholder="Ваше имя" id="name" name="name" type="text">
+                <input required class="popup__form__input" placeholder="Ваш телефон*" name="phone" type="tel"
+                       id="phone">
+                <input required class="popup__form__input" placeholder="Ваш Email*" id="email" name="email"
+                       type="email">
+                <button class="popup__btn_submit">Отправить</button>
+                <span class="popup__form__footer-text">*поля, обязательные для заполнения</span>
+            </form>
+        </div>
+        <div class="popup__btn">Далее</div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script>
+        $("#phone").mask("+7(999)999-9999");
+        $(document).ready(function () {
+            $(".btn.btn_blue.advantages__order").on("click", (e) => {
+                e.preventDefault();
+                $(".popup-wrapper").css("display", "flex");
+                $(".popup").removeClass("hidden")
+                $(".popup-wrapper").removeClass("hidden")
+            });
+            $(".popup__btn").click(function () {
+
+                $(".popup__btn").off("click");
+
+                if ($("#yes-checkbox").prop("checked")) {
+
+                    $(".popup__content p").html("Подсказать чем лучше наши программы?");
+                    $("#yes-checkbox + label").html("Да, подскажите");
+                    $("#no-checkbox + label").html("Нет, не хочу знать");
+                    $("#yes-checkbox").prop("checked", false);
+
+                    $(".popup__btn").click(function () {
+                        if ($("#yes-checkbox").prop("checked")) {
+                            $(".popup__checkboxes-wrapper").addClass("hidden");
+                            $(".popup__btn").addClass("hidden");
+                            $(".popup__form-wrapper").removeClass("hidden");
+                            $(".popup__content p").html("Оставляйте свои контакты,<br/>и мы с радостью подскажем преимущества программы:");
+                        } else {
+                            $(".popup__content p").html("Это бесплатно и займет несколько минут,<br/>разрешите помочь Вам в выборе?");
+                            $("#yes-checkbox + label").html("Да, давайте");
+                            $("#тo-checkbox + label").html("Нет, спасибо");
+                            $("#no-checkbox").prop("checked", false);
+
+                            $("#no-checkbox").click(() => {
+                                $(".popup__btn").html("Закрыть");
+                                $(".popup__btn").click(function () {
+                                    $(".popup").addClass("hidden")
+                                    $(".popup-wrapper").addClass("hidden")
+                                })
+                            });
+                            $("#yes-checkbox").click(() => {
+                                $(".popup__btn").html("Далее");
+                                $(".popup__btn").off("click");
+                                $(".popup__btn").click(function () {
+                                    $(".popup__checkboxes-wrapper").addClass("hidden");
+                                    $(".popup__btn").addClass("hidden");
+                                    $(".popup__form-wrapper").removeClass("hidden");
+                                    $(".popup__content p").html("Оставляйте свои контакты,<br/>и мы с радостью поможем в выборе:");
+                                })
+                            })
+                        }
+                    })
+                } else {
+                    $("#no-checkbox").prop("checked", false);
+
+                    $(".popup__content p").html("Подсказать, чем лучше наши программы?");
+                    $("#yes-checkbox + label").html("Да, мне нужна консультация");
+                    $("#no-checkbox + label").html("Нет, я уже знаю что выбрать");
+
+                    $(".popup__btn").click(function () {
+                        if ($("#yes-checkbox").prop("checked")) {
+                            $(".popup__checkboxes-wrapper").addClass("hidden");
+                            $(".popup__btn").addClass("hidden");
+                            $(".popup__form-wrapper").removeClass("hidden");
+                            $(".popup__content p").html("Оставляйте свои контакты,<br/>и мы с радостью проконсультируем Вас:");
+                        }
+                        else {
+                            $(".popup__checkboxes-wrapper").addClass("hidden");
+                            $(".popup__btn").addClass("hidden");
+                            $(".popup__form-wrapper").removeClass("hidden");
+                            $(".popup__content p").html("Отлично, оставьте свои контакты,<br/>и мы с радостью поможем оформить заявку:");
+                        }
+                    })
+
+                }
+            })
+        });
+        $(".popup__close-btn").click(function () {
+            $(".popup").addClass("hidden");
+            $(".popup-wrapper").addClass("hidden");
+        });
+        $(".popup__form").submit((e) => {
+            e.preventDefault();
+            $.ajax({
+                url: "http://95.181.172.100/erp/mock",
+                type: "POST",
+                data: $('.popup__form').serialize(),
+                success: function (response) {
+                    $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
+                    $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                    $(".popup__btn").html("Вернуться к сайту");
+                    $(".popup__btn").removeClass("hidden");
+                    $(".popup__btn").click(function () {
+                        $(".popup").addClass("hidden");
+                        $(".popup-wrapper").addClass("hidden");
+                    });
+                },
+                error: function (response) {
+                    console.log("ОШИБКА", response)
+                }
+            });
+        })
+    </script>
 </div>
+<!--END -- Popup SAN RESORT TREATMENT window with contact form -- END-->
+
+<!--scripts loaded here-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="../js/tiny-slider.js"></script>

@@ -2033,6 +2033,7 @@ button {
 }
 
 .advantages__order {
+    z-index: 100000;
     position: fixed;
     left: 48px;
     bottom: 200px;

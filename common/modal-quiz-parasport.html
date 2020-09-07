@@ -207,6 +207,7 @@
             <p>Вы уже занимались параспортом?</p>
         </div>
         <div class="popup__checkboxes-wrapper">
+            <input name="form-name" value="Parasport quiz" type="hidden">
             <input class="popup-checkbox" id="yes-checkbox" type="radio" name="answer">
             <label for="yes-checkbox">Да, занимался(-ась)</label>
             <input class="popup-checkbox" id="no-checkbox" type="radio" name="answer">
@@ -229,7 +230,12 @@
     <script>
         $("#phone").mask("+7(999)999-9999");
         $(document).ready(function () {
-            $(".popup-wrapper").css("display", "flex");
+            $(".btn.btn_blue.advantages__order").on("click", (e) => {
+                e.preventDefault();
+                $(".popup-wrapper").css("display", "flex");
+                $(".popup").removeClass("hidden")
+                $(".popup-wrapper").removeClass("hidden")
+            });
             $(".popup__btn").click(function () {
 
                 $(".popup__btn").off("click");
