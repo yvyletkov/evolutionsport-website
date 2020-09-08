@@ -2971,6 +2971,11 @@ a.article:hover {
     background-position:10px;
     padding-left:36px;
 }
+.input-image.direction {
+    background: white url(../assets/images/program-icon.png) left no-repeat;
+    background-position:10px;
+    padding-left:36px;
+}
 .input-image.stadium {
     background: white url(../img/watersport/stadium.png) left no-repeat;
     background-position:10px;

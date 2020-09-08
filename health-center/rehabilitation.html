@@ -8,15 +8,16 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <!-- Подключаем слайдер-->
-    <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css" />
+    <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css"/>
     <!-- -->
     <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
     <link rel="stylesheet" href="../css/all.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
+          rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
     <link rel="stylesheet" href="../assets/styles/app.css"/>
     <link rel="stylesheet" href="../assets/styles/additional.css"/>
@@ -28,6 +29,7 @@
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
+    <script src="../js/health-center-calc-form.js"></script>
     <title>Реабилитация</title>
 
 </head>
@@ -46,48 +48,49 @@
             </div>
             <div class="banner-img"><img src="../assets/images/reabInd.png" alt="Реабилитация"/></div>
             <p class="banner__placeholder">Лечение</p>
-            <form class="banner-form">
-                <input class="hiddenInputForSelectors" type="text" style="display: none;"/>
+
+            <form id="health-center-calc-form" class="banner-form">
+                <input name="form-name" value="health-center-cost-calc" type="hidden">
+
+                <select id="health-center-directions" name="direction" required
+                        class="input-image direction label-view select-controller label label-view__input">
+                    <option disabled selected value>Выберите направление</option>
+                    <option value="rehabilitation">Реабилитация</option>
+                    <option value="sanatorium">Санаторно-курортное лечение</option>
+                    <option value="parasport">Параспорт</option>
+                </select>
+                <select id="health-center-programs" name="program" required
+                        class="input-image direction label-view select-controller label label-view__input">
+                    <option disabled selected value>Выберите программу</option>
+                    <option value="rehabilitation">Реабилитация</option>
+                    <option value="sanatorium">Санаторно-курортное лечение</option>
+                    <option value="parasport">Параспорт</option>
+                </select>
+                <select name="duration" required
+                        class="input-image direction label-view select-controller label label-view__input">
+                    <option disabled selected value>Выберите продолжительность</option>
+                    <option value="14">14 дней</option>
+                    <option value="18">18 дней</option>
+                    <option value="24">24 дня</option>
+                </select>
+
                 <label class="label">
-                    <div class="label-view select-controller">
-                        <div class="label-view-imgbox"><img src="../assets/images/program-icon.png" alt="program-icon"/>
-                        </div>
-                        <div class="label-view__placeholder">Выбрать программу</div>
-                        <div class="label-view__value"></div>
-                        <div class="label-view__triangle"></div>
-                    </div>
-                    <div class="select-dropDown" data-value="">
-                        <div class="select-dropDown__item">123</div>
-                        <div class="select-dropDown__item">123</div>
-                    </div>
-                </label>
-                <label class="label">
-                    <div class="label-view select-controller">
-                        <div class="label-view-imgbox"><img src="../assets/images/calendar-icon.png"
-                                                            alt="calendar-icon"/></div>
-                        <div class="label-view__placeholder">Выбрать программу</div>
-                        <div class="label-view__value"></div>
-                        <div class="label-view__triangle"></div>
-                    </div>
-                    <div class="select-dropDown" data-value="">
-                        <div class="select-dropDown__item">123</div>
-                        <div class="select-dropDown__item">123</div>
+                    <div class="label-view">
+                        <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/></div>
+                        <input name="number-of-rehabilitants" required maxlength="2" max="99" min="1"
+                               class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
                     </div>
                 </label>
                 <label class="label">
                     <div class="label-view">
                         <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/></div>
-                        <input class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
-                    </div>
-                </label>
-                <label class="label">
-                    <div class="label-view">
-                        <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/></div>
-                        <input class="label-view__input" type="number" placeholder="Количество сопровождающих"/>
+                        <input name="number-of-guests" required max="99" min="0" class="label-view__input" type="number"
+                               placeholder="Количество сопровождающих"/>
                     </div>
                 </label>
                 <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
             </form>
+
         </div>
     </section>
     <section class="carousel">
@@ -95,31 +98,56 @@
             <h2 class="defaultTitle carousel__title">Программы</h2>
             <p class="defaultSubtitle carousel__subtitle">Отражение сущности объекта</p>
             <div class="carousel__title"></div>
-            <div class="carousel-slider"><a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl1.png');" href="#">
-                <p class="carousel-slider-item__before">— Абилитация</p>
-                <div class="carousel-slider-item__title">Активное долголетие</div>
-                <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах позвоночника.</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl2.png');" href="#">
-                <p class="carousel-slider-item__before">— Реабилитация</p>
-                <div class="carousel-slider-item__title">Инсульт</div>
-                <p class="carousel-slider-item__text">При последствиях перенесенного инсульта </p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl3.png');" href="#">
-                <p class="carousel-slider-item__before">— Спорт</p>
-                <div class="carousel-slider-item__title">Доступный спорт</div>
-                <p class="carousel-slider-item__text">Общее физическое развитие людей с ограниченными возможностями </p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl1.png');" href="#">
-                <p class="carousel-slider-item__before">— Абилитация</p>
-                <div class="carousel-slider-item__title">Активное долголетие</div>
-                <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах позвоночника.</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl2.png');" href="#">
-                <p class="carousel-slider-item__before">— Реабилитация</p>
-                <div class="carousel-slider-item__title">Инсульт</div>
-                <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах позвоночника.</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a><a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl3.png');" href="#">
-                <p class="carousel-slider-item__before">— Спорт</p>
-                <div class="carousel-slider-item__title">Активное долголетие</div>
-                <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах позвоночника.</p>
-                <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></div></a></div>
+            <div class="carousel-slider">
+                <a class="carousel-slider-item"
+                   style="background-image: url('../assets/images/reabSl1.png');" href="#">
+                    <p class="carousel-slider-item__before">— Абилитация</p>
+                    <div class="carousel-slider-item__title">Активное долголетие</div>
+                    <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах
+                        позвоночника.</p>
+                    <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></div>
+                </a>
+                <a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl2.png');" href="#">
+                    <p class="carousel-slider-item__before">— Реабилитация</p>
+                    <div class="carousel-slider-item__title">Инсульт</div>
+                    <p class="carousel-slider-item__text">При последствиях перенесенного инсульта </p>
+                    <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></div>
+                </a>
+                <a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl3.png');" href="#">
+                    <p class="carousel-slider-item__before">— Спорт</p>
+                    <div class="carousel-slider-item__title">Доступный спорт</div>
+                    <p class="carousel-slider-item__text">Общее физическое развитие людей с ограниченными
+                        возможностями </p>
+                    <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></div>
+                </a>
+                <a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl1.png');" href="#">
+                    <p class="carousel-slider-item__before">— Абилитация</p>
+                    <div class="carousel-slider-item__title">Активное долголетие</div>
+                    <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах
+                        позвоночника.</p>
+                    <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></div>
+                </a>
+                <a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl2.png');" href="#">
+                    <p class="carousel-slider-item__before">— Реабилитация</p>
+                    <div class="carousel-slider-item__title">Инсульт</div>
+                    <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах
+                        позвоночника.</p>
+                    <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></div>
+                </a>
+                <a class="carousel-slider-item" style="background-image: url('../assets/images/reabSl3.png');" href="#">
+                    <p class="carousel-slider-item__before">— Спорт</p>
+                    <div class="carousel-slider-item__title">Активное долголетие</div>
+                    <p class="carousel-slider-item__text">При нарушениях опорно-двигательного аппарата и травмах
+                        позвоночника.</p>
+                    <div class="btn btn_accent carousel-slider-item__btn">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></div>
+                </a>
+            </div>
         </div>
     </section>
     <section class="stat">
@@ -145,86 +173,222 @@
                                                             src="../assets/images/reab-textbl-2.png" alt=""/></div>
             <div class="textBlock-desc" style="align-self: flex-end; padding-bottom: 20px;">
                 <h2 class="textBlock-desc__title">Реабилитационный<br/>центр</h2>
-                <img class="textBlock-images__img_mobile" src="../assets/images/rehabilitation-img-mobile.jpg" alt="Реабилитационный центр">
-                <p class="textBlock-desc__text">Реабилитационный центр в Крыму «Эволюция» является уникальной площадкой, где каждый может улучшить здоровье и повысить качество жизни. Доступная среда центра с общей территорией 64 га позволяет нашим гостям свободно перемещаться по территории, забывая о сложностях, с которыми они могут столкнуться в повседневной жизни. А собственный песчаный пляж длиной 1 км и целебный воздух западного побережья способствует повышению иммунитета и улучшению общего состояния здоровья. Большая медицинская база нашего центра позволяет принимать большое количество гостей, приезжающих с целью реабилитации и оздоровления.</p>
+                <img class="textBlock-images__img_mobile" src="../assets/images/rehabilitation-img-mobile.jpg"
+                     alt="Реабилитационный центр">
+                <p class="textBlock-desc__text">Реабилитационный центр в Крыму «Эволюция» является уникальной площадкой,
+                    где каждый может улучшить здоровье и повысить качество жизни. Доступная среда центра с общей
+                    территорией 64 га позволяет нашим гостям свободно перемещаться по территории, забывая о сложностях,
+                    с которыми они могут столкнуться в повседневной жизни. А собственный песчаный пляж длиной 1 км и
+                    целебный воздух западного побережья способствует повышению иммунитета и улучшению общего состояния
+                    здоровья. Большая медицинская база нашего центра позволяет принимать большое количество гостей,
+                    приезжающих с целью реабилитации и оздоровления.</p>
             </div>
         </div>
     </section>
     <section class="video">
         <div class="video-wrap">
             <p class="defaultTitle video__title">Как проходит реабилитация?</p>
-            <p class="defaultSubtitle video__subtitle">Отражение сущности</p><iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--            <p class="defaultSubtitle video__subtitle">Отражение сущности</p>-->
+            <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
         </div>
     </section>
-    <section class="supa">
+    <section style="padding-top: 0" class="supa">
         <div class="supa-wrap">
             <p class="defaultTitle supa__title">Проживание</p>
             <p class="defaultSubtitle supa__subtitle">Выбери корпус размещения</p>
-            <div class="supaSlider owl-carousel">
+            <div class="supaSlider living owl-carousel">
+
                 <div class="supaSlider-item">
                     <div class="supaSlider-insideSliderBlock">
-                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
                         <div class="supaSlider-insideSliderBlock-num">
                             <div class="supaSlider-insideSliderBlock-num__current">01</div>
                             <div class="supaSlider-insideSliderBlock-num__all">04</div>
                         </div>
-                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
-                            <p class="supaSlider-item-desc-top__title">Корпус<br>Реабилитационный</p>
+                            <p class="supaSlider-item-desc-top__title">Корпус<br>Мирный</p>
                             <div class="supaSlider-item-desc-top-right">
-                                <div class="supaSlider-item-desc-top-right__icon"><img src="../assets/images/wave_gray.png" alt=""/></div>
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
                                 <p class="supaSlider-item-desc-top-right__text">200 м. до моря</p>
                             </div>
                         </div>
                         <div class="supaSlider-item-desc-main">
-                            <p class="supaSlider-item-desc-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. </p>
-                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>2 500 РУБ.</span></div>
+                            <p class="supaSlider-item-desc-main__text">4-х этажное здание со столовой зоной на 1 этаже,
+                                расположено в 200м от моря. Для удобства наших гостей предусмотрен лифт, пандусы и
+                                сейфовые ячейки. А окна с выходом на море, озеро и парковую зону создадут невероятную
+                                атмосферу.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span>
+                            </div>
                         </div>
                         <div class="supaSlider-item-desc__placeholder">Проживание</div>
                     </div>
                 </div>
+
                 <div class="supaSlider-item">
                     <div class="supaSlider-insideSliderBlock">
-                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
                         <div class="supaSlider-insideSliderBlock-num">
                             <div class="supaSlider-insideSliderBlock-num__current">01</div>
                             <div class="supaSlider-insideSliderBlock-num__all">04</div>
                         </div>
-                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
-                            <p class="supaSlider-item-desc-top__title">Корпус<br>Реабилитационный</p>
+                            <p class="supaSlider-item-desc-top__title">Корпус<br>Пограничный</p>
                             <div class="supaSlider-item-desc-top-right">
-                                <div class="supaSlider-item-desc-top-right__icon"><img src="../assets/images/wave_gray.png" alt=""/></div>
-                                <p class="supaSlider-item-desc-top-right__text">200 м. до моря</p>
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
+                                <p class="supaSlider-item-desc-top-right__text">100 м. до моря</p>
                             </div>
                         </div>
                         <div class="supaSlider-item-desc-main">
-                            <p class="supaSlider-item-desc-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. </p>
-                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>2 500 РУБ.</span></div>
+                            <p class="supaSlider-item-desc-main__text">4-х этажное здание со столовой зоной на 2 этаже,
+                                расположено в 100м от моря. Для удобства наших гостей предусмотрен лифт, пандусы и
+                                сейфовые ячейки. А окна с выходом на море, озеро и парковую зону создадут невероятную
+                                атмосферу.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span>
+                            </div>
                         </div>
                         <div class="supaSlider-item-desc__placeholder">Проживание</div>
                     </div>
                 </div>
+
+                <div class="supaSlider-item">
+                    <div class="supaSlider-insideSliderBlock">
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock-num">
+                            <div class="supaSlider-insideSliderBlock-num__current">01</div>
+                            <div class="supaSlider-insideSliderBlock-num__all">04</div>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
+                    </div>
+                    <div class="supaSlider-insideSlider">
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                    </div>
+                    <div class="supaSlider-item-desc">
+                        <div class="supaSlider-item-desc-top">
+                            <p class="supaSlider-item-desc-top__title">Корпус<br>Спортивный</p>
+                            <div class="supaSlider-item-desc-top-right">
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
+                                <p class="supaSlider-item-desc-top-right__text">800 м. до моря</p>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item-desc-main">
+                            <p class="supaSlider-item-desc-main__text">3-х этажное здание со столовой зоной на 1 этаже,
+                                расположено на берегу озеро в 800 м от моря. Для удобства наших гостей предусмотрен
+                                лифт, пандусы и сейфовые ячейки. А окна с выходом на озеро и парковую зону создадут
+                                невероятную атмосферу уюта.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item-desc__placeholder">Проживание</div>
+                    </div>
+                </div>
+
+                <div class="supaSlider-item">
+                    <div class="supaSlider-insideSliderBlock">
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock-num">
+                            <div class="supaSlider-insideSliderBlock-num__current">01</div>
+                            <div class="supaSlider-insideSliderBlock-num__all">04</div>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
+                    </div>
+                    <div class="supaSlider-insideSlider">
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                    </div>
+                    <div class="supaSlider-item-desc">
+                        <div class="supaSlider-item-desc-top">
+                            <p class="supaSlider-item-desc-top__title">Корпус<br>Звездный</p>
+                            <div class="supaSlider-item-desc-top-right">
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
+                                <p class="supaSlider-item-desc-top-right__text">25 м. до моря</p>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item-desc-main">
+                            <p class="supaSlider-item-desc-main__text">Номера площадью от 40 кв.м. с отдельным входом и
+                                террасой, оборудованной тентом, шезлонгами и столиком. В 25 метрах до пляжа и шикарным
+                                видом на море. В номерах: гостиная, мягкая мебель, телевизор, холодильник, спальни,
+                                ванная комната Уборка номера производится ежедневно, банные полотенца меняются по
+                                требованию.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>2 500 РУБ.</span>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item-desc__placeholder">Проживание</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -279,11 +443,14 @@
         <div class="textImg-wrap">
             <div class="textImg-wrap-imgbox">
                 <p class="textImg-wrap-imgbox__secondName">Колпаков</p>
-                <div class="textImg-wrap-imgbox-img"><img class="textImg-wrap-imgbox-img__img" src="../assets/images/kolpakov.jpeg" alt=""/></div>
+                <div class="textImg-wrap-imgbox-img"><img class="textImg-wrap-imgbox-img__img"
+                                                          src="../assets/images/kolpakov.jpeg" alt=""/></div>
             </div>
             <div class="textImg-wrap-desc">
                 <p class="textImg-wrap-desc__title">Мы знаем,<br><span>что для Вас важно</span></p>
-                <p class="textImg-wrap-desc__text">Идейный вдохновитель, куратор и организатор программ  - Олег Колпаков. Регбист-колясочник из Керчи, координатор реабилитационной деятельности в Центре спорта Эволюция более 10 лет, чемпион и призер соревнований по Бочче на колясках.</p>
+                <p class="textImg-wrap-desc__text">Идейный вдохновитель, куратор и организатор программ - Олег Колпаков.
+                    Регбист-колясочник из Керчи, координатор реабилитационной деятельности в Центре спорта Эволюция
+                    более 10 лет, чемпион и призер соревнований по Бочче на колясках.</p>
             </div>
         </div>
     </section>

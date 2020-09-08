@@ -23,9 +23,10 @@ $('.children-form').on('submit' ,function( event ) {
             });
 });
 
-$('.map-form').on('submit' ,function( event ) {
+$('.map-form, #health-center-calc-form').on('submit', function( event ) {
+    debugger
     event.preventDefault();
-    const data = $('.map-form').serializeArray();
+    const data = $('.map-form, #health-center-calc-form').serializeArray();
         // fetch('http://95.181.172.100/erp/mock/', {
         //     method: 'POST',
         //     headers: {
@@ -33,9 +34,10 @@ $('.map-form').on('submit' ,function( event ) {
         //       },
         //     body: JSON.stringify(data),
         //   })
+        debugger
         mainApi(data)
-            .then((res) => {
-                console.log(res)
+            .then((response) => {
+                console.log(response)
               // return Promise.reject(res.status);
             });
 });

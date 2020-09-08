@@ -59,7 +59,7 @@ $(document).ready(function () {
             slidesToShow: 3,
             slidesToScroll: 1,
             centerMode: true,
-            adaptiveHeight: true,
+            adaptiveHeight: false,
             centerPadding: "0px",
             prevArrow:
                 '<div class="carousel-slider__prev"><img style="transform: rotate(180deg);" src="../assets/images/arrowSlider.png"></div>',

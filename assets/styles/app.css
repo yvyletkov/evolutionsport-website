@@ -470,9 +470,23 @@ button {
     /*box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.49);*/
 }
 
+#subscriptions .bannerWrap{
+    -webkit-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.49);
+}
+#subscriptions .bannerBg, #rehabilitation .bannerBg, #health-center .bannerBg {
+    top: 0;
+}
+
 .bannerWrap.bannerWrap_reab .banner-desc__title {
     font-size: 58px;
-    line-height: 1.18;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 768px){
+    #sanatorium .slick-slider, #rehabilitation .slick-slider, #parasport .slick-slider, #health-center .slick-slider {
+        margin-bottom: 35px;
+    }
 }
 
 .bannerWrap.banner_children-wrap {
@@ -901,7 +915,7 @@ button {
     position: relative;
     width: 350px;
     height: 350px;
-    z-index: 3;
+    z-index: 0;
 }
 
 .bannerWrap .banner-img img {
@@ -996,8 +1010,8 @@ button {
 }
 
 .label-view {
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.61) inset;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.61) inset;
+    /*-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.61) inset;*/
+    /*box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.61) inset;*/
     cursor: pointer;
     height: 36px;
     background-color: #fff;
@@ -1012,12 +1026,13 @@ button {
     align-items: center;
     position: relative;
     z-index: 6;
+    padding-right: 10px;
 }
 
 .label-view__input {
     border: none;
     font-size: 14px;
-    color: #000;
+    color: #acacac;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -1027,23 +1042,23 @@ button {
 }
 
 .label-view__input::-webkit-input-placeholder {
-    color: #acacac;
+    color: #acacac !important;
 }
 
 .label-view__input::-moz-placeholder {
-    color: #acacac;
+    color: #acacac !important;
 }
 
 .label-view__input:-ms-input-placeholder {
-    color: #acacac;
+    color: #acacac !important;
 }
 
 .label-view__input::-ms-input-placeholder {
-    color: #acacac;
+    color: #acacac !important;
 }
 
 .label-view__input::placeholder {
-    color: #acacac;
+    color: #acacac !important;
 }
 
 .label-view-imgbox {
@@ -1051,7 +1066,7 @@ button {
     padding: 0 7px 0 10px;
     width: 31px;
     height: 24px;
-    border-right: 1px solid #d1d1d1;
+    /*border-right: 1px solid #d1d1d1;*/
 }
 
 .label-view-imgbox img {
@@ -8195,6 +8210,13 @@ button {
     transform: translate3d(0, 0, 0);
 }
 
+#subscriptions-slider .slick-slider .slick-track,
+#subscriptions-slider .slick-slider .slick-list {
+    border-radius: 11px;
+}
+
+
+
 .slick-track {
     position: relative;
     left: 0;
@@ -8795,7 +8817,7 @@ button {
 
 @media screen and (max-width: 1023px) {
 
-    #health-center-directions, #parasport-derections {
+    #health-center-directionss, #parasport-derections {
         display: none;
     }
 
