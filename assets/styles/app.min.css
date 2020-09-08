@@ -1145,6 +1145,7 @@ button {
   .tarifes-list-item-prices__new.tarifes-list-item-prices__new {
     font-size: 20px;
     width: 97px;
+    text-align: center;
   }
   #icons__about-ow {
     display: none;
@@ -1329,6 +1330,7 @@ button {
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 55px;
+  height:92px;
 }
 
 .sea .sea__wrapper .sea-items .sea-item .sea-box {
@@ -1491,7 +1493,7 @@ button {
 
 .active .active__wrapper .active__wrapper-bg {
   position: absolute;
-  top: 170px;
+  top: 110px;
   right: 10px;
   z-index: -1;
 }
@@ -1527,7 +1529,7 @@ button {
   position: relative;
   margin-left: 22px;
   line-height: 45px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .active .active__wrapper .active__box .active__item-title:before {
@@ -1549,7 +1551,7 @@ button {
 }
 
 .active .active__wrapper .active__box .active__item-text {
-  margin-bottom: 125px;
+  margin-bottom: 75px;
   max-width: 400px;
 }
 
@@ -4348,6 +4350,11 @@ button {
   color: #646464;
   text-decoration: line-through;
   margin-right: 20px;
+  display: none;
+}
+
+.tarifes-list-item-prices__old.active {
+  display: flex;
 }
 
 .tarifes-list-item-prices__new {
@@ -8442,6 +8449,9 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .gallery_children .gallery-left-desc {
+    margin-bottom: 30px;
+  }
   .hero h1 {
     padding-top: 100px;
   }

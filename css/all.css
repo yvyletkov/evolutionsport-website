@@ -167,7 +167,7 @@ body {
 }
 
 .button-blue:hover {
-  background: #508edf;
+  background: #2d4e7a;
   text-decoration: none;
   color: #fff;
 }
@@ -698,6 +698,7 @@ html{
   display: inline-block;
   width: 35px;
   height: 25px;
+  cursor: pointer;
 }
 
 #sidebarCollapse span { 
@@ -1047,11 +1048,15 @@ html{
   padding: 20px 0;
 }
 
-.news-subtitle {
-  display: block;
+.news-subtitle.news-subtitle {
   font-weight: 300;
   font-size: 15px;
   margin: 15px 0 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  /* flex:1 0 auto; */
 }
 
 #about-us-slide .active + .lslide + .lslide,
@@ -7585,6 +7590,9 @@ html{
   color: #474747;
   font-weight: 500;
   padding: 20px 0;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .news-subtitle {
@@ -7628,6 +7636,11 @@ html{
 
 .news-details .button-red {
   padding: 16px 60px;
+}
+
+.news-details .button-blue {
+  padding: 16px 60px;
+  flex:0 0 auto;
 }
 
 .absolute-living {

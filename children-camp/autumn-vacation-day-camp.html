@@ -705,13 +705,13 @@
           <section class="tarifes">
             <div class="tarifes-wrap">
               <h2 class="defaultTitle tarifes__title">Тарифы</h2>
-              <div class="tarifes-list">
+              <form class="tarifes-list">
                 <div class="tarifes-list-item">
                   <div class="tarifes-list-item__head">
-                    <p>Зимний<br /><span>дневной лагерь</span></p>
+                    <p>Осенний<br /><span>дневной лагерь</span></p>
                   </div>
                   <div class="tarifes-list-item-body">
-                    <p class="tarifes-list-item__when">28.12-08.01</p>
+                    <p class="tarifes-list-item__when">24 октября — 1 ноября 2020</p>
                     <ul class="tarifes-list-item-ul">
                       <li class="tarifes-list-item-ul__li">
                         Посещение бассеина
@@ -735,30 +735,27 @@
                     <div class="tarifes-list-item-row">
                                 <p class="tarifes-list-item-row__title">Количество детей</p>
                                 <div class="tarifes-list-item-row__minus">-</div>
-                                <p class="tarifes-list-item-row__item">1</p>
+                                <p class="tarifes-list-item-row__item" id="child-num">1</p>
                                 <div class="tarifes-list-item-row__plus">+</div>
                             </div>
                             <div class="tarifes-list-item-row">
                                 <p class="tarifes-list-item-row__title">Количество дней</p>
                                 <div class="tarifes-list-item-row__minus">-</div>
-                                <p class="tarifes-list-item-row__item">1</p>
+                                <p class="tarifes-list-item-row__item" id="days-num">1</p>
                                 <div class="tarifes-list-item-row__plus">+</div>
                   </div>
                   <div class="tarifes-list-item-row">
-                    <a class="btn btn_darkblue tarifes-list-item__btn" href="#"
-                      >Забронировать</a
-                    >
+                    <button class="btn btn_darkblue tarifes-list-item__btn">Забронировать</button>
                     <div class="tarifes-list-item-prices">
-                      <p class="tarifes-list-item-prices__new" id="new__price-first">
-                        18000&nbsp;<span>руб</span>
-                      </p>
+                      <p class="tarifes-list-item-prices__old">1100</p>
+                      <p class="tarifes-list-item-prices__new" id="new__price-first">1100&nbsp;<span>руб</span></p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
             <div class="tarifes-row">
-              <div class="tarifes-row-item" id="tarifes-item-first">
+              <div class="tarifes-row-item tarifes-row-item_disabled" id="tarifes-item-first">
                 <p class="tarifes-row-item__title">Приведи друга</p>
                 <div class="tarifes-row-item-check">
                   <div class="tarifes-row-item-check__slide">-5%</div>
@@ -1011,10 +1008,9 @@
               </div>
               <div class="sea-item">
                 <div class="sea-item-text">
-                  Собственный песчаный пляж длиной 1000 м на берегу Черного моря
-                  прекрасно подходит для спокойного и комфортного отдыха. На
-                  пляже есть шезлонги, пляжные зонты, солнцезащитные навесы,
-                  раздевалки, спортивная площадка, туалетные и душевые комнаты.
+                  Центр спорта «Эволюция» является обладателем международной награды «Голубой флаг».
+                  Голубой флаг - международная награда, ежегодно вручаемая с 1987 года пляжам
+                  и причалам, вода в которых отвечает высоким стандартам качества и пригодна для безопасного купания.
                 </div>
                 <img
                   class="sea-item-img"
