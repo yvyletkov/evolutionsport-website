@@ -1260,6 +1260,10 @@ button {
   font-weight: 600;
 }
 
+.call .call__wrap .children-form .children-form-btn:hover {
+  background-color: #c0ac38;
+}
+
 .call .call__wrap .call-text-down,
 .call .call__wrap .call-text-down-link {
   color: #fff;
@@ -2341,6 +2345,10 @@ button {
   position: relative;
 }
 
+.carousel.children__carousel .carousel-slider-item:hover {
+  text-decoration: none;
+}
+
 .carousel-slider-item.left-edge:after {
   right: -webkit-calc(100% + 9px);
   right: calc(100% + 9px);
@@ -2763,7 +2771,7 @@ button {
   text-transform: uppercase;
   font-weight: 900;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 62px;
+  font-size: 70px;
   color: #f3f3f3;
 }
 
@@ -3055,7 +3063,7 @@ button {
   transform-origin: center center;
   color: #f8f7f7;
   font-size: 70px;
-  z-index: 2;
+  z-index: -1;
   text-transform: uppercase;
   font-weight: 900;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
