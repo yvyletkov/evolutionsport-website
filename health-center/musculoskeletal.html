@@ -30,6 +30,9 @@
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
     <script src="../js/gallery-responsive.js"></script>
+    <script src="../js/requests.js"></script>
+    <script src="../js/health-center-calc-form.js"></script>
+
     <title>Опорно-двигательный аппарат</title>
 
 </head>
@@ -45,7 +48,7 @@
             </div>
             <div class="banner-img"><img src="../assets/images/odaImg.png" alt="Дышит в трубку"/></div>
             <p class="banner__placeholder">Лечение</p>
-            <form class="banner-form calc-form">
+            <form class="banner-form-wrapper calc-form">
                 <input class="hiddenInputForSelectors" type="text" required name="program" style="display: none;"/>
                 <label class="label">
                     <div class="label-view select-controller">
@@ -587,7 +590,6 @@
             <p>Вы уже проходили реабилитацию?</p>
         </div>
         <div class="popup__checkboxes-wrapper">
-            <input name="form-name" value="Rehabilitation quiz" type="hidden">
             <input class="popup-checkbox" id="yes-checkbox" type="radio" name="answer">
             <label for="yes-checkbox">Да, уже проходил(а)</label>
             <input class="popup-checkbox" id="no-checkbox" type="radio" name="answer">
@@ -595,6 +597,8 @@
         </div>
         <div class="popup__form-wrapper hidden">
             <form class="popup__form">
+                <input type="hidden" name="form-name" value="quiz-health-center-form">
+
                 <input class="popup__form__input" placeholder="Ваше имя" id="name" name="name" type="text">
                 <input required class="popup__form__input" placeholder="Ваш телефон*" name="phone" type="tel"
                        id="phone">
@@ -613,7 +617,7 @@
             $(".btn.btn_blue.advantages__order").on("click", (e) => {
                 e.preventDefault();
                 $(".popup-wrapper").css("display", "flex");
-                $(".popup").removeClass("hidden")
+                $(".popup .quiz").removeClass("hidden")
                 $(".popup-wrapper").removeClass("hidden")
             });
             $(".popup__btn").click(function () {
@@ -700,34 +704,219 @@
             })
         });
         $(".popup__close-btn").click(function () {
-            $(".popup").addClass("hidden");
+            $(".popup .quiz").addClass("hidden");
             $(".popup-wrapper").addClass("hidden");
         });
         $(".popup__form").submit((e) => {
             e.preventDefault();
-            $.ajax({
-                url: "http://95.181.172.100/erp/mock/",
-                type: "POST",
-                data: $('.popup__form').serializeArray(),
-                success: function (response) {
-                    console.log("RESPONSE:", response);
-                    $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
-                    $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
-                    $(".popup__btn").html("Вернуться к сайту");
-                    $(".popup__btn").removeClass("hidden");
-                    $(".popup__btn").click(function () {
-                        $(".popup").addClass("hidden");
-                        $(".popup-wrapper").addClass("hidden");
+            mainApi($('.popup__form').serializeArray())
+                .then((res) => {
+                    console.log(res);
+                    if (res.ok) {
+                        $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
+                        $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                        $(".popup__btn").html("Вернуться к сайту");
+                        $(".popup__btn").removeClass("hidden");
+                        $(".popup__btn").click(function () {
+                            $(".popup").addClass("hidden");
+                            $(".popup-wrapper").addClass("hidden");
+                        });
+                    }
+                })
+                .catch((err) => {
+                    swal({
+                        type: "error",
+                        title: "Извините, рассчет стоимости временно невозможен",
+                        text: "Что-то пошло не так, мы уже работаем над ошибкой",
                     });
-                },
-                error: function (response) {
-                    console.log("ОШИБКА", response)
-                }
-            });
+                    console.log(err);
+                });
         })
     </script>
 </div>
 <!--END -- Popup REHABILITATION window with contact form -- END-->
+
+<!--Popup GET CONTACT window with contact form-->
+<style>
+    .popup-wrapper-onlycontactform {
+        background: rgba(0,0,0,0.5);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .popup-onlycontactform {
+        box-sizing: border-box;
+        width: 485px;
+        padding: 0 20px;
+        background: #f6f6f6;
+        position: relative;
+        box-shadow: -7px 9px 50px -4px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+    }
+    @media screen and (max-width: 768px) {
+        .popup-onlycontactform {
+            width: 100%;
+        }
+        .popup-wrapper-onlycontactform {
+            background: rgba(0, 0, 0, .7);
+        }
+    }
+    .popup__close-btn-onlycontactform {
+        cursor: pointer;
+        color: #989898;
+        position: absolute;
+        top: 3px;
+        right: 9px;
+        font-size: 18px;
+    }
+    .popup__close-btn-onlycontactform:hover {
+        color: #212121;
+    }
+    .popup__close-btn-onlycontactform span {
+        margin-right: 5px;
+        vertical-align: 3px;
+        font-size: 9px;
+    }
+    .popup__content-onlycontactform {
+        margin-top: 36px;
+        margin-bottom: 27px;
+    }
+    .popup__content-onlycontactform p {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .popup__form-wrapper-onlycontactform {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 195px;
+        flex-direction: column;
+    }
+    .popup__btn-onlycontactform, .popup__btn_submit-onlycontactform {
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        font-size: 11px;
+        width: 195px;
+        height: 27px;
+        background: #2c87c3;
+        margin: 0 auto;
+        margin-bottom: 46px;
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup__btn-onlycontactform:hover, .popup__btn_submit-onlycontactform:hover {
+        background: #297cb3;
+    }
+    .hidden {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+    .popup__form__input-onlycontactform {
+        font-size: 12px;
+        padding-bottom: 7px;
+        padding-left: 0;
+        background: none;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #989898;
+        width: 195px;
+    }
+    .popup__form__input-onlycontactform::placeholder {
+        font-size: 10px;
+    }
+    .popup__form__footer-text-onlycontactform {
+        position: absolute;
+        text-align: center;
+        bottom: -20px;
+    }
+    .thanks-content-onlycontactform {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px
+    }
+    .thanks-content-onlycontactform + span {
+        font-weight: normal;
+        font-size: 13px;
+        margin-top: 60px;
+        line-height: 1.4;
+    }
+</style>
+<div class="popup-wrapper-onlycontactform">
+    <div class="popup-onlycontactform">
+        <div class="popup__header-onlycontactform">
+            <div class="popup__close-btn-onlycontactform"><span>Скрыть</span>×</div>
+        </div>
+        <div class="popup__content-onlycontactform">
+            <p>Оставьте свои контакты, и мы поможем Вам забронировать выбранную программу</p>
+        </div>
+        <div class="popup__form-wrapper-onlycontactform">
+            <form class="popup__form-onlycontactform">
+                <input type="hidden" name="form-name" value="contact-form-from-calc-form">
+                <input class="popup__form__input-onlycontactform" placeholder="Ваше имя" id="name" name="name" type="text">
+                <input required class="popup__form__input-onlycontactform" placeholder="Ваш телефон*" name="phone" type="tel" id="phone1">
+                <input required class="popup__form__input-onlycontactform" placeholder="Ваш Email*" id="email" name="email" type="email">
+                <button class="popup__btn_submit-onlycontactform">Отправить</button>
+                <span class="popup__form__footer-text-onlycontactform">*поля, обязательные для заполнения</span>
+            </form>
+        </div>
+        <div class="popup__btn-onlycontactform hidden">Далее</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script>
+        $("#phone1").mask("+7(999)999-9999");
+        $(document).ready(function () {
+            // $(".popup-wrapper").css("display", "flex");
+            $(".popup__close-btn-onlycontactform").click(function () {
+                $(".popup-onlycontactform").addClass("hidden");
+                $(".popup-wrapper-onlycontactform").addClass("hidden");
+            });
+            $(".popup__form-onlycontactform").submit( (e) => {
+                e.preventDefault();
+                mainApi($('.popup__form-onlycontactform').serializeArray())
+                    .then((res) => {
+                        console.log(res);
+                        if (res.ok) {
+
+                            $(".popup__form-wrapper-onlycontactform").addClass("hidden")
+
+                            $(".popup__content-onlycontactform p").html("<div class='thanks-content-onlycontactform'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                            $(".popup__btn-onlycontactform").html("Вернуться к сайту");
+                            $(".popup__btn-onlycontactform").removeClass("hidden");
+                            $(".popup__btn-onlycontactform").click(function () {
+                                $(".popup-onlycontactform").addClass("hidden");
+                                $(".popup-wrapper-onlycontactform").addClass("hidden");
+                            });
+                        }
+                    })
+                    .catch((err) => {
+                        swal({
+                            type: "error",
+                            title: "Извините, у нас технический сбой.",
+                            text: "Позвоните, пожалуйста, нам по телефону 8 800 777 18 26",
+                        });
+                        console.log(err);
+                    });
+
+            })
+        });
+    </script>
+</div>
+<!--END -- Popup GET CONTACT window with contact form -- END-->
 
 
 <!--scripts loaded here-->

@@ -207,7 +207,6 @@
             <p>Вы уже были в санаториях?</p>
         </div>
         <div class="popup__checkboxes-wrapper">
-            <input name="form-name" value="Sanatorium treatment quiz" type="hidden">
             <input class="popup-checkbox" id="yes-checkbox" type="radio" name="answer">
             <label for="yes-checkbox">Да, был/была</label>
             <input class="popup-checkbox" id="no-checkbox" type="radio" name="answer">
@@ -215,6 +214,7 @@
         </div>
         <div class="popup__form-wrapper hidden">
             <form class="popup__form">
+                <input type="hidden" name="form-name" value="quiz-health-center-form">
                 <input class="popup__form__input" placeholder="Ваше имя" id="name" name="name" type="text">
                 <input required class="popup__form__input" placeholder="Ваш телефон*" name="phone" type="tel"
                        id="phone">
@@ -233,7 +233,7 @@
             $(".btn.btn_blue.advantages__order").on("click", (e) => {
                 e.preventDefault();
                 $(".popup-wrapper").css("display", "flex");
-                $(".popup").removeClass("hidden")
+                $(".popup .quiz").removeClass("hidden")
                 $(".popup-wrapper").removeClass("hidden")
             });
             $(".popup__btn").click(function () {
@@ -304,7 +304,7 @@
             })
         });
         $(".popup__close-btn").click(function () {
-            $(".popup").addClass("hidden");
+            $(".popup .quiz").addClass("hidden");
             $(".popup-wrapper").addClass("hidden");
         });
         $(".popup__form").submit((e) => {
@@ -319,7 +319,7 @@
                     $(".popup__btn").html("Вернуться к сайту");
                     $(".popup__btn").removeClass("hidden");
                     $(".popup__btn").click(function () {
-                        $(".popup").addClass("hidden");
+                        $(".popup .quiz").addClass("hidden");
                         $(".popup-wrapper").addClass("hidden");
                     });
                 },

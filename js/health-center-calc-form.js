@@ -53,12 +53,27 @@ window.onload = () => {
             .then((res) => {
                 console.log(res);
                 if (res.ok) {
-                    swal({
-                        type: "success",
-                        title: "Спасибо!",
-                        text: "Ваша заявка будет обработана, наш менеджер с вами свяжется",
-                    });
-                    this.reset();
+
+                    $(".cost-content-direction-value").html($('#health-center-directions option:selected').text());
+                    $(".cost-content-program-value").html($('#health-center-programs option:selected').text());
+                    $(".cost-content-duration-value").html($('#health-center-durations option:selected').text());
+                    $(".cost-content-rehabilitants-value").html($("#health-center-rehabilitants").val());
+                    $(".cost-content-guests-value").html($("#health-center-guests").val());
+
+                    $("#health-center-calc-form").hide();
+                    $(".cost-content").css("visibility", "visible").css("height", "unset");
+                    $(".cost-content").css("display", "block");
+
+                    $("#btn-reset").on("click", () => {
+                        $(".cost-content").css("visibility", "hidden").css("height", "0");
+                        $("#health-center-calc-form").show();
+                        $(".cost-content").css("display", "none");
+                    })
+                    $("#btn-booking").on("click", () => {
+                        $(".popup-wrapper-onlycontactform").css("display", "flex");
+                        $(".popup-onlycontactform").removeClass("hidden");
+                        $(".popup-wrapper-onlycontactform").removeClass("hidden");
+                    })
                 }
             })
             .catch((err) => {

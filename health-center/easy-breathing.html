@@ -8,15 +8,16 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <!-- Подключаем слайдер-->
-    <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css" />
+    <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css"/>
     <!-- -->
     <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
     <link rel="stylesheet" href="../css/all.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
+          rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
     <link rel="stylesheet" href="../assets/styles/app.css"/>
     <link rel="stylesheet" href="../assets/styles/additional.css"/>
@@ -30,6 +31,9 @@
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
     <script src="../js/gallery-responsive.js"></script>
+    <script src="../js/requests.js"></script>
+    <script src="../js/health-center-calc-form.js"></script>
+
     <title>Легкое дыхание</title>
 
 </head>
@@ -41,11 +45,12 @@
         <div class="banner banner_program">
             <div class="banner-desc">
                 <p class="banner-desc__suptitle">ПРОГРАММА САНАТОРНО-<br>КУРОРТНОГО ЛЕЧЕНИЯ</p>
-                <h1 class="banner-desc__title">Легкое<br>дыхание</h1><a class="banner-desc__order" href="#"> <img src="../assets/images/order.png" alt=""/>Оставить<br>заявку</a>
+                <h1 class="banner-desc__title">Легкое<br>дыхание</h1><a class="banner-desc__order" href="#"> <img
+                    src="../assets/images/order.png" alt=""/>Оставить<br>заявку</a>
             </div>
             <div class="banner-img"><img src="../assets/images/ldBan.png" alt="Дышит в трубку"/></div>
             <p class="banner__placeholder">Лечение</p>
-            <form class="banner-form calc-form">
+            <form class="banner-form-wrapper calc-form">
                 <input class="hiddenInputForSelectors" type="text" required name="program" style="display: none;"/>
                 <label class="label">
                     <div class="label-view select-controller">
@@ -54,7 +59,7 @@
                         </div>
                         <div class="label-view__placeholder">Выбрать программу</div>
                         <div class="label-view__value"></div>
-                        <div class="label-view__triangle"> </div>
+                        <div class="label-view__triangle"></div>
                     </div>
                     <div class="select-dropDown" data-value="">
                         <div class="select-dropDown__item">123</div>
@@ -78,7 +83,8 @@
                         <div class="label-view-imgbox">
                             <img src="../assets/images/user-icon.png" alt="user-icon"/>
                         </div>
-                        <input class="label-view__input" name="re_col" required type="number" placeholder="Количество реабилитантов"/>
+                        <input class="label-view__input" name="re_col" required type="number"
+                               placeholder="Количество реабилитантов"/>
                     </div>
                 </label>
                 <label class="label">
@@ -86,7 +92,8 @@
                         <div class="label-view-imgbox">
                             <img src="../assets/images/user-icon.png" alt="user-icon"/>
                         </div>
-                        <input class="label-view__input" name="so_col" required type="number" placeholder="Количество сопровождающих"/>
+                        <input class="label-view__input" name="so_col" required type="number"
+                               placeholder="Количество сопровождающих"/>
                     </div>
                 </label>
                 <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
@@ -95,7 +102,8 @@
     </section>
     <section class="advantages">
         <div class="advantages-wrap">
-            <h3 class="advantages__title">Преимущества</h3><a class="btn btn_blue advantages__order" href="#">Пройти опрос</a>
+            <h3 class="advantages__title">Преимущества</h3><a class="btn btn_blue advantages__order" href="#">Пройти
+            опрос</a>
             <div class="advantages-row">
                 <div class="advantages-row-item">
                     <div class="advantages-row-item__img"><img src="../assets/images/indAdv/med.png" alt=""/></div>
@@ -118,7 +126,8 @@
                     <p class="advantages-row-item__title">Опытный персонал</p>
                 </div>
                 <div class="advantages-row-item">
-                    <div class="advantages-row-item__img"><img src="../assets/images/indAdv/razdevalki.png" alt=""/></div>
+                    <div class="advantages-row-item__img"><img src="../assets/images/indAdv/razdevalki.png" alt=""/>
+                    </div>
                     <p class="advantages-row-item__title">Раздевалки на пляже</p>
                 </div>
                 <div class="advantages-row-item">
@@ -146,12 +155,19 @@
                 <p class="treatment-desc__placeholder">лечение</p>
                 <p class="treatment-desc__title">Показания</p>
                 <ul class="treatment-desc-ul">
-                    <li class="treatment-desc-ul__li">Состояние после перенесённой пневмонии (не менее 3-х месяцев после обострения</li>
+                    <li class="treatment-desc-ul__li">Состояние после перенесённой пневмонии (не менее 3-х месяцев после
+                        обострения
+                    </li>
                     <li class="treatment-desc-ul__li">Хронический бронхит в период ремиссии</li>
-                    <li class="treatment-desc-ul__li">Бронхиальная астма легкой и средней степени тяжести в период ремиссии</li>
-                    <li class="treatment-desc-ul__li">Хронические заболевания носоглотки, пазух, миндалин (ринит), синусит, гайморит, фарингит, тонзиллит</li>
+                    <li class="treatment-desc-ul__li">Бронхиальная астма легкой и средней степени тяжести в период
+                        ремиссии
+                    </li>
+                    <li class="treatment-desc-ul__li">Хронические заболевания носоглотки, пазух, миндалин (ринит),
+                        синусит, гайморит, фарингит, тонзиллит
+                    </li>
                 </ul>
-                <p class="treatment-desc__star">* Количество включенных процедур зависит от продолжительности курса и возможных индивидуальных противопоказаний.</p>
+                <p class="treatment-desc__star">* Количество включенных процедур зависит от продолжительности курса и
+                    возможных индивидуальных противопоказаний.</p>
             </div>
             <div class="treatment-img"><img class="treatment-img__img" src="../assets/images/treatLD.png" alt=""/></div>
             <div class="treatment-desc">
@@ -162,9 +178,14 @@
                     <li class="treatment-desc-ul__li">Диетотерапия</li>
                     <li class="treatment-desc-ul__li">Оксигенотерапия (кислородный коктейль</li>
                     <li class="treatment-desc-ul__li">Фитотерапия (фито чаи)</li>
-                    <li class="treatment-desc-ul__li">Водолечение (циркулярный душ, лечебные ароматические ванны, вихревые ванны) один из видов</li>
-                    <li class="treatment-desc-ul__li">Аппаратная физиотерапия индуктотермия, магнитотерапия, УЗ — терапия, лазеротерапия, электросон терапия, дарсонваль терапия, амплипультерапия) один из видов</li>
-                </ul><a class="treatment-desc__more" href="#">Подробнее</a>
+                    <li class="treatment-desc-ul__li">Водолечение (циркулярный душ, лечебные ароматические ванны,
+                        вихревые ванны) один из видов
+                    </li>
+                    <li class="treatment-desc-ul__li">Аппаратная физиотерапия индуктотермия, магнитотерапия, УЗ —
+                        терапия, лазеротерапия, электросон терапия, дарсонваль терапия, амплипультерапия) один из видов
+                    </li>
+                </ul>
+                <a class="treatment-desc__more" href="#">Подробнее</a>
             </div>
         </div>
     </section>
@@ -175,10 +196,14 @@
             <div class="results-row">
                 <div class="results-row-imgbox">
                     <p class="results-row-imgbox__placeholder">Здоровье</p>
-                    <div class="results-row-imgbox-img"><img class="results-row-imgbox-img__img" src="../assets/images/ldRes.png" alt=""/></div>
+                    <div class="results-row-imgbox-img"><img class="results-row-imgbox-img__img"
+                                                             src="../assets/images/ldRes.png" alt=""/></div>
                 </div>
                 <div class="results-row-desc">
-                    <p class="results-row-desc__text"><strong>После программы лечения</strong> происходит улучшение самочувствия и общего состояния организма, удлинение периода ремиссии, повышение устойчивости организма к простудным заболеваниям, уменьшение случаев острых респираторных заболеваний, нормализация носового дыхания, ликвидация и уменьшение воспалительного процесса.</p>
+                    <p class="results-row-desc__text"><strong>После программы лечения</strong> происходит улучшение
+                        самочувствия и общего состояния организма, удлинение периода ремиссии, повышение устойчивости
+                        организма к простудным заболеваниям, уменьшение случаев острых респираторных заболеваний,
+                        нормализация носового дыхания, ликвидация и уменьшение воспалительного процесса.</p>
                 </div>
             </div>
         </div>
@@ -189,7 +214,8 @@
             <p class="defaultSubtitle">Перечень преимуществ</p>
             <div class="columns-row">
                 <div class="columns-short">
-                    <div class="columns-short-img"><img class="columns-short-img__img" src="../assets/images/col-1.png" alt=""/></div>
+                    <div class="columns-short-img"><img class="columns-short-img__img" src="../assets/images/col-1.png"
+                                                        alt=""/></div>
                     <p class="columns__title">В стоимость<br>программ включено:</p>
                     <ul class="columns-ul">
                         <li class="columns-ul__li">Профильное лечение</li>
@@ -200,13 +226,20 @@
                 <div class="columns-long">
                     <p class="columns__title">Важно<br>знать</p>
                     <ul class="columns-ul">
-                        <li class="columns-ul__li">При приобретении курса необходимо иметь <span>санаторно-курортную карту или выписку из амбулаторной карты</span></li>
-                        <li class="columns-ul__li">Курс лечения <span>назначается врачом</span> индивидуально с учётом пожеланий гостя, наличия показаний и противопоказаний, совместимости процедур</li>
-                        <li class="columns-ul__li">Прочие процедуры, не включённые в программу, отпускаются <span>за дополнительную плату</span></li>
-                        <li class="columns-ul__li">Медикаментозное лечение в стоимость курса лечения <span>не входит</span></li>
-                        <li class="columns-ul__li">Экстренная медицинская неотложная помощь оказывается <span>бесплатно</span></li>
+                        <li class="columns-ul__li">При приобретении курса необходимо иметь <span>санаторно-курортную карту или выписку из амбулаторной карты</span>
+                        </li>
+                        <li class="columns-ul__li">Курс лечения <span>назначается врачом</span> индивидуально с учётом
+                            пожеланий гостя, наличия показаний и противопоказаний, совместимости процедур
+                        </li>
+                        <li class="columns-ul__li">Прочие процедуры, не включённые в программу, отпускаются <span>за дополнительную плату</span>
+                        </li>
+                        <li class="columns-ul__li">Медикаментозное лечение в стоимость курса лечения
+                            <span>не входит</span></li>
+                        <li class="columns-ul__li">Экстренная медицинская неотложная помощь оказывается
+                            <span>бесплатно</span></li>
                     </ul>
-                    <div class="columns-long-img"><img class="columns-short-img__img" src="../assets/images/col-2.png" alt=""/></div>
+                    <div class="columns-long-img"><img class="columns-short-img__img" src="../assets/images/col-2.png"
+                                                       alt=""/></div>
                 </div>
             </div>
         </div>
@@ -214,8 +247,10 @@
     <section class="video">
         <div class="video-wrap">
             <p class="defaultTitle video__title">Видео</p>
-<!--            <p class="defaultSubtitle video__subtitle">Краткое описание</p>-->
-            <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--            <p class="defaultSubtitle video__subtitle">Краткое описание</p>-->
+            <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
         </div>
     </section>
     <section style="padding-top: 0" class="supa">
@@ -226,32 +261,46 @@
 
                 <div class="supaSlider-item">
                     <div class="supaSlider-insideSliderBlock">
-                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
                         <div class="supaSlider-insideSliderBlock-num">
                             <div class="supaSlider-insideSliderBlock-num__current">01</div>
                             <div class="supaSlider-insideSliderBlock-num__all">04</div>
                         </div>
-                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
                             <p class="supaSlider-item-desc-top__title">Корпус<br>Мирный</p>
                             <div class="supaSlider-item-desc-top-right">
-                                <div class="supaSlider-item-desc-top-right__icon"><img src="../assets/images/wave_gray.png" alt=""/></div>
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
                                 <p class="supaSlider-item-desc-top-right__text">200 м. до моря</p>
                             </div>
                         </div>
                         <div class="supaSlider-item-desc-main">
-                            <p class="supaSlider-item-desc-main__text">4-х этажное здание со столовой зоной на 1 этаже, расположено в 200м от моря. Для удобства наших гостей предусмотрен лифт, пандусы и сейфовые ячейки. А окна с выходом на море, озеро и парковую зону создадут невероятную атмосферу.</p>
-                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span></div>
+                            <p class="supaSlider-item-desc-main__text">4-х этажное здание со столовой зоной на 1 этаже,
+                                расположено в 200м от моря. Для удобства наших гостей предусмотрен лифт, пандусы и
+                                сейфовые ячейки. А окна с выходом на море, озеро и парковую зону создадут невероятную
+                                атмосферу.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span>
+                            </div>
                         </div>
                         <div class="supaSlider-item-desc__placeholder">Проживание</div>
                     </div>
@@ -259,32 +308,46 @@
 
                 <div class="supaSlider-item">
                     <div class="supaSlider-insideSliderBlock">
-                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
                         <div class="supaSlider-insideSliderBlock-num">
                             <div class="supaSlider-insideSliderBlock-num__current">01</div>
                             <div class="supaSlider-insideSliderBlock-num__all">04</div>
                         </div>
-                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
                             <p class="supaSlider-item-desc-top__title">Корпус<br>Пограничный</p>
                             <div class="supaSlider-item-desc-top-right">
-                                <div class="supaSlider-item-desc-top-right__icon"><img src="../assets/images/wave_gray.png" alt=""/></div>
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
                                 <p class="supaSlider-item-desc-top-right__text">100 м. до моря</p>
                             </div>
                         </div>
                         <div class="supaSlider-item-desc-main">
-                            <p class="supaSlider-item-desc-main__text">4-х этажное здание со столовой зоной на 2 этаже, расположено в 100м от моря. Для удобства наших гостей предусмотрен лифт, пандусы и сейфовые ячейки. А окна с выходом на море, озеро и парковую зону создадут невероятную атмосферу.</p>
-                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span></div>
+                            <p class="supaSlider-item-desc-main__text">4-х этажное здание со столовой зоной на 2 этаже,
+                                расположено в 100м от моря. Для удобства наших гостей предусмотрен лифт, пандусы и
+                                сейфовые ячейки. А окна с выходом на море, озеро и парковую зону создадут невероятную
+                                атмосферу.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span>
+                            </div>
                         </div>
                         <div class="supaSlider-item-desc__placeholder">Проживание</div>
                     </div>
@@ -292,32 +355,46 @@
 
                 <div class="supaSlider-item">
                     <div class="supaSlider-insideSliderBlock">
-                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
                         <div class="supaSlider-insideSliderBlock-num">
                             <div class="supaSlider-insideSliderBlock-num__current">01</div>
                             <div class="supaSlider-insideSliderBlock-num__all">04</div>
                         </div>
-                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
                             <p class="supaSlider-item-desc-top__title">Корпус<br>Спортивный</p>
                             <div class="supaSlider-item-desc-top-right">
-                                <div class="supaSlider-item-desc-top-right__icon"><img src="../assets/images/wave_gray.png" alt=""/></div>
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
                                 <p class="supaSlider-item-desc-top-right__text">800 м. до моря</p>
                             </div>
                         </div>
                         <div class="supaSlider-item-desc-main">
-                            <p class="supaSlider-item-desc-main__text">3-х этажное здание со столовой зоной на 1 этаже, расположено на берегу озеро  в 800 м от моря. Для удобства наших гостей предусмотрен лифт, пандусы и сейфовые ячейки. А окна с выходом на озеро и парковую зону создадут невероятную атмосферу уюта.</p>
-                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span></div>
+                            <p class="supaSlider-item-desc-main__text">3-х этажное здание со столовой зоной на 1 этаже,
+                                расположено на берегу озеро в 800 м от моря. Для удобства наших гостей предусмотрен
+                                лифт, пандусы и сейфовые ячейки. А окна с выходом на озеро и парковую зону создадут
+                                невероятную атмосферу уюта.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 1 760 РУБ.</span>
+                            </div>
                         </div>
                         <div class="supaSlider-item-desc__placeholder">Проживание</div>
                     </div>
@@ -325,32 +402,47 @@
 
                 <div class="supaSlider-item">
                     <div class="supaSlider-insideSliderBlock">
-                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png" style="transform: rotate(180deg);" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
                         <div class="supaSlider-insideSliderBlock-num">
                             <div class="supaSlider-insideSliderBlock-num__current">01</div>
                             <div class="supaSlider-insideSliderBlock-num__all">04</div>
                         </div>
-                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png" alt=""/></div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png" alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                                                                        alt=""/></div>
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
                             <p class="supaSlider-item-desc-top__title">Корпус<br>Звездный</p>
                             <div class="supaSlider-item-desc-top-right">
-                                <div class="supaSlider-item-desc-top-right__icon"><img src="../assets/images/wave_gray.png" alt=""/></div>
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
                                 <p class="supaSlider-item-desc-top-right__text">25 м. до моря</p>
                             </div>
                         </div>
                         <div class="supaSlider-item-desc-main">
-                            <p class="supaSlider-item-desc-main__text">Номера площадью от 40 кв.м. с отдельным входом и террасой, оборудованной тентом, шезлонгами и столиком. В 25 метрах до пляжа и шикарным видом на море. В номерах: гостиная, мягкая мебель, телевизор, холодильник, спальни, ванная комната Уборка номера производится ежедневно, банные полотенца меняются по требованию.</p>
-                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>2 500 РУБ.</span></div>
+                            <p class="supaSlider-item-desc-main__text">Номера площадью от 40 кв.м. с отдельным входом и
+                                террасой, оборудованной тентом, шезлонгами и столиком. В 25 метрах до пляжа и шикарным
+                                видом на море. В номерах: гостиная, мягкая мебель, телевизор, холодильник, спальни,
+                                ванная комната Уборка номера производится ежедневно, банные полотенца меняются по
+                                требованию.</p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>2 500 РУБ.</span>
+                            </div>
                         </div>
                         <div class="supaSlider-item-desc__placeholder">Проживание</div>
                     </div>
@@ -519,28 +611,48 @@
             <p class="defaultTitle supa__title">Также для комфортного отдыха</p>
             <p class="defaultSubtitle">Подзаголовок</p>
             <div class="supaSlider-insideSlider-wrap supaSlider-item">
-                <p class="children-supa__placeholder">Трансфер</p><div class="supaSlider-insideSliderBlock">
-                <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);" src="../assets/images/arrowSlider.png"></div>
-                <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrowSlider.png"></div>
-            </div>
+                <p class="children-supa__placeholder">Трансфер</p>
+                <div class="supaSlider-insideSliderBlock">
+                    <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);"
+                                                                         src="../assets/images/arrowSlider.png"></div>
+                    <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrowSlider.png"></div>
+                </div>
                 <div class="supaSlider-insideSlider">
                     <div class="supaSlider-insideSlider__item">
-                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" style="width" alt=""/>
+                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn"
+                                                                      href="#">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                            data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" style="width" alt=""/>
                     </div>
                     <div class="supaSlider-insideSlider__item">
-                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
+                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn"
+                                                                      href="#">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                            data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
                     </div>
                     <div class="supaSlider-insideSlider__item">
-                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
+                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn"
+                                                                      href="#">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                            data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
                     </div>
                     <div class="supaSlider-insideSlider__item">
-                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
+                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn"
+                                                                      href="#">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                            data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
                     </div>
                     <div class="supaSlider-insideSlider__item">
-                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
+                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn"
+                                                                      href="#">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                            data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
                     </div>
                     <div class="supaSlider-insideSlider__item">
-                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
+                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn"
+                                                                      href="#">Подробнее<img
+                            src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                            data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
                     </div>
                 </div>
             </div>
@@ -757,7 +869,6 @@
             <p>Вы уже были в санаториях?</p>
         </div>
         <div class="popup__checkboxes-wrapper">
-            <input name="form-name" value="Sanatorium treatment quiz" type="hidden">
             <input class="popup-checkbox" id="yes-checkbox" type="radio" name="answer">
             <label for="yes-checkbox">Да, был/была</label>
             <input class="popup-checkbox" id="no-checkbox" type="radio" name="answer">
@@ -765,6 +876,8 @@
         </div>
         <div class="popup__form-wrapper hidden">
             <form class="popup__form">
+                <input type="hidden" name="form-name" value="quiz-health-center-form">
+
                 <input class="popup__form__input" placeholder="Ваше имя" id="name" name="name" type="text">
                 <input required class="popup__form__input" placeholder="Ваш телефон*" name="phone" type="tel"
                        id="phone">
@@ -783,7 +896,7 @@
             $(".btn.btn_blue.advantages__order").on("click", (e) => {
                 e.preventDefault();
                 $(".popup-wrapper").css("display", "flex");
-                $(".popup").removeClass("hidden")
+                $(".popup .quiz").removeClass("hidden")
                 $(".popup-wrapper").removeClass("hidden")
             });
             $(".popup__btn").click(function () {
@@ -841,8 +954,7 @@
                             $(".popup__btn").addClass("hidden");
                             $(".popup__form-wrapper").removeClass("hidden");
                             $(".popup__content p").html("Оставляйте свои контакты,<br/>и мы с радостью проконсультируем Вас:");
-                        }
-                        else {
+                        } else {
                             $(".popup__checkboxes-wrapper").addClass("hidden");
                             $(".popup__btn").addClass("hidden");
                             $(".popup__form-wrapper").removeClass("hidden");
@@ -854,33 +966,219 @@
             })
         });
         $(".popup__close-btn").click(function () {
-            $(".popup").addClass("hidden");
+            $(".popup .quiz").addClass("hidden");
             $(".popup-wrapper").addClass("hidden");
         });
         $(".popup__form").submit((e) => {
             e.preventDefault();
-            $.ajax({
-                url: "http://95.181.172.100/erp/mock",
-                type: "POST",
-                data: $('.popup__form').serialize(),
-                success: function (response) {
-                    $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
-                    $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
-                    $(".popup__btn").html("Вернуться к сайту");
-                    $(".popup__btn").removeClass("hidden");
-                    $(".popup__btn").click(function () {
-                        $(".popup").addClass("hidden");
-                        $(".popup-wrapper").addClass("hidden");
+            mainApi($('.popup__form').serializeArray())
+                .then((res) => {
+                    console.log(res);
+                    if (res.ok) {
+                        $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
+                        $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                        $(".popup__btn").html("Вернуться к сайту");
+                        $(".popup__btn").removeClass("hidden");
+                        $(".popup__btn").click(function () {
+                            $(".popup").addClass("hidden");
+                            $(".popup-wrapper").addClass("hidden");
+                        });
+                    }
+                })
+                .catch((err) => {
+                    swal({
+                        type: "error",
+                        title: "Извините, рассчет стоимости временно невозможен",
+                        text: "Что-то пошло не так, мы уже работаем над ошибкой",
                     });
-                },
-                error: function (response) {
-                    console.log("ОШИБКА", response)
-                }
-            });
+                    console.log(err);
+                });
         })
     </script>
 </div>
 <!--END -- Popup SAN RESORT TREATMENT window with contact form -- END-->
+
+<!--Popup GET CONTACT window with contact form-->
+<style>
+    .popup-wrapper-onlycontactform {
+        background: rgba(0,0,0,0.5);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .popup-onlycontactform {
+        box-sizing: border-box;
+        width: 485px;
+        padding: 0 20px;
+        background: #f6f6f6;
+        position: relative;
+        box-shadow: -7px 9px 50px -4px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+    }
+    @media screen and (max-width: 768px) {
+        .popup-onlycontactform {
+            width: 100%;
+        }
+        .popup-wrapper-onlycontactform {
+            background: rgba(0, 0, 0, .7);
+        }
+    }
+    .popup__close-btn-onlycontactform {
+        cursor: pointer;
+        color: #989898;
+        position: absolute;
+        top: 3px;
+        right: 9px;
+        font-size: 18px;
+    }
+    .popup__close-btn-onlycontactform:hover {
+        color: #212121;
+    }
+    .popup__close-btn-onlycontactform span {
+        margin-right: 5px;
+        vertical-align: 3px;
+        font-size: 9px;
+    }
+    .popup__content-onlycontactform {
+        margin-top: 36px;
+        margin-bottom: 27px;
+    }
+    .popup__content-onlycontactform p {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .popup__form-wrapper-onlycontactform {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 195px;
+        flex-direction: column;
+    }
+    .popup__btn-onlycontactform, .popup__btn_submit-onlycontactform {
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        font-size: 11px;
+        width: 195px;
+        height: 27px;
+        background: #2c87c3;
+        margin: 0 auto;
+        margin-bottom: 46px;
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup__btn-onlycontactform:hover, .popup__btn_submit-onlycontactform:hover {
+        background: #297cb3;
+    }
+    .hidden {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+    .popup__form__input-onlycontactform {
+        font-size: 12px;
+        padding-bottom: 7px;
+        padding-left: 0;
+        background: none;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #989898;
+        width: 195px;
+    }
+    .popup__form__input-onlycontactform::placeholder {
+        font-size: 10px;
+    }
+    .popup__form__footer-text-onlycontactform {
+        position: absolute;
+        text-align: center;
+        bottom: -20px;
+    }
+    .thanks-content-onlycontactform {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px
+    }
+    .thanks-content-onlycontactform + span {
+        font-weight: normal;
+        font-size: 13px;
+        margin-top: 60px;
+        line-height: 1.4;
+    }
+</style>
+<div class="popup-wrapper-onlycontactform">
+    <div class="popup-onlycontactform">
+        <div class="popup__header-onlycontactform">
+            <div class="popup__close-btn-onlycontactform"><span>Скрыть</span>×</div>
+        </div>
+        <div class="popup__content-onlycontactform">
+            <p>Оставьте свои контакты, и мы поможем Вам забронировать выбранную программу</p>
+        </div>
+        <div class="popup__form-wrapper-onlycontactform">
+            <form class="popup__form-onlycontactform">
+                <input type="hidden" name="form-name" value="contact-form-from-calc-form">
+                <input class="popup__form__input-onlycontactform" placeholder="Ваше имя" id="name" name="name" type="text">
+                <input required class="popup__form__input-onlycontactform" placeholder="Ваш телефон*" name="phone" type="tel" id="phone1">
+                <input required class="popup__form__input-onlycontactform" placeholder="Ваш Email*" id="email" name="email" type="email">
+                <button class="popup__btn_submit-onlycontactform">Отправить</button>
+                <span class="popup__form__footer-text-onlycontactform">*поля, обязательные для заполнения</span>
+            </form>
+        </div>
+        <div class="popup__btn-onlycontactform hidden">Далее</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script>
+        $("#phone1").mask("+7(999)999-9999");
+        $(document).ready(function () {
+            // $(".popup-wrapper").css("display", "flex");
+            $(".popup__close-btn-onlycontactform").click(function () {
+                $(".popup-onlycontactform").addClass("hidden");
+                $(".popup-wrapper-onlycontactform").addClass("hidden");
+            });
+            $(".popup__form-onlycontactform").submit( (e) => {
+                e.preventDefault();
+                mainApi($('.popup__form-onlycontactform').serializeArray())
+                    .then((res) => {
+                        console.log(res);
+                        if (res.ok) {
+
+                            $(".popup__form-wrapper-onlycontactform").addClass("hidden")
+
+                            $(".popup__content-onlycontactform p").html("<div class='thanks-content-onlycontactform'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                            $(".popup__btn-onlycontactform").html("Вернуться к сайту");
+                            $(".popup__btn-onlycontactform").removeClass("hidden");
+                            $(".popup__btn-onlycontactform").click(function () {
+                                $(".popup-onlycontactform").addClass("hidden");
+                                $(".popup-wrapper-onlycontactform").addClass("hidden");
+                            });
+                        }
+                    })
+                    .catch((err) => {
+                        swal({
+                            type: "error",
+                            title: "Извините, у нас технический сбой.",
+                            text: "Позвоните, пожалуйста, нам по телефону 8 800 777 18 26",
+                        });
+                        console.log(err);
+                    });
+
+            })
+        });
+    </script>
+</div>
+<!--END -- Popup GET CONTACT window with contact form -- END-->
 
 <!--scripts loaded here-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>

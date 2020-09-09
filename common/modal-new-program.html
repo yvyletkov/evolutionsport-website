@@ -234,7 +234,7 @@
             })
         });
         $(".popup__close-btn").click(function () {
-            $(".popup").addClass("hidden");
+            $(".popup .quiz").addClass("hidden");
             $(".popup-wrapper").addClass("hidden");
         });
         $(".popup__form").submit( (e) => {
@@ -249,7 +249,7 @@
                     $(".popup__btn").html("Вернуться к сайту");
                     $(".popup__btn").removeClass("hidden");
                     $(".popup__btn").click(function () {
-                        $(".popup").addClass("hidden");
+                        $(".popup .quiz").addClass("hidden");
                         $(".popup-wrapper").addClass("hidden");
                     });
                 },

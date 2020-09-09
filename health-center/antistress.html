@@ -30,6 +30,9 @@
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
     <script src="../js/gallery-responsive.js"></script>
+    <script src="../js/health-center-calc-form.js"></script>
+    <script src="../js/requests.js"></script>
+
     <title>Антистресс</title>
 
 </head>
@@ -45,52 +48,83 @@
             </div>
             <div class="banner-img"><img src="../assets/images/stressBan.png" alt="Дышит в трубку"/></div>
             <p class="banner__placeholder">Лечение</p>
-            <form class="banner-form calc-form">
-                <input class="hiddenInputForSelectors" type="text" required name="program" style="display: none;"/>
-                <label class="label">
-                    <div class="label-view select-controller">
-                        <div class="label-view-imgbox">
-                            <img src="../assets/images/program-icon.png" alt="program-icon"/>
-                        </div>
-                        <div class="label-view__placeholder">Выбрать программу</div>
-                        <div class="label-view__value"></div>
-                        <div class="label-view__triangle"> </div>
+
+            <section class="banner-form-wrapper" >
+                <form id="health-center-calc-form">
+                    <div class="calc-form-inputs">
+                        <input name="form-name" value="health-center-cost-calc" type="hidden">
+
+                        <select required id="health-center-directions" name="direction"
+                                class="input-image direction label-view select-controller label label-view__input">
+                            <option selected disabled value>Выберите направление</option>
+                            <option value="rehabilitation">Реабилитация</option>
+                            <option value="sanatorium">Санаторно-курортное лечение</option>
+                            <option value="parasport">Параспорт</option>
+                        </select>
+                        <select required id="health-center-programs" name="program"
+                                class="input-image direction label-view select-controller label label-view__input">
+                            <option disabled selected value>Выберите программу</option>
+
+                        </select>
+                        <select required name="duration" id="health-center-durations"
+                                class="input-image direction label-view select-controller label label-view__input">
+                            <option selected disabled value>Выберите продолжительность</option>
+                            <option value="14">14 дней</option>
+                            <option value="18">18 дней</option>
+                            <option value="24">21 день</option>
+                        </select>
+
+                        <label class="label">
+                            <div class="label-view">
+                                <div class="label-view-imgbox"><img src="../assets/images/user-icon.png"
+                                                                    alt="user-icon"/>
+                                </div>
+                                <input required id="health-center-rehabilitants" name="number-of-rehabilitants" maxlength="2" max="99" min="1"
+                                       class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
+                            </div>
+                        </label>
+                        <label class="label">
+                            <div class="label-view">
+                                <div class="label-view-imgbox"><img src="../assets/images/user-icon.png"
+                                                                    alt="user-icon"/>
+                                </div>
+                                <input required id="health-center-guests" name="number-of-guests" max="99" min="0" class="label-view__input"
+                                       type="number"
+                                       placeholder="Количество сопровождающих"/>
+                            </div>
+                        </label>
                     </div>
-                    <div class="select-dropDown" data-value="">
-                        <div class="select-dropDown__item">123</div>
-                        <div class="select-dropDown__item">123</div>
+                    <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
+                </form>
+
+                <div class="cost-content">
+                    <p>Стоимость рассчитана</p>
+                    <div>
+                        <span class="cost-content-direction-value"></span>
+                        (<span class="cost-content-program-value"></span>)
                     </div>
-                </label>
-                <!--<label class="label">
-                  <div class="label-view select-controller">
-                    <div class="label-view-imgbox"><img src="../assets/images/calendar-icon.png" alt="calendar-icon"/></div>
-                    <div class="label-view__placeholder">Выбрать программу</div>
-                    <div class="label-view__value"></div>
-                    <div class="label-view__triangle"> </div>
-                  </div>
-                  <div class="select-dropDown" data-value="">
-                    <div class="select-dropDown__item">123</div>
-                    <div class="select-dropDown__item">123</div>
-                  </div>
-                </label>-->
-                <label class="label">
-                    <div class="label-view">
-                        <div class="label-view-imgbox">
-                            <img src="../assets/images/user-icon.png" alt="user-icon"/>
-                        </div>
-                        <input class="label-view__input" name="re_col" required type="number" placeholder="Количество реабилитантов"/>
+                    <div>
+                        <span class="cost-content-duration">Длительность:</span>
+                        <span class="cost-content-duration-value"></span>
                     </div>
-                </label>
-                <label class="label">
-                    <div class="label-view">
-                        <div class="label-view-imgbox">
-                            <img src="../assets/images/user-icon.png" alt="user-icon"/>
-                        </div>
-                        <input class="label-view__input" name="so_col" required type="number" placeholder="Количество сопровождающих"/>
+                    <div>
+                        <span class="cost-content-rehabilitants">Кол-во реабилитантов:</span>
+                        <span class="cost-content-rehabilitants-value"></span>
                     </div>
-                </label>
-                <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
-            </form>
+                    <div>
+                        <span class="cost-content-guests">Кол-во сопровождающих:</span>
+                        <span class="cost-content-guests-value"></span>
+                    </div>
+                    <div>
+                        <span class="cost-content-cost">10</span>
+                        <span>ГРИВЕН</span>
+                    </div>
+                    <button id="btn-booking" class="btn btn_accent banner-form__btn" style="margin-bottom: 10px" type="submit">Забронировать программу</button>
+                    <button id="btn-reset" class="btn btn_accent banner-form__btn" type="submit">Рассчитать снова</button>
+
+                </div>
+            </section>
+
         </div>
     </section>
     <section class="advantages">
@@ -525,7 +559,7 @@
             </div>
                 <div class="supaSlider-insideSlider">
                     <div class="supaSlider-insideSlider__item">
-                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" style="width" alt=""/>
+                        <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
                     </div>
                     <div class="supaSlider-insideSlider__item">
                         <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn" href="#">Подробнее<img src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img data-lazy="../assets/images/child_camp/transport/transport-img1.jpg" alt=""/>
@@ -759,7 +793,6 @@
             <p>Вы уже были в санаториях?</p>
         </div>
         <div class="popup__checkboxes-wrapper">
-            <input name="form" value="Sanatorium treatment quiz" type="hidden">
             <input class="popup-checkbox" id="yes-checkbox" type="radio" name="answer">
             <label for="yes-checkbox">Да, был/была</label>
             <input class="popup-checkbox" id="no-checkbox" type="radio" name="answer">
@@ -767,6 +800,8 @@
         </div>
         <div class="popup__form-wrapper hidden">
             <form class="popup__form">
+                <input type="hidden" name="form-name" value="quiz-health-center-form">
+
                 <input class="popup__form__input" placeholder="Ваше имя" id="name" name="name" type="text">
                 <input required class="popup__form__input" placeholder="Ваш телефон*" name="phone" type="tel"
                        id="phone">
@@ -861,28 +896,214 @@
         });
         $(".popup__form").submit((e) => {
             e.preventDefault();
-            $.ajax({
-                url: "http://95.181.172.100/erp/mock",
-                type: "POST",
-                data: $('.popup__form').serialize(),
-                success: function (response) {
-                    $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
-                    $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
-                    $(".popup__btn").html("Вернуться к сайту");
-                    $(".popup__btn").removeClass("hidden");
-                    $(".popup__btn").click(function () {
-                        $(".popup").addClass("hidden");
-                        $(".popup-wrapper").addClass("hidden");
+            mainApi($('.popup__form').serializeArray())
+                .then((res) => {
+                    console.log(res);
+                    if (res.ok) {
+                        $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
+                        $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                        $(".popup__btn").html("Вернуться к сайту");
+                        $(".popup__btn").removeClass("hidden");
+                        $(".popup__btn").click(function () {
+                            $(".popup").addClass("hidden");
+                            $(".popup-wrapper").addClass("hidden");
+                        });
+                    }
+                })
+                .catch((err) => {
+                    swal({
+                        type: "error",
+                        title: "Извините, рассчет стоимости временно невозможен",
+                        text: "Что-то пошло не так, мы уже работаем над ошибкой",
                     });
-                },
-                error: function (response) {
-                    console.log("ОШИБКА", response)
-                }
-            });
+                    console.log(err);
+                });
         })
     </script>
 </div>
 <!--END -- Popup SAN RESORT TREATMENT window with contact form -- END-->
+
+<!--Popup GET CONTACT window with contact form-->
+<style>
+    .popup-wrapper-onlycontactform {
+        background: rgba(0,0,0,0.5);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .popup-onlycontactform {
+        box-sizing: border-box;
+        width: 485px;
+        padding: 0 20px;
+        background: #f6f6f6;
+        position: relative;
+        box-shadow: -7px 9px 50px -4px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+    }
+    @media screen and (max-width: 768px) {
+        .popup-onlycontactform {
+            width: 100%;
+        }
+        .popup-wrapper-onlycontactform {
+            background: rgba(0, 0, 0, .7);
+        }
+    }
+    .popup__close-btn-onlycontactform {
+        cursor: pointer;
+        color: #989898;
+        position: absolute;
+        top: 3px;
+        right: 9px;
+        font-size: 18px;
+    }
+    .popup__close-btn-onlycontactform:hover {
+        color: #212121;
+    }
+    .popup__close-btn-onlycontactform span {
+        margin-right: 5px;
+        vertical-align: 3px;
+        font-size: 9px;
+    }
+    .popup__content-onlycontactform {
+        margin-top: 36px;
+        margin-bottom: 27px;
+    }
+    .popup__content-onlycontactform p {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .popup__form-wrapper-onlycontactform {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 195px;
+        flex-direction: column;
+    }
+    .popup__btn-onlycontactform, .popup__btn_submit-onlycontactform {
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        font-size: 11px;
+        width: 195px;
+        height: 27px;
+        background: #2c87c3;
+        margin: 0 auto;
+        margin-bottom: 46px;
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup__btn-onlycontactform:hover, .popup__btn_submit-onlycontactform:hover {
+        background: #297cb3;
+    }
+    .hidden {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+    .popup__form__input-onlycontactform {
+        font-size: 12px;
+        padding-bottom: 7px;
+        padding-left: 0;
+        background: none;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #989898;
+        width: 195px;
+    }
+    .popup__form__input-onlycontactform::placeholder {
+        font-size: 10px;
+    }
+    .popup__form__footer-text-onlycontactform {
+        position: absolute;
+        text-align: center;
+        bottom: -20px;
+    }
+    .thanks-content-onlycontactform {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px
+    }
+    .thanks-content-onlycontactform + span {
+        font-weight: normal;
+        font-size: 13px;
+        margin-top: 60px;
+        line-height: 1.4;
+    }
+</style>
+<div class="popup-wrapper-onlycontactform">
+    <div class="popup-onlycontactform">
+        <div class="popup__header-onlycontactform">
+            <div class="popup__close-btn-onlycontactform"><span>Скрыть</span>×</div>
+        </div>
+        <div class="popup__content-onlycontactform">
+            <p>Оставьте свои контакты, и мы поможем Вам забронировать выбранную программу</p>
+        </div>
+        <div class="popup__form-wrapper-onlycontactform">
+            <form class="popup__form-onlycontactform">
+                <input type="hidden" name="form-name" value="contact-form-from-calc-form">
+                <input class="popup__form__input-onlycontactform" placeholder="Ваше имя" id="name" name="name" type="text">
+                <input required class="popup__form__input-onlycontactform" placeholder="Ваш телефон*" name="phone" type="tel" id="phone1">
+                <input required class="popup__form__input-onlycontactform" placeholder="Ваш Email*" id="email" name="email" type="email">
+                <button class="popup__btn_submit-onlycontactform">Отправить</button>
+                <span class="popup__form__footer-text-onlycontactform">*поля, обязательные для заполнения</span>
+            </form>
+        </div>
+        <div class="popup__btn-onlycontactform hidden">Далее</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script>
+        $("#phone1").mask("+7(999)999-9999");
+        $(document).ready(function () {
+            // $(".popup-wrapper").css("display", "flex");
+            $(".popup__close-btn-onlycontactform").click(function () {
+                $(".popup-onlycontactform").addClass("hidden");
+                $(".popup-wrapper-onlycontactform").addClass("hidden");
+            });
+            $(".popup__form-onlycontactform").submit( (e) => {
+                e.preventDefault();
+                mainApi($('.popup__form-onlycontactform').serializeArray())
+                    .then((res) => {
+                        console.log(res);
+                        if (res.ok) {
+
+                            $(".popup__form-wrapper-onlycontactform").addClass("hidden")
+
+                            $(".popup__content-onlycontactform p").html("<div class='thanks-content-onlycontactform'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                            $(".popup__btn-onlycontactform").html("Вернуться к сайту");
+                            $(".popup__btn-onlycontactform").removeClass("hidden");
+                            $(".popup__btn-onlycontactform").click(function () {
+                                $(".popup-onlycontactform").addClass("hidden");
+                                $(".popup-wrapper-onlycontactform").addClass("hidden");
+                            });
+                        }
+                    })
+                    .catch((err) => {
+                        swal({
+                            type: "error",
+                            title: "Извините, у нас технический сбой.",
+                            text: "Позвоните, пожалуйста, нам по телефону 8 800 777 18 26",
+                        });
+                        console.log(err);
+                    });
+
+            })
+        });
+    </script>
+</div>
+<!--END -- Popup GET CONTACT window with contact form -- END-->
 
 <!--scripts loaded here-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
