@@ -854,6 +854,13 @@ button {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 426px) and (max-width: 1023px){
+  #sport .hero h1 {
+    padding-top:250px;
+  }
+}
+
+
 @media screen and (min-width: 425px) and (max-width: 1023px){
   .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__text.swim__text  {
     margin:0 auto;
@@ -8457,6 +8464,10 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  #sidebarCollapse {
+    margin: 0 0 0 10px;
+  }
+
   .gallery_children .gallery-left-desc {
     margin-bottom: 30px;
   }
@@ -8865,6 +8876,13 @@ button {
 }
 
 @media screen and (max-width:426px) {
+    #sport .hero h1 span {
+      font-size: 50px;
+      width:290px;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 900;
+    }
     .baths .baths-title {
       padding: 0px;
     }
@@ -8974,9 +8992,10 @@ button {
   }
   .btn-group>.btn:first-child {
     border-radius:0;
+    margin: 17px 0 17px;
   }
   .btn-group>.btn:not(:first-child){
-    margin: 17px;
+    margin: 17px 0 17px;
     border-radius:0;
   }
   .button__title {

@@ -38,7 +38,6 @@ $(".norm-menu-items-item.list-wrap span").click(function (e) {
 
 // анимации иконки меню
 $("#sidebarCollapse").click(function () {
-  console.log(this);
   $(this).toggleClass("active");
   $(".norm-menu-wrap").toggleClass("active");
 });

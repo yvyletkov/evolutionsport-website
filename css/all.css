@@ -7319,6 +7319,12 @@ html{
 
 .about-btn {
   color: #fff;
+  position: absolute;
+  bottom: 40px;
+}
+
+.about-btn:hover {
+  color: #ffffff;
 }
 
 .card-body {
@@ -7446,7 +7452,7 @@ html{
 
 .icon-description__main {
   display: block;
-  width:106px;
+  width:115px;
 }
 
 .icon-description__main .icon-title {
