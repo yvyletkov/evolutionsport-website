@@ -30,6 +30,7 @@
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main.js"></script>
     <script src="../js/health-center-calc-form.js"></script>
+    <script src="../js/requests.js"></script>
     <title>Реабилитация</title>
 
 </head>
@@ -50,44 +51,48 @@
             <p class="banner__placeholder">Лечение</p>
 
             <form id="health-center-calc-form" class="banner-form">
-                <input name="form-name" value="health-center-cost-calc" type="hidden">
+                <div class="calc-form-inputs">
+                    <input name="form-name" value="health-center-cost-calc" type="hidden">
 
-                <select id="health-center-directions" name="direction" required
-                        class="input-image direction label-view select-controller label label-view__input">
-                    <option disabled selected value>Выберите направление</option>
-                    <option value="rehabilitation">Реабилитация</option>
-                    <option value="sanatorium">Санаторно-курортное лечение</option>
-                    <option value="parasport">Параспорт</option>
-                </select>
-                <select id="health-center-programs" name="program" required
-                        class="input-image direction label-view select-controller label label-view__input">
-                    <option disabled selected value>Выберите программу</option>
-                    <option value="rehabilitation">Реабилитация</option>
-                    <option value="sanatorium">Санаторно-курортное лечение</option>
-                    <option value="parasport">Параспорт</option>
-                </select>
-                <select name="duration" required
-                        class="input-image direction label-view select-controller label label-view__input">
-                    <option disabled selected value>Выберите продолжительность</option>
-                    <option value="14">14 дней</option>
-                    <option value="18">18 дней</option>
-                    <option value="24">24 дня</option>
-                </select>
+                    <select id="health-center-directions" name="direction" required
+                            class="input-image direction label-view select-controller label label-view__input">
+                        <option selected disabled  value>Выберите направление</option>
+                        <option value="rehabilitation">Реабилитация</option>
+                        <option value="sanatorium">Санаторно-курортное лечение</option>
+                        <option value="parasport">Параспорт</option>
+                    </select>
+                    <select id="health-center-programs" name="program" required
+                            class="input-image direction label-view select-controller label label-view__input">
+                        <option disabled selected value>Выберите программу</option>
 
-                <label class="label">
-                    <div class="label-view">
-                        <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/></div>
-                        <input name="number-of-rehabilitants" required maxlength="2" max="99" min="1"
-                               class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
-                    </div>
-                </label>
-                <label class="label">
-                    <div class="label-view">
-                        <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/></div>
-                        <input name="number-of-guests" required max="99" min="0" class="label-view__input" type="number"
-                               placeholder="Количество сопровождающих"/>
-                    </div>
-                </label>
+                    </select>
+                    <select name="duration" required
+                            class="input-image direction label-view select-controller label label-view__input">
+                        <option disabled selected value>Выберите продолжительность</option>
+                        <option value="14">14 дней</option>
+                        <option value="18">18 дней</option>
+                        <option value="24">24 дня</option>
+                    </select>
+
+                    <label class="label">
+                        <div class="label-view">
+                            <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/>
+                            </div>
+                            <input name="number-of-rehabilitants" required maxlength="2" max="99" min="1"
+                                   class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
+                        </div>
+                    </label>
+                    <label class="label">
+                        <div class="label-view">
+                            <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/>
+                            </div>
+                            <input name="number-of-guests" required max="99" min="0" class="label-view__input"
+                                   type="number"
+                                   placeholder="Количество сопровождающих"/>
+                        </div>
+                    </label>
+                </div>
+
                 <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
             </form>
 

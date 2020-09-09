@@ -17,64 +17,58 @@ window.onload = () => {
         {value: "active-life", innerHTML: "Актив-лайф"},
         {value: "dipl-life", innerHTML: "Дипл-лайф"},
         {value: "light-sport", innerHTML: "Лайт-спорт"}
-    ]
+    ];
     let selectDirectionsElement = document.getElementById("health-center-directions");
+    let parentElement = document.getElementById("health-center-programs");
+    function mapFunc (el) {
+        let newOptionElement = document.createElement("option");
+        newOptionElement.innerHTML = el.innerHTML;
+        newOptionElement.setAttribute("value", el.value);
+        parentElement.appendChild(newOptionElement);
+    }
+    function addOptionElements () {
+        if (selectDirectionsElement.selectedIndex === 1) {
+            rehabilitationOptions.map((el) => mapFunc(el))
+        }
+        else if (selectDirectionsElement.selectedIndex === 2) {
+            sanatoriumOptions.map((el) => mapFunc(el))
+        }
+        else if (selectDirectionsElement.selectedIndex === 3) {
+            parasportOptions.map((el) => mapFunc(el))
+        }
+    }
+    addOptionElements();
 
     selectDirectionsElement.addEventListener("change",() => {
 
-        let parentElement = document.getElementById("health-center-programs");
         document.getElementById("health-center-programs").innerHTML = "";
 
-        if (selectDirectionsElement.selectedIndex == 1) {
-            rehabilitationOptions.map((el) => {
-                let newOptionElement = document.createElement("option");
-                newOptionElement.innerHTML = el.innerHTML;
-                newOptionElement.setAttribute("value", el.value);
-                parentElement.appendChild(newOptionElement);
-            })
-        }
-
-        else if (selectDirectionsElement.selectedIndex == 2) {
-            sanatoriumOptions.map((el) => {
-                let newOptionElement = document.createElement("option");
-                newOptionElement.innerHTML = el.innerHTML;
-                newOptionElement.setAttribute("value", el.value);
-                parentElement.appendChild(newOptionElement);
-            })
-        }
-
-        else if (selectDirectionsElement.selectedIndex == 3) {
-            parasportOptions.map((el) => {
-                let newOptionElement = document.createElement("option");
-                newOptionElement.innerHTML = el.innerHTML;
-                newOptionElement.setAttribute("value", el.value);
-                parentElement.appendChild(newOptionElement);
-            })
-        }
+        addOptionElements();
 
     });
 
     $("#health-center-calc-form").submit((e) => {
         e.preventDefault();
-        $.ajax({
-            url: "http://95.181.172.100/erp/mock/",
-            type: "POST",
-            data: $('#health-center-calc-form').serializeArray(),
-            success: function (response) {
-                console.log("RESPONSE:", response);
-                $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
-                $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
-                $(".popup__btn").html("Вернуться к сайту");
-                $(".popup__btn").removeClass("hidden");
-                $(".popup__btn").click(function () {
-                    $(".popup").addClass("hidden");
-                    $(".popup-wrapper").addClass("hidden");
+        mainApi($('#health-center-calc-form').serializeArray())
+            .then((res) => {
+                console.log(res);
+                if (res.ok) {
+                    swal({
+                        type: "success",
+                        title: "Спасибо!",
+                        text: "Ваша заявка будет обработана, наш менеджер с вами свяжется",
+                    });
+                    this.reset();
+                }
+            })
+            .catch((err) => {
+                swal({
+                    type: "error",
+                    title: "Извините, рассчет стоимости временно невозможен",
+                    text: "Что-то пошло не так, мы уже работаем над ошибкой",
                 });
-            },
-            error: function (response) {
-                console.log("ОШИБКА", response)
-            }
-        });
+                console.log(err);
+            });
     })
 
 }
