@@ -1015,11 +1015,12 @@ button {
 .cost-content-cost {
     text-align: center;
     font-size: 30px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 .cost-content-cost + span {
+    /*font-weight: bold;*/
     font-size: 20px;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .cost-content div:last-of-type {
@@ -1030,7 +1031,7 @@ button {
 .bannerWrap .banner-form-wrapper {
     position: absolute;
     top: -webkit-calc(100% - 160px);
-    top: calc(100% - 160px);
+    top: calc(100% - 220px);
     z-index: 3;
     padding: 20px 24px;
     background: -webkit-linear-gradient(44deg, #559ed6, #437da9);
@@ -1058,6 +1059,10 @@ button {
 }
 
 .label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.label:last-child {
     margin-bottom: 10px;
 }
 
