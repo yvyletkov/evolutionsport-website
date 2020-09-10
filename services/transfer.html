@@ -32,7 +32,7 @@
     <title>Трансфер – ЦС Эволюция</title>
 
 </head>
-<body>
+<body id="transfer">
 
 <main class="new-content transfer">
     <section class="textBlock textBlock_rtl">
@@ -56,7 +56,7 @@
 
     <section class="container" style="padding: 40px 0">
         <p class="defaultTitle supaCard__title">Виды транспорта</p>
-        <p class="defaultSubtitle supaCard__subtitle" style="margin-bottom: 67px;">С кратким описанием</p>
+        <p class="defaultSubtitle supaCard__subtitle">С кратким описанием</p>
         <div id="infra">
             <div class="item">
                 <div class="row">
@@ -225,11 +225,11 @@
 
     <section class="textBlock textBlock_reab textBlock_lager">
         <p class="defaultTitle textBlock__title">Можно добраться самостоятельно</p>
-        <p class="defaultSubtitle textBlock__subtitle">Перечень преимуществ</p>
+<!--        <p class="defaultSubtitle textBlock__subtitle">Перечень преимуществ</p>-->
         <div class="textBlock-wrap">
             <div class="textBlock-images">
                 <div class="textBlock-images-img">
-                    <img class="textBlock-images__img" src="/img/transfer1.png" alt=""/>
+                    <img class="textBlock-images__img" src="../img/transfer1.png" alt=""/>
                 </div>
             </div>
             <div class="textBlock-desc">
@@ -247,11 +247,12 @@
     </section>
 
     <form class="reviews-form">
-        <p class="defaultTitle supaCard__title">Форма захвата</p>
-        <p class="defaultSubtitle supaCard__subtitle">Перечь преимуществ</p>
+        <p class="defaultTitle supaCard__title" style="margin-bottom: 20px; margin-top: 0">Хотите расскажем подробнее?</p>
+        <!--        <p class="defaultSubtitle supaCard__subtitle"></p>-->
         <div class="reviews-form-content">
-            <input type="text" placeholder="Введите имя" required>
-            <input type="tel" placeholder="Введите номер телефона" required>
+            <input type="hidden" name="form-name" value="contact-form-transfer-page">
+            <input type="text" name="name" placeholder="Введите имя" required>
+            <input type="tel" name="phone" placeholder="Введите номер телефона" required>
             <button type="submit">Заказать обратный звонок</button>
         </div>
     </form>

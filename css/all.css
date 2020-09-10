@@ -113,11 +113,11 @@ body {
     display: inline-block;
     box-shadow: 0 0 15px #b9b9b9;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 }
 .button-blue:hover {
-    background: #508edf;
+    background: #3c6aa7;
     text-decoration: none;
     color: #fff;
 }
@@ -255,9 +255,13 @@ body {
 
 
 
-#sportivnij .hero h2 span, #mirnij .hero h2 span, #pogranichnij .hero h2 span, #zvezdnij .hero h2 span {
+#sportivnij .hero h2 span,
+#mirnij .hero h2 span,
+#pogranichnij .hero h2 span,
+#zvezdnij .hero h2 span,
+#shtormovoi .hero h2 span {
     text-transform: uppercase;
-    line-height: 0.9;
+    line-height: 1.2;
 }
 
 
@@ -310,7 +314,7 @@ body {
     color: #474747;
 }
 .img-shadow {
-    box-shadow: 0 0 15px #b9b9b9;
+    box-shadow: 0 0 15px rgba(185, 185, 185, 0.47);
 }
 
 #sidebar {
@@ -711,12 +715,6 @@ a.article:hover {
 }
 /*Slider Main*/
 
-.map {
-    padding:40px 0;
-}
-.map img {
-    width:100%;
-}
 .blue-stripe.blue-title {
     margin-left:60px;
     font-size:40px;
@@ -1173,12 +1171,6 @@ a.article:hover {
 }
 /*Slider Main*/
 
-.map {
-    padding:40px 0;
-}
-.map img {
-    width:100%;
-}
 .blue-stripe.blue-title {
     margin-left:60px;
     font-size:40px;
@@ -1814,7 +1806,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
@@ -2030,7 +2021,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
@@ -2380,7 +2370,7 @@ a.article:hover {
     font-weight: 900;
 }
 .baths .tns-controls img {
-    box-shadow:0 0 15px #fff;
+    /*box-shadow:0 0 15px #fff;*/
     border-radius:60%;
 }
 .blue-stripe-border span {
@@ -2496,7 +2486,6 @@ a.article:hover {
 }
 .blue-stripe-border span {
     display: block;
-    font-style: italic;
     font-weight: 400;
 }
 .baths {
@@ -2687,7 +2676,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
@@ -2920,7 +2908,6 @@ a.article:hover {
 
 .blue-stripe-border span {
     display: block;
-    font-style: italic;
     font-weight: 400;
 }
 .baths {
@@ -3241,7 +3228,7 @@ a.article:hover {
     font-weight: 900;
 }
 .baths .tns-controls img {
-    box-shadow:0 0 15px #fff;
+    /*box-shadow:0 0 15px #fff;*/
     border-radius:60%;
 }
 .blue-stripe-border span {
@@ -3360,7 +3347,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
@@ -3786,12 +3772,7 @@ a.article:hover {
 }
 /*Slider Main*/
 
-.map {
-    padding:40px 0;
-}
-.map img {
-    width:100%;
-}
+
 .blue-stripe.blue-title {
     margin-left:60px;
     font-size:40px;
@@ -4268,6 +4249,7 @@ a.article:hover {
 }
 .map img {
     width:100%;
+    margin-left: 50px;
 }
 .blue-stripe.blue-title {
     margin-left:60px;
@@ -5008,7 +4990,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
@@ -5224,7 +5205,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
@@ -5565,16 +5545,9 @@ a.article:hover {
     right: -28px;
     position:absolute;
 }
-.baths .absolute-relax {
-    position: absolute;
-    right: 0px;
-    font-size: 88px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 900;
-}
+
 .baths .tns-controls img {
-    box-shadow:0 0 15px #fff;
+    /*box-shadow:0 0 15px #fff;*/
     border-radius:60%;
 }
 .blue-stripe-border span {
@@ -5724,6 +5697,8 @@ a.article:hover {
     margin-top: 10px;
 }
 .banner-weather .banner-weather-link {
+    position: relative;
+    left: -20px;
     font-weight: 300;
     color: #fff;
     font-size: 12px;
@@ -5776,7 +5751,6 @@ a.article:hover {
 }
 .blue-stripe-border span {
     display: block;
-    font-style: italic;
     font-weight: 400;
 }
 .baths {
@@ -6035,7 +6009,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
@@ -6268,7 +6241,6 @@ a.article:hover {
 
 .blue-stripe-border span {
     display: block;
-    font-style: italic;
     font-weight: 400;
 }
 .baths {
@@ -6583,14 +6555,14 @@ a.article:hover {
 }
 .baths .absolute-relax {
     position: absolute;
-    right: 0px;
+    right: 91px;
     font-size: 88px;
-    color: #f8f8f8;
+    color: #efefef;
     text-transform: uppercase;
     font-weight: 900;
 }
 .baths .tns-controls img {
-    box-shadow:0 0 15px #fff;
+    /*box-shadow:0 0 15px #fff;*/
     border-radius:60%;
 }
 .blue-stripe-border span {
@@ -6710,7 +6682,6 @@ a.article:hover {
 }
 .description .blue-stripe-border span {
     font-weight:400;
-    font-style:italic;
     display:block;
 }
 .room-categories {
