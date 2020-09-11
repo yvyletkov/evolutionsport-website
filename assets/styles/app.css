@@ -10,10 +10,13 @@
 
 @font-face {
     font-family: 'Cambria';
-url('../../fonts/cambriabold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    src: url('/fonts/Cambria.eot');
+    src: url('/fonts/Cambria.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Cambria.woff') format('woff'),
+    url('/fonts/Cambria.ttf') format('truetype');
+    font-weight: normal;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
@@ -484,9 +487,10 @@ button {
     line-height: 1.4;
 }
 
-@media screen and (max-width: 768px){
-    #sanatorium .slick-slider, #rehabilitation .slick-slider, #parasport .slick-slider, #health-center .slick-slider {
-        margin-bottom: 35px;
+@media screen and (max-width: 1023px){
+    #sanatorium .supa-wrap, #rehabilitation .supa-wrap, #parasport .supa-wrap, #health-center .supa-wrap {
+        /*margin-bottom: 35px;*/
+        padding-bottom: 0px !important;
     }
 }
 
@@ -1599,6 +1603,11 @@ button {
     color: #fff;
 }
 
+.btn_accent:hover {
+    background-color: #3a914e;
+
+}
+
 .btn_blue {
     background-color: #2c87c3;
     color: #fff;
@@ -1993,6 +2002,10 @@ button {
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.48);
     /*transform: scale(0.9);*/
     /*z-index: 3;*/
+}
+
+.directions-row-item:hover {
+    text-decoration: none;
 }
 
 .directions-row-item:after {
@@ -3169,6 +3182,12 @@ button {
     background-color: #4272b2;
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 0;
+}
+
+.children-supa .children-supa__btn:hover {
+    background-color: #355b8e;
+    color: #fff;
 }
 
 @media screen and (min-width: 1024px) {
@@ -3212,13 +3231,13 @@ button {
     -ms-transform-origin: center center;
     transform-origin: center center;
     color: #e8e8e8;
-    font-size: 70px;
+    font-size: 74px;
     z-index: 2;
     text-transform: uppercase;
     font-weight: 900;
     font-family: "Geometria";
-    top: 50%;
-    left: 0;
+    top: 49.5%;
+    left: 10px;
     -webkit-transform: rotate(-90deg) translate(52px, -146px);
     -ms-transform: rotate(-90deg) translate(52px, -146px);
     transform: rotate(-90deg) translate(52px, -146px);
@@ -3448,7 +3467,7 @@ button {
         -webkit-background-size: auto 100%;
         background-size: auto 100%;
         background-position: right center;
-        background-image: url("../images/ld-bg.png");
+        /*background-image: url("../images/ld-bg.png");*/
         background-repeat: no-repeat;
     }
 }
@@ -3547,6 +3566,7 @@ button {
 .results-row-desc {
     width: 50%;
     padding: 10px 10px 10px 60px;
+    text-align: justify;
 }
 
 .results-row-desc-ul {
@@ -3567,7 +3587,7 @@ button {
 }
 
 .gallery {
-    background-image: url("../images/galBg.png");
+    /*background-image: url("../images/galBg.png");*/
     background-position: bottom right;
     background-repeat: no-repeat;
 }
@@ -6333,6 +6353,10 @@ button {
     }
 }
 
+.carousel-wrap a:hover {
+    text-decoration: none;
+}
+
 .shedule-table-cell__content {
     margin-top: 30px;
 }
@@ -6874,6 +6898,7 @@ button {
     }
 
     .supaSlider-insideSliderBlock {
+        z-index: 100;
         left: 50%;
         bottom: 0px;
         top: auto;
@@ -7257,6 +7282,7 @@ button {
     .carousel-wrap {
         padding: 0 10px;
     }
+
 
     .carousel.children__carousel .carousel__title.full_time::before {
         -webkit-flex-shrink: 0;
@@ -9257,9 +9283,29 @@ button {
     #infra .right-part {
         max-width: none;
         flex: 0 0 100%;
-        text-align: justify;
+        text-align: left;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    #infra .left-part img:first-child {
+        height: 480px;
+        object-fit: cover;
+    }
+    #infra .left-part img:last-child {
+        height: 230px;
+        object-fit: cover;
+    }
+    #infra .right-part {
+        position: relative;
+        height: 730px;
+    }
+    #infra .right-part img:last-child {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 
 /*Шаблон видов спорта Конец*/
 

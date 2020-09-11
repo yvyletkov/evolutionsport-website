@@ -80,8 +80,8 @@ $(function () {
             navPosition: 'bottom',
             animateIn: 'jello',
             controlsText: [
-                '<img src="../img/red-arrow-left.png">',
-                '<img src="../img/red-arrow-right.png">'
+                '<img src="../img/index/icons/arrow-left-thin.png">',
+                '<img src="../img/index/icons/arrow-right-thin.png">'
             ],
         });
     }
