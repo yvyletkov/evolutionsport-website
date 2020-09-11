@@ -89,30 +89,30 @@ $(".price-form").on("submit", function (event) {
     });
 });
 
-$(".tarifes-list").on("submit", function (event) {
-  event.preventDefault();
-  const sum = +$("#new__price-first").text().match(/\d+/g).join("");
-  let obj = [];
-  if ($("p").is(".tarifes-list-item-row__item")) {
-    const childNum = $("#child-num").text();
-    const daysNum = $("#days-num").text();
-    obj = [
-      { name: "form-name", value: "autumn-camp-day" },
-      { name: "price", value: sum },
-      { name: "count-children", value: childNum },
-      { name: "count-days", value: daysNum },
-    ];
-  } else {
-    obj = [
-      { name: "form-name", value: "autumn-camp" },
-      { name: "price", value: sum },
-    ];
-  }
-  mainApi(obj)
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
+// $(".tarifes-list").on("submit", function (event) {
+//   event.preventDefault();
+//   const sum = +$("#new__price-first").text().match(/\d+/g).join("");
+//   let obj = [];
+//   if ($("p").is(".tarifes-list-item-row__item")) {
+//     const childNum = $("#child-num").text();
+//     const daysNum = $("#days-num").text();
+//     obj = [
+//       { name: "form-name", value: "autumn-camp-day" },
+//       { name: "price", value: sum },
+//       { name: "count-children", value: childNum },
+//       { name: "count-days", value: daysNum },
+//     ];
+//   } else {
+//     obj = [
+//       { name: "form-name", value: "autumn-camp" },
+//       { name: "price", value: sum },
+//     ];
+//   }
+//   // mainApi(obj)
+//   //   .then((res) => {
+//   //     console.log(res);
+//   //   })
+//   //   .catch((err) => {
+//   //     console.log(err);
+//   //   });
+// });

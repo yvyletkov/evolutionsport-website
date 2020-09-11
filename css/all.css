@@ -10,6 +10,16 @@
 }
 
 @font-face {
+  font-family: 'Geometria Heavy';
+  src: url('../fonts/Geometria-Heavy.eot');
+  src: url('../fonts/Geometria-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Geometria-Heavy.woff') format('woff'),
+  url('../fonts/Geometria-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Roboto";
   src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"),
     url("../fonts/Robotothinitalic.woff2") format("woff2"),
@@ -358,7 +368,7 @@ body {
 }
 
 .hero h1 {
-  padding-top: 290px;
+  padding-top: 255px;
   font-size: 76px;
   line-height: 80px;
   color: #fff;
@@ -387,7 +397,7 @@ body {
 .title-bold {
   font-size: 44px;
   line-height: 46px;
-  color: #474747;
+  color: #171717;
   text-align: center;
   font-weight: 900;
 }
@@ -885,6 +895,7 @@ html{
 .about-description {
   font-weight: 100;
   color: #818181;
+  text-align:justify;
 }
 
 .about-description span {
@@ -969,8 +980,8 @@ html{
 }
 
 .calendar {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 0 !important;
 }
 
 .calendar.calendar {
@@ -1166,6 +1177,7 @@ html{
   text-transform: uppercase;
   font-weight: 900;
   top: 5px;
+  z-index:0
 }
 
 .news-block .container {
@@ -5093,8 +5105,8 @@ html{
 .content-slider img {
   box-shadow: 0 0 15px #bfc0c2;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 150px;
+  object-fit: contain;
 }
 
 .calendar .col-9 {
@@ -7220,7 +7232,7 @@ html{
 
 .blue-stripe-border span {
   display: block;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .baths {
@@ -7448,7 +7460,7 @@ html{
 }
 
 .icon-img-cont {
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 .icon-img-cont img {
@@ -7583,7 +7595,7 @@ html{
 }
 
 .about-icon__main {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   display: flex;
   text-align: center;
   width: 250px;
@@ -7611,7 +7623,7 @@ html{
 }
 
 .news-block {
-  padding: 100px 0 60px;
+  padding: 60px 0 0px !important;
 }
 
 .news-block #news4items {
