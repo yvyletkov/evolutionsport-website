@@ -28,7 +28,6 @@ async function mainApi(info) {
 }
 
 async function getQuizNewProgram() {
-  debugger
   try {
     const res = await fetch("http://95.181.172.100/erp/site/all-pages-quiz/", {
       method: "GET",
