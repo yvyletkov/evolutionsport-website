@@ -1,0 +1,7982 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("../fonts/Robotothin.woff2") format("woff2"),
+    url("../fonts/Robotothin.woff") format("woff"),
+    url("../fonts/Robotothin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria Heavy';
+  src: url('../fonts/Geometria-Heavy.eot');
+  src: url('../fonts/Geometria-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Geometria-Heavy.woff') format('woff'),
+  url('../fonts/Geometria-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"),
+    url("../fonts/Robotothinitalic.woff2") format("woff2"),
+    url("../fonts/Robotothinitalic.woff") format("woff"),
+    url("../fonts/Robotothinitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/Robotolight.woff2") format("woff2"),
+    url("../fonts/Robotolight.woff") format("woff"),
+    url("../fonts/Robotolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
+    url("../fonts/Robotolightitalic.woff2") format("woff2"),
+    url("../fonts/Robotolightitalic.woff") format("woff"),
+    url("../fonts/Robotolightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/Roboto.woff2") format("woff2"),
+    url("../fonts/Roboto.woff") format("woff"),
+    url("../fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Italic"), local("Roboto-Italic"),
+    url("../fonts/Robotoitalic.woff2") format("woff2"),
+    url("../fonts/Robotoitalic.woff") format("woff"),
+    url("../fonts/Robotoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/Robotomedium.woff2") format("woff2"),
+    url("../fonts/Robotomedium.woff") format("woff"),
+    url("../fonts/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"),
+    url("../fonts/Robotomediumitalic.woff2") format("woff2"),
+    url("../fonts/Robotomediumitalic.woff") format("woff"),
+    url("../fonts/Robotomediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/Robotobold.woff2") format("woff2"),
+    url("../fonts/Robotobold.woff") format("woff"),
+    url("../fonts/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
+    url("../fonts/Robotobolditalic.woff2") format("woff2"),
+    url("../fonts/Robotobolditalic.woff") format("woff"),
+    url("../fonts/Robotobolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../fonts/Robotoblack.woff2") format("woff2"),
+    url("../fonts/Robotoblack.woff") format("woff"),
+    url("../fonts/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"),
+    url("../fonts/Robotoblackitalic.woff2") format("woff2"),
+    url("../fonts/Robotoblackitalic.woff") format("woff"),
+    url("../fonts/Robotoblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+/* @import '../vendor/fonts.css'; */
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #171717;
+  font-weight: 400;
+}
+
+.grey {
+  background-color: #e8e8e8;
+}
+
+.nopadding-bottom {
+  padding-bottom: 0px !important;
+}
+
+.nopadding-top {
+  padding-top: 0px !important;
+}
+
+.minimap {
+  width: 745px;
+  height: 494px;
+  border: none;
+}
+
+.nopadding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.button-blue {
+  background: #4273b3;
+  color: #fff;
+  padding: 16px 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-blue_card {
+  background: #4273b3;
+  color: #fff;
+  padding: 16px 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width:200px;
+}
+
+.button-blue_card:hover {
+  background: #2d4e7a;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-blue__mobile {
+  display: none;
+}
+
+.button-blue:hover {
+  background: #2d4e7a;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-red {
+  background: #f32d3e;
+  color: #fff;
+  padding: 16px 35px;
+  display: inline-block;
+  box-shadow: 0 0 15px #b9b9b9;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.button-red:hover {
+  background: #9e1c27;
+  text-decoration: none;
+  color: #fff;
+}
+
+.root {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+/* .menu-evolution {
+                padding: 20px 0;
+            } */
+
+.menu-evolution.navbar-dark .navbar-nav .nav-link {
+  color: #171717;
+}
+
+.menu-evolution.navbar-dark.navbar-black .navbar-nav .nav-link {
+  color: #000;
+}
+
+.navbar-dark .navbar-nav.left-menu .nav-link {
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav.right-menu:last-child{
+  text-decoration: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.phone-menu {
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.navbar-nav.left-menu li {
+  padding-right: 15px;
+}
+
+.navbar-nav li {
+  align-self: center;
+}
+
+.underlines {
+  position: relative;
+}
+
+.nav-item .underlines:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: 5px;
+  left: 8px;
+  background: #000;
+  width: calc(100% - 16px);
+}
+
+.navbar-black .nav-item .underlines:after {
+  background: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.button-blue.button-blue {
+  border-radius: 25px;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+.carousel.slide {
+  z-index: 2;
+}
+
+.icons-footer img {
+  max-height: 20px;
+  margin-right: 20px;
+}
+
+.navbar-black {
+  background: #fff;
+  padding: 0px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+}
+
+.logo-white {
+  display: none;
+}
+
+.logo-dark {
+  width: 130px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-image: url("../img/logo1.png");
+}
+
+.logo-dark__main {
+  width: 130px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/logo1.png");
+}
+
+.dropdown-menu.show {
+  width:275px;
+}
+
+.navbar-expand-lg
+  .navbar-nav
+  .nav-link.button-blue__mobile.button-blue__mobile {
+  border-radius: 25px;
+  color: #fff;
+  padding: 13px 18px;
+}
+
+.navbar-black .logo-dark {
+  display: none;
+}
+
+.navbar-black .logo-dark__main {
+  display: none;
+}
+
+.navbar-black .logo-white {
+  display: inline;
+  margin-left: -3px;
+}
+
+.hero {
+  min-height: 750px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero h2 {
+  padding-top: 290px;
+  font-size: 76px;
+  line-height: 80px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero h2 span {
+  text-transform: uppercase;
+  font-weight: 900;
+  display: block;
+}
+
+.hero h1 {
+  padding-top: 255px;
+  font-size: 76px;
+  line-height: 80px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero h1 span {
+  text-transform: uppercase;
+  font-weight: 900;
+  display: block;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-white .nav-item .underlines:after {
+  background: #fff;
+}
+
+.text-white.menu-evolution.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+/*Заголовки*/
+
+.title-bold {
+  font-size: 44px;
+  line-height: 46px;
+  color: #171717;
+  text-align: center;
+  font-weight: 900;
+}
+
+.subtitle-normal {
+  color: #b4b3b3;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 67px;
+}
+
+.subtitle-normal_black {
+  color: #474747;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 67px;
+}
+
+.blue-stripe-title {
+  border-left: 6px solid #4273b3;
+  padding-left: 17px;
+  margin-left: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.img-shadow {
+  box-shadow: 0 0 15px #b9b9b9;
+}
+
+.img__mobile {
+  display: none;
+}
+
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100vh;
+  z-index: 999;
+  background: #4273b3;
+  color: #fff;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #fe0b42;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#dismiss:hover {
+  background: #fff;
+  color: #7386d5;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+  display: block;
+  opacity: 1;
+  top: 0;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #00a257;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  color: #fff;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386d5;
+  background: #fff;
+  text-decoration: none;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #fe0b42;
+  text-decoration: none;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386d5;
+}
+
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+/* width */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #5e5e5e;
+  border-radius: 10px;
+}
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4273b3;
+}
+
+#resort-transfer .tns-slide-active {
+  text-align: center;
+}
+
+.blue-stripe-border {
+  border-left: 6px solid #4273b3;
+  padding-left: 17px;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/athletics/hero.jpg");
+}
+
+#sport .hero h2 {
+  font-size: 67px;
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#sport .hero.container-fluid.container-fluid__basketball {
+  background-image: url("../img/basketball/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid.container-fluid__bow {
+  background-image: url("../img/bow/hero.jpg");
+}
+
+#sport .hero h2 {
+  font-size: 67px;
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.camp-grid {
+  margin-top: 200px;
+}
+
+.camp-grid .gallery-grid {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+
+.camp-grid .container img {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.25s;
+}
+
+.camp-grid .container img:nth-child(7n + 1) {
+  grid-column: 2 / span 2;
+}
+
+.camp-grid .container img:hover {
+  z-index: 2;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+/* вакансии */
+
+.tabs-tab {
+  display: none;
+}
+/* вакансии */
+
+#main-slider {
+  background-image: url("../img/index/main-bg.png");
+  background-repeat: repeat-x;
+  animation: slideleft 10000s infinite linear;
+  -webkit-animation: slideleft 10000s infinite linear;
+  width: 100%;
+  height: 540px;
+  position: relative;
+  margin-top: 95px;
+}
+
+#main-slider:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.menu_close {
+  width: 13px;
+}
+
+.url__pages {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #b8b8b8;
+}
+
+.url__pages:hover {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #171717;
+}
+
+#sidebarCollapse {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#sidebarCollapse span { 
+    position: absolute; left: 0; top: 15px; 
+    margin:0 0 0 -5px;
+}
+
+#sidebarCollapse span,
+#sidebarCollapse span:before,
+#sidebarCollapse span:after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 25px;
+  background:#171717;
+  cursor: pointer;
+}
+#sidebarCollapse span:before {
+  top: -7px;
+}
+#sidebarCollapse span:after {
+  bottom: -7px;
+}
+
+/* #sidebarCollapse span,
+#sidebarCollapse span:before,
+#sidebarCollapse span:after {
+  transition: all 500ms ease-in-out;
+}
+
+#sidebarCollapse.active span {
+  background-color: transparent;
+}
+
+#sidebarCollapse.active span:before,
+#sidebarCollapse.active span:after {
+  top: 0;
+}
+
+#sidebarCollapse.active span:before {
+  transform: rotate(45deg);
+}
+#sidebarCollapse.active span:after {
+  transform: rotate(-45deg);
+} */
+
+.evo-slider h3 {
+  font-size: 76px;
+  line-height: 76px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+
+@keyframes slideleft {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 90000%;
+  }
+}
+
+@-webkit-keyframes slideleft {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 90000%;
+  }
+}
+
+.header-title {
+  margin: 0 0 24px;
+}
+
+.about-us {
+  padding: 40px 0;
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.icon-img-cont {
+  margin-right: 35px;
+  width: 99px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.icon-img-cont img {
+  width: auto;
+}
+
+.icon-description {
+  display: inline-block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.left-image {
+  position: relative;
+  float: left;
+}
+
+.left-image .box-image {
+  box-shadow: 0px 0px 33px 10px #ececec;
+  position: relative;
+  z-index: 2;
+}
+
+.absolute-image-description {
+  position: absolute;
+  top: 171px;
+  font-size: 87px;
+  left: -267px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 1;
+}
+
+.description-right {
+  padding-left: 270px;
+}
+
+.description-right .left-square {
+  margin-left: -105px;
+  margin-top: -10px;
+}
+
+.blue-stripe {
+  border-left: 6px solid #4273b3;
+  padding-left: 17px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blue-stripe span {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about-description {
+  font-weight: 100;
+  color: #818181;
+  text-align:justify;
+}
+
+.about-description span {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #171717;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 60px;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+.about-btn {
+  color: #fff;
+}
+
+.button__group-center {
+  width: 270px;
+  display: flex;
+}
+
+.card-body {
+  padding: 20px 36px 15px;
+  transition: 0.5s;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.about-us-slide .blue-stripe span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+/*Slider Main*/
+
+.map {
+  padding: 40px 0;
+}
+
+.map img {
+  width: 100%;
+}
+
+.blue-stripe.blue-title {
+  margin-left: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.blue-stripe.blue-title span {
+  font-style: normal;
+  color: #b4b3b3;
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: none;
+}
+
+.photogallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.calendar {
+  padding-top: 60px;
+  padding-bottom: 0 !important;
+}
+
+.calendar.calendar {
+  padding-left: 45px;
+}
+
+.calendar .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.photogallery .col-2,
+.photogallery .col-4 {
+  padding: 0 4px;
+}
+
+.photogallery .row {
+  margin-top: 90px;
+}
+
+.photogallery img {
+  width: 100%;
+  margin-bottom: 8px;
+  box-shadow: 0 0 15px #bfc0c2;
+}
+
+.first-gallery .absolute-image-description {
+  left: 0;
+  right: -110px;
+  top: auto;
+  bottom: 220px;
+  z-index: -1;
+}
+
+.photogallery .inline-images {
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.photogallery .inline-images:nth-child(2n + 1) {
+  margin-right: -100px;
+}
+
+.read-more-gallery {
+  position: relative;
+  right: -80px;
+}
+
+.read-more-gallery a {
+  position: absolute;
+  left: -60px;
+  top: 150px;
+  color: #171717;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.photogallery .first-gallery {
+  text-align: right;
+}
+
+.photogallery .two-gallery {
+  margin-top: 49px;
+}
+
+.photogallery .three-gallery {
+  margin-top: -31px;
+}
+
+.photogallery .four-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery img:first-child {
+  margin-bottom: 14px;
+}
+
+.news-block {
+  padding: 100px 0 60px;
+}
+
+.news-block #news4items {
+  padding: 40px 45px;
+}
+
+.news-details {
+  font-size: 16px;
+  line-height: 18px;
+  color: #474747;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.news-subtitle.news-subtitle {
+  font-weight: 300;
+  font-size: 15px;
+  margin: 15px 0 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  /* flex:1 0 auto; */
+}
+
+#about-us-slide .active + .lslide + .lslide,
+#about-us-slide .active + .clone + .clone,
+#about-us-slide .active + .lslide + .clone {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide .active {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide + .lSAction > .lSPrev {
+  background-image: url(../img/arrow-left.png);
+  left: 33%;
+  width: 75px;
+  height: 75px;
+}
+
+#about-us-slide + .lSAction > .lSNext {
+  background-image: url(../img/arrow-right.png);
+  right: 33%;
+  width: 75px;
+  height: 75px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSPrev {
+  background-image: url(../img/index/icons/arrow-left-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSNext {
+  background-image: url(../img/index/icons/arrow-right-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+.contacts-right {
+  padding: 200px 65px;
+}
+
+.contacts-right .blue-stripe.blue-title {
+  margin-left: 0px;
+}
+
+.contacts-description {
+  padding: 100px 0 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-description span {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #585858;
+  margin-top: 15px;
+}
+
+.title-absolute {
+  position: relative;
+}
+
+.icons-footer {
+  padding: 35px 0;
+}
+
+.news-block .absolute-news-title {
+  position: absolute;
+  font-size: 130px;
+  color: #fff;
+  right: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  top: 5px;
+  z-index:0
+}
+
+.news-block .container {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.news-block .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.footer-phone {
+  color: #585858;
+}
+
+.footer-phone a {
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  color: #171717;
+  font-weight: 700;
+}
+
+.content-slider img {
+  box-shadow: 0 0 15px #bfc0c2;
+}
+
+#sport .hero.container-fluid.container-fluid__fencing {
+  background-image: url("../img/fencing/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid.container-fluid__dances {
+  background-image: url("../img/dances/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid.container-fluid__gymnastics {
+  background-image: url("../img/gymnastics/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid.container-fluid__handball {
+  background-image: url("../img/handball/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.sbory__header.sbory__header {
+  text-transform: uppercase;
+  color: #171717;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.evo-slider h3 {
+  font-size: 76px;
+  line-height: 76px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+
+#about__features-sports {
+  display: flex;
+}
+
+.about-us {
+  padding: 40px 0;
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.icon-description {
+  display: inline-block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.left-image {
+  position: relative;
+  float: left;
+}
+
+.left-image .box-image {
+  box-shadow: 0px 0px 33px 10px #ececec;
+  position: relative;
+  z-index: 2;
+}
+
+.absolute-image-description {
+  position: absolute;
+  top: 171px;
+  font-size: 87px;
+  left: -267px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 1;
+}
+
+.description-right {
+  padding-left: 270px;
+}
+
+.description-right .left-square {
+  margin-left: -105px;
+  margin-top: -10px;
+}
+
+.blue-stripe {
+  border-left: 6px solid #4273b3;
+  padding-left: 17px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blue-stripe span {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about-description {
+  font-weight: 100;
+  color: #818181;
+}
+
+.about-description .beach__long {
+  font-weight: 500;
+  cursor: pointer;
+  color: #171717;
+  text-decoration: none;
+}
+
+.about-description span {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #171717;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 60px;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+.about-btn {
+  color: #fff;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.about-us-slide .blue-stripe span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+/*Slider Main*/
+
+.map {
+  padding: 40px 0;
+}
+
+.map img {
+  width: 100%;
+}
+
+.blue-stripe.blue-title {
+  margin-left: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.blue-stripe.blue-title span {
+  font-style: normal;
+  color: #b4b3b3;
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: none;
+}
+
+.photogallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.calendar {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.calendar .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.photogallery .col-2,
+.photogallery .col-4 {
+  padding: 0 4px;
+}
+
+.photogallery .row {
+  margin-top: 90px;
+}
+
+.photogallery img {
+  width: 100%;
+  margin-bottom: 8px;
+  box-shadow: 0 0 15px #bfc0c2;
+}
+
+.first-gallery .absolute-image-description {
+  left: 0;
+  right: -110px;
+  top: auto;
+  bottom: 220px;
+  z-index: -1;
+}
+
+.photogallery .inline-images {
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.photogallery .inline-images:nth-child(2n + 1) {
+  margin-right: -100px;
+}
+
+.photogallery .first-gallery {
+  text-align: right;
+}
+
+.photogallery .two-gallery {
+  margin-top: 49px;
+}
+
+.photogallery .three-gallery {
+  margin-top: -31px;
+}
+
+.photogallery .four-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery img:first-child {
+  margin-bottom: 14px;
+}
+
+.news-block {
+  padding: 100px 0 60px;
+}
+
+.news-block #news4items {
+  padding: 40px 45px;
+}
+
+.news-details {
+  font-size: 16px;
+  line-height: 18px;
+  color: #474747;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.news-subtitle {
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 15px 0 20px;
+}
+
+#about-us-slide .active + .lslide + .lslide,
+#about-us-slide .active + .clone + .clone,
+#about-us-slide .active + .lslide + .clone {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide .active {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide + .lSAction > .lSPrev {
+  background-image: url(../img/arrow-left.png);
+  left: 33%;
+  width: 75px;
+  height: 75px;
+}
+
+#about-us-slide + .lSAction > .lSNext {
+  background-image: url(../img/arrow-right.png);
+  right: 33%;
+  width: 75px;
+  height: 75px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSPrev {
+  background-image: url(../img/index/icons/arrow-left-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSNext {
+  background-image: url(../img/index/icons/arrow-right-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+.contacts-right {
+  padding: 200px 65px;
+}
+
+.contacts-right .blue-stripe.blue-title {
+  margin-left: 0px;
+}
+
+.contacts-description {
+  padding: 100px 0 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-description span {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #585858;
+  margin-top: 15px;
+}
+
+.title-absolute {
+  position: relative;
+}
+
+.icons-footer {
+  padding: 35px 0;
+}
+
+.news-block .absolute-news-title {
+  position: absolute;
+  font-size: 130px;
+  color: #fff;
+  right: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  top: 5px;
+}
+
+.news-block .container {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.news-block .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.footer-phone {
+  color: #585858;
+}
+
+.footer-phone a {
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  color: #171717;
+  font-weight: 700;
+}
+
+.content-slider img {
+  box-shadow: 0 0 15px #bfc0c2;
+}
+/*! lightslider - v1.1.3 - 2015-04-14
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2015 Sachin N; Licensed MIT */
+/** /!!! core css Should not edit !!!/**/
+
+.lSSlideOuter {
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lightSlider:before,
+.lightSlider:after {
+  content: " ";
+  display: table;
+}
+
+.lightSlider {
+  overflow: hidden;
+  margin: 0;
+}
+
+.lSSlideWrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.lSSlideWrapper > .lightSlider:after {
+  clear: both;
+}
+
+.lSSlideWrapper .lSSlide {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: all 1s;
+  -webkit-transition-property: -webkit-transform, height;
+  -moz-transition-property: -moz-transform, height;
+  transition-property: transform, height;
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+}
+
+.lSSlideWrapper .lSFade {
+  position: relative;
+}
+
+.lSSlideWrapper .lSFade > * {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  margin-right: 0;
+  width: 100%;
+}
+
+.lSSlideWrapper.usingCss .lSFade > * {
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+}
+
+.lSSlideWrapper .lSFade > *.active {
+  z-index: 10;
+}
+
+.lSSlideWrapper.usingCss .lSFade > *.active {
+  opacity: 1;
+}
+/** /!!! End of core css Should not edit !!!/**/
+/* Pager */
+
+.lSSlideOuter .lSPager.lSpg {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.lSSlideOuter .lSPager.lSpg > li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.lSSlideOuter .lSPager.lSpg > li a {
+  background-color: #222222;
+  border-radius: 30px;
+  display: inline-block;
+  height: 8px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 8px;
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+
+.lSSlideOuter .lSPager.lSpg > li:hover a,
+.lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color: #428bca;
+}
+
+.lSSlideOuter .media {
+  opacity: 0.8;
+}
+
+.lSSlideOuter .media.active {
+  opacity: 1;
+}
+/* End of pager */
+/** Gallery */
+
+.lSSlideOuter .lSPager.lSGallery {
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0;
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate3d(0px, 0px, 0px);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+  overflow: hidden;
+  -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+  transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active,
+.lSSlideOuter .lSPager.lSGallery li:hover {
+  border-radius: 5px;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.lSSlideOuter .lSPager.lSGallery:before,
+.lSSlideOuter .lSPager.lSGallery:after {
+  content: " ";
+  display: table;
+}
+
+.lSSlideOuter .lSPager.lSGallery:after {
+  clear: both;
+}
+/* End of Gallery*/
+/* slider actions */
+
+.lSAction > a {
+  width: 32px;
+  display: block;
+  top: 50%;
+  height: 32px;
+  background-image: url("../img/controls.png");
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  margin-top: -16px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s linear 0s;
+  transition: opacity 0.35s linear 0s;
+}
+
+.lSAction > a:hover {
+  opacity: 1;
+}
+
+.lSAction > .lSPrev {
+  background-position: 0 0;
+  left: 10px;
+}
+
+.lSAction > .lSNext {
+  background-position: -32px 0;
+  right: 10px;
+}
+
+.lSAction > a.disabled {
+  pointer-events: none;
+}
+
+.cS-hidden {
+  height: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  overflow: hidden;
+}
+/* vertical */
+
+.lSSlideOuter.vertical {
+  position: relative;
+}
+
+.lSSlideOuter.vertical.noPager {
+  padding-right: 0px !important;
+}
+
+.lSSlideOuter.vertical .lSGallery {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+}
+
+.lSSlideOuter.vertical .lightSlider > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+/* vertical controlls */
+
+.lSSlideOuter.vertical .lSAction > a {
+  left: 50%;
+  margin-left: -14px;
+  margin-top: 0;
+}
+
+.lSSlideOuter.vertical .lSAction > .lSNext {
+  background-position: 31px -31px;
+  bottom: 10px;
+  top: auto;
+}
+
+.lSSlideOuter.vertical .lSAction > .lSPrev {
+  background-position: 0 -31px;
+  bottom: auto;
+  top: 10px;
+}
+/* vertical */
+/* Rtl */
+
+.lSSlideOuter.lSrtl {
+  direction: rtl;
+}
+
+.lSSlideOuter .lightSlider,
+.lSSlideOuter .lSPager {
+  padding-left: 0;
+  list-style: none outside none;
+}
+
+.lSSlideOuter.lSrtl .lightSlider,
+.lSSlideOuter.lSrtl .lSPager {
+  padding-right: 0;
+}
+
+.lSSlideOuter .lightSlider > *,
+.lSSlideOuter .lSGallery li {
+  float: left;
+}
+
+.lSSlideOuter.lSrtl .lightSlider > *,
+.lSSlideOuter.lSrtl .lSGallery li {
+  float: right !important;
+}
+/* Rtl */
+
+@-webkit-keyframes rightEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes rightEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes topEnd {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes topEnd {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes leftEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes leftEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes bottomEnd {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes bottomEnd {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.lSSlideOuter .rightEnd {
+  -webkit-animation: rightEnd 0.3s;
+  animation: rightEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter .leftEnd {
+  -webkit-animation: leftEnd 0.3s;
+  animation: leftEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.vertical .rightEnd {
+  -webkit-animation: topEnd 0.3s;
+  animation: topEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.vertical .leftEnd {
+  -webkit-animation: bottomEnd 0.3s;
+  animation: bottomEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.lSrtl .rightEnd {
+  -webkit-animation: leftEnd 0.3s;
+  animation: leftEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.lSrtl .leftEnd {
+  -webkit-animation: rightEnd 0.3s;
+  animation: rightEnd 0.3s;
+  position: relative;
+}
+/*/  GRab cursor */
+
+.lightSlider.lsGrab > * {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+.lightSlider.lsGrabbing > * {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/martial/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#mirnij .hero {
+  background-image: url("../img/korpus/mirnij/hero.jpg");
+}
+
+#mirnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 88px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#mirnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#mirnij .modal-dialog {
+  max-width: 900px;
+}
+
+#mirnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#mirnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#mirnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+#pogranichnij .hero {
+  background-image: url("../img/korpus/pogranichnij/hero.jpg");
+}
+
+#pogranichnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+#ed-title__about-iw {
+  right: -15px;
+  position: relative;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#pogranichnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#pogranichnij .modal-dialog {
+  max-width: 900px;
+}
+
+#pogranichnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#pogranichnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#pogranichnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/powerlifting/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#resort .hero {
+  background-image: url("../img/resort/hero.jpg");
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.resort-right-description .first-bold {
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 95px;
+}
+
+.resort-right-description .first-bold span {
+  display: block;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.resort-right-description .till-sea {
+  padding-left: 60px;
+  position: relative;
+}
+
+.resort-right-description .till-sea:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: -17px;
+  background-image: url(../img/resort/wave.png);
+}
+
+.resort-right-description .left-grey-stripe {
+  padding-left: 15px;
+  border-left: 1px solid #dbdbdb;
+  color: #494949;
+  margin-bottom: 47px;
+}
+
+.resort-right-description .left-grey-stripe .price {
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.resort-right-description .button-blue {
+  padding: 16px;
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.icon-description {
+  display: inline-block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.resort-beach {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.resort-beach p {
+  margin-bottom: 24px;
+}
+
+.resort-beach .icons-block {
+  margin-top: 42px;
+}
+
+.resort-beach .absolute-beach {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  font-size: 120px;
+  font-weight: 900;
+  color: #dddddd;
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+.resort-beach .blue-stripe-title {
+  margin: 40px 0px;
+}
+
+.thin-arrows .resort-left-slider .tns-controls button:first-child {
+  left: 0;
+  position: relative;
+}
+
+.thin-arrows .resort-left-slider .tns-controls {
+  top: auto;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+}
+
+#nested-in-korpus-first .tns-slide-active,
+#nested-in-korpus-second .tns-slide-active,
+#nested-in-korpus-third .tns-slide-active,
+#nested-in-korpus-fourth .tns-slide-active {
+  padding-bottom: 50px;
+}
+
+#baths-slider .item {
+  position: relative;
+}
+
+.bath-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  padding: 15px 55px;
+  background: #a9a9a9;
+  box-shadow: -10px 10px 15px #a9a9a9;
+  font-size: 24px;
+}
+
+.baths .baths-padding {
+  padding: 0 100px 0 35px;
+}
+
+.baths p {
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  color: #626262;
+  margin: 0 0 26px 0;
+  max-width: 480px;
+}
+
+.baths p strong {
+  font-weight: 700;
+  color: #171717;
+}
+
+.baths .tns-controls button:first-child {
+  left: -28px;
+}
+
+.baths .tns-controls button:nth-child(2) {
+  right: -28px;
+  position: absolute;
+}
+
+.baths .absolute-relax {
+  position: absolute;
+  right: 0px;
+  font-size: 88px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.baths .tns-controls img {
+  box-shadow: 0 0 15px #fff;
+  border-radius: 60%;
+}
+
+.blue-stripe-border span {
+  display: block;
+}
+
+.baths {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.resort-otdyh {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.resort-otdyh .text-left p {
+  margin-left: auto;
+  max-width: 350px;
+  margin-right: 20px;
+}
+
+.absolute-otdyh {
+  position: absolute;
+  bottom: -90px;
+  right: 15px;
+  font-size: 120px;
+  font-weight: 900;
+  color: #dddddd;
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+.resort-otdyh .blue-stripe-title {
+  margin-left: 10px;
+}
+
+.justify-otdyh {
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.resort-transfer {
+  position: relative;
+}
+
+.absolute-transfer {
+  position: absolute;
+  bottom: 20px;
+  left: 140px;
+  z-index: 2;
+}
+
+.absolute-transfer span {
+  font-size: 38px;
+  color: #fff;
+  line-height: 44px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#resort-transfer .tns-slide-active + .tns-item img {
+  width: 100%;
+  max-height: 540px;
+  z-index: 2;
+}
+
+#resort-transfer .tns-slide-active + .tns-item {
+  z-index: 1;
+  margin-left: -11.1111%;
+  text-align: center;
+  max-height: calc(100% - 60px);
+}
+
+#resort-transfer .tns-slide-active {
+  z-index: 3;
+}
+
+#resort-transfer .tns-slide-active img {
+  z-index: 3;
+  position: relative;
+}
+
+#sbory .hero {
+  background-image: url("../img/sbory/hero.jpg");
+}
+
+#sbory .hero h2 {
+  padding-top: 200px;
+  color: #171717;
+}
+
+.hero .btn-danger {
+  padding-right: 100px;
+  background-color: #e52634;
+}
+
+.hero-description {
+  max-width: 350px;
+  color: #b4b3b3;
+  font-size: 17px;
+}
+
+.features {
+  padding: 40px 0 100px;
+  text-align: center;
+}
+
+.features .small-f {
+  color: #848484;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.features .big-f {
+  display: block;
+  font-size: 105px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-left: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100px;
+}
+
+.absolute-victory {
+  position: absolute;
+  top: 110px;
+  font-size: 13em;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+  text-align: center;
+  margin: 0 25px;
+}
+
+.absolute-victory__video {
+  position: absolute;
+  top: -140px;
+  left: 390px;
+  font-size: 13em;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+  text-align: center;
+  margin: 0 25px;
+}
+
+.main-content {
+  position: relative;
+}
+
+.blue-stripe-border span {
+  display: block;
+  font-weight: 400;
+}
+
+.baths {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  position: relative;
+  margin: 0 0 50px;
+}
+
+.baths .baths-padding {
+  padding: 0 0px 0 35px !important;
+}
+
+.baths .baths-title {
+  padding: 0 0px 0 18px;
+}
+
+.baths-padding .button-blue {
+  background-color: #a11923;
+  z-index: 2;
+  position: relative;
+}
+
+.baths-padding .button-blue:hover {
+  background-color: #c82430;
+}
+
+.baths .absolute-sport {
+  position: absolute;
+  font-size: 99px;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+  width: 100%;
+  left: 10px;
+  top: 200px;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 35px;
+  border-left: 6px solid #fff;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.about-btn {
+  color: #fff;
+}
+
+.card-body {
+  padding: 100px 36px 15px;
+  transition: 0.5s;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  min-height: 440px;
+}
+
+.card-body .button-blue {
+  background-color: #c82430;
+}
+
+.card-body .button-blue:hover {
+  background-color: #a11923;
+  z-index: 2;
+  position: relative;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.resort-right-description .first-bold {
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 95px;
+}
+
+.resort-right-description .first-bold span {
+  display: block;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.resort-right-description .till-sea {
+  padding-left: 60px;
+  position: relative;
+}
+
+.resort-right-description .till-sea:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: -17px;
+  background-image: url(../img/resort/wave.png);
+}
+
+.resort-right-description .left-grey-stripe {
+  padding-left: 15px;
+  border-left: 1px solid #dbdbdb;
+  color: #494949;
+  margin-bottom: 47px;
+}
+
+.resort-right-description .left-grey-stripe .price {
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.resort-right-description .button-blue {
+  padding: 16px;
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+}
+
+.icon-img-cont {
+  margin: 10px auto;
+}
+
+.icon-img-cont img {
+  width: auto;
+}
+
+.icon-description {
+  display: block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#sportivnij .hero {
+  background-image: url("../img/korpus/sportivnij/hero.jpg");
+}
+
+#sportivnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#sportivnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#sportivnij .modal-dialog {
+  max-width: 900px;
+}
+
+#sportivnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#sportivnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#sportivnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+#sport .hero.container-fluid.container-fluid__tennis {
+  background-image: url("../img/tennis/hero.jpg");
+}
+
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/throwing/hero.jpg");
+}
+
+#sport .hero h2 {
+  font-size: 67px;
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero {
+  background-image: url("../img/watersport/hero.jpg");
+}
+
+#sport .hero h2 {
+  color: #171717;
+  text-transform: uppercase;
+}
+
+#sport .hero h2 span {
+  font-size: 92px;
+}
+
+.hero .button-red {
+  margin-right: 20px;
+  min-width: 210px;
+  text-align: center;
+}
+
+.hero .about-list {
+  color: #989898;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 350px;
+  color: #b4b3b3;
+  font-size: 17px;
+}
+
+.blue-stripe-border span {
+  display: block;
+  font-weight: 400;
+}
+
+.baths {
+  padding-top: 40px;
+  position: relative;
+}
+
+.baths .baths-padding {
+  padding: 0 100px 0 35px;
+}
+
+.price-form {
+  background: #d62835;
+  padding: 20px;
+}
+
+.price-form .input-image {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  color: #b8b8b8;
+  min-height: 35px;
+  padding-left: 40px;
+  border: 0px;
+}
+
+::placeholder {
+  color: #b8b8b8;
+  font-size: 14px;
+}
+
+.input-image.date {
+  background: white url(../img/watersport/calendar.png) left no-repeat;
+  background-position: 10px;
+  padding-left: 36px;
+}
+
+.input-image.stadium {
+  background: white url(../img/watersport/stadium.png) left no-repeat;
+  background-position: 10px;
+  padding-left: 36px;
+}
+
+.input-image.users,
+.input-image.trainers {
+  background: white url(../img/watersport/users.png) left no-repeat;
+  background-position: 10px;
+}
+
+.input-image option {
+  padding-left: 20px;
+}
+
+.thin-arrows .resort-left-slider .tns-controls button:first-child {
+  left: 0;
+  position: relative;
+}
+
+.thin-arrows .resort-left-slider .tns-controls {
+  top: auto;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+}
+
+#nested-in-korpus-first .tns-slide-active,
+#nested-in-korpus-second .tns-slide-active,
+#nested-in-korpus-third .tns-slide-active,
+#nested-in-korpus-fourth .tns-slide-active {
+  padding-bottom: 50px;
+}
+
+.price-form .button-blue {
+  padding: 16px 0;
+  text-align: center;
+  width: 100%;
+  border: 0;
+}
+
+.features {
+  padding: 40px 0 100px;
+  text-align: center;
+}
+
+.features .small-f {
+  color: #848484;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.features .big-f {
+  display: block;
+  font-size: 105px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 35px;
+  border-left: 6px solid #fff;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.about-btn {
+  color: #fff;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.resort-right-description .first-bold {
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 95px;
+}
+
+.resort-right-description .first-bold span {
+  display: block;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.resort-right-description .till-sea {
+  padding-left: 60px;
+  position: relative;
+}
+
+.resort-right-description .till-sea:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: -17px;
+  background-image: url(../img/resort/wave.png);
+}
+
+.resort-right-description .left-grey-stripe {
+  padding-left: 15px;
+  border-left: 1px solid #dbdbdb;
+  color: #494949;
+  margin-bottom: 47px;
+}
+
+.resort-right-description .left-grey-stripe .price {
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.resort-right-description .button-blue {
+  padding: 16px;
+  background-color: #b21924;
+}
+
+.video-block {
+  padding: 40px 0;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.play-arrow {
+  position: absolute;
+  top: calc(50% - 39px);
+  left: calc(50% - 39px);
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+}
+
+.icon-description {
+  display: block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.about-us {
+  padding: 60px 0;
+}
+
+.left-part img:first-child {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.left-part img:last-child {
+  width: 100%;
+}
+
+#infra {
+  color: #474747;
+}
+
+.infra {
+  padding: 40px 0;
+  position: relative;
+}
+
+.tleft {
+  font-size: 16px;
+  color: #494949;
+  margin-bottom: 15px;
+}
+
+.tleft:nth-child(2n) {
+  font-weight: 600;
+}
+
+.infra-bold {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.features-center .title-bold {
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+#baths-slider .item {
+  position: relative;
+}
+
+.bath-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  padding: 15px 55px;
+  background: #a9a9a9;
+  box-shadow: -10px 10px 15px #a9a9a9;
+  font-size: 24px;
+}
+
+.baths .baths-padding {
+  padding: 0 100px 0 35px;
+}
+
+.baths .tns-controls button:first-child {
+  left: -28px;
+}
+
+.baths .tns-controls button:nth-child(2) {
+  right: -28px;
+  position: absolute;
+}
+
+.baths .absolute-relax {
+  position: absolute;
+  right: 0px;
+  font-size: 88px;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.baths .tns-controls img {
+  box-shadow: 0 0 15px #fff;
+  border-radius: 60%;
+}
+
+.blue-stripe-border span {
+  display: block;
+}
+
+.baths {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.news-block {
+  padding: 100px 0 60px;
+}
+
+.news-block #news4items {
+  padding: 40px 45px;
+}
+
+.news-details {
+  font-size: 16px;
+  line-height: 18px;
+  color: #474747;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.news-subtitle {
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 15px 0 20px;
+}
+
+.news-block .absolute-news-title {
+  position: absolute;
+  font-size: 130px;
+  color: #f8f8f8;
+  right: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  top: 5px;
+}
+
+.news-block .container {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.news-block .blue-stripe-border {
+  font-size: 40px;
+  color: #474747;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-color: #e52634;
+}
+
+.news-block .blue-stripe-border span {
+  font-style: normal;
+  color: #b4b3b3;
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: none;
+  margin-bottom: 35px;
+}
+
+.news-details .button-red {
+  padding: 16px 60px;
+}
+
+.absolute-living {
+  position: absolute;
+  left: -50px;
+  font-size: 88px;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+}
+
+.absolute-infra {
+  position: absolute;
+  font-size: 88px;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+  right: 30px;
+  top: 120px;
+}
+
+#zvezdnij .hero {
+  background-image: url("../img/korpus/zvezdnij/hero.jpg");
+}
+
+#zvezdnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#zvezdnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#zvezdnij .modal-dialog {
+  max-width: 900px;
+}
+
+#zvezdnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#zvezdnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#zvezdnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/athletics/hero.jpg");
+}
+
+#sport .hero h2 {
+  font-size: 67px;
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/basketball/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/bow/hero.jpg");
+}
+
+#sport .hero h2 {
+  font-size: 67px;
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.camp-grid {
+  margin-top: 200px;
+}
+
+.camp-grid .gallery-grid {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+
+.camp-grid .container img {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.25s;
+}
+
+.camp-grid .container img:nth-child(7n + 1) {
+  grid-column: 2 / span 2;
+}
+
+.camp-grid .container img:hover {
+  z-index: 2;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.evo-slider h3 {
+  font-size: 76px;
+  line-height: 76px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+
+.about-us {
+  padding: 40px 0;
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.icon-img-cont {
+  margin-right: 35px;
+  width: 99px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.icon-img-cont img {
+  width: auto;
+}
+
+.icon-description {
+  display: inline-block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.left-image {
+  position: relative;
+  float: left;
+}
+
+.left-image .box-image {
+  box-shadow: 0px 0px 33px 10px #ececec;
+  position: relative;
+  z-index: 2;
+}
+
+.absolute-image-description {
+  position: absolute;
+  top: 171px;
+  font-size: 87px;
+  left: -267px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 1;
+}
+
+.description-right {
+  padding-left: 270px;
+}
+
+.description-right .left-square {
+  margin-left: -105px;
+  margin-top: -10px;
+}
+
+.blue-stripe {
+  border-left: 6px solid #4273b3;
+  padding-left: 17px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blue-stripe span {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about-description {
+  font-weight: 100;
+  color: #818181;
+}
+
+.about-description span {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #171717;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 60px;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+.about-btn {
+  color: #fff;
+}
+
+.card-body {
+  padding: 20px 36px 15px;
+  transition: 0.5s;
+}
+
+.about-us-slide
+  .tns-item[aria-hidden="true"]
+  + .tns-slide-active
+  + .tns-slide-active
+  .card-body {
+  padding-top: 146px;
+}
+
+#about-us-slide__tourn {
+  padding: 15px 0 0 0;
+}
+
+.about-us-slide__tourn_href {
+  position: absolute;
+  left: 45px;
+  bottom: 25px;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.about-us-slide__tourn_href:hover {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.about-us-slide .blue-stripe span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+/*Slider Main*/
+
+.map {
+  padding: 40px 0;
+}
+
+.map img {
+  width: 100%;
+}
+
+.blue-stripe.blue-title {
+  margin-left: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.blue-stripe.blue-title span {
+  font-style: normal;
+  color: #b4b3b3;
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: none;
+}
+
+.photogallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.calendar {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.calendar .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.photogallery .col-2,
+.photogallery .col-4 {
+  padding: 0 4px;
+}
+
+.photogallery .row {
+  margin-top: 90px;
+}
+
+.photogallery img {
+  width: 100%;
+  margin-bottom: 8px;
+  box-shadow: 0 0 15px #bfc0c2;
+}
+
+.first-gallery .absolute-image-description {
+  left: 0;
+  right: -110px;
+  top: auto;
+  bottom: 220px;
+  z-index: -1;
+}
+
+.photogallery .inline-images {
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.photogallery .inline-images:nth-child(2n + 1) {
+  margin-right: -100px;
+}
+
+.photogallery .first-gallery {
+  text-align: right;
+}
+
+.photogallery .two-gallery {
+  margin-top: 49px;
+}
+
+.photogallery .three-gallery {
+  margin-top: -31px;
+}
+
+.photogallery .four-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery img:first-child {
+  margin-bottom: 14px;
+}
+
+.news-block {
+  padding: 100px 0 60px;
+}
+
+.news-block #news4items {
+  padding: 40px 45px;
+}
+
+.news-details {
+  font-size: 16px;
+  line-height: 18px;
+  color: #474747;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.news-subtitle {
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 15px 0 20px;
+}
+
+#about-us-slide .active + .lslide + .lslide,
+#about-us-slide .active + .clone + .clone,
+#about-us-slide .active + .lslide + .clone {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide .active {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide + .lSAction > .lSPrev {
+  background-image: url(../img/arrow-left.png);
+  left: 33%;
+  width: 75px;
+  height: 75px;
+}
+
+#about-us-slide + .lSAction > .lSNext {
+  background-image: url(../img/arrow-right.png);
+  right: 33%;
+  width: 75px;
+  height: 75px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSPrev {
+  background-image: url(../img/index/icons/arrow-left-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSNext {
+  background-image: url(../img/index/icons/arrow-right-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+.contacts-right {
+  padding: 200px 65px;
+}
+
+.contacts-right .blue-stripe.blue-title {
+  margin-left: 0px;
+}
+
+.contacts-description {
+  padding: 100px 0 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-description span {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #585858;
+  margin-top: 15px;
+}
+
+.title-absolute {
+  position: relative;
+}
+
+.icons-footer {
+  padding: 35px 0;
+}
+
+.news-block .absolute-news-title {
+  position: absolute;
+  font-size: 130px;
+  color: #fff;
+  right: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  top: 5px;
+}
+
+.news-block .container {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.news-block .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.footer-phone {
+  color: #585858;
+}
+
+.footer-phone a {
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  color: #171717;
+  font-weight: 700;
+}
+
+.content-slider img {
+  box-shadow: 0 0 15px #bfc0c2;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/dances/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/fencing/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/football/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/gymnastics/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/handball/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.evo-slider h3 {
+  font-size: 76px;
+  line-height: 76px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+
+#main-slider .slider-content {
+  padding: 120px 0 50px;
+  position: relative;
+}
+
+.about-us {
+  padding: 40px 0;
+}
+
+.about-icon {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.about-icon:last-child {
+  margin-bottom: 0;
+}
+
+.icon-description {
+  display: inline-block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.left-image {
+  position: relative;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+  z-index: 2;
+}
+
+.left-image .box-image {
+  box-shadow: 0px 0px 33px 10px #ececec;
+  position: relative;
+  z-index: 2;
+}
+
+.absolute-image-description {
+  position: absolute;
+  top: 200px;
+  font-size: 87px;
+  left: -270px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 1;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.description-right {
+  padding-left: 270px;
+}
+
+.description-right .left-square {
+  box-shadow: 0px 0px 33px 10px #ececec;
+}
+
+.left-square-wrap {
+  transform: translateX(-105px);
+  margin-top: 20px;
+  width: calc(100% + 105px);
+}
+
+.blue-stripe {
+  border-left: 4px solid #4273b3;
+  padding-left: 17px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.blue-stripe span {
+  display: block;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.about-description {
+  font-weight: 100;
+  color: #818181;
+}
+
+.about-description span {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #171717;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 60px;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+.about-btn {
+  color: #fff;
+}
+
+.card-body {
+  padding: 75px 36px 15px;
+}
+
+.card-body * {
+  color: #fff;
+}
+
+#about-us-slide {
+  padding: 10px 0;
+}
+
+.about-us-slide {
+  margin-bottom: 75px !important;
+}
+
+.about-us-slide .tns-item {
+  position: relative;
+}
+
+.about-us-slide .tns-item:before {
+  content: "";
+  width: calc(100% - 40px);
+  height: 15px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  background-color: rgb(65, 113, 175);
+}
+
+.about-us-slide
+  .tns-item[aria-hidden="true"]
+  + .tns-slide-active
+  + .tns-slide-active:before {
+  width: 60%;
+  right: 10px;
+  left: auto;
+  top: -10px;
+  background-color: rgb(65, 113, 175);
+  border-radius: 5px;
+  padding-bottom: 50%;
+}
+
+.about-us-slide
+  .tns-item[aria-hidden="true"]
+  + .tns-slide-active
+  + .tns-slide-active
+  .card-body {
+  padding-top: 110px;
+  position: relative;
+  z-index: 2;
+  min-height: 530px;
+}
+/*.about-us-slide .tns-item[aria-hidden="true"] + .tns-slide-active + .tns-slide-active .about-list[class]{
+    margin-bottom: 150px;
+}*/
+
+.about-us-slide .tns-controls button[data-controls="prev"] {
+  left: 355px;
+}
+
+.about-us-slide .tns-controls button[data-controls="next"] {
+  right: 355px;
+  position: absolute;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.about-us-slide .blue-stripe span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.about-list[class] {
+  list-style: disc;
+  margin-left: 15px;
+}
+/*Slider Main*/
+
+.map {
+  padding: 40px 0;
+}
+
+.map img {
+  width: 100%;
+}
+
+.blue-stripe.blue-title {
+  margin-left: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.blue-stripe.blue-title span {
+  font-style: normal;
+  color: #b4b3b3;
+  font-size: 20px;
+  padding-top: 15px;
+  text-transform: none;
+  transform: translateY(5px);
+}
+
+.photogallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.calendar {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.calendar .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.photogallery .col-2,
+.photogallery .col-4 {
+  padding: 0 4px;
+}
+
+.photogallery .row {
+  margin-top: 90px;
+}
+
+.photogallery img {
+  width: 100%;
+  margin-bottom: 8px;
+  box-shadow: 0 0 15px #bfc0c2;
+}
+
+.first-gallery .absolute-image-description {
+  left: 0;
+  right: -110px;
+  top: auto;
+  bottom: 220px;
+  z-index: -1;
+}
+
+.photogallery .inline-images {
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.photogallery .inline-images:nth-child(2n + 1) {
+  margin-right: -100px;
+}
+
+.photogallery .first-gallery {
+  text-align: right;
+}
+
+.photogallery .two-gallery {
+  margin-top: 49px;
+}
+
+.photogallery .three-gallery {
+  margin-top: -31px;
+}
+
+.photogallery .four-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery {
+  margin-top: -177px;
+}
+
+.photogallery .five-gallery img:first-child {
+  margin-bottom: 14px;
+}
+
+.news-block {
+  padding: 100px 0 60px;
+}
+
+.news-block #news4items {
+  padding: 40px 45px;
+}
+
+.news-details {
+  font-size: 16px;
+  line-height: 18px;
+  color: #474747;
+  font-weight: 500;
+  padding: 20px 0 0;
+}
+
+.news-subtitle {
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 15px 0 0;
+}
+
+#about-us-slide .active + .lslide + .lslide,
+#about-us-slide .active + .clone + .clone,
+#about-us-slide .active + .lslide + .clone {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide .active {
+  transform: scale(0.8);
+  transition: 0.5s;
+  border-top: 20px solid #4171af;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#about-us-slide + .lSAction > .lSPrev {
+  background-image: url(../img/arrow-left.png);
+  left: 33%;
+  width: 75px;
+  height: 75px;
+}
+
+#about-us-slide + .lSAction > .lSNext {
+  background-image: url(../img/arrow-right.png);
+  right: 33%;
+  width: 75px;
+  height: 75px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSPrev {
+  background-image: url(../img/index/icons/arrow-left-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+#calendar-index-slider + .lSAction > .lSNext {
+  background-image: url(../img/index/icons/arrow-right-thin.png);
+  width: 15px;
+  height: 31px;
+  background-position: 0px;
+}
+
+.contacts {
+  padding: 50px 0 20px !important;
+}
+
+.contacts .row {
+  align-items: center;
+}
+
+.contacts-right {
+  padding: 0 65px;
+}
+
+.contacts-right .blue-stripe.blue-title {
+  margin-left: 0px;
+}
+
+.contacts-description {
+  padding: 70px 0 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-description span {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #585858;
+  margin-top: 5px;
+}
+
+.title-absolute {
+  position: relative;
+}
+
+.icons-footer {
+  padding: 25px 0;
+  display: flex;
+}
+
+.news-block .absolute-news-title {
+  position: absolute;
+  font-size: 130px;
+  color: #fff;
+  right: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  top: 5px;
+}
+
+.news-block .container {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.news-block .blue-stripe.blue-title {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.footer-phone {
+  color: #585858;
+}
+
+.footer-phone a {
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  color: #171717;
+  font-weight: 700;
+}
+
+.content-slider .item a:first-child {
+  height: 175px;
+  display: block;
+}
+
+.content-slider img {
+  box-shadow: 0 0 15px #bfc0c2;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.calendar .col-9 {
+  padding: 0 50px 0 110px;
+}
+
+.slider-content-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto 0;
+  width: max-content;
+}
+
+.slider-content-promo:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+.slider-content-promo__icon {
+  width: 40px;
+  height: 40px;
+  background: url("../img/index/icons/play.png") center/contain no-repeat;
+  margin-bottom: 5px;
+}
+
+.slider-content-promo span {
+  font-size: 14px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .infra__img-height {
+    height:441px;
+  }
+  #main-slider {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bannerWrap .banner_children-camp .banner-weather {
+    display: none;
+  }
+  .calendar-block__year.calendar-block__year {
+    right: 30px;
+    top: 30px;
+  }
+
+  .calendar .col-9 {
+    padding: 0 50px 0 190px;
+  }
+
+  .left-image {
+    display: none;
+  }
+
+  .textBlock_lager .textBlock-images .textBlock-images-img:last-child {
+    display: none
+  }
+
+  .description-right {
+    padding-left: 0;
+  }
+  .left-square-wrap {
+    transform: none;
+    width: auto;
+    margin: 20px 0;
+  }
+  .subtitle-normal {
+    margin-bottom: 30px;
+  }
+  .about-us-slide
+    .tns-item[aria-hidden="true"]
+    + .tns-slide-active
+    + .tns-slide-active:before {
+    left: 122px;
+  }
+  .icons-left {
+    display: none;
+    justify-content: center;
+    max-width: none;
+  }
+  .about-icon {
+    display: block;
+    text-align: center;
+  }
+  .icon-img-cont {
+    margin-right: 0;
+    height: 57px;
+    margin-bottom: 10px;
+  }
+
+  #icons__about-ow .tns-controls button {
+    margin: 0 80px 0;
+  }
+
+  .icon-img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .content-right {
+    max-width: none;
+  }
+  .blue-stripe {
+    margin-bottom: 20px;
+  }
+  .description-right .left-square {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about-us .row,
+  .contacts .row {
+    display: block;
+  }
+  .contacts .col-md-6 {
+    padding: 0;
+    max-width: none;
+  }
+  .contacts-right {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #row-sbory-ow .tns-controls button[data-controls="next"]{
+    right: 0;
+  }
+
+  #row-sbory-ow .tns-controls button[data-controls="prev"]{
+    left: -10px;
+  }
+
+  #about__features-sports-ow .tns-controls button[data-controls="next"]{
+    right: 50px;
+  }
+
+  #about__features-sports-ow .tns-controls button[data-controls="prev"]{
+    left: 50px;
+  }
+
+  .subtitle-normal.subtitle-normal {
+    margin: 10px 0;
+  }
+
+  #row-sbory-ow {
+    margin: 0 20px;
+  }
+
+  .calendar-block.calendar-block {
+    width: 338px;
+  }
+  .calendar .col-md-9 {
+    display: none;
+  }
+  .button-blue__mobile {
+    background: #4273b3;
+    color: #fff;
+    padding: 16px 60px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .evo-slider h3 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .icons-left {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .about-icon {
+    flex: 0 0 170px;
+  }
+}
+/*! lightslider - v1.1.3 - 2015-04-14
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2015 Sachin N; Licensed MIT */
+/** /!!! core css Should not edit !!!/**/
+
+.lSSlideOuter {
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lightSlider:before,
+.lightSlider:after {
+  content: " ";
+  display: table;
+}
+
+.lightSlider {
+  overflow: hidden;
+  margin: 0;
+}
+
+.lSSlideWrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.lSSlideWrapper > .lightSlider:after {
+  clear: both;
+}
+
+.lSSlideWrapper .lSSlide {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: all 1s;
+  -webkit-transition-property: -webkit-transform, height;
+  -moz-transition-property: -moz-transform, height;
+  transition-property: transform, height;
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+}
+
+.lSSlideWrapper .lSFade {
+  position: relative;
+}
+
+.lSSlideWrapper .lSFade > * {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  margin-right: 0;
+  width: 100%;
+}
+
+.lSSlideWrapper.usingCss .lSFade > * {
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+}
+
+.lSSlideWrapper .lSFade > *.active {
+  z-index: 10;
+}
+
+.lSSlideWrapper.usingCss .lSFade > *.active {
+  opacity: 1;
+}
+/** /!!! End of core css Should not edit !!!/**/
+/* Pager */
+
+.lSSlideOuter .lSPager.lSpg {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.lSSlideOuter .lSPager.lSpg > li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.lSSlideOuter .lSPager.lSpg > li a {
+  background-color: #222222;
+  border-radius: 30px;
+  display: inline-block;
+  height: 8px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 8px;
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+
+.lSSlideOuter .lSPager.lSpg > li:hover a,
+.lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color: #428bca;
+}
+
+.lSSlideOuter .media {
+  opacity: 0.8;
+}
+
+.lSSlideOuter .media.active {
+  opacity: 1;
+}
+/* End of pager */
+/** Gallery */
+
+.lSSlideOuter .lSPager.lSGallery {
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0;
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate3d(0px, 0px, 0px);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+  overflow: hidden;
+  -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+  transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active,
+.lSSlideOuter .lSPager.lSGallery li:hover {
+  border-radius: 5px;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.lSSlideOuter .lSPager.lSGallery:before,
+.lSSlideOuter .lSPager.lSGallery:after {
+  content: " ";
+  display: table;
+}
+
+.lSSlideOuter .lSPager.lSGallery:after {
+  clear: both;
+}
+/* End of Gallery*/
+/* slider actions */
+
+.lSAction > a {
+  width: 32px;
+  display: block;
+  top: 50%;
+  height: 32px;
+  background-image: url("../img/controls.png");
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  margin-top: -16px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s linear 0s;
+  transition: opacity 0.35s linear 0s;
+}
+
+.lSAction > a:hover {
+  opacity: 1;
+}
+
+.lSAction > .lSPrev {
+  background-position: 0 0;
+  left: 10px;
+}
+
+.lSAction > .lSNext {
+  background-position: -32px 0;
+  right: 10px;
+}
+
+.lSAction > a.disabled {
+  pointer-events: none;
+}
+
+.cS-hidden {
+  height: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  overflow: hidden;
+}
+/* vertical */
+
+.lSSlideOuter.vertical {
+  position: relative;
+}
+
+.lSSlideOuter.vertical.noPager {
+  padding-right: 0px !important;
+}
+
+.lSSlideOuter.vertical .lSGallery {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+}
+
+.lSSlideOuter.vertical .lightSlider > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+/* vertical controlls */
+
+.lSSlideOuter.vertical .lSAction > a {
+  left: 50%;
+  margin-left: -14px;
+  margin-top: 0;
+}
+
+.lSSlideOuter.vertical .lSAction > .lSNext {
+  background-position: 31px -31px;
+  bottom: 10px;
+  top: auto;
+}
+
+.lSSlideOuter.vertical .lSAction > .lSPrev {
+  background-position: 0 -31px;
+  bottom: auto;
+  top: 10px;
+}
+/* vertical */
+/* Rtl */
+
+.lSSlideOuter.lSrtl {
+  direction: rtl;
+}
+
+.lSSlideOuter .lightSlider,
+.lSSlideOuter .lSPager {
+  padding-left: 0;
+  list-style: none outside none;
+}
+
+.lSSlideOuter.lSrtl .lightSlider,
+.lSSlideOuter.lSrtl .lSPager {
+  padding-right: 0;
+}
+
+.lSSlideOuter .lightSlider > *,
+.lSSlideOuter .lSGallery li {
+  float: left;
+}
+
+.lSSlideOuter.lSrtl .lightSlider > *,
+.lSSlideOuter.lSrtl .lSGallery li {
+  float: right !important;
+}
+/* Rtl */
+
+@-webkit-keyframes rightEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes rightEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes topEnd {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes topEnd {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes leftEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes leftEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes bottomEnd {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes bottomEnd {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.lSSlideOuter .rightEnd {
+  -webkit-animation: rightEnd 0.3s;
+  animation: rightEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter .leftEnd {
+  -webkit-animation: leftEnd 0.3s;
+  animation: leftEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.vertical .rightEnd {
+  -webkit-animation: topEnd 0.3s;
+  animation: topEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.vertical .leftEnd {
+  -webkit-animation: bottomEnd 0.3s;
+  animation: bottomEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.lSrtl .rightEnd {
+  -webkit-animation: leftEnd 0.3s;
+  animation: leftEnd 0.3s;
+  position: relative;
+}
+
+.lSSlideOuter.lSrtl .leftEnd {
+  -webkit-animation: rightEnd 0.3s;
+  animation: rightEnd 0.3s;
+  position: relative;
+}
+/*/  GRab cursor */
+
+.lightSlider.lsGrab > * {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+.lightSlider.lsGrabbing > * {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing;
+}
+
+#sport .hero.container-fluid.container-fluid__fights {
+  background-image: url("../img/martial/hero.jpg");
+}
+
+#sport .hero.container-fluid.container-fluid__football {
+  background-image: url("../img/football/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#mirnij .hero {
+  background-image: url("../img/korpus/mirnij/hero.jpg");
+}
+
+#mirnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 88px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#mirnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#mirnij .modal-dialog {
+  max-width: 900px;
+}
+
+#mirnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#mirnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#mirnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+#pogranichnij .hero {
+  background-image: url("../img/korpus/pogranichnij/hero.jpg");
+}
+
+#pogranichnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#pogranichnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#pogranichnij .modal-dialog {
+  max-width: 900px;
+}
+
+#pogranichnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#pogranichnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#pogranichnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+#sport .hero.container-fluid.container-fluid__powerlifting {
+  background-image: url("../img/powerlifting/hero.jpg");
+}
+
+#sport .hero.container-fluid.container-fluid__volleyball {
+  background-image: url("../img/volleyball/volleyball.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#resort .hero {
+  background-image: url("../img/resort/hero.jpg");
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.resort-right-description .first-bold {
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 95px;
+}
+
+.resort-right-description .first-bold span {
+  display: block;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.resort-right-description .till-sea {
+  padding-left: 60px;
+  position: relative;
+}
+
+.resort-right-description .till-sea:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: -17px;
+  background-image: url(../img/resort/wave.png);
+}
+
+.resort-right-description .left-grey-stripe {
+  padding-left: 15px;
+  border-left: 1px solid #dbdbdb;
+  color: #494949;
+  margin-bottom: 47px;
+}
+
+.resort-right-description .left-grey-stripe .price {
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.resort-right-description .button-blue {
+  padding: 16px;
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.icon-img-cont {
+  margin-right: 30px;
+  width: 67px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.icon-img-cont img {
+  width: auto;
+}
+
+.icon-description {
+  display: inline-block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.resort-beach {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.resort-beach p {
+  margin-bottom: 24px;
+}
+
+.resort-beach .icons-block {
+  margin-top: 42px;
+}
+
+.resort-beach .absolute-beach {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  font-size: 120px;
+  font-weight: 900;
+  color: #dddddd;
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+.resort-beach .blue-stripe-title {
+  margin: 40px 0px;
+}
+
+.thin-arrows .resort-left-slider .tns-controls button:first-child {
+  left: 0;
+  position: relative;
+}
+
+.thin-arrows .resort-left-slider .tns-controls {
+  top: auto;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+}
+
+#nested-in-korpus-first .tns-slide-active,
+#nested-in-korpus-second .tns-slide-active,
+#nested-in-korpus-third .tns-slide-active,
+#nested-in-korpus-fourth .tns-slide-active {
+  padding-bottom: 50px;
+}
+
+#baths-slider .item {
+  position: relative;
+}
+
+.bath-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  padding: 15px 55px;
+  background: #a9a9a9;
+  box-shadow: -10px 10px 15px #a9a9a9;
+  font-size: 24px;
+}
+
+.baths .baths-padding {
+  padding: 0 100px 0 35px;
+}
+
+.baths .tns-controls button:first-child {
+  left: -28px;
+}
+
+.baths .tns-controls button:nth-child(2) {
+  right: -28px;
+  position: absolute;
+}
+
+.baths .absolute-relax {
+  position: absolute;
+  right: 0px;
+  font-size: 88px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.baths .tns-controls img {
+  box-shadow: 0 0 15px #fff;
+  border-radius: 60%;
+}
+
+.blue-stripe-border span {
+  display: block;
+}
+
+.baths {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.baths .blue-stripe-border {
+  margin: 40px 0px;
+}
+
+.resort-otdyh {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.resort-otdyh .text-left p {
+  margin-left: auto;
+  max-width: 350px;
+  margin-right: 20px;
+}
+
+.absolute-otdyh {
+  position: absolute;
+  bottom: -155px;
+  right: 0px;
+  font-size: 115px;
+  font-weight: 900;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+.resort-otdyh .blue-stripe-title {
+  margin-left: 10px;
+}
+
+.justify-otdyh {
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.resort-transfer {
+  position: relative;
+}
+
+.absolute-transfer {
+  position: absolute;
+  bottom: 20px;
+  left: 140px;
+  z-index: 2;
+}
+
+.absolute-transfer span {
+  font-size: 38px;
+  color: #fff;
+  line-height: 44px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#resort-transfer .tns-slide-active + .tns-item img {
+  width: 100%;
+  max-height: 540px;
+  z-index: 2;
+}
+
+#resort-transfer .tns-slide-active + .tns-item {
+  z-index: 1;
+  margin-left: -11.1111%;
+  text-align: center;
+  max-height: calc(100% - 60px);
+}
+
+#resort-transfer .tns-slide-active {
+  z-index: 3;
+}
+
+#resort-transfer .tns-slide-active img {
+  z-index: 3;
+  position: relative;
+}
+
+#resort .hero {
+  position: relative;
+}
+
+.banner-weather {
+  max-width: 257px;
+  width: 100%;
+  padding: 25px 37px;
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
+  box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
+  background-image: -webkit-linear-gradient(44deg, #4f88cd 0%, #233e5f 100%);
+  background-image: -o-linear-gradient(44deg, #4f88cd 0%, #233e5f 100%);
+  background-image: linear-gradient(46deg, #4f88cd 0%, #233e5f 100%);
+  position: absolute;
+  bottom: -134px;
+  right: 0%;
+  z-index: 3;
+  text-align: right;
+}
+
+.banner-weather .banner-weather-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-box-align: right;
+  -webkit-align-items: right;
+  -ms-flex-align: right;
+  align-items: right;
+  margin-bottom: 25px;
+  right: 0%;
+  text-align: right;
+}
+
+.banner-weather .banner-weather-box .banner-weather-degrees {
+  color: #fff;
+  font-size: 49px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.banner-weather .banner-weather-items {
+  margin-left: 10px;
+}
+
+.banner-weather .banner-weather-items .banner-weather-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner-weather
+  .banner-weather-items
+  .banner-weather-item
+  .banner-weather-line {
+  max-width: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  color: #fff;
+}
+
+.banner-weather
+  .banner-weather-items
+  .banner-weather-item
+  .banner-weather-line
+  span {
+  color: #fff;
+}
+
+.banner-weather .banner-weather-items .banner-weather-item .li + li {
+  margin-top: 10px;
+}
+
+.banner-weather .banner-weather-link {
+  font-weight: 300;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+#sbory .hero {
+  background-image: url("../img/sbory/hero.jpg");
+}
+
+#sbory .hero h2 {
+  padding-top: 200px;
+  color: #171717;
+}
+
+.hero .btn-danger {
+  padding-right: 100px;
+  background-color: #e52634;
+}
+
+.hero-description {
+  max-width: 350px;
+  color: #b4b3b3;
+  font-size: 17px;
+}
+
+.features {
+  padding: 40px 0 100px;
+  text-align: center;
+}
+
+.features .small-f {
+  color: #848484;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.features .big-f {
+  display: block;
+  font-size: 105px;
+  line-height: 70px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.blue-stripe-border span {
+  display: block;
+  font-weight: 400;
+}
+
+.baths {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.baths .baths-padding {
+  padding: 0 100px 0 35px;
+}
+
+.baths-padding .button-blue {
+  background-color: #a11923;
+  z-index: 2;
+  position: relative;
+}
+
+.baths-padding .button-blue:hover {
+  background-color: #c82430;
+}
+
+.baths .blue-stripe-border {
+  margin: 40px 0px;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 35px;
+  border-left: 6px solid #fff;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.about-btn {
+  color: #fff;
+}
+
+.card-body {
+  padding: 100px 36px 15px;
+  transition: 0.5s;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  min-height: 440px;
+}
+
+.card-body .button-blue {
+  background-color: #c82430;
+}
+
+.card-body .button-blue:hover {
+  background-color: #a11923;
+  z-index: 2;
+  position: relative;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.resort-right-description .first-bold {
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 95px;
+}
+
+.resort-right-description .first-bold span {
+  display: block;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.resort-right-description .till-sea {
+  padding-left: 60px;
+  position: relative;
+}
+
+.resort-right-description .till-sea:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: -17px;
+  background-image: url(../img/resort/wave.png);
+}
+
+.resort-right-description .left-grey-stripe {
+  padding-left: 15px;
+  border-left: 1px solid #dbdbdb;
+  color: #494949;
+  margin-bottom: 47px;
+}
+
+.resort-right-description .left-grey-stripe .price {
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.resort-right-description .button-blue {
+  padding: 16px;
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+}
+
+.icon-img-cont {
+  margin: 10px auto;
+}
+
+.icon-img-cont img {
+  width: auto;
+}
+
+.icon-description {
+  display: block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#sbory .hero h2 span {
+  font-weight: bold;
+  color: #000;
+}
+
+#sbory .bg-white {
+  background-color: transparent !important;
+}
+
+#sbory .bg-white.navbar-black {
+  background-color: #fff !important;
+}
+
+#sportivnij .hero {
+  background-image: url("../img/korpus/sportivnij/hero.jpg");
+}
+
+#sportivnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__title {
+  position: absolute;
+  top: 230px;
+  color:#171717;
+  font-size:69px;
+  width: 260px;
+  line-height: 20px;
+}
+
+.hero__title span {
+  font-weight: bold;
+  font-size: 99px;
+  padding:20px 0 0;
+}
+
+.hero__subtitle {
+  position: absolute;
+  top: 290px;
+  color:#171717;
+}
+
+#hero__btn {
+  position: absolute;
+  top: 440px;
+  margin: 0 90px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#sportivnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#sportivnij .modal-dialog {
+  max-width: 900px;
+}
+
+#sportivnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.booking__form {
+  display: flex;
+  margin: 0 auto;
+}
+
+.booking {
+  max-width: 920px;
+  height: 80px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.booking__button {
+  max-width: 230px;
+  height: 80px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.booking__span {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #969696;
+}
+
+.booking__input {
+  outline: none;
+  border: none;
+  margin: 5px 0 0;
+}
+
+.booking__select {
+  outline: none;
+  border: none;
+  margin: 5px 0 0;
+}
+
+.booking__form_block:first-child {
+  border-left: none;
+}
+
+.booking__form_block {
+  max-width: 230px;
+  padding: 20px 0 0 42px;
+  border-left: 1px solid black;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#sportivnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#sportivnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/tennis/hero.jpg");
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid {
+  background-image: url("../img/throwing/hero.jpg");
+}
+
+#sport .hero h2 {
+  font-size: 67px;
+}
+
+#sport .hero h2 span {
+  font-size: 72px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+#sport .hero.container-fluid.container-fluid__watersports{
+  background-image: url("../img/watersport/hero.jpg");
+}
+
+#sport .hero h1 {
+  color: #171717;
+  text-transform: uppercase;
+}
+
+#sport .hero h1 span {
+  font-size: 72px;
+  color: #171717;
+  font-weight: bold;
+}
+
+.hero .button-red {
+  margin-right: 20px;
+  min-width: 210px;
+  text-align: center;
+}
+
+.hero .about-list {
+  color: #989898;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 350px;
+  color: #b4b3b3;
+  font-size: 17px;
+}
+
+.blue-stripe-border span {
+  display: block;
+  font-weight: bold;
+}
+
+.baths {
+  padding-top: 40px;
+  position: relative;
+}
+
+.baths .baths-padding {
+  padding: 0 100px 0 35px;
+}
+
+.price-form {
+  background: #d62835;
+  padding: 20px;
+}
+
+.price-form .input-image {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  color: #b8b8b8;
+  min-height: 35px;
+  padding-left: 40px;
+  border: 0px;
+}
+
+::placeholder {
+  color: #b8b8b8;
+  font-size: 14px;
+}
+
+.input-image.date {
+  background: white url(../img/watersport/calendar.png) left no-repeat;
+  background-position: 10px;
+  padding-left: 36px;
+}
+
+.input-image.stadium {
+  background: white url(../img/watersport/stadium.png) left no-repeat;
+  background-position: 10px;
+  padding-left: 36px;
+}
+
+.input-image.users,
+.input-image.trainers {
+  background: white url(../img/watersport/users.png) left no-repeat;
+  background-position: 10px;
+}
+
+.input-image option {
+  padding-left: 20px;
+}
+
+.thin-arrows .resort-left-slider .tns-controls button:first-child {
+  left: 0;
+  position: relative;
+}
+
+.thin-arrows .resort-left-slider .tns-controls {
+  top: auto;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+}
+
+#nested-in-korpus-first .tns-slide-active,
+#nested-in-korpus-second .tns-slide-active,
+#nested-in-korpus-third .tns-slide-active,
+#nested-in-korpus-fourth .tns-slide-active {
+  padding-bottom: 50px;
+}
+
+.price-form .button-blue {
+  padding: 16px 0;
+  text-align: center;
+  width: 100%;
+  border: 0;
+}
+
+.features {
+  padding: 0px 0 60px;
+  text-align: center;
+}
+
+.features .small-f {
+  color: #848484;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.features .big-f {
+  display: block;
+  font-size: 105px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.about-us-slide .blue-stripe {
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8px;
+  font-style: normal;
+  margin-bottom: 30px;
+  border-left: 6px solid #fff;
+  margin-top:50px;
+}
+
+.about-list {
+  padding-left: 15px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.about-btn {
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+}
+
+.about-btn:hover {
+  color: #ffffff;
+}
+
+.card-body {
+  padding: 75px 36px 15px;
+  transition: 0s;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  min-height: 440px;
+  margin: 0 10px;
+}
+
+.card-body .button-blue {
+  background-color: #c82430;
+}
+
+.card-body .button-blue:hover {
+  background-color: #a11923;
+  z-index: 2;
+  position: relative;
+}
+
+.about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
+  vertical-align: middle;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.resort-right-description .first-bold {
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 95px;
+}
+
+.resort-right-description .first-bold span {
+  display: block;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.resort-right-description .till-sea {
+  padding-left: 60px;
+  position: relative;
+}
+
+.resort-right-description .till-sea:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: -17px;
+  background-image: url(../img/resort/wave.png);
+}
+
+.resort-right-description .left-grey-stripe {
+  padding-left: 15px;
+  border-left: 1px solid #dbdbdb;
+  color: #494949;
+  margin-bottom: 47px;
+}
+
+.resort-right-description .left-grey-stripe .price {
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.resort-right-description .button-blue {
+  padding: 16px;
+  background-color: #b21924;
+}
+
+.video-block {
+  padding: 40px 0;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.play-arrow {
+  position: absolute;
+  top: calc(50% - 39px);
+  left: calc(50% - 39px);
+}
+
+.about-icon {
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+}
+
+.icon-img-cont {
+  margin: 15px auto;
+}
+
+.icon-img-cont img {
+  width: auto;
+}
+
+.icon-description {
+  display: block;
+}
+
+.icon-description .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.icon-description .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.icon-description__main {
+  display: block;
+  width:115px;
+}
+
+.icon-description__main .icon-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.icon-description__main .icon-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.about-us {
+  padding: 60px 10px;
+}
+
+.left-part img:first-child {
+  margin-bottom: 13px !important;
+}
+
+#infra {
+  color: #474747;
+}
+
+.infra {
+  padding: 60px 0;
+  position: relative;
+}
+
+.tleft {
+  font-size: 16px;
+  color: #494949;
+  margin-bottom: 14px;
+}
+
+.tleft:nth-child(2n) {
+  font-weight: 600;
+}
+
+.infra-bold {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.features-center .title-bold {
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+.img__icon40 {
+  height:40px;
+  width:100%;
+}
+
+#baths-slider .item {
+  position: relative;
+}
+
+.bath-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  padding: 15px 55px;
+  background: #a9a9a9;
+  box-shadow: -10px 10px 15px #a9a9a9;
+  font-size: 24px;
+}
+
+.baths .baths-padding {
+  padding: 0 100px 0 35px;
+}
+
+.baths .tns-controls button:first-child {
+  left: -28px;
+}
+
+.baths .tns-controls button:nth-child(2) {
+  right: -28px;
+  position: absolute;
+}
+
+.baths .absolute-relax {
+  position: absolute;
+  right: 0px;
+  font-size: 88px;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.baths .tns-controls img {
+  box-shadow: 0 0 15px #fff;
+  border-radius: 60%;
+}
+
+.blue-stripe-border span {
+  display: block;
+}
+
+.baths {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-icon__main {
+  margin-bottom: 33px;
+  display: flex;
+  text-align: center;
+  width: 250px;
+}
+
+.baths .blue-stripe-border {
+  margin: 0 0 26px;
+  border-color: #4273b3;
+  font-weight: bold;
+  font-size:24px;
+}
+
+#about-us-slide-sbory {
+  margin: 10px 0;
+}
+
+.about-us-slide-sbory .tns-item[aria-hidden="true"] + .tns-slide-active + .tns-slide-active:before {
+  width: 60%;
+  right: 10px;
+  left: auto;
+  top: -10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding-bottom: 50%;
+}
+
+.news-block {
+  padding: 60px 0 0px !important;
+}
+
+.news-block #news4items {
+  padding: 40px 45px;
+}
+
+.news-details {
+  font-size: 16px;
+  line-height: 18px;
+  color: #474747;
+  font-weight: 500;
+  padding: 20px 0;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-subtitle {
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 15px 0 20px;
+}
+
+.news-block .absolute-news-title {
+  position: absolute;
+  font-size: 130px;
+  color: #f8f8f8;
+  right: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  top: 5px;
+}
+
+.news-block .container {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.news-block .blue-stripe-border {
+  font-size: 40px;
+  color: #474747;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-color: #e52634;
+}
+
+.news-block .blue-stripe-border span {
+  font-style: normal;
+  color: #b4b3b3;
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: none;
+  margin-bottom: 35px;
+}
+
+.news-details .button-red {
+  padding: 16px 60px;
+}
+
+.news-details .button-blue {
+  padding: 16px 60px;
+  flex:0 0 auto;
+}
+
+.absolute-living {
+  position: absolute;
+  left: -50px;
+  font-size: 88px;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+}
+
+.absolute-infra {
+  position: absolute;
+  font-size: 88px;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+  right: 90px;
+  top: 120px;
+}
+
+#zvezdnij .hero {
+  background-image: url("../img/korpus/zvezdnij/hero.jpg");
+}
+
+#zvezdnij p {
+  font-size: 16px;
+  color: #494949;
+  line-height: 20px;
+}
+
+.description {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.description .row {
+  position: relative;
+}
+
+.description .absolute-descr {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #f3f3f3;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.room-categories .blue-stripe-title {
+  margin-left: 17px;
+}
+
+.description .blue-stripe-border {
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.description .blue-stripe-border span {
+  font-weight: 400;
+  display: block;
+}
+
+.room-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+#rooms-lists {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.left-list a {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #494949;
+}
+
+.left-list img {
+  margin-right: 15px;
+  min-width: 194px;
+}
+
+.left-list .title-rooms {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#zvezdnij .left-list .subtitle-rooms {
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.room-info-part {
+  position: relative;
+}
+
+.button-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info .room-detail:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 1px;
+  height: 40px;
+  top: 0px;
+  background: #989898;
+}
+
+.room-info .room-info-part:last-child .room-detail:after {
+  content: none;
+}
+
+.room-info .room-detail span {
+  display: block;
+  font-weight: 700;
+}
+
+.room-detail a {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 0px;
+}
+
+.room-categories .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
+.right-list {
+  position: relative;
+}
+
+.right-list .absolute-descr {
+  position: absolute;
+  top: -27px;
+  font-size: 79px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+#zvezdnij .modal-dialog {
+  max-width: 900px;
+}
+
+#zvezdnij .modal-body .container {
+  padding: 0 60px 0 100px;
+}
+
+.nomer-first {
+  padding: 0 15px 40px;
+  position: relative;
+}
+
+.no-pad-left {
+  padding-left: 0px !important;
+}
+
+.icon-rooms {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.icon-rooms img {
+  max-width: 25px;
+  padding-right: 5px;
+}
+
+.left-nomer p {
+  text-align: justify;
+}
+
+.left-nomer p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.blue-info {
+  background: #107fc1;
+  padding: 30px 40px;
+  color: #fff;
+  margin-top: -110px;
+}
+
+.blue-info ul {
+  padding-left: 16px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.blue-info ul li {
+  padding-bottom: 10px;
+}
+
+.blue-info ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.nomer-price {
+  font-size: 45px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.white-button {
+  padding: 16px 17px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.white-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0009;
+}
+
+#zvezdnij .nomer-small {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  line-height: initial;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#zvezdnij .nomer-small a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.absolute-on-popup {
+  position: absolute;
+  top: 190px;
+  font-size: 57px;
+  left: -200px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-weight: 900;
+  color: #f7f7f7;
+  z-index: 0;
+}
+
+.video iframe {
+  border: none;
+}
+
+.banner-desc__title {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
