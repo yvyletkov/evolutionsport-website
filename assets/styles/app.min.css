@@ -3514,9 +3514,7 @@ button {
 }
 
 .gallery {
-  background-image: url("../images/galBg.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  background-image: none;
 }
 
 .gallery:not(:last-child) {

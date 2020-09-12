@@ -152,8 +152,8 @@ $(document).on("click", ".tarifes-list-item-row__minus", function () {
     obj = {
       "form-name": "autumn-camp-day",
       price: 1100,
-      count_children: childNum,
-      count_days: daysNum,
+      "count-children": childNum,
+      "count-days": daysNum,
     };
   } else {
     obj = {
@@ -190,8 +190,8 @@ $(document).on("click", ".tarifes-list-item-row__plus", function (event) {
     obj = {
       "form-name": "autumn-camp-day",
       price: 1100,
-      count_children: childNum,
-      count_days: daysNum,
+      "count-children": childNum,
+      "count-days": daysNum,
     };
   } else {
     obj = {
