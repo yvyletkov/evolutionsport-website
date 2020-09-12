@@ -5010,7 +5010,7 @@ button {
 
 .fitness-sections-title__block {
     width: fit-content;
-    background: #1e1e1e;
+    background: rgba(30, 30, 30, 0.5);
 }
 
 @media screen and (max-width: 1100px) {
