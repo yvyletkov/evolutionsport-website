@@ -6500,6 +6500,15 @@ a.article:hover {
     text-transform: uppercase;
     font-weight: 900;
 }
+@media screen and (max-width: 1024px){
+    .baths .absolute-relax {
+        display: none;
+    }
+    .baths {
+        padding-bottom: 30px!important;
+    }
+}
+
 .baths .tns-controls img {
     /*box-shadow:0 0 15px #fff;*/
     border-radius:60%;
@@ -6509,7 +6518,7 @@ a.article:hover {
 }
 .baths {
     padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .baths .blue-stripe-border {
     margin: 0 0 40px;
@@ -6790,6 +6799,31 @@ a.article:hover {
     z-index: 0;
 }
 
+
+
+#health-center-bid-form {
+    text-align: left!important;
+}
+
+#health-center-bid-form label {
+    display: block;
+    font-size: 13px;
+}
+#health-center-bid-form p {
+    font-size: 110%;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#health-center-bid-form input {
+    width: 100%;
+    margin-bottom: 9px;
+}
+#health-center-bid-form textarea {
+    margin-bottom: 9px;
+    width: 100%;
+    resize: none;
+}
 
 
 
