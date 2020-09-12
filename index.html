@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="assets/styles/sweetalert2.css" />
     <link rel="stylesheet" href="assets/styles/app.min.css" />
     <link rel="stylesheet" href="assets/styles/additional.css" />
+    <link rel="stylesheet" href="css/gallery-responsive.css" />
 
     <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/slick.min.js"></script>
@@ -44,6 +45,7 @@
     <script src="assets/scripts/owl.carousel.min.js"></script>
     <script src="assets/scripts/sweetalert2.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="js/gallery-responsive.js"></script>
     <title>Эволюция</title>
   </head>
 
@@ -1027,71 +1029,54 @@
         </div>
     </div> -->
 
-        <section class="gallery gallery_children">
-          <div class="gallery-wrap">
-            <div class="gallery-left">
-              <h2 class="blue-stripe blue-title">
-                Фотогалерея<span>Выберите нужную дату</span>
-              </h2>
-              <div class="gallery-left-grid">
-                <div class="gallery-left-grid-img">
-                  <img
-                    src="img/index/gallery/gallery-01.jpg"
-                    alt="все в краске"
-                  />
-                </div>
-                <div class="gallery-left-grid-img">
-                  <img
-                    src="img/index/gallery/gallery-02.jpg"
-                    alt="девочка прыгает"
-                  />
-                </div>
-                <div class="gallery-left-grid-img">
-                  <img
-                    src="img/index/gallery/gallery-03.jpg"
-                    alt="футбольное поле"
-                  />
-                </div>
-                <div class="gallery-left-grid-img">
-                  <img
-                    src="img/index/gallery/gallery-04.jpg"
-                    alt="беговая дорожка"
-                  />
-                </div>
-                <div class="gallery-left-grid-img">
-                  <img src="img/index/gallery/gallery-05.jpg" alt="бассейн" />
-                </div>
-              </div>
-            </div>
-            <div class="gallery-right">
-              <div class="gallery-right-img">
-                <img src="img/index/gallery/gallery-06.jpg" alt="пляж" />
-              </div>
-              <div class="gallery-right-img">
-                <img
-                  src="img/index/gallery/gallery-07.jpg"
-                  class="inline-images"
-                  alt="номер в отеле"
-                />
-              </div>
-              <div class="gallery-right-img">
-                <img
-                  src="img/index/gallery/gallery-08.jpg"
-                  class="inline-images"
-                  alt="играют в волейбол"
-                />
-              </div>
-              <div class="gallery-right-img">
-                <img src="img/index/gallery/gallery-09.jpg" alt="джакузи" />
-              </div>
-              <div class="read-more-gallery">
-                <a class="url-more" href="/o-czentre/galereya/"
-                  >Смотреть еще фото →</a
-                >
-              </div>
-            </div>
+    <section class="gallery">
+      <div class="gallery-wrap">
+          <div class="gallery-left-desc">
+              <p class="gallery-left-desc__title">Фотогалерея</p>
+              <p class="gallery-left-desc__text">Реабилитационный центр</p>
           </div>
-        </section>
+
+          <div class="gallery__popup">
+              <img src="" class="gallery__popup__img" alt=""/>
+          </div>
+
+      </div>
+
+      <div class="gallery-responsive">
+          <a class="fancybox" rel="group" href="./img/main/1.png">
+              <img class="gallery-responsive__img" src="./img/main/1.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/2.png">
+              <img class="gallery-responsive__img" src="./img/main/2.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/3.png">
+              <img class="gallery-responsive__img" src="./img/main/3.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/4.png">
+              <img class="gallery-responsive__img" src="./img/main/4.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/5.png">
+              <img class="gallery-responsive__img" src="./img/main/5.png" alt=""/>
+          </a2>
+          <a class="fancybox" rel="group" href="./img/main/6.png">
+              <img class="gallery-responsive__img" src="./img/main/6.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/7.png">
+              <img class="gallery-responsive__img" src="./img/main/7.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/8.png">
+              <img class="gallery-responsive__img" src="./img/main/8.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/9.png">
+              <img class="gallery-responsive__img" src="./img/main/9.png" alt=""/>
+          </a>
+          <a class="fancybox" rel="group" href="./img/main/10.png">
+              <img class="gallery-responsive__img" src="./img/main/10.png" alt=""/>
+          </a>
+
+      </div>
+
+  </section>
 
         <section class="container-fluid news-block grey">
           <div class="container">
