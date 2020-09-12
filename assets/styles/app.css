@@ -1377,6 +1377,7 @@ button {
     font-size: 17px;
     line-height: 18px;
     margin-bottom: 32px;
+    text-align: justify;
 }
 
 .sea-box {
@@ -5254,6 +5255,18 @@ button {
     background: radial-gradient(ellipse closest-side, #000, rgba(0, 0, 0, 0));
 }
 
+/*.supaCard .supaSlider-insideSlider__item:before {*/
+/*    position: absolute;*/
+/*    top:0;*/
+/*    left: 0;*/
+/*    content: "";*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*    background-color: #000;*/
+/*    z-index: 100;*/
+/*}*/
+
 .supaCard .children-supa__text {
     position: static;
     font-weight: 900;
@@ -6113,7 +6126,7 @@ button {
 .group-slider-item-desc-col {
     font-size: 20px;
     line-height: 120%;
-    text-align: right;
+    text-align: left;
 }
 
 .group-slider-item-desc-col:nth-last-child(3) {
@@ -8887,6 +8900,7 @@ button {
     right: 0;
 }
 
+
 /*Хедер*/
 @media screen and (max-width: 1200px) {
     .menu-evolution {
@@ -8960,6 +8974,18 @@ button {
 @media screen and (max-width: 767px) {
     #children-animation .bannerWrap {
         display: none;
+    }
+
+    .map img {
+        margin-left: 0;
+    }
+
+    #sportivnij col-6,
+    #mirnij .col-6,
+    #pogranichnij .col-6,
+    #zvezdnij .col-6,
+    #shtormovoi .col-6{
+        padding: 0;
     }
 
     .menu-evolution {
@@ -9065,8 +9091,16 @@ button {
         font-size: 60px;
     }
 
-    #sportivnij .hero h2 span, #mirnij .hero h2 span, #pogranichnij .hero h2 span, #zvezdnij .hero h2 span {
+    #sportivnij .hero h2 span,
+    #mirnij .hero h2 span,
+    #pogranichnij .hero h2 span,
+    #zvezdnij .hero h2 span,
+    #shtormovoi .hero h2 span{
         text-transform: none;
+    }
+
+    #pogranichnij .hero h2 span {
+        font-size: 55px;
     }
 
     .banner-weather { /*added*/
@@ -9209,6 +9243,14 @@ button {
 
     .hero { /*added*/
         margin-bottom: 100px;
+    }
+
+    #sportivnij .hero,
+    #pogranichnij .hero,
+    #zvezdnij .hero,
+    #shtormovoi .hero,
+    #mirnij .hero {
+        margin-bottom: 0;
     }
 
     .no-margin-bottom {

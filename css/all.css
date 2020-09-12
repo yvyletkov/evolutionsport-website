@@ -292,7 +292,7 @@ body {
     font-size:20px;
     margin-top:10px;
     text-align:center;
-    font-weight:100;
+    font-weight:400;
     margin-bottom:67px;
 }
 .subtitle-normal_black {
@@ -466,7 +466,7 @@ a.article:hover {
 }
 .blue-stripe-border {
     border-left: 6px solid #4273b3;
-    padding-left: 17px;
+    padding-left: 13px;
 }
 
 #sport .hero.container-fluid {
@@ -1805,7 +1805,7 @@ a.article:hover {
     font-weight:600
 }
 .description .blue-stripe-border span {
-    font-weight:400;
+    font-weight:600;
     display:block;
 }
 .room-categories {
@@ -2003,6 +2003,7 @@ a.article:hover {
     position:relative;
 }
 .description .absolute-descr {
+    font-family: Geometria;
     position:absolute;
     bottom:0px;
     right:40px;
@@ -2018,10 +2019,6 @@ a.article:hover {
 .description .blue-stripe-border {
     margin-top:70px;
     font-weight:600
-}
-.description .blue-stripe-border span {
-    font-weight:400;
-    display:block;
 }
 .room-categories {
     padding-top:50px;
@@ -2484,10 +2481,7 @@ a.article:hover {
     z-index: -1;
     text-align: center;
 }
-.blue-stripe-border span {
-    display: block;
-    font-weight: 400;
-}
+
 .baths {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -2657,26 +2651,12 @@ a.article:hover {
 .description .row {
     position:relative;
 }
-.description .absolute-descr {
-    position:absolute;
-    bottom:0px;
-    right:40px;
-    font-size:60px;
-    font-weight:900;
-    color:#f3f3f3;
-    z-index:-1;
-    text-transform: uppercase;
-}
 .room-categories .blue-stripe-title {
     margin-left:17px;
 }
 .description .blue-stripe-border {
     margin-top:70px;
     font-weight:600
-}
-.description .blue-stripe-border span {
-    font-weight:400;
-    display:block;
 }
 .room-categories {
     padding-top:50px;
@@ -2906,10 +2886,7 @@ a.article:hover {
     font-size:17px;
 }
 
-.blue-stripe-border span {
-    display: block;
-    font-weight: 400;
-}
+
 .baths {
     padding-top: 40px;
     position:relative;
@@ -3328,16 +3305,7 @@ a.article:hover {
 .description .row {
     position:relative;
 }
-.description .absolute-descr {
-    position:absolute;
-    bottom:0px;
-    right:40px;
-    font-size:60px;
-    font-weight:900;
-    color:#f3f3f3;
-    z-index:-1;
-    text-transform: uppercase;
-}
+
 .room-categories .blue-stripe-title {
     margin-left:17px;
 }
@@ -3345,10 +3313,7 @@ a.article:hover {
     margin-top:70px;
     font-weight:600
 }
-.description .blue-stripe-border span {
-    font-weight:400;
-    display:block;
-}
+
 .room-categories {
     padding-top:50px;
     padding-bottom:80px;
@@ -4973,9 +4938,9 @@ a.article:hover {
 }
 .description .absolute-descr {
     position:absolute;
-    bottom:0px;
+    bottom:-20px;
     right:40px;
-    font-size:88px;
+    font-size:60px;
     font-weight:900;
     color:#f3f3f3;
     z-index:-1;
@@ -4988,10 +4953,7 @@ a.article:hover {
     margin-top:70px;
     font-weight:600
 }
-.description .blue-stripe-border span {
-    font-weight:400;
-    display:block;
-}
+
 .room-categories {
     padding-top:50px;
     padding-bottom:80px;
@@ -5186,16 +5148,7 @@ a.article:hover {
 .description .row {
     position:relative;
 }
-.description .absolute-descr {
-    position:absolute;
-    bottom:0px;
-    right:40px;
-    font-size:60px;
-    font-weight:900;
-    color:#f3f3f3;
-    z-index:-1;
-    text-transform: uppercase;
-}
+
 .room-categories .blue-stripe-title {
     margin-left:17px;
 }
@@ -5203,10 +5156,7 @@ a.article:hover {
     margin-top:70px;
     font-weight:600
 }
-.description .blue-stripe-border span {
-    font-weight:400;
-    display:block;
-}
+
 .room-categories {
     padding-top:50px;
     padding-bottom:80px;
@@ -5749,10 +5699,7 @@ a.article:hover {
     margin-bottom: -100px;
     margin-top: -110px;
 }
-.blue-stripe-border span {
-    display: block;
-    font-weight: 400;
-}
+
 .baths {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -5978,6 +5925,10 @@ a.article:hover {
 #sportivnij .hero {
     background-image:url('../img/korpus/sportivnij/hero.jpg');
 }
+.main-content .description.container p {
+    text-align: justify;
+
+}
 #sportivnij p {
     font-size:16px;
     color:#494949;
@@ -5990,16 +5941,7 @@ a.article:hover {
 .description .row {
     position:relative;
 }
-.description .absolute-descr {
-    position:absolute;
-    bottom:0px;
-    right:40px;
-    font-size:60px;
-    font-weight:900;
-    color:#f3f3f3;
-    z-index:-1;
-    text-transform: uppercase;
-}
+
 .room-categories .blue-stripe-title {
     margin-left:17px;
 }
@@ -6007,10 +5949,7 @@ a.article:hover {
     margin-top:70px;
     font-weight:600
 }
-.description .blue-stripe-border span {
-    font-weight:400;
-    display:block;
-}
+
 .room-categories {
     padding-top:50px;
     padding-bottom:80px;
@@ -6241,7 +6180,7 @@ a.article:hover {
 
 .blue-stripe-border span {
     display: block;
-    font-weight: 400;
+    font-weight: 500;
 }
 .baths {
     padding-top: 40px;
@@ -6662,16 +6601,7 @@ a.article:hover {
 .description .row {
     position:relative;
 }
-.description .absolute-descr {
-    position:absolute;
-    bottom:0px;
-    right:40px;
-    font-size:60px;
-    font-weight:900;
-    color:#f3f3f3;
-    z-index:-1;
-    text-transform: uppercase;
-}
+
 .room-categories .blue-stripe-title {
     margin-left:17px;
 }
@@ -6680,10 +6610,7 @@ a.article:hover {
     margin-bottom:30px;
     font-weight:600
 }
-.description .blue-stripe-border span {
-    font-weight:400;
-    display:block;
-}
+
 .room-categories {
     padding-top:50px;
     padding-bottom:80px;
