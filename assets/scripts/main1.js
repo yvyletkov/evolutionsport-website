@@ -229,7 +229,7 @@ $(document).ready(function () {
     }
 
     $(".health-center-carousel").owlCarousel({
-        items: 3,
+        items: 2,
         nav: true,
         pagination: false,
         navText: [

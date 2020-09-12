@@ -14,13 +14,13 @@
     <!-- -->
     <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
-    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/all1.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
           rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
-    <link rel="stylesheet" href="../assets/styles/app.css"/>
-    <link rel="stylesheet" href="../assets/styles/additional.css"/>
+    <link rel="stylesheet" href="../assets/styles/app1.css"/>
+    <link rel="stylesheet" href="../assets/styles/additional1.css"/>
 
     <script src="../assets/scripts/jquery.min.js"></script>
     <script src="../assets/scripts/slick.min.js"></script>
@@ -28,7 +28,7 @@
     <script src="../assets/scripts/datepicker/datepicker.min.js"></script>
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
-    <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/main1.js"></script>
     <style>@media screen and (max-width: 1023px) {
         .supa-wrap {
             padding: 30px 20px 0;
@@ -60,22 +60,22 @@
                     <div class="calc-form-inputs">
                         <input name="form-name" value="health-center-cost-calc" type="hidden">
 
-                        <select id="health-center-directions" name="direction"
+                        <select required id="health-center-directions" name="direction"
                                 class="input-image direction label-view select-controller label label-view__input">
-                            <option disabled value>Выберите направление</option>
-                            <option selected value="rehabilitation">Реабилитация</option>
+                            <option selected disabled value>Выберите направление</option>
+                            <option value="rehabilitation">Реабилитация</option>
                             <option value="sanatorium">Санаторно-курортное лечение</option>
                             <option value="parasport">Параспорт</option>
                         </select>
-                        <select id="health-center-programs" name="program"
+                        <select required id="health-center-programs" name="program"
                                 class="input-image direction label-view select-controller label label-view__input">
                             <option disabled selected value>Выберите программу</option>
 
                         </select>
-                        <select name="duration" id="health-center-durations"
-                                class="input-image direction label-view select-controller label label-view__input">
-                            <option disabled value>Выберите продолжительность</option>
-                            <option selected value="14">14 дней</option>
+                        <select required name="duration" id="health-center-durations"
+                                class="input-image date label-view select-controller label label-view__input">
+                            <option selected disabled value>Выберите продолжительность</option>
+                            <option value="14">14 дней</option>
                             <option value="18">18 дней</option>
                             <option value="24">21 день</option>
                         </select>
@@ -85,7 +85,7 @@
                                 <div class="label-view-imgbox"><img src="../assets/images/user-icon.png"
                                                                     alt="user-icon"/>
                                 </div>
-                                <input id="health-center-rehabilitants" name="number-of-rehabilitants" maxlength="2" max="99" min="1"
+                                <input required id="health-center-rehabilitants" name="number-of-rehabilitants" maxlength="2" max="99" min="1"
                                        class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
                             </div>
                         </label>
@@ -94,7 +94,7 @@
                                 <div class="label-view-imgbox"><img src="../assets/images/user-icon.png"
                                                                     alt="user-icon"/>
                                 </div>
-                                <input id="health-center-guests" name="number-of-guests" max="99" min="0" class="label-view__input"
+                                <input required id="health-center-guests" name="number-of-guests" max="99" min="0" class="label-view__input"
                                        type="number"
                                        placeholder="Количество сопровождающих"/>
                             </div>
@@ -237,7 +237,7 @@
     <section style="padding-top: 0" class="supa">
         <div class="supa-wrap">
             <p class="defaultTitle supa__title">Проживание</p>
-            <p class="defaultSubtitle supa__subtitle">выберите корпус размещения</p>
+            <p class="defaultSubtitle supa__subtitle">Выберите свой корпус размещения</p>
             <div class="supaSlider living owl-carousel">
 
                 <div class="supaSlider-item">
@@ -253,18 +253,17 @@
                                                                              alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/мирный/3.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/мирный/2.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/мирный/1.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/мирный/4.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/мирный/5.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
-                                                                        alt=""/></div>
+
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
@@ -300,18 +299,17 @@
                                                                              alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/пограничный/1.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/пограничный/2.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/пограничный/3.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/пограничный/4.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/пограничный/5.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
-                                                                        alt=""/></div>
+
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
@@ -347,18 +345,17 @@
                                                                              alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/спортивный/5.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/спортивный/2.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/спортивный/3.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/спортивный/4.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/спортивный/1.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
-                                                                        alt=""/></div>
+
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
@@ -394,18 +391,17 @@
                                                                              alt=""/></div>
                     </div>
                     <div class="supaSlider-insideSlider">
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/звездный/2.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/звездный/4.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/звездный/1.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/звездный/3.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/звездный/5.png"
                                                                         alt=""/></div>
-                        <div class="supaSlider-insideSlider__item"><img data-lazy="../assets/images/room-slider.png"
-                                                                        alt=""/></div>
+
                     </div>
                     <div class="supaSlider-item-desc">
                         <div class="supaSlider-item-desc-top">
@@ -422,14 +418,97 @@
                                 видом на море. В номерах: гостиная, мягкая мебель, телевизор, холодильник, спальни,
                                 ванная комната Уборка номера производится ежедневно, банные полотенца меняются по
                                 требованию.</p>
-                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>2 500 РУБ.</span>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 2 500 РУБ.</span>
                             </div>
                         </div>
                         <div class="supaSlider-item-desc__placeholder">Проживание</div>
                     </div>
                 </div>
 
+                <div class="supaSlider-item">
+                    <div class="supaSlider-insideSliderBlock">
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock-num">
+                            <div class="supaSlider-insideSliderBlock-num__current">01</div>
+                            <div class="supaSlider-insideSliderBlock-num__all">04</div>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
+                    </div>
+                    <div class="supaSlider-insideSlider">
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/штормовой/4.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/штормовой/2.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/штормовой/3.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/штормовой/1.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/штормовой/5.png"
+                                                                        alt=""/></div>
+                    </div>
+                    <div class="supaSlider-item-desc">
+                        <div class="supaSlider-item-desc-top">
+                            <p class="supaSlider-item-desc-top__title">Корпус<br>Штормовой</p>
+                            <div class="supaSlider-item-desc-top-right">
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
+                                <p class="supaSlider-item-desc-top-right__text">25 м. до моря</p>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item-desc-main">
+                            <p class="supaSlider-item-desc-main__text"></p>
+                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 2 500 РУБ.</span>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item-desc__placeholder">Проживание</div>
+                    </div>
+                </div>
+
+                <div class="supaSlider-item">
+                    <div class="supaSlider-insideSliderBlock">
+                        <div class="supaSlider-insideSliderBlock__prev"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             style="transform: rotate(180deg);" alt=""/>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock-num">
+                            <div class="supaSlider-insideSliderBlock-num__current">01</div>
+                            <div class="supaSlider-insideSliderBlock-num__all">04</div>
+                        </div>
+                        <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrow-supaSlider.png"
+                                                                             alt=""/></div>
+                    </div>
+                    <div class="supaSlider-insideSlider">
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/реабилитационный/4.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/реабилитационный/5.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/реабилитационный/2.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/реабилитационный/1.png"
+                                                                        alt=""/></div>
+                        <div class="supaSlider-insideSlider__item"><img data-lazy="../img/реабилитационный/3.png"
+                                                                        alt=""/></div>
+                    </div>
+                    <div class="supaSlider-item-desc">
+                        <div class="supaSlider-item-desc-top">
+                            <p class="supaSlider-item-desc-top__title">Корпус<br>Реабилитационный</p>
+                            <div class="supaSlider-item-desc-top-right">
+                                <div class="supaSlider-item-desc-top-right__icon"><img
+                                        src="../assets/images/wave_gray.png" alt=""/></div>
+                                <p class="supaSlider-item-desc-top-right__text">25 м. до моря</p>
+                            </div>
+                        </div>
+                        <div class="supaSlider-item-desc-main">
+                            <p class="supaSlider-item-desc-main__text"></p>
+                            <!--                            <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 2 500 РУБ.</span>-->
+                        </div>
+                    </div>
+                    <div class="supaSlider-item-desc__placeholder">Проживание</div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
     <section class="advantages advantages_4">
@@ -683,14 +762,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="../js/tiny-slider.js"></script>
-<script src="../js/index.js"></script>
+<script src="../js/index1.js"></script>
 <script src="../js/watersport.js"></script>
 <script src="../js/mirnij.js"></script>
 <script src="../js/resort.js"></script>
 <script src="../js/sbory.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/health-center-calc-form.js"></script>
-<script src="../js/requests.js"></script>
+<script src="../js/main1.js"></script>
+<script src="../js/requests1.js"></script>
 <script src="../js/gallery-responsive.js"></script>
+<script src="../js/health-center-calc-form.js"></script>
 </body>
 </html>

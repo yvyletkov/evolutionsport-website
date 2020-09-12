@@ -5744,6 +5744,14 @@ a.article:hover {
     padding: 0 20px;
 }
 
+@media screen and (min-width: 1200px) {
+    #transfer #infra .left-part, #transfer #infra .right-part {
+        height: unset !important;
+    }
+}
+
+
+
 .health-center-carousel-wrapper {
     margin-top: 30px;
 }

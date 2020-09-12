@@ -117,7 +117,7 @@ $(function () {
     if (window.matchMedia("(max-width: 1023px)").matches) {
         document.querySelector(".advantages-row").classList.toggle("owl-carousel");
         $('.advantages-row').owlCarousel({
-            items: 1,
+            items: 3,
             nav: true,
             center: true,
             loop: true,

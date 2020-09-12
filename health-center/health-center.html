@@ -14,13 +14,13 @@
     <!-- -->
     <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
-    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/all1.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
           rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
-    <link rel="stylesheet" href="../assets/styles/app.css"/>
-    <link rel="stylesheet" href="../assets/styles/additional.css"/>
+    <link rel="stylesheet" href="../assets/styles/app1.css"/>
+    <link rel="stylesheet" href="../assets/styles/additional1.css"/>
 
     <script src="../assets/scripts/jquery.min.js"></script>
     <script src="../assets/scripts/slick.min.js"></script>
@@ -28,7 +28,7 @@
     <script src="../assets/scripts/datepicker/datepicker.min.js"></script>
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
-    <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/main1.js"></script>
     <style>@media screen and (max-width: 1023px) {
         .supa-wrap {
             padding: 30px 20px 0;
@@ -57,48 +57,81 @@
             </div>
             <div class="banner-img"><img src="../assets/images/indBannerImg.png" alt="Центр здоровья"/></div>
             <p class="banner__placeholder">Лечение</p>
-            <form class="banner-form-wrapper">
-                <input class="hiddenInputForSelectors" type="text" style="display: none;"/>
-                <label class="label">
-                    <div class="label-view select-controller">
-                        <div class="label-view-imgbox"><img src="../assets/images/program-icon.png" alt="program-icon"/>
-                        </div>
-                        <div class="label-view__placeholder">Выбрать программу</div>
-                        <div class="label-view__value"></div>
-                        <div class="label-view__triangle"></div>
+            <section class="banner-form-wrapper" >
+                <form id="health-center-calc-form">
+                    <div class="calc-form-inputs">
+                        <input name="form-name" value="health-center-cost-calc" type="hidden">
+
+                        <select required id="health-center-directions" name="direction"
+                                class="input-image direction label-view select-controller label label-view__input">
+                            <option selected disabled value>Выберите направление</option>
+                            <option value="rehabilitation">Реабилитация</option>
+                            <option value="sanatorium">Санаторно-курортное лечение</option>
+                            <option value="parasport">Параспорт</option>
+                        </select>
+                        <select required id="health-center-programs" name="program"
+                                class="input-image direction label-view select-controller label label-view__input">
+                            <option disabled selected value>Выберите программу</option>
+
+                        </select>
+                        <select required name="duration" id="health-center-durations"
+                                class="input-image date label-view select-controller label label-view__input">
+                            <option selected disabled value>Выберите продолжительность</option>
+                            <option value="14">14 дней</option>
+                            <option value="18">18 дней</option>
+                            <option value="24">21 день</option>
+                        </select>
+
+                        <label class="label">
+                            <div class="label-view">
+                                <div class="label-view-imgbox"><img src="../assets/images/user-icon.png"
+                                                                    alt="user-icon"/>
+                                </div>
+                                <input required id="health-center-rehabilitants" name="number-of-rehabilitants" maxlength="2" max="99" min="1"
+                                       class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
+                            </div>
+                        </label>
+                        <label class="label">
+                            <div class="label-view">
+                                <div class="label-view-imgbox"><img src="../assets/images/user-icon.png"
+                                                                    alt="user-icon"/>
+                                </div>
+                                <input required id="health-center-guests" name="number-of-guests" max="99" min="0" class="label-view__input"
+                                       type="number"
+                                       placeholder="Количество сопровождающих"/>
+                            </div>
+                        </label>
                     </div>
-                    <div class="select-dropDown" data-value="">
-                        <div class="select-dropDown__item">123</div>
-                        <div class="select-dropDown__item">123</div>
+                    <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
+                </form>
+
+                <div class="cost-content">
+                    <p>Стоимость рассчитана</p>
+                    <div>
+                        <span class="cost-content-direction-value"></span>
+                        (<span class="cost-content-program-value"></span>)
                     </div>
-                </label>
-                <label class="label">
-                    <div class="label-view select-controller">
-                        <div class="label-view-imgbox"><img src="../assets/images/calendar-icon.png"
-                                                            alt="calendar-icon"/></div>
-                        <div class="label-view__placeholder">Выбрать программу</div>
-                        <div class="label-view__value"></div>
-                        <div class="label-view__triangle"></div>
+                    <div>
+                        <span class="cost-content-duration">Длительность:</span>
+                        <span class="cost-content-duration-value"></span>
                     </div>
-                    <div class="select-dropDown" data-value="">
-                        <div class="select-dropDown__item">123</div>
-                        <div class="select-dropDown__item">123</div>
+                    <div>
+                        <span class="cost-content-rehabilitants">Кол-во реабилитантов:</span>
+                        <span class="cost-content-rehabilitants-value"></span>
                     </div>
-                </label>
-                <label class="label">
-                    <div class="label-view">
-                        <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/></div>
-                        <input class="label-view__input" type="number" placeholder="Количество реабилитантов"/>
+                    <div>
+                        <span class="cost-content-guests">Кол-во сопровождающих:</span>
+                        <span class="cost-content-guests-value"></span>
                     </div>
-                </label>
-                <label class="label">
-                    <div class="label-view">
-                        <div class="label-view-imgbox"><img src="../assets/images/user-icon.png" alt="user-icon"/></div>
-                        <input class="label-view__input" type="number" placeholder="Количество сопровождающих"/>
+                    <div>
+                        <span class="cost-content-cost">10</span>
+                        <span>ГРИВЕН</span>
                     </div>
-                </label>
-                <button class="btn btn_accent banner-form__btn" type="submit">Рассчитать стоимость</button>
-            </form>
+                    <button id="btn-booking" class="btn btn_accent banner-form__btn" style="margin-bottom: 10px" type="submit">Забронировать программу</button>
+                    <button id="btn-reset" class="btn btn_accent banner-form__btn" type="submit">Рассчитать снова</button>
+
+                </div>
+            </section>
         </div>
     </section>
     <section class="textBlock textBlock_index">
@@ -446,14 +479,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="../js/tiny-slider.js"></script>
-<script src="../js/index.js"></script>
+<script src="../js/index1.js"></script>
 <script src="../js/watersport.js"></script>
 <script src="../js/mirnij.js"></script>
 <script src="../js/resort.js"></script>
 <script src="../js/sbory.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/health-center-calc-form.js"></script>
-<script src="../js/requests.js"></script>
+<script src="../js/main1.js"></script>
+<script src="../js/requests1.js"></script>
 <script src="../js/gallery-responsive.js"></script>
+<script src="../js/health-center-calc-form.js"></script>
 </body>
 </html>
