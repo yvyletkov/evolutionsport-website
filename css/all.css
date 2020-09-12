@@ -5027,7 +5027,7 @@ html{
 }
 
 .contacts {
-  padding: 20px 0 !important;
+  padding: 50px 0 20px !important;
 }
 
 .contacts .row {
@@ -7540,6 +7540,11 @@ html{
 .features-center .title-bold {
   margin-top: -40px;
   margin-bottom: 50px;
+}
+
+.img__icon40 {
+  height:40px;
+  width:100%;
 }
 
 #baths-slider .item {

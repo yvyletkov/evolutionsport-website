@@ -3980,6 +3980,10 @@ button {
   right: -10px;
 }
 
+.img-full__hd {
+  height: 575px;
+}
+
 .columns-short-img__img {
   width: 100%;
 }
