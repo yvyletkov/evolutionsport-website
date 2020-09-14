@@ -114,7 +114,7 @@ $(document).ready(
                         console.log(error);
                     }
                 }).done(function() {
-                    Swal({type: 'success', text: 'Сообщение отправлено'});
+                    swal({type: 'success', text: 'Сообщение отправлено'});
                 });
             })
         })

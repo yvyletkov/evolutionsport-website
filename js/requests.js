@@ -97,38 +97,38 @@ $(".price-form").on("submit", function (event) {
     });
 });
 
-// $(".tarifes-list").on("submit", function (event) {
-//   event.preventDefault();
-//   const sum = $("#new__price-first").text().match(/\d+/g).join("");
-//   let obj = {};
-//   if ($("p").is(".tarifes-list-item-row__item")) {
-//     const childNum = $("#child-num").text();
-//     const daysNum = $("#days-num").text();
-//     obj = {
-//       form_name: "autumn-camp-day",
-//       price: sum,
-//       count_children: childNum,
-//       count_days: daysNum,
-//     };
-//   } else {
-//     obj = {
-//       form_name: "autumn-camp",
-//       price: sum,
-//     };
-//   }
-//   console.log(obj);
-//   mainApi(obj)
-//     .then((res) => {
-//       console.log(res.data.sum);
-//       // $(".tarifes-list-item-prices__new").text(function{
-//       //   res.data.sum
-//       // })
-//       document.querySelector(".tarifes-list-item-prices__new").textContent = res.data.sum
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// });
+$(".tarifes-list").on("submit", function (event) {
+  event.preventDefault();
+  const sum = $("#new__price-first").text().match(/\d+/g).join("");
+  let obj = {};
+  if ($("p").is(".tarifes-list-item-row__item")) {
+    const childNum = $("#child-num").text();
+    const daysNum = $("#days-num").text();
+    obj = {
+      form_name: "autumn-camp-day",
+      price: sum,
+      count_children: childNum,
+      count_days: daysNum,
+    };
+  } else {
+    obj = {
+      form_name: "autumn-camp",
+      price: sum,
+    };
+  }
+  console.log(obj);
+  mainApi(obj)
+    .then((res) => {
+      console.log(res.data.sum);
+      // $(".tarifes-list-item-prices__new").text(function{
+      //   res.data.sum
+      // })
+      document.querySelector(".tarifes-list-item-prices__new").textContent = res.data.sum
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
 // $(".tarifes-list-item-row__plus, .tarifes-list-item-row__minus").on('click', function(event) {
 //   event.preventDefault();
