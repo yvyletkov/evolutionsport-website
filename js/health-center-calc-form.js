@@ -47,18 +47,22 @@ window.onload = () => {
 
     });
 
-    $("#health-center-calc-form").submit((e) => {
+    $("#health-center-calc-form").submit( (e) => {
         e.preventDefault();
         mainApi($('#health-center-calc-form').serializeArray())
-            .then((res) => {
+            .then( async (res) => {
                 console.log(res);
                 if (res.ok) {
+
+                    let data = await res.json();
+                    console.log("RES", data);
 
                     $(".cost-content-direction-value").html($('#health-center-directions option:selected').text());
                     $(".cost-content-program-value").html($('#health-center-programs option:selected').text());
                     $(".cost-content-duration-value").html($('#health-center-durations option:selected').text());
                     $(".cost-content-rehabilitants-value").html($("#health-center-rehabilitants").val());
                     $(".cost-content-guests-value").html($("#health-center-guests").val());
+                    $(".cost-content-cost").html(data.data.sum);
 
                     $("#health-center-calc-form").hide();
                     $(".cost-content").css("visibility", "visible").css("height", "unset");

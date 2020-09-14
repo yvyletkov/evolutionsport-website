@@ -27,6 +27,26 @@ async function mainApi(info) {
   }
 }
 
+async function getQuizNewProgram() {
+  try {
+    const res = await fetch("http://95.181.172.100/erp/site/all-pages-quiz/", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+    });
+    if (!res.ok) {
+      throw new Error(`error ${res.status}`);
+    }
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+getQuizNewProgram();
+
 $("#health-center-bid-form").on("submit", function (event) {
   event.preventDefault();
   const data = $("#health-center-bid-form").serializeArray();
