@@ -195,28 +195,13 @@ body {
     max-height:20px;
     margin-right:20px;
 }
-.bg-white.navbar-black {
-    background-color:#000!important;
-}
 .navbar-black {
     background:#000;
     padding:0px;
     transition: 0.8s;
     -webkit-transition: 0.8s;
 }
-.logo-white {
-    display:none;
-}
-.logo-dark {
-    display:inline;
-}
-.navbar-black .logo-dark {
-    display:none;
-}
-.navbar-black .logo-white {
-    display:inline;
-    margin-left: -3px;
-}
+
 .hero {
     font-family: 'Roboto', serif;
     min-height: 750px;
