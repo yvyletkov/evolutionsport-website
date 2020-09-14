@@ -71,8 +71,19 @@ $(".banner-desc__order").click( // ФОРМА ЗАЯВКИ ЦЕНТРА ЗДОР
             showConfirmButton: false,
             confirmButtonColor: '#ff5908',
             cancelButtonColor: '#666',
-            confirmButtonText: 'Забронировать',
+            confirmButtonText: 'Оставить заявку',
             cancelButtonText: 'Отмена',
         })
     }
 )
+
+function getAndShowPopUpNewProgram () {
+
+    let iframeEl = document.createElement("iframe");
+    iframeEl.src = 'http://95.181.172.100/erp/site/all-pages-quiz/';
+    iframeEl.style.cssText = "width: 100%; height: 100%; position: fixed; top:0; right: 0; z-index: 100000";
+    iframeEl.style.cssText = "width: 100%; height: 100%; position: fixed; top:0; right: 0; z-index: 100000";
+    document.getElementsByTagName("body")[0].appendChild(iframeEl);
+
+};
+// setTimeout(getAndShowPopUpNewProgram,0);
