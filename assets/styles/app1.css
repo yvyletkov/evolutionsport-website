@@ -474,10 +474,11 @@ button {
     /*box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.49);*/
 }
 
-#subscriptions .bannerWrap{
+#subscriptions .bannerWrap {
     -webkit-box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.49);
     box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.49);
 }
+
 #subscriptions .bannerBg, #rehabilitation .bannerBg, #health-center .bannerBg {
     top: 0;
 }
@@ -487,7 +488,7 @@ button {
     line-height: 1.4;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
     #sanatorium .supa-wrap, #rehabilitation .supa-wrap, #parasport .supa-wrap, #health-center .supa-wrap {
         /*margin-bottom: 35px;*/
         padding-bottom: 0px !important;
@@ -1013,6 +1014,7 @@ button {
 .cost-content-duration-value {
     margin-left: 3px;
 }
+
 .cost-content-direction-value {
     margin-right: 3px;
 }
@@ -1022,6 +1024,7 @@ button {
     font-size: 30px;
     /*font-weight: bold;*/
 }
+
 .cost-content-cost + span {
     /*font-weight: bold;*/
     font-size: 20px;
@@ -8043,18 +8046,23 @@ button {
     #fitness .textBlock-wrap, #fitness .textBlock-desc, #fitness .textBlock-images {
         display: block;
     }
+
     #fitness .textBlock_rtl .textBlock-desc {
         padding: 0;
     }
+
     #fitness .textBlock-desc__title {
         margin-bottom: 20px;
     }
+
     #fitness .textBlock-desc__text {
         margin-bottom: 5px;
     }
+
     #fitness .textBlock-desc__title {
         display: none;
     }
+
     #fitness .SL6-wrap-outer {
         padding: 10px 20px;
     }
@@ -8092,6 +8100,7 @@ button {
     #children-animation .textBlock_rtl .textBlock-desc {
         display: block;
     }
+
     #children-animation .textBlock_rtl .textBlock-desc {
         padding: 0 10px 0 10px;
     }
@@ -8339,7 +8348,6 @@ button {
 #subscriptions-slider .slick-slider .slick-list {
     border-radius: 11px;
 }
-
 
 
 .slick-track {
@@ -8816,15 +8824,15 @@ button {
     text-transform: uppercase;
 }
 
-.norm-menu-items-item.active .norm-menu-items-item__title:before {
-    content: '';
-    width: 2px;
-    height: 11px;
-    position: absolute;
-    top: 4px;
-    left: -6px;
-    background: #000;
-}
+/*.norm-menu-items-item.active .norm-menu-items-item__title:before {*/
+/*    content: '';*/
+/*    width: 2px;*/
+/*    height: 11px;*/
+/*    position: absolute;*/
+/*    top: 4px;*/
+/*    left: -6px;*/
+/*    background: #000;*/
+/*}*/
 
 .norm-menu-items-item.active .norm-menu-items-item__title span {
     transform: rotate(90deg);
@@ -8984,7 +8992,7 @@ button {
     #mirnij .col-6,
     #pogranichnij .col-6,
     #zvezdnij .col-6,
-    #shtormovoi .col-6{
+    #shtormovoi .col-6 {
         padding: 0;
     }
 
@@ -9095,7 +9103,7 @@ button {
     #mirnij .hero h2 span,
     #pogranichnij .hero h2 span,
     #zvezdnij .hero h2 span,
-    #shtormovoi .hero h2 span{
+    #shtormovoi .hero h2 span {
         text-transform: none;
     }
 
@@ -9334,14 +9342,17 @@ button {
         height: 480px;
         object-fit: cover;
     }
+
     #infra .left-part img:last-child {
         height: 230px;
         object-fit: cover;
     }
+
     #infra .right-part {
         position: relative;
         height: 730px;
     }
+
     #infra .right-part img:last-child {
         position: absolute;
         bottom: 0;
@@ -9656,6 +9667,32 @@ button {
         font-weight: light;
         font-size: 11px;
         color: #b4b3b3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #pogranichnij .description.container,
+    #shtormovoi .description.container,
+    #mirnij .description.container,
+    #zvezdnij .description.container,
+    #sportivnij .description.container {
+        padding: 20px 20px
+    }
+
+    #pogranichnij .room-categories .container,
+    #shtormovoi .room-categories .container,
+    #mirnij .room-categories .container,
+    #zvezdnij .room-categories .container,
+    #sportivnij .room-categories .container {
+        padding: 0 20px !important;
+    }
+
+    #pogranichnij .button-blue,
+    #shtormovoi .button-blue,
+    #mirnij .button-blue,
+    #zvezdnij .button-blue,
+    #sportivnij .button-blue {
+        padding: 10px 30px !important;
     }
 }
 
