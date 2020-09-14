@@ -150,6 +150,8 @@
 
 .contacts-right .blue-stripe.blue-title {
   margin-left: 0px;
+  color:#171717;
+  font-weight: 700;
 }
 
 .contacts-description {
@@ -445,7 +447,7 @@
 
 .blue-stripe-border span {
   display: block;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .blue-stripe-border span {
