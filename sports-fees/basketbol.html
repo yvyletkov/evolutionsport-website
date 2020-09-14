@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="../assets/styles/sweetalert2.css" />
   <link rel="stylesheet" href="../assets/styles/app.min.css" />
   <link rel="stylesheet" href="../assets/styles/additional.css" />
+  <link rel="stylesheet" href="../header/header.css" />
+  <link rel="stylesheet" href="../header/footer.css" />
 
   <script src="../assets/scripts/jquery.min.js"></script>
   <script src="../assets/scripts/slick.min.js"></script>
@@ -301,7 +303,7 @@
               <div class="baths-title">
                 <h3 class="blue-stripe-border">Cпортивные сборы<span>по баскетболу</span></h3>
                 <img src="../img/sbory/basketball.png" class="img-fluid img-shadow img__mobile" alt="баскетбол">
-                <p>Учебно-тренировочные сборы по баскетболу можно провести в Крыму на территории центра спорта
+                <p class="baths__desctiption">Учебно-тренировочные сборы по баскетболу можно провести в Крыму на территории центра спорта
                   «Эволюция».
                   Внушительные размеры спортивных залов способны вместить в себя большое количество любителей и
                   профессионалов баскетбола.
@@ -871,23 +873,30 @@
     <!--scripts loaded here-->
     <footer class="container contacts nopadding-top">
       <div class="row">
+        <h2 class=row__title>Контакты</h2>
+        <p class=row__subtitle>Центра спорта</p>
         <div class="col-md-6 col-xs-12">
-          <div style="position:relative;overflow:hidden;">
+          <div style="position: relative; overflow: hidden;">
             <iframe
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A446999efda47433efc6ec2b79d186280c8090bd2d66371537693adfb6661c264&amp;source=constructor"
-              class="minimap"></iframe>
+              class="minimap"
+            ></iframe>
           </div>
         </div>
         <div class="col-md-6 col-xs-12 contacts-right">
-          <div class="blue-stripe blue-title">Контакты<span>нашего центра</span></div>
+          <div class="blue-stripe blue-title">
+            Контакты<span>нашего центра</span>
+          </div>
           <div class="contacts-description">
             г. Евпатория, Крым
-            <span>297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул. Аллея Дружбы, 1</span>
+            <span
+              >297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул.
+              Аллея Дружбы, 1</span
+            >
           </div>
           <div class="icons-footer">
             <a href="https://vk.com/evolutionsportcenter"><img src="../img/icons/vk.png" alt="vk" /></a>
-            <a href="https://www.instagram.com/evolution.sportcenter/"><img src="../img/icons/inst.png"
-                alt="instagram" /></a>
+            <a href="https://www.instagram.com/evolution.sportcenter/"><img src="../img/icons/inst.png" alt="instagram" /></a>
             <a href="https://www.facebook.com/evolutioncentrsport"><img src="../img/icons/fb.png" alt="facebook" /></a>
           </div>
           <div class="footer-phone">
@@ -908,6 +917,7 @@
   <script src="../js/sbory.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/requests.js"></script>
+  <script src="../header/header.js"></script>
 </body>
 
 </html>
