@@ -6807,10 +6807,40 @@ a.article:hover {
     text-align: center;
 }
 #health-center-bid-form input {
+    font-size: 12px;
     width: 100%;
     margin-bottom: 9px;
 }
 #health-center-bid-form textarea {
+    margin-bottom: 9px;
+    width: 100%;
+    resize: none;
+}
+
+
+
+#header-contact-form {
+    /*text-align: left!important;*/
+}
+
+#header-contact-form label {
+    margin-bottom: 5px!important;
+    display: block;
+    font-size: 15px;
+}
+#header-contact-form p {
+    font-size: 110%;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#header-contact-form input {
+    height: 3rem;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 9px;
+}
+#header-contact-form textarea {
     margin-bottom: 9px;
     width: 100%;
     resize: none;
