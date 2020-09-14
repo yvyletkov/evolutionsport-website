@@ -188,6 +188,8 @@
         </div>
         <div class="popup__form-wrapper hidden">
             <form class="popup__form">
+                <input name="form-name" value="quiz-new-program-form" type="hidden">
+                <input name="rus-form-name" value="Опросник (у нас новая программа)" type="hidden">
                 <input class="popup__form__input" placeholder="Ваше имя" id="name" name="name" type="text">
                 <input required class="popup__form__input" placeholder="Ваш телефон*" name="phone" type="tel" id="phone">
                 <input required class="popup__form__input" placeholder="Ваш Email*" id="email" name="email" type="email">
@@ -239,24 +241,31 @@
         });
         $(".popup__form").submit( (e) => {
             e.preventDefault();
-            $.ajax({
-                url: "http://95.181.172.100/erp/mock",
-                type: "GET",
-                data: $('.popup__form').serialize(),
-                success: function(response) {
-                    $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
-                    $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
-                    $(".popup__btn").html("Вернуться к сайту");
-                    $(".popup__btn").removeClass("hidden");
-                    $(".popup__btn").click(function () {
-                        $(".popup .quiz").addClass("hidden");
-                        $(".popup-wrapper").addClass("hidden");
+            $(".popup__form").submit((e) => {
+                e.preventDefault();
+                mainApi($('.popup__form').serializeArray())
+                    .then((res) => {
+                        console.log(res);
+                        if (res.ok) {
+                            $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
+                            $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
+                            $(".popup__btn").html("Вернуться к сайту");
+                            $(".popup__btn").removeClass("hidden");
+                            $(".popup__btn").click(function () {
+                                $(".popup").addClass("hidden");
+                                $(".popup-wrapper").addClass("hidden");
+                            });
+                        }
+                    })
+                    .catch((err) => {
+                        swal({
+                            type: "error",
+                            title: "Извините, рассчет стоимости временно невозможен",
+                            text: "Что-то пошло не так, мы уже работаем над ошибкой",
+                        });
+                        console.log(err);
                     });
-                },
-                error: function(response) {
-                    console.log("ОШИБКА", response)
-                }
-            });
+            })
         })
     </script>
 </div>
