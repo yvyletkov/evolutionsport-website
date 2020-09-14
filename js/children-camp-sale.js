@@ -165,7 +165,7 @@ $(document).on("click", ".tarifes-list-item-row__minus", function () {
   mainApi(obj)
     .then((res) => {
       console.log(res);
-      document.querySelector(".tarifes-list-item-prices__new").textContent = res.data.sum
+      document.querySelector(".tarifes-list-item-prices__new").textContent = `${res.data.sum} руб`
     })
     .catch((err) => {
       console.log(err);
@@ -203,7 +203,7 @@ $(document).on("click", ".tarifes-list-item-row__plus", function (event) {
   mainApi(obj)
     .then((res) => {
       console.log(res.data.sum);
-      document.querySelector(".tarifes-list-item-prices__new").textContent = res.data.sum
+      document.querySelector(".tarifes-list-item-prices__new").textContent = `${res.data.sum} руб`
     })
     .catch((err) => {
       console.log(err);
