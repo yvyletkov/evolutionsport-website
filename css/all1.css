@@ -195,28 +195,13 @@ body {
     max-height:20px;
     margin-right:20px;
 }
-.bg-white.navbar-black {
-    background-color:#000!important;
-}
 .navbar-black {
     background:#000;
     padding:0px;
     transition: 0.8s;
     -webkit-transition: 0.8s;
 }
-.logo-white {
-    display:none;
-}
-.logo-dark {
-    display:inline;
-}
-.navbar-black .logo-dark {
-    display:none;
-}
-.navbar-black .logo-white {
-    display:inline;
-    margin-left: -3px;
-}
+
 .hero {
     font-family: 'Roboto', serif;
     min-height: 750px;
@@ -5575,24 +5560,18 @@ a.article:hover {
 .banner-weather {
     max-width: 257px;
     width: 100%;
-    padding: 25px 37px;
     -webkit-box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
     box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
-    background-image: -webkit-linear-gradient(44deg, #4f88cd 0%, #233e5f 100%);
-    background-image: -o-linear-gradient(44deg, #4f88cd 0%, #233e5f 100%);
-    background-image: linear-gradient(46deg, #4f88cd 0%, #233e5f 100%);
     position: absolute;
-    bottom: -134px;
+    bottom: -114px;
     right: 50%;
     transform: translateX(200%);
     z-index: 3;
-    text-align: right;
 }
 
 @media screen and (max-width: 1200px) {
     .banner-weather {
         transform: translateX(150%);
-
     }
 }
 
