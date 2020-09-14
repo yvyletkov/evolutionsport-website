@@ -1,20 +1,11 @@
-$(function () {
-  // scroll functions
-  $(window).scroll(function (e) {
-    // add/remove class to navbar when scrolling to hide/show
-    var scroll = $(window).scrollTop();
-    if (scroll >= 150) {
-      $(".navbar").addClass("navbar-black");
-    } else {
-      $(".navbar").removeClass("navbar-black");
-    }
-  });
-});
+
 
 // $(document).on("click", "#sidebarCollapse", function (e) {
 //   $(".norm-menu-wrap").toggleClass("active");
 // });
 
+<<<<<<< HEAD
+=======
 // $(document).on("click", ".norm-menu__close", function (e) {
 //   $(".norm-menu-wrap").removeClass("active");
 // });
@@ -28,6 +19,7 @@ $(function () {
 //   }
 // });
 
+>>>>>>> origin/master
 //дата для бронирования
 // const dateNow = () => {
 //     const today = new Date();
@@ -36,20 +28,16 @@ $(function () {
 //   };
 // dateNow();
 
+<<<<<<< HEAD
 // анимации иконки меню
+=======
+// анимации иконки меню
+<<<<<<< HEAD
+=======
 // $("#sidebarCollapse").click(function () {
 //   $(this).toggleClass("active");
 //   $(".norm-menu-wrap").toggleClass("active");
 // });
+>>>>>>> origin/master
 
-$(".input-image.date")
-  .datepicker({
-    dateFormat: "mm-dd-yy",
-    changeMonth: true,
-    changeYear: true,
-    yearRange: "1900:2100",
-    autoclose: true,
-  })
-  .keyup(function () {
-    this.value = this.value.replace(/[^\d]/g, "");
-  });
+>>>>>>> dev_a

@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css" />
   <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../header/header.css" />
+  <link rel="stylesheet" href="../header/footer.css" />
 
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
@@ -369,32 +371,13 @@
         </div>
       </section>
 
-      <section class="container-fluid baths pb-0 pt-0">
+      <section class="container-fluid calendar grey">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 order-2 order-md-1">
-              <img src="../img/tournament1.jpg" class="img-fluid img-shadow" alt="фото с турнира">
-            </div>
-            <div class="col-12 col-md-6 order-1 order-md-2">
-              <div class="baths pt-0 pb-0 mb-0">
-                <h3 class="blue-stripe-border mt-md-0">Турниры<br> в центре Спорта</h3>
-                <p>
-                  В Центре Спорта «Эволюция» проводятся соревнования и
-                  турниры крупного масштаба. По запросу можете получить
-                  специальное предложение по стоимости и условиям именно
-                  для Вашей группы в нужные даты и арендой спортивных
-                  сооружений.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="container-fluid calendar grey" style="margin-bottom: 80px">
-        <div class="container">
-          <div class="row">
-            <div class="col-3 col-md-3 col-sm-12 col-xs-12">
+          <div class="row row__calendar">
+            <div class="col-3 col-md-3">
+              <h2 class="blue-title-mobile">
+                Календарь событий<span>Выберите нужную дату</span>
+              </h2>
               <div class="calendar-block">
                 <span class="calendar-block__day"></span>
                 <span class="calendar-block__month"></span>
@@ -404,45 +387,51 @@
                 </div>
                 <div class="datepicker-here" id="custom-cells"></div>
               </div>
-              <span class="calendar-block__absolut">события</span><br>
+              <span class="calendar-block__absolut">события</span><br />
             </div>
-            <div class="col-9 col-md-9 col-sm-12 col-xs-12">
-              <h2 class="blue-stripe blue-title">Календарь событий<span>Выберите нужную дату</span></h2>
+            <div class="col-9 col-md-9">
+              <h2 class="blue-stripe blue-title">
+                Календарь событий<span>Выберите нужную дату</span>
+              </h2>
               <div id="calendar-index-slider__tourn" class="content-slider">
                 <div class="item">
-                  <a href="#"><img class="img-fluid" src="../img/index/calendar/calendar-01.jpg"
-                      alt="Акция! Специальное предолжение на Cooper Pass"></a>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="../img/index/calendar/calendar-01.jpg"
+                      alt="Акция! Специальное предолжение на Cooper Pass"
+                  /></a>
                   <div class="news-details">
-                    Акция! Специальное предложение на Cooper Pass
-                    <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем,
-                      ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
+                    Соревнования по плаванию «Evolution Open»
+                    <span class="news-subtitle"
+                      >Приглашаем Вас принять участие в соревнованиях по плаванию «Evolution open» в Центре Спорта «Эволюция»</span
+                    >
                   </div>
                 </div>
                 <div class="item">
-                  <a href="#"><img class="img-fluid" src="../img/index/calendar/calendar-01.jpg"
-                      alt="Акция! Специальное предолжение на Cooper Pass"></a>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="../img/index/calendar/calendar-01.jpg"
+                      alt="Акция! Специальное предолжение на Cooper Pass"
+                  /></a>
                   <div class="news-details">
-                    Акция! Специальное предложение на Cooper Pass
-                    <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем,
-                      ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
+                    Фитнес выходной в Центре Спорта «Эволюция» 8 августа
+                    <span class="news-subtitle">
+                      Приглашаем Вас провести Фитнес выходной, в День Физкультурника, состоится презентация новых спортивных направлений</span>
                   </div>
                 </div>
                 <div class="item">
-                  <a href="#"><img class="img-fluid" src="../img/index/calendar/calendar-01.jpg"
-                      alt="Акция! Специальное предолжение на Cooper Pass"></a>
-                  <div class="news-details">
-                    Акция! Специальное предложение на Cooper Pass
-                    <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем,
-                      ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
-                  </div>
-                </div>
-                <div class="item">
-                  <a href="#"><img class="img-fluid" src="../img/index/calendar/calendar-01.jpg"
-                      alt="Акция! Специальное предолжение на Cooper Pass"></a>
-                  <div class="news-details">
-                    Акция! Специальное предложение на Cooper Pass
-                    <span class="news-subtitle">Дорогие друзья! Поздравляем, ураПоздравляем, ураПоздравляем,
-                      ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ураПоздравляем, ура</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="../img/index/calendar/calendar-01.jpg"
+                      alt="Акция! Специальное предолжение на Cooper Pass"
+                  /></a>
+                  <div class="news-details">Зажигательные тренировки на берегу моря
+                    <span class="news-subtitle"
+                      >ZUMBAFIT в Центре Спорта «Эволюция»!</span
+                    >
                   </div>
                 </div>
               </div>
@@ -558,6 +547,7 @@
   <script src="../js/sbory.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/tournaments.js"></script>
+  <script src="../header/header.js"></script>
 </body>
 
 </html>
