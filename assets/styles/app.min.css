@@ -314,7 +314,7 @@ select {
   font-size: 44px;
   text-align: center;
   line-height: 100%;
-  color: #474747;
+  color: #171717;
 }
 
 .defaultSubtitle {
@@ -2134,6 +2134,7 @@ button {
   font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
+  color:#171717;
 }
 
 .advantages-row {
@@ -4057,6 +4058,8 @@ button {
 
 .tarifes__title {
   margin-bottom: 40px;
+  color:#171717;
+  font-weight: 700;
 }
 
 .tarifes-row {
@@ -8210,6 +8213,86 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  #sport .hero h1 {
+    color:#ffffff;
+    width:345px;
+    margin:0 auto;
+  }
+  #sport .hero.container-fluid.container-fluid__bow {
+    background-image: url(../../img/sports-meeting/shots.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__powerlifting {
+    background-image: url(../../img/sports-meeting/powerlifting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__basketball {
+    background-image: url(../../img/sports-meeting/basketball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:200px;
+  }
+  #sport .hero.container-fluid.container-fluid__volleyball {
+    background-image: url(../../img/sports-meeting/volleyball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__gymnastics {
+    background-image: url(../../img/sports-meeting/gymn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:200px;
+  }
+  #sport .hero.container-fluid.container-fluid__dances {
+    background-image: url(../../img/sports-meeting/dancing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__tennis {
+    background-image: url(../../img/sports-meeting/tennis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__handball {
+    background-image: url(../../img/sports-meeting/gandboll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__fencing {
+    background-image: url(../../img/sports-meeting/fehtovanie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__fights {
+    background-image: url(../../img/sports-meeting/fights.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  #sport .hero.container-fluid.container-fluid__football {
+    background-image: url(../../img/sports-meeting/football.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
+  }
+  .hero h1 span {
+    font-size: 58px;
+    width: 300px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+  .news-block .absolute-news-title {
+    display: none;
+  }
   .baths__desctiption.baths__desctiption {
     margin: 0 auto 26px;
   }
@@ -8232,6 +8315,9 @@ button {
   }
   #sport .hero.container-fluid.container-fluid__watersports{
     background-image: url("../../img/watersport/watersport.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:100px;
   }
   .sea
   .sea__wrapper
@@ -8329,6 +8415,7 @@ button {
   .active .active__wrapper .active__box .active__item-title{
     text-align: center;
     line-height: 1;
+    margin: 0 auto 20px;
   }
 
   .sea .sea__wrapper .sea-title::before {
@@ -8379,8 +8466,9 @@ button {
     font-size: 40px;
     margin-bottom: 20px;
     color:#171717;
-    font-weight: 900;
+    font-weight: 700;
     border: none;
+    margin-left:0;
   }
 
   .news-block {
@@ -8923,7 +9011,7 @@ button {
   }
 
   #icons__about-ow .tns-controls button {
-    margin: 0 100px 0;
+    margin: -30px 60px 0;
   }
 
   .calendar .col-md-9 {

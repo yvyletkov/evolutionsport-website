@@ -92,10 +92,10 @@ $(function () {
       ],
       responsive: {
         320: {
-          items: 1,
+          items: 3,
         },
         425: {
-          items: 1,
+          items: 3,
         },
         768: {
           items: 3,
@@ -280,10 +280,10 @@ $(function () {
           items: 3,
         },
         768: {
-          items: 5,
+          items: 3,
         },
         1024: {
-         items: 5,
+         items: 3,
         }
       },
     });
