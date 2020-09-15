@@ -79,7 +79,7 @@ $(function () {
       nav: false,
       navPosition: "bottom",
       animateIn: "jello",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',

@@ -528,7 +528,7 @@
     font-family: 'Geometria Heavy';
     font-weight: 900;
     font-size: 87px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
     left: -230px;
     top: 160px;
     text-transform: uppercase;

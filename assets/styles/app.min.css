@@ -260,6 +260,10 @@ select {
   background: #000;
 }
 
+.tarifes-list-item__more:hover {
+  color:#171717;
+}
+
 .owl-carousel .owl-video-play-icon {
   position: absolute;
   height: 80px;
@@ -321,6 +325,7 @@ select {
   font-size: 20px;
   text-align: center;
   font-weight: normal;
+  color: #b4b3b3;
 }
 
 .tabel {
@@ -659,6 +664,12 @@ button {
 
 .bannerWrap .banner_children-camp .banner-item-img-small_yellow {
   background-color: #ffe826;
+}
+
+.bannerWrap .banner_children-camp .banner-item-img-small_yellow:hover {
+  text-decoration: none;
+  color:#171717;
+  background-color: #e4d127;
 }
 
 .bannerWrap .banner_children-camp .banner-item-img-small__proc {
@@ -1132,8 +1143,7 @@ button {
   }
 
   .tarifes-list-item-prices__new.tarifes-list-item-prices__new {
-    font-size: 20px;
-    width: 97px;
+    font-size: 24px;
     text-align: center;
   }
   #icons__about-ow {
@@ -1250,7 +1260,7 @@ button {
 }
 
 .call .call__wrap .children-form .children-form-btn:hover {
-  background-color: #c0ac38;
+  text-decoration: underline;
 }
 
 .call .call__wrap .call-text-down,
@@ -1547,6 +1557,7 @@ button {
 .active .active__wrapper .active__box .active__item-text {
   margin-bottom: 75px;
   max-width: 400px;
+  text-align: justify;
 }
 
 .group-slider-item-galery-slider2-item {
@@ -1794,7 +1805,7 @@ button {
 }
 
 .stat-item__big {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Cambria", Arial, Helvetica, sans-serif;
   font-size: 105px;
   font-weight: bold;
   line-height: 100%;
@@ -2119,7 +2130,7 @@ button {
 }
 
 .advantages-wrap {
-  padding: 40px 10px;
+  padding: 60px 10px;
   max-width: 1000px;
   width: 100%;
   background-position: right top;
@@ -2705,7 +2716,7 @@ button {
 
 .supa-wrap {
   max-width: 1200px;
-  padding: 60px 30px;
+  padding: 0px 30px;
   margin: 0 auto;
 }
 
@@ -3498,7 +3509,7 @@ button {
 
 .gallery {
   background-image: none;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .gallery:not(:last-child) {
@@ -4309,15 +4320,11 @@ button {
 }
 
 .tarifes-list-item-prices {
-  margin-top: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -4329,7 +4336,7 @@ button {
   font-weight: 900;
   color: #646464;
   text-decoration: line-through;
-  margin-left: 20px;
+  margin: 0 auto;
   display: none;
 }
 
@@ -4340,7 +4347,7 @@ button {
 .tarifes-list-item-prices__new {
   font-weight: 900;
   font-size: 26px;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .tarifes-list-item-prices__new span {
@@ -4407,7 +4414,7 @@ button {
 }
 
 .map-main-baloon-main__title {
-  color: #474747;
+  color: #171717;
   font-size: 16px;
   font-weight: 900;
 }
@@ -4964,7 +4971,7 @@ button {
 .OD .tarifes-list-item-row .tarifes-list-item-prices {
   margin: 0 auto;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .OD .tarifes-list-item-row:not(:last-child) {
@@ -7499,7 +7506,7 @@ button {
     width: 100%;
   }
   .advantages-row-item__title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .video iframe {
     height: 340px;
@@ -8146,6 +8153,8 @@ button {
 
 .icon-img-cont img {
   margin: 0 auto;
+  width: 50px;
+  height: 35px;
 }
 
 .infra .tns-controls button:first-child {
@@ -8213,6 +8222,32 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  #sbory .hero h2 {
+    display:none;
+  }
+
+  #sbory .hero h1 {
+    padding: 200px 30px 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    z-index: 100;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  #sbory .hero h2 span {
+    color: #fff;
+    padding: 0 0 0 40px;
+  }
+  .icon-description .icon-title {
+    font-size: 16px;
+  }
+  .icon-img-cont img {
+    margin: 0 auto;
+    width: 60px;
+    height: 50px;
+}
   #sport .hero h1 {
     color:#ffffff;
     width:345px;
@@ -8445,7 +8480,7 @@ button {
   }
 
   .title-bold {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
   }
 
   .subtitle-normal.subtitle-normal {
@@ -8459,7 +8494,7 @@ button {
   .news-block .container {
     padding-left:30px;
     padding-right: 30px;
-    height:500px;
+    height:430px;
   }
 
   .news-block .blue-stripe.blue-title {
@@ -8936,25 +8971,6 @@ button {
         font-size: 45px;
         top: 230px;
       }
-
-      #sbory .hero h2 {
-        display:none;
-      }
-    
-      #sbory .hero h1 {
-        padding: 200px 30px 30px;
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        z-index: 100;
-        font-size: 40px;
-        line-height: 40px;
-      }
-    
-      #sbory .hero h2 span {
-        color: #fff;
-        padding: 0 0 0 40px;
-      }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -9116,6 +9132,9 @@ button {
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
+  .advantages-row-item__text {
+    font-size: 12px;
+  }
   .news-block .container {
     height:430px;
   }
