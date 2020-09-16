@@ -1,0 +1,32 @@
+/* ПЕРЕЗВОНИТЕ МНЕ В ХЕДЕРЕ */
+
+.header__popup__title {
+    font-size: 16px;line-height: 1.3
+}
+
+.header__popup__input {
+    margin: 0 auto;
+    display: block;
+    font-size: 14px;
+    padding-bottom: 7px;
+    padding-left: 0;
+    background: none;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #989898;
+    width: 195px;
+}
+
+.header__popup__input:first-child {
+    margin-top: 25px;
+}
+
+.header__popup__input::placeholder {
+    font-size: 10px;
+}
+
+.header__popup__btn {
+    font-size: 13px;
+}
+
+/* КОНЕЦ ПЕРЕЗВОНИТЕ МНЕ В ХЕДЕРЕ */
