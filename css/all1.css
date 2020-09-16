@@ -195,10 +195,7 @@ body {
     max-height:20px;
     margin-right:20px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 .navbar-black {
     background:#000;
     padding:0px;
@@ -6697,6 +6694,16 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
+
+#mirnij .right-list .absolute-descr,
+#zvezdnij .right-list .absolute-descr,
+#pogranichnij .right-list .absolute-descr,
+#sportivnij .right-list .absolute-descr,
+#shtormovoi .right-list .absolute-descr {
+    top: -81px;
+    font-size: 76px;
+}
+
 #zvezdnij .modal-dialog {
     max-width: 900px;
 }
