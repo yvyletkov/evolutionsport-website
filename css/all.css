@@ -6019,9 +6019,7 @@ html{
 }
 
 .banner-weather {
-  max-width: 257px;
-  width: 100%;
-  padding: 25px 37px;
+  width: fit-content;
   -webkit-box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
   box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
   background-image: -webkit-linear-gradient(44deg, #4f88cd 0%, #233e5f 100%);

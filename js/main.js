@@ -8,8 +8,8 @@ $(document).ready(
                     '<input name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
                     '<input name="phone" type="number" id="swal-input2" class="header__popup__input" placeholder="Номер телефона">',
                 showCancelButton: true,
-                confirmButtonColor: '#0f4179',
-                cancelButtonColor: '#666',
+                confirmButtonColor: '#355b8e',
+                cancelButtonColor: '#4a4a4a',
                 confirmButtonText: '<span class="header__popup__btn">Перезвоните мне</span>',
                 cancelButtonText: '<span class="header__popup__btn">Закрыть окно</span>',
                 preConfirm: function () {
