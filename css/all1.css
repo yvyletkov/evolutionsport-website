@@ -5559,14 +5559,12 @@ a.article:hover {
     position: relative;
 }
 .banner-weather {
-    max-width: 257px;
-    width: 100%;
+    width: fit-content;
     -webkit-box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
     box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
     position: absolute;
     bottom: -114px;
-    right: 50%;
-    transform: translateX(200%);
+    right: calc(50% - 480px);
     z-index: 3;
 }
 

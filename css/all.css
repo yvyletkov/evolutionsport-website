@@ -4150,7 +4150,11 @@ html{
   color: #585858;
 }
 
-
+@media screen and (max-width: 768px){
+  .blue-stripe {
+    padding-left: 0!important;
+  }
+}
 
 .content-slider img {
   box-shadow: 0 0 15px #bfc0c2;
@@ -4307,7 +4311,7 @@ html{
 
 
 .about-description {
-  font-weight: 100;
+  font-weight: 300;
   color: #171717;
 }
 
@@ -6019,9 +6023,7 @@ html{
 }
 
 .banner-weather {
-  max-width: 257px;
-  width: 100%;
-  padding: 25px 37px;
+  width: fit-content;
   -webkit-box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
   box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
   background-image: -webkit-linear-gradient(44deg, #4f88cd 0%, #233e5f 100%);

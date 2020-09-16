@@ -353,7 +353,7 @@ select {
     font-size: 44px;
     text-align: center;
     line-height: 100%;
-    color: #474747;
+    color: #171717;
     margin-top: 10px;
 }
 
@@ -3160,6 +3160,12 @@ button {
     width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    .children-supa .supaSlider-insideSlider-wrap {
+        margin-top: 20px;
+    }
+}
+
 .children-supa .children-supa__text {
     position: absolute;
     bottom: 60px;
@@ -3603,10 +3609,10 @@ button {
 }
 
 .gallery:not(:last-child) {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(80%, rgba(255, 255, 255, 0.3)), to(#fff)), url("../images/galBg.png") no-repeat right bottom;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, #fff 100%), url("../images/galBg.png") no-repeat right bottom;
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, #fff 100%), url("../images/galBg.png") no-repeat right bottom;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, #fff 100%), url("../images/galBg.png") no-repeat right bottom;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(80%, rgba(255, 255, 255, 0.3)), to(#fff)), url("../images/galBg.png") no-repeat right bottom;*/
+    /*background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, #fff 100%), url("../images/galBg.png") no-repeat right bottom;*/
+    /*background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, #fff 100%), url("../images/galBg.png") no-repeat right bottom;*/
+    /*background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, #fff 100%), url("../images/galBg.png") no-repeat right bottom;*/
 }
 
 .gallery_children .gallery-right-img:last-child {
@@ -7975,6 +7981,10 @@ button {
         text-align: center;
     }
 
+    #residence .supaSlider-item-desc-top__title {
+        text-align: left;
+    }
+
     .children-supa .supaSlider-insideSliderBlock {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -9113,9 +9123,8 @@ button {
 
     .banner-weather { /*added*/
         position: absolute;
-        right: 50%;
+        right: calc(50% - 110px);
         bottom: -110px;
-        transform: translateX(50%);
     }
 
     .blue-stripe-border {
