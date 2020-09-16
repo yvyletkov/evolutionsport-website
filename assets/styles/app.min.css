@@ -855,7 +855,7 @@ button {
 
 @media screen and (min-width: 426px) and (max-width: 1023px){
   #sport .hero h1 {
-    padding-top:250px;
+    padding-top:100px;
   }
 }
 
@@ -4348,6 +4348,7 @@ button {
   font-weight: 900;
   font-size: 26px;
   margin: 0;
+  text-align: center;
 }
 
 .tarifes-list-item-prices__new span {
@@ -4366,6 +4367,7 @@ button {
   background-color: #1e2953;
   color: #fff;
   font-weight: 500;
+  border-radius: 0;
 }
 
 .map-wrap {
@@ -6478,6 +6480,7 @@ button {
   }
   .supa {
     margin-bottom: 20px;
+    margin-top:40px;
   }
 }
 
@@ -6673,7 +6676,7 @@ button {
 @media screen and (max-width: 1023px) {
   .banner_children-wrap + .stat .stat-wrap {
     display: flex;
-    padding: 20px 0;
+    padding: 40px 0;
   }
 
   .stat-item__big.stat-item__big {
@@ -6858,7 +6861,7 @@ button {
     transform: translateX(-50%);
   }
   .advantages-wrap {
-    padding: 30px 16px;
+    padding: 0px 16px 40px;
   }
   .advantages-row-item__text {
     font-size: 14px;
@@ -7043,7 +7046,7 @@ button {
     padding-top: 0;
   }
   .supa-wrap {
-    padding: 30px 20px;
+    padding: 0px 20px;
   }
   .gallery_children .gallery-left-grid {
     width: 100%;
@@ -7124,7 +7127,7 @@ button {
     height: 450px !important;
   }
   .carousel-wrap {
-    padding: 0 10px;
+    padding: 0 10px 40px;
   }
   .carousel.children__carousel .carousel__title.full_time::before {
     -webkit-flex-shrink: 0;
@@ -7180,7 +7183,7 @@ button {
   }
   .map-form-row {
     display: block;
-    width: 280px;
+    width: 305px;
     margin: 0 auto;
   }
   .newYear-row {
@@ -7244,7 +7247,7 @@ button {
   .OD .tarifes-list-item-row {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
   .tarifes-list-item__btn {
     width: 100%;
@@ -8222,18 +8225,46 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  #sport .btn-group {
+    margin:0 auto;
+    width:440px;
+  }
+  .hero .about-list {
+    color:#ffffff;
+  }
+  .tournament .btn-group {
+    margin: 75px auto
+  }
+  #head__tourn span {
+    font-size: 70px;
+    text-align: center;
+  }
+  .hero-description {
+    text-align: center;
+    margin:20px auto;
+  }
+  #tourn__slider {
+    padding-bottom: 40px;
+  }
+  .color-black {
+    color:#171717 !important;
+  }
+  .map {
+    padding: 0;
+  }
+  .video-wrap {
+    max-width: 1200px;
+    padding: 50px 10px 45px;
+    margin: 0 auto;
+  }
+  .carousel.children__carousel {
+    padding-bottom: 0;
+  }
+  #about__features-sports {
+    height:80px;
+  }
   #sbory .hero h2 {
     display:none;
-  }
-
-  #sbory .hero h1 {
-    padding: 200px 30px 30px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    z-index: 100;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   #sbory .hero h2 span {
@@ -8250,7 +8281,7 @@ button {
 }
   #sport .hero h1 {
     color:#ffffff;
-    width:345px;
+    width:290px;
     margin:0 auto;
   }
   #sport .hero.container-fluid.container-fluid__bow {
@@ -8319,12 +8350,6 @@ button {
     background-size: cover;
     margin-top:100px;
   }
-  .hero h1 span {
-    font-size: 58px;
-    width: 300px;
-    margin: 0 auto;
-    color: #ffffff;
-}
   .news-block .absolute-news-title {
     display: none;
   }
@@ -8504,6 +8529,7 @@ button {
     font-weight: 700;
     border: none;
     margin-left:0;
+    text-transform: none;
   }
 
   .news-block {
@@ -8544,7 +8570,10 @@ button {
     margin-bottom: 30px;
   }
   .hero h1 {
-    padding-top: 100px;
+    padding-top: 200px;
+    font-size: 45px;
+    line-height: 1;
+    margin-bottom: 0px;
   }
   .features .big-f {
     padding: 0;
@@ -8901,6 +8930,45 @@ button {
 
 
 @media screen and (max-width:426px) {
+  .hero h1 {
+    padding-top: 70px;
+  }
+  #sport .btn-group {
+    width:290px;
+  }
+  .hero h1 {
+    margin-bottom: 30px;
+  }
+    #head__tourn {
+      padding:100px 0 0 0;
+      text-align: center;
+    }
+    #head__tourn span {
+      font-size: 70px;
+    }
+    .tournament .hero {
+      background-image: url(../../img/sports-meeting/fights.jpg) !important;
+      height: 550px;
+    }
+    #sbory .hero h1 {
+      padding: 200px 0px 30px;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      z-index: 100;
+      font-size: 50px;
+      line-height: 1;
+      text-transform: none;
+    }
+    .hero h1 span {
+      width: 300px;
+      margin: 0 auto;
+      color: #ffffff;
+      text-transform: none;
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 700;
+    }
     .baths .baths-title {
       padding: 0px;
     }
@@ -8964,7 +9032,7 @@ button {
       }
 
       .features {
-          padding: 30px 0;
+          padding: 45px 0;
       }
 
       .absolute-victory.absolute-victory {
@@ -9171,6 +9239,7 @@ button {
     }
     .features {
       padding: 40px 0 0;
+      height:130px;
     }
     #nested-out-korpus-mw .tns-controls button:first-child {
       left: 0;
@@ -9202,7 +9271,8 @@ button {
     }
     .btn-group {
       display: block;
-      width: 100%;
+      width: 274px;
+      margin: 0 auto;
     }
     .hero .button-red {
       width: 100%;

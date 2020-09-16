@@ -7,7 +7,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="./img/arrow-blue-left.png">',
         '<img src="./img/arrow-blue-right.png">',
@@ -33,7 +33,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-blue-left.png">',
         '<img src="../img/arrow-blue-right.png">',
@@ -59,7 +59,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/red-arrow-left.png">',
         '<img src="../img/red-arrow-right.png">',
@@ -85,7 +85,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="img/arrow-thin-left.png">',
         '<img src="img/arrow-thin-right.png">',
@@ -111,7 +111,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -134,7 +134,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="img/arrow-thin-left.png">',
         '<img src="img/arrow-thin-right.png">',
@@ -163,7 +163,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -192,7 +192,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="./img/arrow-thin-left.png">',
         '<img src="./img/arrow-thin-right.png">',
@@ -218,7 +218,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -244,7 +244,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -270,7 +270,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -296,7 +296,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -322,7 +322,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -348,7 +348,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -374,7 +374,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -397,7 +397,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
@@ -423,7 +423,7 @@ $(function () {
       loop: true,
       nav: false,
       navPosition: "bottom",
-      preventScrollOnTouch: "force",
+      preventScrollOnTouch: false,
       controlsText: [
         '<img src="../img/arrow-thin-left.png">',
         '<img src="../img/arrow-thin-right.png">',
