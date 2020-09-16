@@ -21,8 +21,8 @@ $(document).ready(
                         ])
                     })
                 },
-            }).then(function (result) {
-                var result = {};
+            }).then(function () {
+                let result = {};
                 result["form-name"] = "quiz-parasport-form";
                 result["rus-form-name"] = "Контактная форма из шапки сайта";
                 result.name = $('#swal-input1').val();

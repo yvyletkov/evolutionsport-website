@@ -29,54 +29,8 @@ $("#sidebarCollapse").click(function () {
     $(".norm-menu-wrap").toggleClass("active");
 });
 
-// $(".input-image.date")
-//     .datepicker({
-//         dateFormat: "mm-dd-yy",
-//         changeMonth: true,
-//         changeYear: true,
-//         yearRange: "1900:2100",
-//         autoclose: true,
-//     })
-//     .keyup(function () {
-//         this.value = this.value.replace(/[^\d]/g, "");
-//     });
 
-// $(".nav-link.button-blue__mobile, .nav-link.button-blue").click( // ФОРМА ПЕРЕЗВОНА В ХЕДЕРЕ
-//     (e) => {
-//         e.preventDefault();
-//         swal({
-//             html: '<form id="header-contact-form">' +
-//
-//                 '<p>Пожалуйста, укажите свои контактные данные, и мы Вам перезвоним</p>' +
-//
-//                 '<input type="hidden" name="form-name" value="quiz-new-program-form">' +
-//                 '<input type="hidden" name="rus-form-name" value="Форма из шапки сайта (Перезвоните мне)">' +
-//
-//                 '<label for="health-center-bid-form__name">Ваше имя</label>' +
-//                 '<input required type="text" name="name" id="header-contact-form__name">' +
-//
-//                 '<label for="health-center-bid-form__email">Ваш E-mail</label>' +
-//                 '<input  type="email" name="email" id="header-contact-form__email">' +
-//
-//                 '<label for="health-center-bid-form__phone">Ваш номер телефона</label>' +
-//                 '<input required type="number" name="phone" id="header-contact-form__phone">' +
-//
-//                 '<button type="submit">Отправить</button>' +
-//
-//                 '</form>',
-//             focusConfirm: false,
-//             showCancelButton: false,
-//             showConfirmButton: false,
-//             confirmButtonColor: '#ff5908',
-//             cancelButtonColor: '#666',
-//             confirmButtonText: 'Забронировать',
-//             cancelButtonText: 'Отмена',
-//         })
-//     }
-// );
-
-
-
+// КОНТАКТНАЯ ФОРМА С ХЕДЕРА
 $(document).ready(
     function () {
         $(".nav-link.button-blue__mobile, .nav-link.button-blue").click( () => {
@@ -99,55 +53,26 @@ $(document).ready(
                         ])
                     })
                 },
-            }).then(function (result) {
-                var result = {};
+            }).then(function () {
+                let result = {};
                 result["form-name"] = "quiz-parasport-form";
                 result["rus-form-name"] = "Контактная форма из шапки сайта";
                 result.name = $('#swal-input1').val();
                 result.phone = $('#swal-input2').val();
-                $.ajax({
-                    url:"http://95.181.172.100/erp/site/forms/",
-                    type: "POST",
-                    data: JSON.stringify(result),
-                    error: function(xhr,status,error){
-                        console.log(status);
-                        console.log(error);
-                    }
-                }).done(function() {
-                    swal({type: 'success', text: 'Сообщение отправлено'});
-                });
+                mainApi(result)
+                    .then((res) => {
+                        console.log(res);
+                        if (res.ok) {
+                            debugger
+                            swal({type: 'success', text: 'Сообщение отправлено'});
+                        }
+                    })
+
             })
         })
     }
-)
+);
+// КОНЕЦ КОНТАКТНАЯ ФОРМА С ХЕДЕРА
 
-
-// $(document).ready(
-//     () => {
-//         $("#header-contact-form").on("submit", (event) => {
-//             debugger
-//             event.preventDefault();
-//             const data = $("#header-contact-form").serializeArray();
-//             mainApi(data)
-//                 .then((res) => {
-//                     if (res.ok) {
-//                         swal({
-//                             type: "success",
-//                             title: "Спасибо! Ваша заявка будет обработана",
-//                             text: "Наш менеджер с вами свяжется в ближайшее время",
-//                         });
-//                     }
-//                 })
-//                 .catch((err) => {
-//                     swal({
-//                         type: "error",
-//                         title: "Извините, ваша заявка не отправлена",
-//                         text: "Что-то пошло не так, мы уже работаем над ошибкой",
-//                     });
-//                     console.log(err);
-//                 });
-//         })
-//     }
-// );
 
 
