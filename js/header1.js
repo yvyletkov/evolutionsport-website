@@ -29,17 +29,17 @@ $("#sidebarCollapse").click(function () {
     $(".norm-menu-wrap").toggleClass("active");
 });
 
-$(".input-image.date")
-    .datepicker({
-        dateFormat: "mm-dd-yy",
-        changeMonth: true,
-        changeYear: true,
-        yearRange: "1900:2100",
-        autoclose: true,
-    })
-    .keyup(function () {
-        this.value = this.value.replace(/[^\d]/g, "");
-    });
+// $(".input-image.date")
+//     .datepicker({
+//         dateFormat: "mm-dd-yy",
+//         changeMonth: true,
+//         changeYear: true,
+//         yearRange: "1900:2100",
+//         autoclose: true,
+//     })
+//     .keyup(function () {
+//         this.value = this.value.replace(/[^\d]/g, "");
+//     });
 
 // $(".nav-link.button-blue__mobile, .nav-link.button-blue").click( // ФОРМА ПЕРЕЗВОНА В ХЕДЕРЕ
 //     (e) => {
@@ -81,15 +81,15 @@ $(document).ready(
     function () {
         $(".nav-link.button-blue__mobile, .nav-link.button-blue").click( () => {
             swal({
-                title: 'Пожалуйста, укажите свои контактные данные, и мы Вам перезвоним',
+                title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы Вам перезвоним</p>',
                 html:
-                    '<input name="name" id="swal-input1" class="swal2-input" placeholder="Ваше имя">' +
-                    '<input style="width: 100%" name="phone" id="swal-input2" class="swal2-input" placeholder="Номер телефона">',
+                    '<input name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
+                    '<input name="phone" type="number" id="swal-input2" class="header__popup__input" placeholder="Номер телефона">',
                 showCancelButton: true,
-                confirmButtonColor: '#ff5908',
+                confirmButtonColor: '#0f4179',
                 cancelButtonColor: '#666',
-                confirmButtonText: 'Далее',
-                cancelButtonText: 'Отмена',
+                confirmButtonText: '<span class="header__popup__btn">Перезвоните мне</span>',
+                cancelButtonText: '<span class="header__popup__btn">Закрыть окно</span>',
                 preConfirm: function () {
                     return new Promise(function (resolve) {
                         resolve([
