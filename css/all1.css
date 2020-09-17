@@ -149,6 +149,9 @@ body {
 .menu-evolution.navbar-dark .navbar-nav .nav-link {
     color:#171717;
 }
+.nav-link.button-blue {
+    cursor: pointer;
+}
 .menu-evolution.navbar-dark.navbar-black .navbar-nav .nav-link {
     color:#fff;
 }
@@ -1880,13 +1883,10 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
-#mirnij .modal-dialog {
+.modal-dialog {
     max-width: 900px;
 }
-#mirnij .modal-body .container {
-    padding: 0 60px 0 100px;
-}
-.nomer-first {
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -2092,13 +2092,7 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
-#pogranichnij .modal-dialog {
-    max-width: 900px;
-}
-#pogranichnij .modal-body .container {
-    padding: 0 60px 0 100px;
-}
-.nomer-first {
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -2730,13 +2724,7 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
-#sportivnij .modal-dialog {
-    max-width: 900px;
-}
-#sportivnij .modal-body .container {
-    padding: 0 60px 0 100px;
-}
-.nomer-first {
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -3386,13 +3374,7 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
-#zvezdnij .modal-dialog {
-    max-width: 900px;
-}
-#zvezdnij .modal-body .container {
-    padding: 0 60px 0 100px;
-}
-.nomer-first {
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -4915,6 +4897,10 @@ a.article:hover {
     color:#494949;
     line-height:20px;
 }
+
+#shtormovoi .hero {
+    background-image:url('../img/campuses/shtormovoi/stormy.png');
+}
 .description {
     padding-top:65px;
     padding-bottom:65px;
@@ -5017,6 +5003,7 @@ a.article:hover {
 .right-list {
     position:relative;
 }
+
 .right-list .absolute-descr {
     position: absolute;
     top: -27px;
@@ -5026,13 +5013,34 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
-#mirnij .modal-dialog {
+.modal-dialog {
     max-width: 900px;
 }
-#mirnij .modal-body .container {
-    padding: 0 60px 0 100px;
+.modal-body .container {
+    padding: 0 60px 0 60px;
+    margin: 0 auto;
 }
-.nomer-first {
+@media screen and (max-width: 768px){
+    .modal-body .container {
+        padding: 0 10px 0 10px;
+        margin: 0 auto;
+    }
+    .modal-body .blue-info {
+        margin-top: 0;
+    }
+    .modal-body .row {
+        padding: 15px 0;
+    }
+    .icon-rooms {
+        display: flex;
+        padding-left: 22px;
+    }
+}
+.icon-rooms {
+    display: flex;
+    align-items: center;
+}
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -5229,13 +5237,7 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
-#pogranichnij .modal-dialog {
-    max-width: 900px;
-}
-#pogranichnij .modal-body .container {
-    padding: 0 60px 0 100px;
-}
-.nomer-first {
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -6022,13 +6024,8 @@ a.article:hover {
     z-index: 1;
     text-transform: uppercase;
 }
-#sportivnij .modal-dialog {
-    max-width: 900px;
-}
-#sportivnij .modal-body .container {
-    padding: 0 60px 0 100px;
-}
-.nomer-first {
+
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -6702,13 +6699,8 @@ a.article:hover {
     font-size: 76px;
 }
 
-#zvezdnij .modal-dialog {
-    max-width: 900px;
-}
-#zvezdnij .modal-body .container {
-    padding: 0 60px 0 100px;
-}
-.nomer-first {
+
+.nomer-popup__slider-wrapper {
     padding:0 15px 40px;
     position:relative;
 }
@@ -6729,7 +6721,7 @@ a.article:hover {
     text-align:justify;
 }
 .left-nomer p:nth-child(2) {
-    margin-top:40px;
+    margin-top:20px;
 }
 .blue-info {
     background: #107fc1;
@@ -6849,6 +6841,30 @@ a.article:hover {
     margin-bottom: 9px;
     width: 100%;
     resize: none;
+}
+
+.left-nomer p {
+    margin-bottom: 20px;
+}
+
+#rooms-lists img {
+    width: 194px;height: 103px;object-fit: cover
+}
+
+.modal {
+    padding-right: 0 !important;
+}
+.modal-header {
+    border: none !important;
+    padding-bottom: 0 !important;
+}
+.modal-header button {
+    padding-right: 15px !important;
+    font-size: 21px !important;
+}
+
+.modal-body {
+    padding-bottom: 3rem;
 }
 
 

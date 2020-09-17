@@ -55,7 +55,7 @@ $(document).ready(
                 },
             }).then(function () {
                 let result = {};
-                result["form-name"] = "quiz-parasport-form";
+                result["form-name"] = "default-contact-form";
                 result["rus-form-name"] = "Контактная форма из шапки сайта";
                 result.name = $('#swal-input1').val();
                 result.phone = $('#swal-input2').val();
@@ -63,8 +63,7 @@ $(document).ready(
                     .then((res) => {
                         console.log(res);
                         if (res.ok) {
-                            debugger
-                            swal({type: 'success', text: 'Сообщение отправлено'});
+                            swal({type: 'success', text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'});
                         }
                     })
 

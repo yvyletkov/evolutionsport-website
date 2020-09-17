@@ -306,6 +306,9 @@ body {
     margin: 10px 0 16px;
     font-weight: 400;
   }
+  footer .row__subtitle {
+    margin: 0 0 16px;
+  }
   .button-blue__mobile.button-blue__mobile {
     display: block;
   }

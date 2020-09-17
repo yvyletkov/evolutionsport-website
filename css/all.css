@@ -252,7 +252,7 @@ body {
   font-size: 20px;
   margin-top: 10px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 67px;
 }
 
@@ -1886,7 +1886,7 @@ html{
   padding: 0 60px 0 100px;
 }
 
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
@@ -2141,15 +2141,7 @@ html{
   text-transform: uppercase;
 }
 
-#pogranichnij .modal-dialog {
-  max-width: 900px;
-}
-
-#pogranichnij .modal-body .container {
-  padding: 0 60px 0 100px;
-}
-
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
@@ -2918,7 +2910,7 @@ html{
   padding: 0 60px 0 100px;
 }
 
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
@@ -3626,7 +3618,7 @@ html{
   padding: 0 60px 0 100px;
 }
 
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
@@ -4151,7 +4143,7 @@ html{
 }
 
 @media screen and (max-width: 768px){
-  .blue-stripe {
+  .description-right .blue-stripe {
     padding-left: 0!important;
   }
 }
@@ -5376,7 +5368,7 @@ html{
   padding: 0 60px 0 100px;
 }
 
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
@@ -5626,15 +5618,7 @@ html{
   text-transform: uppercase;
 }
 
-#pogranichnij .modal-dialog {
-  max-width: 900px;
-}
-
-#pogranichnij .modal-body .container {
-  padding: 0 60px 0 100px;
-}
-
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
@@ -6312,10 +6296,6 @@ html{
   color: #000;
 }
 
-#sbory .bg-white {
-  background-color: transparent !important;
-}
-
 #sbory .bg-white.navbar-black {
   background-color: #fff !important;
 }
@@ -6507,7 +6487,7 @@ html{
   padding: 0 60px 0 100px;
 }
 
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
@@ -7357,7 +7337,7 @@ html{
   padding: 0 60px 0 100px;
 }
 
-.nomer-first {
+.nomer-popup__slider-wrapper {
   padding: 0 15px 40px;
   position: relative;
 }
