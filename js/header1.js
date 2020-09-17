@@ -55,7 +55,7 @@ $(document).ready(
                 },
             }).then(function () {
                 let result = {};
-                result["form-name"] = "quiz-parasport-form";
+                result["form-name"] = "default-contact-form";
                 result["rus-form-name"] = "Контактная форма из шапки сайта";
                 result.name = $('#swal-input1').val();
                 result.phone = $('#swal-input2').val();

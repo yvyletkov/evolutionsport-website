@@ -149,6 +149,9 @@ body {
 .menu-evolution.navbar-dark .navbar-nav .nav-link {
     color:#171717;
 }
+.nav-link.button-blue {
+    cursor: pointer;
+}
 .menu-evolution.navbar-dark.navbar-black .navbar-nav .nav-link {
     color:#fff;
 }

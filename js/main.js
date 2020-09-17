@@ -23,12 +23,12 @@ $(document).ready(
                 },
             }).then(function () {
                 let result = {};
-                result["form-name"] = "quiz-parasport-form";
+                result["form-name"] = "default-contact-form";
                 result["rus-form-name"] = "Контактная форма из шапки сайта";
                 result.name = $('#swal-input1').val();
                 result.phone = $('#swal-input2').val();
                 $.ajax({
-                    url:"http://95.181.172.100/erp/site/forms/",
+                    url: "http://95.181.172.100/erp/site/forms/",
                     type: "POST",
                     data: JSON.stringify(result),
                     error: function(xhr,status,error){
