@@ -1,4 +1,4 @@
-const URL = "http://95.181.172.100/erp/site/forms/";
+const URL = "http://77.232.53.82:8051/erp/site/forms/";
 
 //testURL = "http://77.232.53.82:8051/";
 //mainURL = "http://95.181.172.100/erp/site/forms/";
@@ -36,7 +36,7 @@ async function mainApi(info) {
 // САБМИТ ФОРМЫ РАССЧЕТА СТОИМОСТИ ЦЕНТРА ЗДОРОВЬЯ
 $(document).ready(() => {
     $("#health-center-bid-form").on("submit", function (event) {
-        debugger
+
         event.preventDefault();
         const data = $("#health-center-bid-form").serializeArray();
         mainApi(data)
@@ -115,7 +115,7 @@ $(document).ready(
                 .then(function () {
                     let result = {};
                     result["form-name"] = "health-center-bid-form";
-                    result["rus-form-name"] = "Форма подачи заявки в Центре Здоровья";
+                    result["rus-form-name"] = "Подача заявки в Центре Здоровья";
                     result.program = $('title').html();
                     result.name = $('#health-center-bid-form__name').val();
                     result.email = $('#health-center-bid-form__email').val();
@@ -130,10 +130,9 @@ $(document).ready(
                         .then((res) => {
                             console.log(res);
                             if (res.ok) {
-                                debugger
                                 swal({
                                     type: 'success',
-                                    text: 'Заявку успешно подана! Скоро наш менеджер с Вами свяжется'
+                                    text: 'Заявку успешно подана! Наш менеджер свяжется с Вами для уточнения деталей в самое ближайшее время'
                                 });
                             }
                         })

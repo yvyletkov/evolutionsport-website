@@ -8998,7 +8998,7 @@ button {
         margin-left: 0;
     }
 
-    #sportivnij col-6,
+    #sportivnij .col-6,
     #mirnij .col-6,
     #pogranichnij .col-6,
     #zvezdnij .col-6,
@@ -9118,12 +9118,12 @@ button {
     }
 
     #pogranichnij .hero h2 span {
-        font-size: 55px;
+        font-size: 50px;
     }
 
     .banner-weather { /*added*/
         position: absolute;
-        right: calc(50% - 110px);
+        right: calc(50% - 115px);
         bottom: -110px;
     }
 

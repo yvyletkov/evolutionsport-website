@@ -2,7 +2,6 @@
 $(document).ready(
     function () {
 
-        debugger
 
         $(document).ready(function() {
             $(".fancybox").fancybox();

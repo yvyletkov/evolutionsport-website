@@ -63,8 +63,7 @@ $(document).ready(
                     .then((res) => {
                         console.log(res);
                         if (res.ok) {
-                            debugger
-                            swal({type: 'success', text: 'Сообщение отправлено'});
+                            swal({type: 'success', text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'});
                         }
                     })
 
