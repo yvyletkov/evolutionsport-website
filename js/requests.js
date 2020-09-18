@@ -1,16 +1,15 @@
-const URL = "http://95.181.172.100/erp/site/forms/";
+const URL = "http://77.232.53.82:8051/erp/site/forms/";
 
-//testURL = "http://77.232.53.82:8051/erp/site/forms/";
-//mainURL = "http://95.181.172.100/erp/site/forms/";
+//mainURL = "http://77.232.53.82:8051/erp/site/forms/";
 
-function objectifyForm(formArray) {
-    if (formArray["form-name"]) return formArray; // если объект уже норм, то ретурним его же
+function objectifyForm(data) {
+    if (data["form-name"]) return data; // если объект уже норм, то оставляем как есть
 
-    let returnArray = {};
-    for (let i = 0; i < formArray.length; i++) {
-        returnArray[formArray[i]['name']] = formArray[i]['value'];
+    let wellSerializedData = {};
+    for (let i = 0; i < data.length; i++) {
+        wellSerializedData[data[i]['name']] = data[i]['value'];
     }
-    return returnArray;
+    return wellSerializedData;
 }
 
 async function mainApi(info) {

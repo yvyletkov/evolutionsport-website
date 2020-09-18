@@ -1,3 +1,7 @@
+button.swal2-styled {   /* Стиль для кнопок всех свитАлертов*/
+  padding: 7px 23px!important;
+}
+
 .navbar-expand-lg .navbar-collapse {
   display: flex !important;
 }
@@ -5,7 +9,6 @@
 .button-blue__mobile.button-blue__mobile {
   display: none;
 }
-
 
 .navbar-expand-lg .navbar-nav .nav-link.button-blue.button-blue {
   border-radius: 25px;
@@ -500,23 +503,6 @@ body {
   font-weight: 500;
 }
 
-.button-blue_card {
-  background: #4273b3;
-  color: #fff;
-  padding: 16px 60px;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  width: 200px;
-}
-
-.button-blue_card:hover {
-  background: #2d4e7a;
-  text-decoration: none;
-  color: #fff;
-}
 
 .button-blue:hover {
   background: #2d4e7a;

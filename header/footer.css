@@ -14,9 +14,22 @@
   footer .footer-phone a {
     margin-top: 0;
   }
+  footer .contacts {
+    padding: 20px 0!important;
+  }
+  footer .row__title {
+    font-size: 32px !important;
+  }
+  footer .row__subtitle {
+    font-size: 16px !important;
+  }
 }
 
-footer .contacts .row {
+footer.contacts {
+  padding: 20px 0!important;
+}
+
+footer.contacts .row {
   align-items: center;
 }
 
@@ -199,6 +212,9 @@ footer .contacts-description span {
 }
 
 @media screen and (max-width: 767px) {
+  footer.contacts {
+    padding: 28px 0 30px!important;
+  }
   footer .icons-footer {
     width: 100px;
     margin: 0 auto;
@@ -511,3 +527,12 @@ footer .footer-phone a {
   color: #171717;
   font-weight: 700;
 }
+
+
+@media screen and (max-width: 1023px) {
+  footer .about-us .row, .contacts .row {
+    display: block;
+  }
+}
+
+

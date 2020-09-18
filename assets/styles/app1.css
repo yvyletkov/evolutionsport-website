@@ -1027,7 +1027,7 @@ button {
 
 .cost-content-cost + span {
     /*font-weight: bold;*/
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 2px;
 }
 
@@ -6354,6 +6354,10 @@ button {
 
 @media screen and (max-width: 768px) {
 
+    .shedule {
+        margin-top: 10px;
+    }
+
     .shedule-main-item {
         padding: 20px 10px;
     }
@@ -7069,6 +7073,7 @@ button {
 
     .gallery-left-desc__text {
         font-size: 16px;
+        font-weight: 400;
     }
 
     .supaSlider-item-desc {
@@ -7913,7 +7918,7 @@ button {
     }
 
     .gallery-left-desc__title {
-        text-transform: none;
+        text-transform: capitalize;
         font-size: 32px;
     }
 

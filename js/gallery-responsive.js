@@ -8,6 +8,7 @@ window.onload = function () {
       $(".gallery-responsive").addClass("owl-carousel");
       $(".gallery-responsive").owlCarousel({
         items: 3,
+        dots: false,
         nav: true,
         center: true,
         loop: true,
@@ -25,6 +26,7 @@ window.onload = function () {
       $(".gallery-responsive-up").addClass("owl-carousel");
       $(".gallery-responsive-up").owlCarousel({
         items: 3,
+        dots: false,
         nav: true,
         center: true,
         loop: true,
