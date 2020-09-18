@@ -11,6 +11,7 @@ $(document).ready(
             $('.gallery-responsive').addClass('owl-carousel');
             $('.gallery-responsive').owlCarousel({
                 items: 3,
+                dots: false,
                 nav: true,
                 center: true,
                 loop: true,

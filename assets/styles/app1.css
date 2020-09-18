@@ -1027,7 +1027,7 @@ button {
 
 .cost-content-cost + span {
     /*font-weight: bold;*/
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 2px;
 }
 
@@ -6354,6 +6354,10 @@ button {
 
 @media screen and (max-width: 768px) {
 
+    .shedule {
+        margin-top: 10px;
+    }
+
     .shedule-main-item {
         padding: 20px 10px;
     }
@@ -7069,6 +7073,7 @@ button {
 
     .gallery-left-desc__text {
         font-size: 16px;
+        font-weight: 400;
     }
 
     .supaSlider-item-desc {
@@ -7913,7 +7918,7 @@ button {
     }
 
     .gallery-left-desc__title {
-        text-transform: none;
+        text-transform: capitalize;
         font-size: 32px;
     }
 
@@ -8720,168 +8725,6 @@ button {
 }
 
 /*Новое меню*/
-.norm-menu-wrap {
-    background-color: rgb(239, 239, 239);
-    box-shadow: 0px 0px 32px 0px rgba(23, 23, 23, 0.36);
-    overflow-y: scroll;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 275px;
-    height: 100vh;
-    display: none;
-}
-
-.norm-menu {
-    position: relative;
-    padding-top: 45px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100%;
-    height: fit-content;
-}
-
-.norm-menu-wrap.active {
-    display: flex;
-}
-
-.norm-menu > p {
-    font-family: Roboto;
-    font-size: 16px;
-    text-align: center;
-}
-
-.norm-menu > a {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.norm-menu a:hover {
-    color: #000;
-}
-
-.norm-menu:before {
-    content: '';
-    background-color: rgb(205, 205, 205);
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 18px;
-}
-
-.norm-menu__close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 13px 11px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 10px;
-    font-family: "Roboto";
-    color: rgba(23, 23, 23, 0.42);
-}
-
-.norm-menu__close img {
-    margin-left: 6px;
-}
-
-.norm-menu__logo {
-    display: block;
-    margin-bottom: 33px;
-}
-
-.norm-menu__logo img {
-    margin: 0 auto;
-}
-
-.norm-menu-items {
-    margin-left: 70px;
-    width: 180px;
-    margin-bottom: 20px;
-}
-
-.norm-menu-items-item + .norm-menu-items-item {
-    margin-top: 7px;
-}
-
-.norm-menu-items-item__title {
-    font-size: 13px;
-    font-family: "Roboto";
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-}
-
-.norm-menu-items-item.list-wrap .norm-menu-items-item__title span {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    background: url('../images/icon/menu-arr.png') center no-repeat;
-}
-
-.norm-menu-items-item.active .norm-menu-items-item__title {
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-/*.norm-menu-items-item.active .norm-menu-items-item__title:before {*/
-/*    content: '';*/
-/*    width: 2px;*/
-/*    height: 11px;*/
-/*    position: absolute;*/
-/*    top: 4px;*/
-/*    left: -6px;*/
-/*    background: #000;*/
-/*}*/
-
-.norm-menu-items-item.active .norm-menu-items-item__title span {
-    transform: rotate(90deg);
-}
-
-.norm-menu-items-item.active .norm-menu-items-item-list {
-    display: block;
-}
-
-.norm-menu-items-item-list {
-    margin-top: 5px;
-    display: none;
-}
-
-.norm-menu-items-item-list__item {
-    display: block;
-    padding: 1px 0;
-    padding-left: 15px;
-    position: relative;
-    line-height: normal;
-}
-
-.norm-menu-items-item-list__item:before {
-    content: '—';
-    position: absolute;
-    top: 1px;
-    left: 0;
-}
-
-.norm-menu-socials {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    margin-top: auto;
-}
-
-.norm-menu-socials__item {
-    margin: 0 5px;
-}
 
 /*Новое меню Конец*/
 

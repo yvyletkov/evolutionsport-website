@@ -62,7 +62,7 @@ window.onload = () => {
                     $(".cost-content-duration-value").html($('#health-center-durations option:selected').text());
                     $(".cost-content-rehabilitants-value").html($("#health-center-rehabilitants").val());
                     $(".cost-content-guests-value").html($("#health-center-guests").val());
-                    $(".cost-content-cost").html(data.data.sum);
+                    $(".cost-content-cost").html("от " + data.data.sum);
 
                     $("#health-center-calc-form").hide();
                     $(".cost-content").css("visibility", "visible").css("height", "unset");

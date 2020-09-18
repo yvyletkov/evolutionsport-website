@@ -81,24 +81,24 @@
     // })
 
 // })
-async function mainApi(info) {
-  try {
-    const res = await fetch("http://95.181.172.100/erp/site/forms/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(info),
-    });
-
-    if (!res.ok) {
-      throw new Error(`error ${res.status}`);
-    }
-    return await res.json();
-  } catch (err) {
-    console.log(err);
-  }
-}
+// async function mainApi(info) {
+//   try {
+//     const res = await fetch("http://95.181.172.100/erp/site/forms/", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json;charset=utf-8",
+//       },
+//       body: JSON.stringify(info),
+//     });
+//
+//     if (!res.ok) {
+//       throw new Error(`error ${res.status}`);
+//     }
+//     return await res.json();
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
 
 $(document).on("click", ".tarifes-list-item-row__minus", function () {
   var num = +$(this).next(".tarifes-list-item-row__item").html();

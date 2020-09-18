@@ -244,7 +244,7 @@ body {
   line-height: 46px;
   color: #171717;
   text-align: center;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .subtitle-normal {
@@ -2667,6 +2667,25 @@ html{
   position: relative;
 }
 
+.button-blue_card {
+  display: flex;
+  background: #4273b3;
+  color: #fff;
+  padding: 16px 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.button-blue_card:hover {
+  background: #2d4e7a;
+  text-decoration: none;
+  color: #fff;
+}
+
 .about-us-slide .tns-horizontal.tns-subpixel > .tns-item {
   vertical-align: middle;
 }
@@ -4145,6 +4164,8 @@ html{
 @media screen and (max-width: 768px){
   .description-right .blue-stripe {
     padding-left: 0!important;
+    text-align: center;
+    margin-bottom: 14px;
   }
 }
 
