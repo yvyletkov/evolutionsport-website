@@ -6,6 +6,7 @@
   display: none;
 }
 
+
 .navbar-expand-lg .navbar-nav .nav-link.button-blue.button-blue {
   border-radius: 25px;
   color: #fff;
@@ -47,15 +48,16 @@ body {
   width: 275px;
   height: 100vh;
   overflow-y: scroll;
+  transition: all 240ms;
+
 }
 
 .norm-menu-wrap.active {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 320px;
   opacity: 1;
   visibility: visible;
-  transition: all 0.5s linear;
 }
 
 .norm-menu {
@@ -132,7 +134,7 @@ body {
 }
 
 .norm-menu-items-item__title {
-  font-size: 13px;
+  font-size: 20px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   position: relative;
   display: flex;
@@ -148,7 +150,7 @@ body {
   width: 25px;
   height: 25px;
   background: url("../assets/images/icon/right-chevron_copy.png") center
-    no-repeat;
+  no-repeat;
   color: #b8b8b8;
   margin: 0 35px;
 }
@@ -191,7 +193,7 @@ body {
 }
 
 .norm-menu-items-item-list__item:before {
-  content: "—";
+  content: "";
   position: absolute;
   top: 1px;
   left: 0;
@@ -211,6 +213,7 @@ body {
 #sidebarCollapse {
   margin: 0 0 0 10px;
 }
+
 
 #sidebarCollapse span,
 #sidebarCollapse span:before,
@@ -299,6 +302,15 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .row__subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 16px;
+    font-weight: 400;
+  }
+  footer .row__subtitle {
+    margin: 0 0 16px;
+  }
   .button-blue__mobile.button-blue__mobile {
     display: block;
   }
@@ -328,7 +340,7 @@ body {
   background-color: #fff !important;
   padding: 0px;
   transition: 0.8s;
-  height: 70px;
+  height:70px;
   -webkit-transition: 0.8s;
 }
 
@@ -351,8 +363,8 @@ body {
 }
 
 .navbar-expand-lg
-  .navbar-nav
-  .nav-link.button-blue__mobile.button-blue__mobile {
+.navbar-nav
+.nav-link.button-blue__mobile.button-blue__mobile {
   border-radius: 25px;
   color: #fff;
   padding: 13px 18px;
@@ -403,6 +415,7 @@ body {
   background: #fff;
 }
 
+
 @media screen and (min-width: 1024px) {
   .row__title {
     display: none;
@@ -433,21 +446,12 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .row__title {
     font-size: 40px;
     text-align: center;
     font-weight: bold;
   }
-  .row__subtitle {
-    font-size: 20px;
-    text-align: center;
-    margin: 10px 0 16px;
-    font-weight: 400;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .logo-dark {
     width: 225px;
     height: 50px;
@@ -481,8 +485,8 @@ body {
 }
 
 .curort-nav.menu-evolution.navbar-dark:not(.navbar-black)
-  .navbar-nav
-  .nav-link.button-blue {
+.navbar-nav
+.nav-link.button-blue {
   color: #000;
 }
 
@@ -500,7 +504,7 @@ body {
   background: #4273b3;
   color: #fff;
   padding: 16px 60px;
-  display: flex;
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
