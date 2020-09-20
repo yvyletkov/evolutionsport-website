@@ -56,9 +56,11 @@
     cursor: zoom-in;
 }
 
-.gallery-responsive__img:hover {
-    transform: scale(1.06);
-    filter: brightness(120%);
+@media screen and (min-width: 768px){
+    .gallery-responsive__img:hover {
+        transform: scale(1.06);
+        filter: brightness(120%);
+    }
 }
 
 .gallery-responsive.owl-carousel {
@@ -126,9 +128,11 @@
     cursor: zoom-in;
 }
 
-.gallery-responsive-up__img:hover {
-    transform: scale(1.06);
-    filter: brightness(120%);
+@media screen and (min-width: 768px){
+    .gallery-responsive-up__img:hover {
+        transform: scale(1.06);
+        filter: brightness(120%);
+    }
 }
 
 .gallery-responsive-up.owl-carousel {
