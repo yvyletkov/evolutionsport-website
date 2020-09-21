@@ -1,0 +1,170 @@
+    <!-- start booking form 2.0 -->
+    <style>
+        #tl-hotel-select {
+            display: none;
+        }
+
+        .bookmarks {
+            width: 100%;
+            margin: 0 0 55px 0;
+            padding: 0 0;
+            list-style: none;
+        }
+
+        .bookmarks li {
+            background-color: rgb(226, 226, 226);
+            font-size: 18px;
+            font-family: "Roboto";
+            color: rgb(23, 23, 23);
+            font-weight: bold;
+            line-height: 1.2;
+            padding: 20px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .bookmarks li.active {
+            background-color: rgb(239, 239, 239);
+            cursor: default;
+            color: rgb(118, 118, 118);
+        }
+
+        .bookmarks li:before {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 628px) {
+            .bookmarks {
+                margin: 0 0 125px 0;
+            }
+        }
+    </style>
+    <!-- start TL Booking form script -->
+    <ul class="bookmarks">
+        <li id="hotel-rooms" data-id="6244">Бронирование номеров</li>
+        <li id="hotel-camp" data-id="11334">Детский лагерь</li>
+    </ul>
+    <select id="tl-hotel-select">
+        <option value="6244"> Бронирование номеров</option>
+        <option value="11334">Детский лагерь</option>
+    </select>
+    <div id="tl-booking-form" style="width: 100%"></div>
+    <script type='text/javascript'>
+
+        $(document).ready(function () {
+            var select = document.getElementById("tl-hotel-select");
+            select.addEventListener('change', function () {
+                var hotel_id = "hotel_id";
+                var regex = new RegExp(/hotel_id=\d+/g);
+                var getParams = window.location.search;
+                var params_str = ((getParams == "") ? "?" : "") + hotel_id + "=" + this.value;
+                var path = "";
+                if (getParams.indexOf(hotel_id) != -1) {
+                    path = getParams.replace(regex, params_str);
+                } else {
+                    path = getParams + params_str;
+                }
+                window.history.pushState(false, false, path);
+            });
+            var provider = getUrlParams()['provider'],
+                selector = $('#tl-hotel-select'),
+                listElement = $('.bookmarks li[id ^="hotel-"]'),
+                listActiveElement = $('.bookmarks li.active');
+            listElement.each(function () {
+                if ($(this).attr('data-id') == provider || (typeof provider == 'undefined' || provider === null)) {
+                    listActiveElement.removeClass('active');
+                    $(this).addClass('active');
+                    return false;
+                }
+            });
+            listElement.on("click", function () {
+                var listActiveElement = $('.bookmarks li.active'),
+                    data_id = $(this).attr('data-id');
+                if (data_id == listActiveElement.attr('data-id'))
+                    return false;
+                listActiveElement.removeClass('active');
+                $(this).addClass('active');
+                selector.val(data_id).change();
+                fireEvent(selector[0], 'change');
+            });
+
+            function getUrlParams() {
+                var urlParams = {};
+                var params = location.search.substr(1).split('&');
+                for (var key in params) {
+                    var keyValuePair = params[key].split('=');
+                    urlParams[keyValuePair[0]] = decodeURIComponent(keyValuePair[1]);
+                }
+                return urlParams;
+            }
+
+            function fireEvent(element, event) {
+                if (document.createEventObject) {
+                    var ieEvt = document.createEventObject();
+                    return element.fireEvent('on' + event, ieEvt);
+                } else {
+                    var evt = document.createEvent("HTMLEvents");
+                    evt.initEvent(event, true, true);
+                    return !element.dispatchEvent(evt);
+                }
+            }
+        });
+
+        function bookingStepChanged(data) {
+            switch (data.step) {
+                case 'search':
+                case 'preview':
+                case 'payment':
+                case 'complete':
+                    break;
+                default:
+                    return;
+            }
+            window.yaCounter41202634.hit('/' + data.step);
+        }
+
+        (function (w) {
+            var q = [
+                ['setContext', 'TL-INT-evolutionsport-new', 'ru'],
+                ['embed', 'booking-form', {container: 'tl-booking-form', onBookingStepChanged: bookingStepChanged}]
+            ];
+            var t = w.travelline = (w.travelline || {}), ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+                ti.__loader = true;
+                var d = w.document, p = d.location.protocol, s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = (p == 'https:' ? p : 'http:') + '//ibe.tlintegration.com/integration/loader.js';
+                (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+            }
+        })(window);
+        $(document).ready(function () {
+            function getParameterByName(name, url) {
+                if (!url) {
+                    url = window.location.href;
+                }
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+            $('.bookmarks li').each(function () {
+                var prov = getParameterByName('hotel_id');
+                if ($(this).attr('data-id') == prov) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+                if ((prov == '0') || (prov == null)) {
+                    $("#hotel-rooms").addClass('active');
+                }
+            });
+        });
+    </script>
+    <!-- end booking form 2.0 -->

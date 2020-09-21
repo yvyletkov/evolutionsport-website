@@ -253,7 +253,7 @@ body {
   margin-top: 10px;
   text-align: center;
   font-weight: 300;
-  margin-bottom: 67px;
+  margin-bottom: 50px;
 }
 
 .subtitle-normal_black {
@@ -522,6 +522,7 @@ html{
   height: 540px;
   position: relative;
   margin-top: 95px;
+  background-size: cover;
 }
 
 #main-slider:before {
@@ -4246,6 +4247,12 @@ html{
   position: relative;
 }
 
+@media screen and (max-width: 1024px){
+  #main-slider .slider-content {
+    padding: 80px 0 50px;
+  }
+}
+
 .about-us {
   padding: 40px 0;
 }
@@ -4459,6 +4466,12 @@ html{
   margin-bottom: 40px;
   color:#171717;
   font-weight: 700;
+}
+
+.calendar .blue-stripe.blue-title span {
+  font-weight: normal;
+  display: block;
+  font-size: 14px;
 }
 
 .photogallery .col-2,
@@ -5223,6 +5236,10 @@ html{
 
 #sport .hero.container-fluid.container-fluid__football {
   background-image: url("../img/football/hero.jpg");
+}
+
+#sport .hero.container-fluid.container-fluid__atletika {
+  background-image: url("../img/throwing/hero.jpg");
 }
 
 #sport .hero h2 span {

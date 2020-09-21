@@ -335,4 +335,51 @@ $(document).ready(
 );
 // --- КОНЕЦ КОНТАКТНАЯ ФОРМА С ХЕДЕРА
 
+// -------- КОНТАКТНАЯ ФОРМА СО СТРАНИЦЫ BOOKING
+$(document).ready(
+    function () {
+        $(".call-me-btn, #call-me-btn").click(() => {
+            swal({
+                title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы Вам перезвоним</p>',
+                html:
+                    '<input name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
+                    '<input name="phone" type="number" id="swal-input2" class="header__popup__input" placeholder="Номер телефона">' +
+                    '<input name="email" type="email" id="swal-input3" class="header__popup__input" placeholder="Ваша почта">',
+                showCancelButton: true,
+                confirmButtonColor: '#355b8e',
+                cancelButtonColor: '#4a4a4a',
+                confirmButtonText: '<span class="header__popup__btn">Перезвоните мне</span>',
+                cancelButtonText: '<span class="header__popup__btn">Закрыть окно</span>',
+                preConfirm: function () {
+                    return new Promise(function (resolve) {
+                        resolve([
+                            $('#swal-input1').val(),
+                            $('#swal-input2').val(),
+                            $('#swal-input3').val()
+                        ])
+                    })
+                },
+            }).then(function () {
+                let result = {};
+                result["form-name"] = "default-contact-form";
+                result["rus-form-name"] = `Кнопка "Позвоните мне"/"Заказать звонок" со страницы "${$('title').html()}"`;
+                result.name = $('#swal-input1').val();
+                result.phone = $('#swal-input2').val();
+                result.email = $('#swal-input3').val();
+                mainApi(result)
+                    .then((res) => {
+                        console.log(res);
+                        if (res.ok) {
+                            swal({
+                                type: 'success',
+                                text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'
+                            });
+                        }
+                    })
+
+            })
+        })
+    }
+);
+// --- КОНЕЦ КОНТАКТНАЯ ФОРМА СО СТРАНИЦЫ BOOKING
 

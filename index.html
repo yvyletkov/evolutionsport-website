@@ -49,6 +49,7 @@
     <script src="assets/scripts/sweetalert2.js"></script>
     <script src="assets/scripts/main.js"></script>
     <script src="js/gallery-responsive.js"></script>
+
     <title>Эволюция</title>
   </head>
 
@@ -464,7 +465,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Прямая трансляция</a>
+                <a class="nav-link" href="http://evolutionsport.ru/">Старая версия сайта</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Календарь событий</a>
@@ -499,49 +500,22 @@
         <section class="evo-slider index-slider" id="main-slider">
           <div class="slider-content container">
             <h3 class="header-title">Территория<br />достижений</h3>
-            <div
-              class=""
-              style="margin-top:25px;width:100%;height:80px;background:#fff;"
-            ></div>
-<!--            <div class="booking">-->
-<!--              <form class="booking__form" name="reg">-->
-<!--                <div class="booking__form_block">-->
-<!--                  <span class="booking__span">Дата заезда</span>-->
-<!--                  <input-->
-<!--                    type="date"-->
-<!--                    name="dateIn"-->
-<!--                    class="booking__input"-->
-<!--                    placeholder="Дата заезда"-->
-<!--                    required-->
-<!--                    minlength="2"-->
-<!--                  />-->
-<!--                </div>-->
-<!--                <div class="booking__form_block">-->
-<!--                  <span class="booking__span">Дата выезда</span>-->
-<!--                  <input-->
-<!--                    type="date"-->
-<!--                    name="dateOut"-->
-<!--                    class="booking__input"-->
-<!--                    placeholder="Дата выезда"-->
-<!--                    required-->
-<!--                    minlength="8"-->
-<!--                  />-->
-<!--                </div>-->
-<!--                <div class="booking__form_block">-->
-<!--                  <span class="booking__span">Колличество гостей</span>-->
-<!--                  <select class="booking__select" required>-->
-<!--                    <option>2 взрослых</option>-->
-<!--                    <option>1 взрослый</option>-->
-<!--                  </select>-->
-<!--                </div>-->
-<!--                <button-->
-<!--                  class="button-blue booking__button booking__button_disabled"-->
-<!--                >-->
-<!--                  Забронировать-->
-<!--                </button>-->
-<!--              </form>-->
-<!--            </div>-->
 
+            <!-- start TL Search form script -->
+            <div id="block-search">
+              <div id="tl-search-form" class="tl-container"><noindex><a href="http://www.travelline.ru/products/tl-hotel/" rel="nofollow">система онлайн-бронирования</a></noindex></div>
+            </div>
+            <script type="text/javascript">
+              (function(w){
+                var q=[
+                  ['setContext', 'TL-INT-evolutionsport-new', 'ru'],
+                  ['embed', 'search-form', {container: 'tl-search-form'}]
+                ];
+                var t=w.travelline=(w.travelline||{}),ti=t.integration=(t.integration||{});ti.__cq=ti.__cq?ti.__cq.concat(q):q;
+                if (!ti.__loader){ti.__loader=true;var d=w.document,p=d.location.protocol,s=d.createElement('script');s.type='text/javascript';s.async=true;s.src=(p=='https:'?p:'http:')+'//ibe.tlintegration.com/integration/loader.js';(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(s);}
+              })(window);
+            </script>
+            <!-- end TL Search form script -->
             <a
               data-fancybox
               href="https://www.youtube.com/embed/HJ80df3OTms?feature=oembed"
@@ -718,7 +692,7 @@
 
         <section class="about-us-slide container my-3 nopadding-top">
           <h2 class="title-bold">В нашем центре</h2>
-          <p class="subtitle-normal">Отражение сущности объекта</p>
+          <p class="subtitle-normal">Выберите интересующий Вас раздел</p>
           <div id="about-us-slide">
             <div class="item">
               <div class="about-card card-body" style="background-image: url(img/main-slider/childrencamp.jpg);">
@@ -733,6 +707,49 @@
                   <li>Весенняя смена</li>
                   <li>Летняя смена</li>
                   <li>Осенняя смена</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                      class="about-card card-body"
+                      style="background-image: url(img/main-slider/sportsmeeting.png);"
+              >
+                <h3 class="blue-stripe">Спортивные<br>сборы</h3>
+                <a class="btn button-blue_card" href="sports-fees/sports-fees.html">
+                  Подробнее<img
+                        src="assets/images/arrow-right.png"
+                        alt="arrow-right"
+                /></a>
+                <ul class="about-list">
+                  <li>Футбол</li>
+                  <li>Баскетбол</li>
+                  <li>Легкая атлетика</li>
+                  <li>Единоборства</li>
+                  <li>Волейбол</li>
+                  <li>и другие</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                      class="about-card card-body"
+                      style="background-image: url(img/main-slider/rehabilitation.png);"
+              >
+                <h3 class="blue-stripe">Реабилитация</h3>
+                <a class="btn button-blue_card" href="./health-center/rehabilitation.html">
+                  Подробнее<img
+                        src="assets/images/arrow-right.png"
+                        alt="arrow-right"
+                /></a>
+                <ul class="about-list">
+                  <li>Инсульт</li>
+                  <li>Параспорт</li>
+                  <li>Черепно-мозговая травма</li>
+                  <li>Опорно-двигательный аппарат</li>
+                  <li>Детский церебральный паралич</li>
                 </ul>
               </div>
             </div>
@@ -774,27 +791,6 @@
                   <li>Бассейн</li>
                   <li>Банный комплекс</li>
                   <li>Тренажерные залы</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item">
-              <div
-                class="about-card card-body"
-                style="background-image: url(img/main-slider/rehabilitation.png);"
-              >
-                <h3 class="blue-stripe">Реабилитация</h3>
-                <a class="btn button-blue_card" href="./health-center/rehabilitation.html">
-                  Подробнее<img
-                    src="assets/images/arrow-right.png"
-                    alt="arrow-right"
-                  /></a>
-                <ul class="about-list">
-                  <li>Инсульт</li>
-                  <li>Параспорт</li>
-                  <li>Черепно-мозговая травма</li>
-                  <li>Опорно-двигательный аппарат</li>
-                  <li>Детский церебральный паралич</li>
                 </ul>
               </div>
             </div>
@@ -1109,6 +1105,7 @@
           </div>
         </section>
       </main>
+
 
       <!--scripts loaded here-->
       <footer class="container contacts nopadding-top">
