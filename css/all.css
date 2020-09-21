@@ -253,7 +253,7 @@ body {
   margin-top: 10px;
   text-align: center;
   font-weight: 300;
-  margin-bottom: 67px;
+  margin-bottom: 50px;
 }
 
 .subtitle-normal_black {
@@ -4468,6 +4468,12 @@ html{
   font-weight: 700;
 }
 
+.calendar .blue-stripe.blue-title span {
+  font-weight: normal;
+  display: block;
+  font-size: 14px;
+}
+
 .photogallery .col-2,
 .photogallery .col-4 {
   padding: 0 4px;
@@ -5230,6 +5236,10 @@ html{
 
 #sport .hero.container-fluid.container-fluid__football {
   background-image: url("../img/football/hero.jpg");
+}
+
+#sport .hero.container-fluid.container-fluid__atletika {
+  background-image: url("../img/throwing/hero.jpg");
 }
 
 #sport .hero h2 span {
