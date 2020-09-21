@@ -74,17 +74,54 @@ window.onload = () => {
                         $(".cost-content").css("display", "none");
                     })
                     $("#btn-booking").on("click", () => {
-                        $(".popup-wrapper-onlycontactform").css("display", "flex");
-                        $(".popup-onlycontactform").removeClass("hidden");
-                        $(".popup-wrapper-onlycontactform").removeClass("hidden");
+                        swal({
+                            title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы поможем Вам забронировать выбранную программу</p>',
+                            html:
+                                '<input name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
+                                '<input name="email" type="email" id="swal-input2" class="header__popup__input" placeholder="Ваша почта">' +
+                                '<input name="phone" type="number" id="swal-input3" class="header__popup__input" placeholder="Номер телефона">',
+                            showCancelButton: true,
+                            confirmButtonColor: '#355b8e',
+                            cancelButtonColor: '#4a4a4a',
+                            confirmButtonText: '<span class="header__popup__btn">Далее</span>',
+                            cancelButtonText: '<span class="header__popup__btn">Закрыть</span>',
+                            preConfirm: function () {
+                                return new Promise(function (resolve) {
+                                    resolve([
+                                        $('#swal-input1').val(),
+                                        $('#swal-input2').val(),
+                                        $('#swal-input3').val(),
+                                        $('#swal-textarea1').val()
+                                    ])
+                                })
+                            },
+                        }).then(function () {
+                            let result = {};
+                            result["form-name"] = "default-contact-form";
+                            result["rus-form-name"] = `Контактная форма после рассчета стоимости программы "${$('#health-center-programs option:selected').text()}"`;
+                            result.name = $('#swal-input1').val();
+                            result.email = $('#swal-input2').val();
+                            result.phone = $('#swal-input3').val();
+                            mainApi(result)
+                                .then((res) => {
+                                    console.log(res);
+                                    if (res.ok) {
+                                        swal({
+                                            type: 'success',
+                                            text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'
+                                        });
+                                    }
+                                })
+
+                        })
                     })
                 }
             })
             .catch((err) => {
                 swal({
                     type: "error",
-                    title: "Извините, рассчет стоимости временно невозможен",
-                    text: "Что-то пошло не так, мы уже работаем над ошибкой",
+                    title: "Извините, забронировать программу онлайн сейчас невозможно :(",
+                    text: "Пожалуйста, позвоните нам по номеру 8(800)777-18-26",
                 });
                 console.log(err);
             });
