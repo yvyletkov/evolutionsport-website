@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/tiny-slider1.css"/>
+<!--    <link rel="stylesheet" href="assets/scripts/fancybox/jquery.fancybox.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/scripts/datepicker/datepicker.min.css"/>-->
+    <link rel="stylesheet" href="css/all1.css">
+    <link rel="stylesheet" href="css/gallery-responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/styles/sweetalert2.css"/>
+<!--    <link rel="stylesheet" href="assets/styles/app1.css"/>-->
+<!--    <link rel="stylesheet" href="assets/styles/additional1.css"/>-->
+    <link rel="stylesheet" href="header/header.css"/>
+    <link rel="stylesheet" href="header/footer.css"/>
+    <link rel="stylesheet" href="css/popup-styles.css"/>
+
+    <script src="assets/scripts/jquery.min.js"></script>
+<!--    <script src="assets/scripts/slick.min.js"></script>-->
+<!--    <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>-->
+<!--    <script src="assets/scripts/datepicker/datepicker.min.js"></script>-->
+<!--    <script src="assets/scripts/owl.carousel.min.js"></script>-->
+    <script src="assets/scripts/sweetalert2.js"></script>
+<!--    <script src="assets/scripts/main1.js"></script>-->
+
+    <style>
+
+        #booking .wrapper {
+            margin-top: 170px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #booking .wrapper {
+                margin-top: 100px
+            }
+        }
+
+        .call-me-btn {
+            margin-top: 15px;
+            background-color: #4273b3;
+            padding: 6px 26px;
+            border: none;
+            color: #fff;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        .call-me-btn:hover {
+            background-color: #345a8c;
+        }
+
+        #tl-hotel-select {
+            display: none;
+        }
+
+        .bookmarks-wrapper {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto;
+            margin-top: -15px;
+        }
+
+        .bookmarks {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 0 55px 0;
+            padding: 0 0;
+            list-style: none;
+        }
+
+        .bookmarks li {
+            background-color: rgb(226, 226, 226);
+            max-font-size: 18px;
+            font-family: "Roboto";
+            color: rgb(23, 23, 23);
+            font-weight: bold;
+            line-height: 1.2;
+            padding: 20px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .bookmarks li.active {
+            background-color: rgb(239, 239, 239);
+            cursor: default;
+            color: rgb(118, 118, 118);
+        }
+
+        .bookmarks li:before {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 628px) {
+            .bookmarks {
+                margin: 0 0 125px 0;
+            }
+        }
+
+        #tl-booking-form {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto
+        }
+    </style>
+
+    <title>Бронирование</title>
+
+</head>
+<body id="booking">
+
+<header
+        class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution"
+>
+    <div class="container">
+        <div
+                class="collapse navbar-collapse justify-content-between"
+                id="navbarToggle"
+        >
+            <div class="norm-menu-wrap">
+                <div class="norm-menu">
+                    <div class="norm-menu__close">
+                        <img src="img/icons/close.svg" alt="значок закрытия" class="menu_close"/>
+                    </div>
+                    <a href="#" class="norm-menu__logo">
+                        <img src="assets/images/logo-menu.png" alt="logo"/>
+                    </a>
+                    <div class="norm-menu-items">
+
+                        <div class="norm-menu-items-item">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="index.html">Главная</a>
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="sports-fees/sports-fees.html">Спортивные сборы</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/vodnyie-vidyi-sporta.html"
+                                >Водные виды спорта</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/basketbol.html"
+                                >Баскетбол</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/volejbol.html"
+                                >Волейбол</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/edinoborstva.html"
+                                >Единоборства</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/futbol.html"
+                                >Футбол</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/gimnastika.html"
+                                >Гимнастика</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/legkaya-atletika.html"
+                                >Легкая атлетика</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/tennis.html"
+                                >Теннис</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/fextovanie.html"
+                                >Фехтование</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/gandbol.html"
+                                >Гандбол</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/tanczyi.html"
+                                >Танцы</a
+                                >
+
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/pauerlifting.html"
+                                >Пауерлифтинг</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/metatelnyie-vidyi-sporta.html"
+                                >Метательные виды спорта</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="sports-fees/strelba-iz-luka.html"
+                                >Стрельба из лука</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="tournaments/turniryi.html">Турниры</a>
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="health-center/health-center.html">Центр здоровья</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="health-center/rehabilitation.html"
+                                >Реабилитация</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="health-center/sanatorium-treatment.html"
+                                >Санаторно-курортное лечение</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="health-center/parasport.html"
+                                >Параспорт</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="children-camp/children-camp.html">Детский лагерь</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="children-camp/autumn-vacation.html"
+                                >Осенний лагерь</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="children-camp/autumn-vacation-day-camp.html"
+                                >Дневной лагерь на осенних каникулах</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="resort-vacation/resort-vacation.html">Курортный отдых</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <a class="norm-menu-items-item-list__item"
+                                   href="resort-vacation/mirnyi.html">
+                                    Мирный</a>
+                                <a class="norm-menu-items-item-list__item"
+                                   href="resort-vacation/pogranichnyi.html">
+                                    Пограничный</a>
+                                <a class="norm-menu-items-item-list__item"
+                                   href="resort-vacation/sportivnyi.html">
+                                    Спортивный</a>
+                                <a class="norm-menu-items-item-list__item"
+                                   href="resort-vacation/zvezdnyi.html">
+                                    Звездный</a>
+                                <a class="norm-menu-items-item-list__item"
+                                   href="resort-vacation/shtormovoi.html">
+                                    Штормовой</a>
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="fitness-club/fitness-club.html">Фитнес клуб</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/subscriptions-and-prices.html"
+                                >Абонементы и цены</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/pools.html"
+                                >Бассейны</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/gyms.html"
+                                >Тренажерные залы</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/group-programs.html"
+                                >Групповые программы</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/sport-sections.html"
+                                >Спортивные секции</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/bath-complex.html"
+                                >Банный комплекс</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/shedule.html"
+                                >Расписание групповых программ</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/coaches.html"
+                                >Тренеры</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="fitness-club/rent.html"
+                                >Аренда спортивных сооружений</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="events-center/czentr-meropriyatij.html">Центр
+                                    мероприятий</a>
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a id="services-menu-item" class="url__pages"
+                                   href="../services/services.html">Услуги</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="services/transfer.html"
+                                >Трансфер</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="services/animation.html"
+                                >Анимация</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="services/surfing.html"
+                                >Серфинг</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="services/excursions.html"
+                                >Экскурсии</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a id="infrastructure-menu-item" class="url__pages"
+                                   href="../infrastructure/infrastructure.html">Инфраструктура</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <!--                                <a-->
+                                <!--                                        class="norm-menu-items-item-list__item"-->
+                                <!--                                        href="../infrastructure/karta-territorii/"-->
+                                <!--                                >Карта территории</a-->
+                                <!--                                >-->
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/residence.html"
+                                >Проживание</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/pools.html"
+                                >Бассейны</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/football-fields.html"
+                                >Футбольные поля</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/indoor-gyms.html"
+                                >Крытые спортивные залы</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/stadiums.html"
+                                >Стадионы</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/gyms.html"
+                                >Тренажерные залы</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/beach-sports-grounds.html"
+                                >Пляжные спортивные площадки</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/beach.html"
+                                >Пляж</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/bath-complex.html"
+                                >Банный комплекс</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/conference-rooms.html"
+                                >Конференц-залы</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="infrastructure/shops.html"
+                                >Магазины</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item list-wrap">
+                            <div class="norm-menu-items-item__title">
+                                <a id="about-menu-item" class="url__pages" href="../about/about.html">О центре</a>
+                                <span></span>
+                            </div>
+                            <div class="norm-menu-items-item-list">
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="about/documents.html"
+                                >Официальные документы</a
+                                >
+                                <!--                                <a-->
+                                <!--                                        class="norm-menu-items-item-list__item"-->
+                                <!--                                        href="../about/map.html"-->
+                                <!--                                >Карта территории</a-->
+                                <!--                                >--><a
+                                    class="norm-menu-items-item-list__item"
+                                    href="about/gallery.html"
+                            >Галерея</a
+                            >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="about/team.html"
+                                >Команда</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="about/news.html"
+                                >Новости</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="about/feedback.html"
+                                >Отзывы</a
+                                >
+                                <a
+                                        class="norm-menu-items-item-list__item"
+                                        href="about/vacancies.html"
+                                >Вакансии</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="norm-menu-items-item">
+                            <div class="norm-menu-items-item__title">
+                                <a class="url__pages" href="contacts.html">Контакты</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="norm-menu-socials">
+                        <a href="https://vk.com/evolutionsportcenter" class="norm-menu-socials__item">
+                            <img src="assets/images/icon/vk.png" alt="vk"/>
+                        </a>
+                        <a href="https://www.instagram.com/evolution.sportcenter/" class="norm-menu-socials__item">
+                            <img src="assets/images/icon/inst.png" alt="instagram"/>
+                        </a>
+                        <a href="https://www.facebook.com/evolutioncentrsport" class="norm-menu-socials__item">
+                            <img src="assets/images/icon/fb.png" alt="facebook"/>
+                        </a>
+                    </div>
+                    <p>Звоните нам</p>
+                    <a href="tel:88007771826">8 (800) 777-18-26</a>
+                </div>
+            </div>
+
+            <ul class="navbar-nav left-menu">
+                <li class="nav-item">
+                    <a id="sidebarCollapse">
+                        <span></span>
+                    </a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://evolutionsport.ru/">Старая версия сайта</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Календарь событий</a>
+                </li>
+            </ul>
+
+            <a class="navbar-brand d-none d-lg-block" href="index.html">
+                <div class="logo-dark"></div>
+                <img
+                        src="img/logo-small.png"
+                        class="logo-white"
+                        alt="logo-white"
+                />
+            </a>
+
+            <ul class="navbar-nav right-menu">
+                <li class="nav-item">
+                    <a class="nav-link phone-menu" href="tel:88007771826">8 (800) 777-18-26</a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link button-blue__mobile"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="nav-link button-blue">
+                        <i class="fa fa-phone"></i> Перезвоните мне
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="wrapper">
+
+    <section class="container">
+        <h1 class="">Бронирование номеров</h1>
+        <h4>Уважаемые гости!</h4>
+        <p>Модуль бронирования отображает стоимость для индивидуальных гостей.</p>
+        <p>Для расчета стоимости размещения групп, позвоните нам  8 800 777 18 26, или оставьте Ваш номер, мы перезвоним вам.</p>
+        <button class="call-me-btn">Позвоните мне!</button>
+    </section>
+
+    <!-- start booking form 2.0 -->
+    <section class="bookmarks-wrapper">
+        <ul class="bookmarks">
+            <li id="hotel-rooms" data-id="6244">Бронирование номеров</li>
+            <li id="hotel-camp" data-id="11334">Детский лагерь</li>
+        </ul>
+        <select id="tl-hotel-select">
+            <option value="6244"> Бронирование номеров</option>
+            <option value="11334">Детский лагерь</option>
+        </select>
+    </section>
+
+    <div id="tl-booking-form"></div>
+    <script type='text/javascript'>
+
+        $(document).ready(function () {
+            var select = document.getElementById("tl-hotel-select");
+            select.addEventListener('change', function () {
+                var hotel_id = "hotel_id";
+                var regex = new RegExp(/hotel_id=\d+/g);
+                var getParams = window.location.search;
+                var params_str = ((getParams == "") ? "?" : "") + hotel_id + "=" + this.value;
+                var path = "";
+                if (getParams.indexOf(hotel_id) != -1) {
+                    path = getParams.replace(regex, params_str);
+                } else {
+                    path = getParams + params_str;
+                }
+                window.history.pushState(false, false, path);
+            });
+            var provider = getUrlParams()['provider'],
+                selector = $('#tl-hotel-select'),
+                listElement = $('.bookmarks li[id ^="hotel-"]'),
+                listActiveElement = $('.bookmarks li.active');
+            listElement.each(function () {
+                if ($(this).attr('data-id') == provider || (typeof provider == 'undefined' || provider === null)) {
+                    listActiveElement.removeClass('active');
+                    $(this).addClass('active');
+                    return false;
+                }
+            });
+            listElement.on("click", function () {
+                var listActiveElement = $('.bookmarks li.active'),
+                    data_id = $(this).attr('data-id');
+                if (data_id == listActiveElement.attr('data-id'))
+                    return false;
+                listActiveElement.removeClass('active');
+                $(this).addClass('active');
+                selector.val(data_id).change();
+                fireEvent(selector[0], 'change');
+            });
+
+            function getUrlParams() {
+                var urlParams = {};
+                var params = location.search.substr(1).split('&');
+                for (var key in params) {
+                    var keyValuePair = params[key].split('=');
+                    urlParams[keyValuePair[0]] = decodeURIComponent(keyValuePair[1]);
+                }
+                return urlParams;
+            }
+
+            function fireEvent(element, event) {
+                if (document.createEventObject) {
+                    var ieEvt = document.createEventObject();
+                    return element.fireEvent('on' + event, ieEvt);
+                } else {
+                    var evt = document.createEvent("HTMLEvents");
+                    evt.initEvent(event, true, true);
+                    return !element.dispatchEvent(evt);
+                }
+            }
+        });
+
+        function bookingStepChanged(data) {
+            switch (data.step) {
+                case 'search':
+                case 'preview':
+                case 'payment':
+                case 'complete':
+                    break;
+                default:
+                    return;
+            }
+            window.yaCounter41202634.hit('/' + data.step);
+        }
+
+        (function (w) {
+            var q = [
+                ['setContext', 'TL-INT-evolutionsport-new', 'ru'],
+                ['embed', 'booking-form', {container: 'tl-booking-form', onBookingStepChanged: bookingStepChanged}]
+            ];
+            var t = w.travelline = (w.travelline || {}), ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+                ti.__loader = true;
+                var d = w.document, p = d.location.protocol, s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = (p == 'https:' ? p : 'http:') + '//ibe.tlintegration.com/integration/loader.js';
+                (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+            }
+        })(window);
+        $(document).ready(function () {
+            function getParameterByName(name, url) {
+                if (!url) {
+                    url = window.location.href;
+                }
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+            $('.bookmarks li').each(function () {
+                var prov = getParameterByName('hotel_id');
+                if ($(this).attr('data-id') == prov) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+                if ((prov == '0') || (prov == null)) {
+                    $("#hotel-rooms").addClass('active');
+                }
+            });
+        });
+    </script>
+    <!-- end booking form 2.0 -->
+</main>
+
+<footer class="container contacts nopadding-top">
+    <div class="row">
+        <h2 class=row__title>Контакты</h2>
+        <p class=row__subtitle>Центра спорта</p>
+        <div class="col-md-6 col-xs-12">
+            <div style="position: relative; overflow: hidden;">
+                <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A446999efda47433efc6ec2b79d186280c8090bd2d66371537693adfb6661c264&amp;source=constructor"
+                        class="minimap"
+                ></iframe>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12 contacts-right">
+            <div class="blue-stripe blue-title">
+                Контакты<span>нашего центра</span>
+            </div>
+            <div class="contacts-description">
+                г. Евпатория, Крым
+                <span
+                >297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул.
+                Аллея Дружбы, 1</span
+                >
+            </div>
+            <div class="icons-footer">
+                <a href="https://vk.com/evolutionsportcenter"><img src="img/icons/vk.png" alt="vk"/></a>
+                <a href="https://www.instagram.com/evolution.sportcenter/"><img src="img/icons/inst.png"
+                                                                                alt="instagram"/></a>
+                <a href="https://www.facebook.com/evolutioncentrsport"><img src="img/icons/fb.png"
+                                                                            alt="facebook"/></a>
+            </div>
+            <div class="footer-phone">
+                Звонить по номеру телефона
+                <a href="tel:88007771826">8 (800) 777-18-26</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!--<script src="js/tiny-slider.js"></script>-->
+<!--<script src="js/index1.js"></script>-->
+<!--<script src="js/watersport1.js"></script>-->
+<!--<script src="js/campusesSliders.js"></script>-->
+<!--<script src="js/resort1.js"></script>-->
+<!--<script src="js/sbory1.js"></script>-->
+<!--<script src="js/main1.js"></script>-->
+<script src="js/requests.js"></script>
+<!--<script src="js/gallery-responsive1.js"></script>-->
+<!--<script src="js/health-center-calc-form.js"></script>-->
+<script src="header/header.js"></script>
+
+</body>
+</html>
