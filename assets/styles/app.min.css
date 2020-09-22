@@ -9964,6 +9964,10 @@ span {
     .container.map {
         margin-bottom: 40px;
     }
+
+    .about-us.container .row {
+        display: block;
+    }
 }
 
 
