@@ -215,8 +215,8 @@ body {
 }
 
 .hero h1 {
-    padding-top: 267px;
-    font-size: 76px;
+    padding-top: 260px;
+    font-size: 74px;
     line-height: 80px;
     color: #fff;
     text-align: left;
@@ -2417,7 +2417,8 @@ html {
     position: relative;
     color: #626262;
     margin: 0 0 26px 0;
-    max-width: 480px;
+    max-width: 550px;
+    text-align: justify;
 }
 
 .baths p strong {
@@ -2688,6 +2689,7 @@ html {
     font-weight: 500;
     margin-bottom: 20px;
     width: 200px;
+    border-radius: 0;
 }
 
 .button-blue_card:hover {
@@ -3135,6 +3137,8 @@ html {
     background: white url(../img/watersport/calendar.png) left no-repeat;
     background-position: 10px;
     padding-left: 36px;
+    margin-left:5px;
+    width:50%;
 }
 
 .input-image.stadium {
@@ -3356,7 +3360,7 @@ html {
 }
 
 .features-center .title-bold {
-    margin-top: -40px;
+    margin-top: 40px;
     margin-bottom: 50px;
 }
 
@@ -3747,7 +3751,7 @@ html {
     z-index: 0;
 }
 
-#sport .hero.container-fluid {
+#sport .hero.container-fluid__atletika {
     background-image: url("../img/athletics/hero.jpg");
 }
 
@@ -4401,7 +4405,7 @@ html {
 + .tns-slide-active
 + .tns-slide-active:before {
     width: 60%;
-    right: 15px;
+    right: 18px;
     left: auto;
     top: -10px;
     background-color: rgb(65, 113, 175);
@@ -5259,10 +5263,6 @@ html {
 
 #sport .hero.container-fluid.container-fluid__football {
     background-image: url("../img/football/hero.jpg");
-}
-
-#sport .hero.container-fluid.container-fluid__atletika {
-    background-image: url("../img/throwing/hero.jpg");
 }
 
 #sport .hero h2 span {
@@ -7063,7 +7063,7 @@ span {
 }
 
 .infra {
-    padding: 40px 0 0;
+    padding: 100px 0 0;
     position: relative;
 }
 
@@ -7084,7 +7084,7 @@ span {
 }
 
 .features-center .title-bold {
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 50px;
 }
 
@@ -7154,9 +7154,10 @@ span {
 
 .baths .blue-stripe-border {
     margin: 0 0 26px;
-    border-color: #4273b3;
     font-weight: bold;
     font-size: 24px;
+    border-left: 6px solid #4273b3;
+    padding-left: 13px;
 }
 
 #about-us-slide-sbory {

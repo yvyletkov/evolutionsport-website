@@ -100,6 +100,26 @@
 //   }
 // }
 
+async function mainApiChildren(info) {
+  try {
+      const res = await fetch(URL, {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(objectifyForm(info)),
+      });
+
+      if (!res.ok) {
+          throw new Error(`error ${res.status}`);
+      }
+      console.log(res);
+      return await res.json();
+  } catch (err) {
+      console.log(err);
+  }
+}
+
 $(document).on("click", ".tarifes-list-item-row__minus", function () {
   var num = +$(this).next(".tarifes-list-item-row__item").html();
   if (num == 1) {
@@ -162,7 +182,7 @@ $(document).on("click", ".tarifes-list-item-row__minus", function () {
     };
   }
   console.log(obj);
-  mainApi(obj)
+  mainApiChildren(obj)
     .then((res) => {
       console.log(res);
       document.querySelector(".tarifes-list-item-prices__new").textContent = `${res.data.sum} руб`
@@ -200,7 +220,7 @@ $(document).on("click", ".tarifes-list-item-row__plus", function (event) {
     };
   }
   console.log(obj);
-  mainApi(obj)
+  mainApiChildren(obj)
     .then((res) => {
       console.log(res.data.sum);
       document.querySelector(".tarifes-list-item-prices__new").textContent = `${res.data.sum} руб`

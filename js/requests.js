@@ -78,31 +78,31 @@ $(".map-form").on("submit", function (event) {
         });
 });
 
-$(".price-form").on("submit", function (event) {
-    event.preventDefault();
-    const data = $(".price-form").serializeArray();
-    mainApi(data)
-        .then((res) => {
-            console.log(res);
-            res.map((e) => console.log(typeof e.value));
-            if (res.ok) {
-                swal({
-                    type: "success",
-                    title: "Спасибо!",
-                    text: "Ваша заявка будет обработана и наш менеджер с вами свяжется",
-                });
-                this.reset();
-            }
-        })
-        .catch((err) => {
-            swal({
-                type: "error",
-                title: "Извините, ваша заявка не отправлена",
-                text: "Что-то пошло не так мы уже работаем над ошибкой",
-            });
-            console.log(err);
-        });
-});
+// $(".price-form").on("submit", function (event) {
+//     event.preventDefault();
+//     const data = $(".price-form").serializeArray();
+//     mainApi(data)
+//         .then((res) => {
+//             console.log(res);
+//             res.map((e) => console.log(typeof e.value));
+//             if (res.ok) {
+//                 swal({
+//                     type: "success",
+//                     title: "Спасибо!",
+//                     text: "Ваша заявка будет обработана и наш менеджер с вами свяжется",
+//                 });
+//                 this.reset();
+//             }
+//         })
+//         .catch((err) => {
+//             swal({
+//                 type: "error",
+//                 title: "Извините, ваша заявка не отправлена",
+//                 text: "Что-то пошло не так мы уже работаем над ошибкой",
+//             });
+//             console.log(err);
+//         });
+// });
 
 $(".tarifes-list").on("submit", function (event) {
     event.preventDefault();
@@ -292,7 +292,7 @@ function getAndShowPopUpNewProgram() {
 // -------- КОНТАКТНАЯ ФОРМА С ХЕДЕРА
 $(document).ready(
     function () {
-        $(".nav-link.button-blue__mobile, .nav-link.button-blue").click(() => {
+        $(".nav-link.button-blue__mobile, .nav-link.button-blue, #call-me-btn").click(() => {
             swal({
                 title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы Вам перезвоним</p>',
                 html:

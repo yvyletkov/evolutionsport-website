@@ -302,8 +302,9 @@ footer .blue-stripe.blue-title span {
 }
 
 @media screen and (max-width: 426px) {
-  footer .minimap {
+  footer .minimap.minimap {
     height: 270px;
+    margin: 0;
   }
 }
 
@@ -311,6 +312,7 @@ footer .minimap {
   width: 745px;
   height: 494px;
   border: none;
+  margin: 55px 0 0 ;
 }
 
 footer .icons-footer img {
