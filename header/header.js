@@ -1,3 +1,5 @@
+lazyload();
+
 $(function () {
     // scroll functions
     $(window).scroll(function (e) {

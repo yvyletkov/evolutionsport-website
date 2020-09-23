@@ -1,11 +1,11 @@
-@font-face {
-    font-family: 'Geometria';
-    src: url('/fonts/Geometria-Heavy.woff2') format('woff2'),
-    url('/fonts/Geometria-Heavy.woff') format('woff'), 
-    url("/fonts/Geometria-Heavy.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal
-}
+/*@font-face {*/
+/*    font-family: 'Geometria';*/
+/*    src: url('/fonts/Geometria-Heavy.woff2') format('woff2'),*/
+/*    url('/fonts/Geometria-Heavy.woff') format('woff'), */
+/*    url("/fonts/Geometria-Heavy.ttf") format("truetype");*/
+/*    font-weight: bold;*/
+/*    font-style: normal*/
+/*}*/
 
 @font-face {
     font-family: 'Cambria';
