@@ -19,14 +19,14 @@
     <!-- Подключаем слайдер-->
     <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css"/>
     <!-- -->
-    <link
-            rel="stylesheet"
-            href="../assets/scripts/fancybox/jquery.fancybox.min.css"
-    />
-    <link
-            rel="stylesheet"
-            href="../assets/scripts/datepicker/datepicker.min.css"
-    />
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            href="../assets/scripts/fancybox/jquery.fancybox.min.css"-->
+<!--    />-->
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            href="../assets/scripts/datepicker/datepicker.min.css"-->
+<!--    />-->
     <link rel="stylesheet" href="../css/all.css"/>
 
     <link
@@ -35,18 +35,10 @@
     />
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
     <link rel="stylesheet" href="../assets/styles/app.min.css"/>
-    <link rel="stylesheet" href="../assets/styles/additional.css"/>
+<!--    <link rel="stylesheet" href="../assets/styles/additional.css"/>-->
     <link rel="stylesheet" href="../header/header.css"/>
     <link rel="stylesheet" href="../header/footer.css"/>
     <link rel="stylesheet" href="../css/popup-styles.css"/>
-
-    <script src="../assets/scripts/jquery.min.js"></script>
-    <script src="../assets/scripts/slick.min.js"></script>
-    <script src="../assets/scripts/fancybox/jquery.fancybox.min.js"></script>
-    <script src="../assets/scripts/datepicker/datepicker.min.js"></script>
-    <script src="../assets/scripts/owl.carousel.min.js"></script>
-    <script src="../assets/scripts/sweetalert2.js"></script>
-    <script src="../assets/scripts/main.js"></script>
 
     <title>Спортивные сборы</title>
 </head>
@@ -207,7 +199,8 @@
 
                             <div class="norm-menu-items-item list-wrap">
                                 <div class="norm-menu-items-item__title">
-                                    <a class="url__pages" href="../resort-vacation/resort-vacation.html">Курортный отдых</a>
+                                    <a class="url__pages" href="../resort-vacation/resort-vacation.html">Курортный
+                                        отдых</a>
                                     <span></span>
                                 </div>
                                 <div class="norm-menu-items-item-list">
@@ -321,7 +314,8 @@
 
                             <div class="norm-menu-items-item list-wrap">
                                 <div class="norm-menu-items-item__title">
-                                    <a id="infrastructure-menu-item" class="url__pages" href="../infrastructure/infrastructure.html">Инфраструктура</a>
+                                    <a id="infrastructure-menu-item" class="url__pages"
+                                       href="../infrastructure/infrastructure.html">Инфраструктура</a>
                                     <span></span>
                                 </div>
                                 <div class="norm-menu-items-item-list">
@@ -553,9 +547,10 @@
                     <div class="row" id="row-sbory__about">
                         <div class="col-12 col-lg-6 pt-md-5 pt-2 pt-lg-2">
                             <img
-                                    src="../img/sbory/left-part.jpg"
-                                    class="img-fluid img-shadow"
-                                    alt=""
+                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                    data-src="../img/sbory/left-part.jpg"
+                                    class="lazyload img-fluid img-shadow"
+                                    alt="Сборы"
                             />
                         </div>
                         <div class="col-12 col-lg-6">
@@ -672,7 +667,7 @@
                     <div class="item">
                         <div
                                 class="about-card card-body"
-                                style="background-image: url(../img//sports-meeting/powerlifting.jpg);"
+                                style="background-image: url(../img/sports-meeting/powerlifting.jpg);"
                         >
                             <h3 class="blue-stripe">Пауерлифтинг</h3>
                             <a href="./pauerlifting.html" class="button-blue">Подробнее </a>
@@ -802,17 +797,13 @@
     </main>
 
     <!--scripts loaded here-->
-    <footer class="container contacts nopadding-top">
+
+    <footer style="margin-top: 50px" class="container contacts nopadding-top">
         <div class="row">
             <h2 class=row__title>Контакты</h2>
             <p class=row__subtitle>Центра спорта</p>
             <div class="col-md-6 col-xs-12">
-                <div style="position: relative; overflow: hidden;">
-                    <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A446999efda47433efc6ec2b79d186280c8090bd2d66371537693adfb6661c264&amp;source=constructor"
-                            class="minimap"
-                    ></iframe>
-                </div>
+                <div id="YaMaps" style="position: relative; overflow: hidden;"></div>
             </div>
             <div class="col-md-6 col-xs-12 contacts-right">
                 <div class="blue-stripe blue-title">
@@ -838,15 +829,26 @@
                 </div>
             </div>
         </div>
-    </footer></div>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script src="../assets/scripts/jquery.min.js"></script>
+<!--<script src="../assets/scripts/slick.min.js"></script>-->
+<script src="../assets/scripts/fancybox/jquery.fancybox.min.js"></script>
+<!--<script src="../assets/scripts/datepicker/datepicker.min.js"></script>-->
+<script src="../assets/scripts/owl.carousel.min.js"></script>
+<script src="../assets/scripts/sweetalert2.js"></script>
+<script src="../assets/scripts/main.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="../js/tiny-slider.js"></script>
 <script src="../js/index.js"></script>
-<script src="../js/watersport.js"></script>
-<script src="../js/mirnij.js"></script>
-<script src="../js/resort.js"></script>
-<script src="../js/sbory.js"></script>
+<!--<script src="../js/watersport.js"></script>-->
+<!--<script src="../js/mirnij.js"></script>-->
+<!--<script src="../js/resort.js"></script>-->
+<!--<script src="../js/sbory.js"></script>-->
 <script src="../js/main.js"></script>
 <script src="../js/requests.js"></script>
 <script src="../header/header.js"></script>
