@@ -130,8 +130,6 @@
     font-style: italic;
 }
 
-/* @import '../vendor/fonts.css'; */
-
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -6915,6 +6913,8 @@ span {
 
     .about-us-slide .about-list {
         text-align: center;
+        list-style: none;
+        margin-left: 0 !important;
     }
 }
 

@@ -1,14 +1,13 @@
-@import url("../../vendor/fonts.css");
 
-@font-face {
-    font-family: 'Geometria Heavy';
-    src: url('/fonts/Geometria-Heavy.eot');
-    src: url('/fonts/Geometria-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Geometria-Heavy.woff') format('woff'),
-    url('/fonts/Geometria-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
+/*@font-face {*/
+/*    font-family: 'Geometria Heavy';*/
+/*    src: url('/fonts/Geometria-Heavy.eot');*/
+/*    src: url('/fonts/Geometria-Heavy.eot?#iefix') format('embedded-opentype'),*/
+/*    url('/fonts/Geometria-Heavy.woff') format('woff'),*/
+/*    url('/fonts/Geometria-Heavy.ttf') format('truetype');*/
+/*    font-weight: 900;*/
+/*    font-style: normal;*/
+/*}*/
 
 *,
 *::before,
