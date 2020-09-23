@@ -35,13 +35,11 @@
     />
     <link rel="stylesheet" href="assets/styles/sweetalert2.css"/>
     <link rel="stylesheet" href="assets/styles/app.min.css"/>
-    <link rel="stylesheet" href="assets/styles/additional.css"/>
+<!--    <link rel="stylesheet" href="assets/styles/additional.css"/>-->
     <link rel="stylesheet" href="css/gallery-responsive.css"/>
     <link rel="stylesheet" href="header/header.css"/>
     <link rel="stylesheet" href="header/footer.css"/>
     <link rel="stylesheet" href="css/popup-styles.css"/>
-
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 
     <title>Эволюция</title>
 </head>
@@ -963,7 +961,8 @@
         <section class="container map">
             <h2 class="title-bold">Карта территории</h2>
             <p class="subtitle-normal">С отметками</p>
-            <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="lazyload" data-src="img/index/map.jpg" alt="миникарта"/>
+            <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="lazyload"
+                 data-src="img/index/map.jpg" alt="миникарта"/>
         </section>
 
         <!--         <div class="container photogallery">
@@ -1131,12 +1130,7 @@
             <h2 class=row__title>Контакты</h2>
             <p class=row__subtitle>Центра спорта</p>
             <div class="col-md-6 col-xs-12">
-                <div style="position: relative; overflow: hidden;">
-                    <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A446999efda47433efc6ec2b79d186280c8090bd2d66371537693adfb6661c264&amp;source=constructor"
-                            class="minimap"
-                    ></iframe>
-                </div>
+                <div id="YaMaps" style="position: relative; overflow: hidden;"></div>
             </div>
             <div class="col-md-6 col-xs-12 contacts-right">
                 <div class="blue-stripe blue-title">
@@ -1164,6 +1158,7 @@
     </footer>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 <script src="assets/scripts/jquery.min.js"></script>
 <script src="assets/scripts/slick.min.js"></script>
 <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>

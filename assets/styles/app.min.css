@@ -1878,7 +1878,7 @@ span {
 }
 
 .stat-item__big {
-    font-family: "Cambria", Arial, Helvetica, sans-serif;
+    font-family: "Cambria", Cochin, Helvetica, sans-serif;
     font-size: 105px;
     font-weight: bold;
     line-height: 100%;
@@ -10034,7 +10034,7 @@ span {
 
 @media screen and (max-width: 768px) {
     .button__group-center {
-        width: 270px;
+        width: 236px;
         display: flex;
         margin:0 auto;
     }
