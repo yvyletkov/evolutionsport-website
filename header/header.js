@@ -32,8 +32,6 @@ $("#sidebarCollapse").click(function () {
 
 
 $(document).ready(function (){
-    debugger
-
     let YaMapsShown = false;
 
     $(window).scroll(function() {
