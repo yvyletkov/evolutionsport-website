@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../header/header.css"/>
     <link rel="stylesheet" href="../header/footer.css"/>
     <link rel="stylesheet" href="../css/popup-styles.css"/>
+    <script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
 
     <title>Осенний лагерь</title>
 
@@ -641,6 +642,19 @@
                                 <button class="btn btn_darkblue tarifes-list-item__btn" id="tarifes__btn">
                                     Забронировать
                                 </button>
+                                <button
+                                    type="button"
+                                    class="TINKOFF_BTN_YELLOW tinkoff-btn"
+                                    onclick="tinkoff.create({
+                                        shopId: 'e891aeeb-4ce9-41d8-be57-d697cf1a07d7',
+                                        showcaseId: 'ca0e3920-a934-428b-8383-6412e18cf459',
+                                        items: [
+                                        {name: 'iPhone 11', price: 100000, quantity: 1},
+                                        {name: 'Чехол', price: 500, quantity: 1}
+                                        ],
+                                        sum: 100500
+                                    })"
+                                ></button>
                             </div>
                         </div>
                     </form>
@@ -1369,6 +1383,37 @@
         </div>
     </div>
 
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup__header">
+                <div class="popup__close-btn"><span>Скрыть</span>×</div>
+            </div>
+            <div class="popup__content">
+                <p>У нас новая программа, рассказать?</p>
+            </div>
+            <div class="popup__checkboxes-wrapper">
+                <input name="form-name" value="Parasport quiz" type="hidden">
+                <input class="popup-checkbox" id="yes-checkbox" type="radio" name="answer">
+                <label for="yes-checkbox">Класс! Конечно!</label>
+                <input class="popup-checkbox" id="no-checkbox" type="radio" name="answer">
+                <label for="no-checkbox">Нет, спасибо</label>
+            </div>
+            <div class="popup__form-wrapper hidden">
+                <form class="popup__form">
+                    <input type="hidden" name="form-name" value="default-contact-form">
+                    <input type="hidden" name="rus-form-name" value="Опросник на странице 'Детский осенний лагерь'">
+                    <input required class="popup__form__input" placeholder="Ваше имя*" id="name" name="name" type="text">
+                    <input required class="popup__form__input" placeholder="Ваш телефон*" name="phone" type="tel"
+                        id="phone">
+                    <input class="popup__form__input" placeholder="Ваш Email" id="email" name="email" type="email">
+                    <button class="popup__btn_submit">Отправить</button>
+                    <span class="popup__form__footer-text">*поля, обязательные для заполнения</span>
+                </form>
+            </div>
+            <div class="popup__btn">Далее</div>
+        </div>
+    </div>
+
     <!--scripts loaded here-->
     <footer style="margin-top: 50px" class="container contacts nopadding-top">
         <div class="row">
@@ -1413,10 +1458,9 @@
 <script src="../assets/scripts/owl.carousel.min.js"></script>
 <script src="../assets/scripts/sweetalert2.js"></script>
 <script src="../assets/scripts/main.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>-->
 <script src="../js/tiny-slider.js"></script>
 <script src="../js/index.js"></script>
 <!--<script src="../js/watersport.js"></script>-->
@@ -1426,5 +1470,6 @@
 <!--<script src="../js/main.js"></script>-->
 <script src="../js/requests.js"></script>
 <script src="../header/header.js"></script>
+<script src="../js/interview-children-autumn.js"></script>
 </body>
 </html>

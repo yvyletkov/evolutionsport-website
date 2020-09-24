@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="../header/header.css"/>
     <link rel="stylesheet" href="../header/footer.css"/>
     <link rel="stylesheet" href="../css/popup-styles.css"/>
+    <script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
 
     <title>Дневной лагерь осенних каникул</title>
 </head>
@@ -696,6 +697,19 @@
                                     <div class="tarifes-list-item-row__plus" id="days-num__plus">+</div>
                                 </div>
                                 <div class="tarifes-list-item-row">
+                                    <button
+                                    type="button"
+                                    class="TINKOFF_BTN_YELLOW tinkoff-btn"
+                                    onclick="tinkoff.create({
+                                        shopId: 'e891aeeb-4ce9-41d8-be57-d697cf1a07d7',
+                                        showcaseId: 'ca0e3920-a934-428b-8383-6412e18cf459',
+                                        items: [
+                                        {name: 'iPhone 11', price: 100000, quantity: 1},
+                                        {name: 'Чехол', price: 500, quantity: 1}
+                                        ],
+                                        sum: 100500
+                                    })"
+                                ></button>
                                     <button class="btn btn_darkblue tarifes-list-item__btn">Забронировать</button>
                                     <div class="tarifes-list-item-prices">
                                         <p class="tarifes-list-item-prices__old">1100 руб</p>
