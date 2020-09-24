@@ -9174,7 +9174,7 @@ span {
     }
 
     .popup__checkboxes-wrapper {
-        color: #cecece;
+        color: #b5b5b5;
     }
 
     .popup__checkboxes-wrapper, .popup__form-wrapper {
@@ -9286,9 +9286,11 @@ span {
     }
 
     .popup__form__footer-text {
-        position: absolute;
+        position: relative;
         text-align: center;
-        bottom: -20px;
+        bottom: 38px;
+        font-size: 10px;
+        color: #434343;
     }
 
     .sea .sea__wrapper {

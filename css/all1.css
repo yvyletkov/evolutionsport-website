@@ -6867,6 +6867,11 @@ a.article:hover {
     padding-bottom: 3rem;
 }
 
+.btn.btn_blue.advantages__order:hover {
+    color: #fff;
+    background-color: #236d9e;
+}
+
 
 
 

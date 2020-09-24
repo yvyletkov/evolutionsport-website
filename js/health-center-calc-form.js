@@ -126,5 +126,22 @@ window.onload = () => {
                 console.log(err);
             });
     })
+};
 
-}
+//ОПРОСНИК
+$(document).ready( function () {
+
+    let showQuiz = () => {
+        $(".popup-wrapper").css("display", "flex");
+        $(".popup .quiz").removeClass("hidden")
+        $(".popup-wrapper").removeClass("hidden")
+    }
+
+    setTimeout( showQuiz, 15000);
+
+    $(".btn.btn_blue.advantages__order").on("click", (e) => {
+        e.preventDefault();
+        showQuiz();
+    })
+});
+//ОПРОСНИК КОНЕЦ
