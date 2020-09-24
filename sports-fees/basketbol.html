@@ -35,7 +35,7 @@
   <script src="../assets/scripts/owl.carousel.min.js"></script>
   <script src="../assets/scripts/sweetalert2.js"></script>
   <script src="../assets/scripts/main.js"></script>
-  <script src="../assets/scripts/ajax.js"></script>
+
   <title>Баскетбол</title>
 
 </head>
@@ -498,6 +498,7 @@
       <section class="container-fluid baths">
         <div class="container">
           <div class="row relative">
+            <span class="absolute-sport">Путь к победе</span>
             <div class="col-md-6 col-12">
               <img src="../img/sbory/basketball.png" class="img-fluid img-shadow img-full__hd" alt="баскетбол">
             </div>
@@ -1028,7 +1029,7 @@
       <section class="container-fluid grey baths">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-6">
                     <div id="baths-slider">
                         <div class="item">
                             <img src="../img/baths/hamam1.jpg" class="img-fluid img-shadow">
@@ -1044,7 +1045,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-6">
                     <div class="baths-padding">
                         <h3 class="blue-stripe-border">С легким паром<span>Банный комплекс</span></h3>
                         <p>Банный комплекс — отличное место, где можно полностью расслабиться. Финская сауна,
@@ -1136,12 +1137,7 @@
         <h2 class=row__title>Контакты</h2>
         <p class=row__subtitle>Центра спорта</p>
         <div class="col-md-6 col-xs-12">
-          <div style="position: relative; overflow: hidden;">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A446999efda47433efc6ec2b79d186280c8090bd2d66371537693adfb6661c264&amp;source=constructor"
-              class="minimap"
-            ></iframe>
-          </div>
+          <div id="YaMaps" style="position: relative; overflow: hidden;"></div>
         </div>
         <div class="col-md-6 col-xs-12 contacts-right">
           <div class="blue-stripe blue-title">
@@ -1167,6 +1163,8 @@
       </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="../js/tiny-slider.js"></script>
@@ -1178,7 +1176,7 @@
   <script src="../js/main.js"></script>
   <script src="../js/requests.js"></script>
   <script src="../header/header.js"></script>
-  <script src="../js/sports-meeting-calc-form.js"></script>
+
 </body>
 
 </html>
