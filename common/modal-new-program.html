@@ -57,7 +57,7 @@
         line-height: 1.2;
     }
     .popup__checkboxes-wrapper {
-        color: #cecece;
+        color: #b5b5b5;
     }
     .popup__checkboxes-wrapper, .popup__form-wrapper {
         margin: 0 auto;
@@ -155,9 +155,11 @@
         font-size: 10px;
     }
     .popup__form__footer-text {
-        position: absolute;
+        position: relative;
         text-align: center;
-        bottom: -20px;
+        bottom: 38px;
+        font-size: 10px;
+        color: #434343;
     }
     .thanks-content {
         margin-bottom: 20px;
@@ -250,10 +252,11 @@
                             $(".popup__form-wrapper").addClass("hidden") // ПОТОМ ПЕРЕНЕСТИ В SUCCESS
                             $(".popup__content p").html("<div class='thanks-content'>Спасибо</div><span>Наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время</span>");
                             $(".popup__btn").html("Вернуться к сайту");
-                            $(".popup__btn").removeClass("hidden");
-                            $(".popup__btn").click(function () {
-                                $(".popup").addClass("hidden");
-                                $(".popup-wrapper").addClass("hidden");
+                        $(".popup__btn").removeClass("hidden");
+                        $(".popup__btn").click(function () {
+                            $(".popup").addClass("hidden");
+                            $(".popup-wrapper").addClass("hidden");
+                            $(".btn.btn_blue.advantages__order").css("display", "none")
                             });
                         }
                     })
