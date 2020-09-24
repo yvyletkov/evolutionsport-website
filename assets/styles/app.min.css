@@ -1659,8 +1659,9 @@ span {
 }
 
 .btn_accent {
-    background-color: #43a95b;
+    background-color: #4273b3;
     color: #fff;
+    border-radius: 0;
 }
 
 .btn_blue {
@@ -10034,6 +10035,9 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .baths .baths-padding {
+        padding: 0 !important;
+    }
     .button__group-center {
         width: 270px;
         display: flex;

@@ -160,7 +160,7 @@ body {
 
 
 .button-red {
-    background: #f32d3e;
+    background: #c82430;
     color: #fff;
     padding: 16px 35px;
     display: inline-block;
@@ -3137,8 +3137,12 @@ html {
     background: white url(../img/watersport/calendar.png) left no-repeat;
     background-position: 10px;
     padding-left: 36px;
-    margin-left:5px;
+    margin:0 5px 0 0;
     width:50%;
+}
+
+.input-image.date + [name="date-to"] {
+    margin:0 0 10px;
 }
 
 .input-image.stadium {
