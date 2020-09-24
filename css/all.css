@@ -516,7 +516,7 @@ html {
 /* вакансии */
 
 #main-slider {
-    background-image: url("../img/index/main-bg.png");
+    background-image: url("../img/index/main-bg.jpg");
     background-repeat: repeat-x;
     animation: slideleft 10000s infinite linear;
     -webkit-animation: slideleft 10000s infinite linear;
