@@ -10036,6 +10036,10 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .baths .absolute-relax {
+        bottom:-30px;
+        font-size: 60px;
+    }
     .baths .baths-padding {
         padding: 0 !important;
     }
