@@ -23,7 +23,8 @@ $(".price-form").submit( (e) => {
 
                 $("#btn-reset").on("click", () => {
                     $(".cost-content").css("visibility", "hidden").css("height", "0");
-                    $("#health-center-calc-form").show();
+                    $(".price-form")[0].reset();
+                    $(".price-form").show();
                     $(".cost-content").css("display", "none");
                 })
             // if (res.ok) {
