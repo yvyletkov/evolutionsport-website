@@ -20,12 +20,14 @@
           rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
     <link rel="stylesheet" href="../assets/styles/app.min.css"/>
-<!--    <link rel="stylesheet" href="../assets/styles/additional.css"/>-->
+    <!--  <link rel="stylesheet" href="../assets/styles/additional.css"/>  -->
     <link rel="stylesheet" href="../css/gallery-responsive.css"/>
     <link rel="stylesheet" href="../header/header.css"/>
     <link rel="stylesheet" href="../header/footer.css"/>
     <link rel="stylesheet" href="../css/popup-styles.css"/>
     <script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
+    <script src="../assets/scripts/jquery.min.js"></script>
+
 
     <title>Осенний лагерь</title>
 
@@ -527,10 +529,10 @@
                         }
                     }</style>
                     <div id="autumn-camp">
-                        <a class="banner-item-img-small banner-item-img-small_yellow" href="#">
+                        <a class="banner-item-img-small banner-item-img-small_yellow" href="#tarifes-list">
                             <div class="banner-item-content">
-                                <p class="banner-item-img-small__proc">15%</p>
-                                <p class="banner-item-img-small__sale">Скидка</p>
+                                <p class="banner-item-img-small__proc">0-0-12</p>
+                                <p class="banner-item-img-small__sale">РАССРОЧКА</p>
                                 <p class="banner-item-img-small__more">Подробнее</p>
                             </div>
                         </a>
@@ -600,9 +602,9 @@
                                 в наш лагерь</h2><a class="advantages-row-item__more" href="#">Подробнее</a>
                         </div>
                         <div class="item">
-                            <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/doc-2.png"
+                            <div class="advantages-row-item__img"><img src="../assets/images/child_camp/docs/icon-3.png"
                                                                        alt=""/></div>
-                            <h2 class="advantages-row-item__text"><strong>Страховка</strong><br>отказа<br>от путевки
+                            <h2 class="advantages-row-item__text"><strong>Выгодные</strong><br>условия<br>кредитования
                             </h2><a class="advantages-row-item__more" href="#">Подробнее</a>
                         </div>
                         <div class="item">
@@ -615,7 +617,7 @@
                 </div>
             </section>
 
-            <section class="tarifes">
+            <section class="tarifes" id="tarifes-list">
                 <div class="tarifes-wrap">
                     <h2 class="defaultTitle tarifes__title">Тарифы</h2>
                     <form class="tarifes-list" id="tarifes__list">
@@ -642,7 +644,61 @@
                                 <button class="btn btn_darkblue tarifes-list-item__btn" id="tarifes__btn">
                                     Забронировать
                                 </button>
-                                <button
+                                <!-- <button class="btn credit-btn">Купить в кредит/рассрочку</button> -->
+                                <!-- <input name=”promoCode” value=”default” type=”hidden”/>
+                                <input name=”promoCode” value=”installment_0_0_10” type=”hidden”/> -->
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle tinkoff-btn TINKOFF_BTN_YELLOW" 
+                                    type="button" 
+                                    data-toggle="dropdown" 
+                                    aria-haspopup="true" 
+                                    aria-expanded="false"
+                                    data-flip="false">
+                                      /рассрочку
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <button class="dropdown-item"
+                                      onclick="tinkoff.create({
+                                        shopId: 'e891aeeb-4ce9-41d8-be57-d697cf1a07d7',
+                                        showcaseId: 'ca0e3920-a934-428b-8383-6412e18cf459',
+                                        items: [
+                                        {name: 'путёвка в Детский лагерь', price: 14400, quantity: 1},
+                                        ],
+                                        sum: 14400
+                                    })">Купить в кредит</button>
+                                      <button class="dropdown-item"
+                                      onclick="tinkoff.create({
+                                        shopId: 'e891aeeb-4ce9-41d8-be57-d697cf1a07d7',
+                                        showcaseId: 'ca0e3920-a934-428b-8383-6412e18cf459',
+                                        items: [
+                                        {name: 'путёвка в Детский лагерь', price: 14400, quantity: 1},
+                                        ],
+                                        promoCode: 'installment_0_0_12_11',
+                                        sum: 14400
+                                    })">Рассрочка 0 0 12</button>
+                                      <button class="dropdown-item"
+                                      onclick="tinkoff.create({
+                                        shopId: 'e891aeeb-4ce9-41d8-be57-d697cf1a07d7',
+                                        showcaseId: 'ca0e3920-a934-428b-8383-6412e18cf459',
+                                        items: [
+                                        {name: 'путёвка в Детский лагерь', price: 14400, quantity: 1},
+                                        ],
+                                        promoCode: 'installment_0_0_6_6',
+                                        sum: 14400
+                                    })">Рассрочка 0 0 6</button>
+                                      <button class="dropdown-item"
+                                      onclick="tinkoff.create({
+                                        shopId: 'e891aeeb-4ce9-41d8-be57-d697cf1a07d7',
+                                        showcaseId: 'ca0e3920-a934-428b-8383-6412e18cf459',
+                                        items: [
+                                        {name: 'путёвка в Детский лагерь', price: 14400, quantity: 1},
+                                        ],
+                                        promoCode: 'installment_0_0_4_5',
+                                        sum: 14400
+                                    })">Рассрочка 0 0 4</button>
+                                    </div>
+                                  </div>
+                                <!-- <button
                                     type="button"
                                     class="TINKOFF_BTN_YELLOW tinkoff-btn"
                                     onclick="tinkoff.create({
@@ -651,11 +707,10 @@
                                         items: [
                                         {name: 'путёвка в Детский лагерь', price: 14400, quantity: 1},
                                         ],
-                                        promoCode: 'installment_0_0_6_6',
-                                        promoCode: 'installment_0_0_12_11',
+                                        promoCode: 'installment_0_0_10',
                                         sum: 14400
                                     })"
-                                >/рассрочку</button>
+                                >/рассрочку</button> -->
                             </div>
                         </div>
                     </form>
@@ -1452,7 +1507,6 @@
 
 <script src="../js/gallery-responsive.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-<script src="../assets/scripts/jquery.min.js"></script>
 <script src="../assets/scripts/slick.min.js"></script>
 <script src="../assets/scripts/fancybox/jquery.fancybox.min.js"></script>
 <script src="../assets/scripts/datepicker/datepicker.min.js"></script>
@@ -1460,10 +1514,10 @@
 <script src="../assets/scripts/sweetalert2.js"></script>
 <script src="../assets/scripts/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
 <script src="../js/tiny-slider.js"></script>
 <script src="../js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <!--<script src="../js/watersport.js"></script>-->
 <!--<script src="../js/mirnij.js"></script>-->
 <!--<script src="../js/resort.js"></script>-->
@@ -1472,5 +1526,6 @@
 <script src="../js/requests.js"></script>
 <script src="../header/header.js"></script>
 <script src="../js/interview-children-autumn.js"></script>
+<script src="../js/tinkoff-autumn-camp.js"></script>
 </body>
 </html>
