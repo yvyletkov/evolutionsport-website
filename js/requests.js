@@ -1,4 +1,4 @@
-const URL = "http://77.232.53.82:8051/erp/site/forms/";
+const mainURL = "http://77.232.53.82:8051/erp/site/forms/";
 
 //mainURL = "http://77.232.53.82:8051/erp/site/forms/";
 
@@ -14,7 +14,7 @@ function objectifyForm(data) {
 
 async function mainApi(info) {
     try {
-        const res = await fetch(URL, {
+        const res = await fetch(mainURL, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
