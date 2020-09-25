@@ -875,9 +875,10 @@ span {
 }
 
 .bannerWrap .banner_children-camp .banner-item-img-small__proc {
-    font-size: 52px;
+    font-size: 40px;
     line-height: 100%;
     font-weight: 900;
+    margin:20px 0 0;
 }
 
 .banner_children-camp-mobile-bg {
@@ -887,7 +888,7 @@ span {
 .bannerWrap .banner_children-camp .banner-item-img-small__sale {
     font-size: 23px;
     line-height: 100%;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .bannerWrap .banner_children-camp .banner-item-img-small__more {
