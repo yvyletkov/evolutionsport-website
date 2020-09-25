@@ -9523,6 +9523,10 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+    #parasport .defaultSubtitle.carousel__subtitle {
+        margin-bottom: 0 !important;
+    }
+
     #pogranichnij .description.container,
     #shtormovoi .description.container,
     #mirnij .description.container,
