@@ -1716,6 +1716,7 @@ span {
 }
 
 #tarifes__list-mw {
+    overflow: visible;
     padding: 0 19px;
 }
 
@@ -4361,6 +4362,7 @@ span {
     margin-bottom: 40px;
     color: #171717;
     font-weight: 700;
+    margin-top:0;
 }
 
 .tarifes-row {
@@ -5910,6 +5912,11 @@ img,
     -o-object-position: center;
     object-position: center;
     width: 100%;
+}
+
+#about_center-list {
+    width:100%;
+    z-index: 100;
 }
 
 .SL6-SLIDER-item-desc-row {
