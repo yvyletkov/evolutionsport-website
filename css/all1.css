@@ -152,9 +152,7 @@ body {
 .nav-link.button-blue {
     cursor: pointer;
 }
-.menu-evolution.navbar-dark.navbar-black .navbar-nav .nav-link {
-    color:#fff;
-}
+
 .navbar-dark .navbar-nav.left-menu .nav-link {
     font-size:16px;
     font-weight:300;

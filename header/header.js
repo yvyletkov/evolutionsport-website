@@ -1,4 +1,6 @@
-lazyload();
+$(document).ready(function () {
+    lazyload();
+});
 
 $(function () {
     // scroll functions
