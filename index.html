@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="header/header.css"/>
     <link rel="stylesheet" href="header/footer.css"/>
     <link rel="stylesheet" href="css/popup-styles.css"/>
+    <link rel="stylesheet" href="css/interactive-map.css"/>
+
 
     <title>Эволюция</title>
 </head>
@@ -47,19 +49,26 @@
 <body>
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(67541794, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
     });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/67541794" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/67541794" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 
 <div class="root">
@@ -545,7 +554,7 @@
                         class="slider-content-promo"
                 >
                     <div class="slider-content-promo__icon"></div>
-                    <span>Промо ролик</span>
+                    <span>Посмотреть ролик о Центре</span>
                 </a>
             </div>
         </section>
@@ -982,8 +991,12 @@
         <section class="container map">
             <h2 class="title-bold">Карта территории</h2>
             <p class="subtitle-normal">С отметками</p>
-            <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="lazyload"
-                 data-src="img/index/map.jpg" alt="миникарта"/>
+            <div class="interactive-map">
+                <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                     data-src="img/map.jpg"
+                     alt=""
+                     class="lazyload">
+            </div>
         </section>
 
         <!--         <div class="container photogallery">
@@ -1193,6 +1206,8 @@
 <script src="assets/scripts/sweetalert2.js"></script>
 <script src="assets/scripts/main.js"></script>
 <script src="js/gallery-responsive.js"></script>
+<script src="js/interactive-map.js"></script>
+
 
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
 <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->

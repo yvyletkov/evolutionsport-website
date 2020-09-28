@@ -1,0 +1,68 @@
+.interactive-map {
+    position: relative;
+    max-width: 100%;
+    height: fit-content;
+}
+.interactive-map img {
+    width: 100%;
+}
+
+.map-point__label {
+    position: absolute;
+    background-color: #161616;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.map-point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /*background-color: pink;*/
+    border-radius: 50%;
+}
+
+#map-point-1 {left: 75.5%; bottom: 89.7%}
+#map-point-2 {left: 67.5%; bottom: 88.9%}
+#map-point-3 {left: 89.4%; bottom: 17.3%}
+#map-point-4 {left: 87.8%; bottom: 21.0%}
+#map-point-5 {left: 42.0%; bottom: 85.7%}
+#map-point-6 {left: 77.9%; bottom: 84.2%}
+#map-point-7 {left: 54.5%; bottom: 80.3%}
+#map-point-8 {left: 31.2%; bottom: 79.4%}
+#map-point-9 {left: 36.2%; bottom: 79.9%}
+#map-point-10 {left: 33.4%; bottom: 78.7%}
+#map-point-11 {left: 48.7%; bottom: 68.7%}
+#map-point-12 {left: 59.7%; bottom: 61.8%}
+#map-point-13 {left: 28.1%; bottom: 75.7%}
+#map-point-14 {left: 31.7%; bottom: 67.7%}
+/*#map-point-15 {left: %; bottom: %}*/
+/*#map-point-16 {left: %; bottom: %}*/
+/*#map-point-17 {left: %; bottom: %}*/
+/*#map-point-18 {left: %; bottom: %}*/
+/*#map-point-19 {left: %; bottom: %}*/
+/*#map-point-20 {left: %; bottom: %}*/
+/*#map-point-21 {left: %; bottom: %}*/
+/*#map-point-22 {left: %; bottom: %}*/
+/*#map-point-23 {left: %; bottom: %}*/
+/*#map-point-24 {left: %; bottom: %}*/
+/*#map-point-25 {left: %; bottom: %}*/
+/*#map-point-26 {left: %; bottom: %}*/
+/*#map-point-27 {left: %; bottom: %}*/
+/*#map-point-28 {left: %; bottom: %}*/
+/*#map-point-29 {left: %; bottom: %}*/
+/*#map-point-30 {left: %; bottom: %}*/
+/*#map-point-31 {left: %; bottom: %}*/
+/*#map-point-32 {left: %; bottom: %}*/
+/*#map-point-33 {left: %; bottom: %}*/
+/*#map-point-34 {left: %; bottom: %}*/
+/*#map-point-35 {left: %; bottom: %}*/
+/*#map-point-36 {left: %; bottom: %}*/
+/*#map-point-37 {left: %; bottom: %}*/
+/*#map-point-38 {left: %; bottom: %}*/
+/*#map-point-39 {left: %; bottom: %}*/
+/*#map-point-40 {left: %; bottom: %}*/
+/*#map-point-41 {left: %; bottom: %}*/
+#map-point-42 {left: 70.7%; bottom: 16.7%}
