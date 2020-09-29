@@ -10238,6 +10238,12 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    #sport .hero.container-fluid__throwing {
+        background-image: url(../../img/sports-meeting/metanie.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 100px;
+    }
     .popup {
         width: 100%;
     }
