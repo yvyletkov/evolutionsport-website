@@ -1,5 +1,12 @@
 $(document).ready(function () {
+    let galleryTouched = false;
     lazyload();
+    $('.gallery-responsive').on('touchstart', function (e) {
+        if (!galleryTouched) {
+            lazyload();
+            galleryTouched = true;
+        }
+    })
 });
 
 $(function () {
