@@ -18,10 +18,11 @@
 
 .map-point {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    /*background-color: pink;*/
+    width: 2.4%;
+    height: 3.7%;
+    background-color: #ff0200;
     border-radius: 50%;
+    border: 1px solid black;
 }
 
 #map-point-1 {left: 75.5%; bottom: 89.7%}
@@ -38,12 +39,12 @@
 #map-point-12 {left: 59.7%; bottom: 61.8%}
 #map-point-13 {left: 28.1%; bottom: 75.7%}
 #map-point-14 {left: 31.7%; bottom: 67.7%}
-/*#map-point-15 {left: %; bottom: %}*/
-/*#map-point-16 {left: %; bottom: %}*/
-/*#map-point-17 {left: %; bottom: %}*/
-/*#map-point-18 {left: %; bottom: %}*/
-/*#map-point-19 {left: %; bottom: %}*/
-/*#map-point-20 {left: %; bottom: %}*/
+#map-point-15 {left: 35.9%; bottom: 60.5%}
+#map-point-16 {left: 41.8%; bottom: 58.2%}
+#map-point-17 {left: 19.3%; bottom: 72.2%}
+#map-point-18 {left: 17.8%; bottom: 63.5%}
+#map-point-19 {left: 23.5%; bottom: 57.1%}
+#map-point-20 {left: 16.6%; bottom: 50.7%}
 /*#map-point-21 {left: %; bottom: %}*/
 /*#map-point-22 {left: %; bottom: %}*/
 /*#map-point-23 {left: %; bottom: %}*/
