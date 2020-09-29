@@ -2,7 +2,9 @@
     position: relative;
     max-width: 100%;
     height: fit-content;
+    transform: translateY(-40px) translateX(-60px);
 }
+
 .interactive-map img {
     width: 100%;
 }
@@ -18,52 +20,325 @@
 
 .map-point {
     position: absolute;
-    width: 2.4%;
-    height: 3.7%;
-    background-color: #ff0200;
+    width: 2.3%;
+    height: 3.5%;
+    background-color: rgba(255, 24, 0, 0.7);
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid #101010;
 }
 
-#map-point-1 {left: 75.5%; bottom: 89.7%}
-#map-point-2 {left: 67.5%; bottom: 88.9%}
-#map-point-3 {left: 89.4%; bottom: 17.3%}
-#map-point-4 {left: 87.8%; bottom: 21.0%}
-#map-point-5 {left: 42.0%; bottom: 85.7%}
-#map-point-6 {left: 77.9%; bottom: 84.2%}
-#map-point-7 {left: 54.5%; bottom: 80.3%}
-#map-point-8 {left: 31.2%; bottom: 79.4%}
-#map-point-9 {left: 36.2%; bottom: 79.9%}
-#map-point-10 {left: 33.4%; bottom: 78.7%}
-#map-point-11 {left: 48.7%; bottom: 68.7%}
-#map-point-12 {left: 59.7%; bottom: 61.8%}
-#map-point-13 {left: 28.1%; bottom: 75.7%}
-#map-point-14 {left: 31.7%; bottom: 67.7%}
-#map-point-15 {left: 35.9%; bottom: 60.5%}
-#map-point-16 {left: 41.8%; bottom: 58.2%}
-#map-point-17 {left: 19.3%; bottom: 72.2%}
-#map-point-18 {left: 17.8%; bottom: 63.5%}
-#map-point-19 {left: 23.5%; bottom: 57.1%}
-#map-point-20 {left: 16.6%; bottom: 50.7%}
-/*#map-point-21 {left: %; bottom: %}*/
-/*#map-point-22 {left: %; bottom: %}*/
-/*#map-point-23 {left: %; bottom: %}*/
-/*#map-point-24 {left: %; bottom: %}*/
-/*#map-point-25 {left: %; bottom: %}*/
-/*#map-point-26 {left: %; bottom: %}*/
-/*#map-point-27 {left: %; bottom: %}*/
-/*#map-point-28 {left: %; bottom: %}*/
-/*#map-point-29 {left: %; bottom: %}*/
-/*#map-point-30 {left: %; bottom: %}*/
-/*#map-point-31 {left: %; bottom: %}*/
-/*#map-point-32 {left: %; bottom: %}*/
-/*#map-point-33 {left: %; bottom: %}*/
-/*#map-point-34 {left: %; bottom: %}*/
-/*#map-point-35 {left: %; bottom: %}*/
-/*#map-point-36 {left: %; bottom: %}*/
-/*#map-point-37 {left: %; bottom: %}*/
-/*#map-point-38 {left: %; bottom: %}*/
-/*#map-point-39 {left: %; bottom: %}*/
-/*#map-point-40 {left: %; bottom: %}*/
-/*#map-point-41 {left: %; bottom: %}*/
-#map-point-42 {left: 70.7%; bottom: 16.7%}
+
+@media screen and (max-width: 1000px) {
+    .map-point {
+        width: 3.1%;
+        height: 4.7%;
+    }
+
+    .map-point__label {
+        padding: 8px 13px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .interactive-map {
+        transform: scale(1.3) translateX(-19px) translateY(30px);
+        mix-blend-mode: multiply;
+        margin-bottom: 40px;
+    }
+
+    .map-point__label {
+        padding: 6px 11px;
+        font-size: 11px;
+    }
+}
+
+#map-point-1 {
+    left: 75.5%;
+    bottom: 89.7%
+}
+
+#map-point-2 {
+    left: 67.5%;
+    bottom: 88.9%
+}
+
+#map-point-3 {
+    left: 89.4%;
+    bottom: 17.3%
+}
+
+#map-point-3-2 {
+    left: 89.4%;
+    bottom: 17.3%
+}
+
+#map-point-3-3 {
+    left: 89.4%;
+    bottom: 17.3%
+}
+
+#map-point-3-4 {
+    left: 89.4%;
+    bottom: 17.3%
+}
+
+#map-point-3-5 {
+    left: 89.4%;
+    bottom: 17.3%
+}
+
+#map-point-4 {
+    left: 87.8%;
+    bottom: 21.0%
+}
+
+#map-point-5 {
+    left: 42.0%;
+    bottom: 85.7%
+}
+
+#map-point-6 {
+    left: 77.9%;
+    bottom: 84.2%
+}
+
+#map-point-7 {
+    left: 54.5%;
+    bottom: 80.3%
+}
+
+#map-point-8 {
+    left: 31.2%;
+    bottom: 79.4%
+}
+
+#map-point-9 {
+    left: 36.2%;
+    bottom: 79.9%
+}
+
+#map-point-10 {
+    left: 33.4%;
+    bottom: 78.7%
+}
+
+#map-point-11 {
+    left: 48.7%;
+    bottom: 68.7%
+}
+
+#map-point-12 {
+    left: 59.7%;
+    bottom: 61.8%
+}
+
+#map-point-13 {
+    left: 28.1%;
+    bottom: 75.7%
+}
+
+#map-point-14 {
+    left: 32.3%;
+    bottom: 68.6%
+}
+
+#map-point-15 {
+    left: 45.2%;
+    bottom: 60.8%
+}
+
+#map-point-16 {
+    left: 52.8%;
+    bottom: 58.8%
+}
+
+#map-point-17 {
+    left: 22.8%;
+    bottom: 71%
+}
+
+#map-point-18 {
+    left: 23.3%;
+    bottom: 65.7%
+}
+
+#map-point-19 {
+    left: 30.6%;
+    bottom: 59.4%
+}
+
+#map-point-20 {
+    left: 21.8%;
+    bottom: 52.8%
+}
+
+#map-point-21 {
+    left: 32.5%;
+    bottom: 53%
+}
+
+#map-point-22 {
+    left: 30.2%;
+    bottom: 49.5%
+}
+
+#map-point-23 {
+    left: 47.5%;
+    bottom: 44.9%
+}
+
+#map-point-24 {
+    left: 78.9%;
+    bottom: 30%
+}
+
+#map-point-25 {
+    left: 51.5%;
+    bottom: 37.5%
+}
+
+#map-point-26 {
+    left: 61.3%;
+    bottom: 32.8%
+}
+
+#map-point-27 {
+    left: 70.9%;
+    bottom: 24.4%
+}
+
+#map-point-28 {
+    left: 75.2%;
+    bottom: 32.5%
+}
+
+#map-point-29 {
+    left: 81.4%;
+    bottom: 20.9%
+}
+
+#map-point-30 {
+    left: 87.2%;
+    bottom: 14.3%
+}
+
+#map-point-31 {
+    left: 27.8%;
+    bottom: 45%
+}
+
+#map-point-31-2 {
+    left: 40%;
+    bottom: 37.2%
+}
+
+#map-point-32 {
+    left: 17.3%;
+    bottom: 47.8%
+}
+
+#map-point-33 {
+    left: 24.8%;
+    bottom: 73.7%
+}
+
+#map-point-34 {
+    left: 93.3%;
+    bottom: 25.3%
+}
+
+#map-point-35 {
+    left: 41.2%;
+    bottom: 47.6%
+}
+
+#map-point-36 {
+    left: 79.2%;
+    bottom: 81.3%
+}
+
+#map-point-37 {
+    left: 58.8%;
+    bottom: 77.3%
+}
+
+#map-point-38 {
+    left: 71.9%;
+    bottom: 52.6%
+}
+
+#map-point-39 {
+    left: 38.7%;
+    bottom: 47.2%
+}
+
+#map-point-40 {
+    left: 80.8%;
+    bottom: 86.2%
+}
+
+#map-point-41 {
+    left: 79.3%;
+    bottom: 89%
+}
+
+#map-point-42 {
+    left: 70.7%;
+    bottom: 16.7%
+}
+
+#map-point-42-2 {
+    left: 70.7%;
+    bottom: 16.7%
+}
+
+#map-point-42-3 {
+    left: 70.7%;
+    bottom: 16.7%
+}
+
+#map-point-42-4 {
+    left: 70.7%;
+    bottom: 16.7%
+}
+
+#map-point-43 {
+    left: 53.6%;
+    bottom: 92.5%
+}
+
+#map-point-44 {
+    left: 76.5%;
+    bottom: 14.9%
+}
+
+#map-point-44-2 {
+    left: 76.5%;
+    bottom: 14.9%
+}
+
+#map-point-44-3 {
+    left: 76.5%;
+    bottom: 14.9%
+}
+
+#map-point-44-4 {
+    left: 76.5%;
+    bottom: 14.9%
+}
+
+#map-point-45 {
+    left: 64.3%;
+    bottom: 36%
+}
+
+#map-point-46 {
+    left: 68.2%;
+    bottom: 34.2%
+}
+
+#map-point-47 {
+    left: 79.3%;
+    bottom: 20.8%
+}
