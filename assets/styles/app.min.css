@@ -10238,6 +10238,10 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    #call-me-btn {
+        display: flex;
+        margin:0 auto;
+    }
     #sport .hero.container-fluid__throwing {
         background-image: url(../../img/sports-meeting/metanie.jpg);
         background-repeat: no-repeat;
