@@ -466,6 +466,10 @@ html {
     background-image: url("../img/bow/hero.jpg");
 }
 
+#sport .hero.container-fluid__throwing {
+    background-image: url("../img/throwing/hero.jpg");
+}
+
 #sport .hero h2 {
     font-size: 67px;
 }
