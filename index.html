@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="header/footer.css"/>
     <link rel="stylesheet" href="css/popup-styles.css"/>
     <link rel="stylesheet" href="css/interactive-map.css"/>
-
+    <link rel="stylesheet" href="assets/scripts/eventsDatePicker/calendar.css">
 
     <title>Эволюция</title>
 </head>
@@ -932,6 +932,7 @@
             </div>
         </section>
 
+        
         <section class="container-fluid calendar grey">
             <div class="container">
                 <h2 class="blue-title-mobile">
@@ -941,12 +942,13 @@
                     <div class="col-3 col-md-3">
 
                         <div class="calendar-block">
-                            <span class="calendar-block__day"></span>
+                            <div id="one" style="position: absolute;top:-50px;left:-23px"></div>
+                            <!-- <span class="calendar-block__day"></span>
                             <span class="calendar-block__month"></span>
                             <div class="calendar-block__year">
                                 <span>20</span>
                                 <span>20</span>
-                            </div>
+                            </div> -->
                             <div class="datepicker-here" id="custom-cells"></div>
                         </div>
                         <span class="calendar-block__absolut">события</span><br/>
@@ -1015,34 +1017,6 @@
                      class="lazyload">
             </div>
         </section>
-
-        <!--         <div class="container photogallery">
-        <div class="blue-stripe blue-title">Фотогалерея<span>Выберите нужную дату</span></div>
-        <div class="row">
-            <div class="col-2 first-gallery">
-                <img src="img/index/gallery/gallery-01.jpg">
-                <span class="absolute-image-description">Фото</span>
-            </div>
-            <div class="col-2 two-gallery">
-                <img src="img/index/gallery/gallery-02.jpg">
-                <img src="img/index/gallery/gallery-03.jpg">
-            </div>
-            <div class="col-2 three-gallery">
-                <img src="img/index/gallery/gallery-04.jpg">
-                <img src="img/index/gallery/gallery-05.jpg">
-            </div>
-            <div class="col-4 four-gallery">
-                <img src="img/index/gallery/gallery-06.jpg">
-                <img src="img/index/gallery/gallery-07.jpg" class="inline-images">
-                <img src="img/index/gallery/gallery-08.jpg" class="inline-images">
-                <div class="read-more-gallery"><a href="/o-czentre/galereya/">Смотреть еще фото →</a></div>
-            </div>
-            <div class="col-2 five-gallery">
-                <img src="img/index/gallery/gallery-09.jpg">
-                <img src="img/index/gallery/gallery-10.jpg">
-            </div>
-        </div>
-    </div> -->
 
         <section class="gallery">
             <div class="gallery-wrap">
@@ -1224,8 +1198,6 @@
 <script src="assets/scripts/main.js"></script>
 <script src="js/gallery-responsive.js"></script>
 <script src="js/interactive-map.js"></script>
-
-
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
 <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
 <script src="js/tiny-slider.js"></script>
@@ -1236,5 +1208,8 @@
 
 <!--    <script src="js/main.js"></script>-->
 <script src="header/header.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="./assets/scripts/eventsDatePicker/calendar.js"></script>
+<script src="assets/scripts/eventsDatePicker/index.js"></script>
 </body>
 </html>
