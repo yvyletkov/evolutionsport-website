@@ -1,3 +1,8 @@
+var days = {
+  "29/9/2020": "Собеседование",
+  "27/9/2020": "День рождения у мамы",
+  "28/9/2020": "Конференция в Москве",
+};
 function hiddenInput(form) {
   var arr = form.find(".select-dropDown");
   var fullStr = "";
@@ -465,57 +470,115 @@ $(document).ready(function () {
   });
 });
 /*Экскурсии Конец*/
-
-/*Календарь*/
-function fillDate(date) {
-  if (date.getDate() > 0 && date.getDate() < 10) {
-    $(".calendar-block__day").text("0" + date.getDate());
-  } else {
-    $(".calendar-block__day").text(date.getDate());
-  }
-
-  if (date.getMonth() == 0) {
-    $(".calendar-block__month").text("Январь");
-  } else if (date.getMonth() == 1) {
-    $(".calendar-block__month").text("Февраль");
-  } else if (date.getMonth() == 2) {
-    $(".calendar-block__month").text("Март");
-  } else if (date.getMonth() == 3) {
-    $(".calendar-block__month").text("Апрель");
-  } else if (date.getMonth() == 4) {
-    $(".calendar-block__month").text("Май");
-  } else if (date.getMonth() == 5) {
-    $(".calendar-block__month").text("Июнь");
-  } else if (date.getMonth() == 6) {
-    $(".calendar-block__month").text("Июль");
-  } else if (date.getMonth() == 7) {
-    $(".calendar-block__month").text("Август");
-  } else if (date.getMonth() == 8) {
-    $(".calendar-block__month").text("Сентябрь");
-  } else if (date.getMonth() == 9) {
-    $(".calendar-block__month").text("Октябрь");
-  } else if (date.getMonth() == 10) {
-    $(".calendar-block__month").text("Ноябрь");
-  } else if (date.getMonth() == 11) {
-    $(".calendar-block__month").text("Декабрь");
-  }
-}
 $(document).ready(function () {
-  const dateNow = new Date();
-  fillDate(dateNow);
+  var days = {
+    "29/9/2020": "Собеседование",
+    "27/9/2020": "День рождения у мамы",
+    "28/9/2020": "Конференция в Москве",
+  };
+  $("#calendar").datepicker({
+    beforeShowDay: function (date) {
+      var this_date =
+        date.getDate().toString() +
+        "/" +
+        (date.getMonth() + 1).toString() +
+        "/" +
+        date.getFullYear().toString();
+      if (this_date in days) return [true, , "события запланированы"];
+      else return [false, , "нет запланированного события"];
+    },
+  });
 });
-$(function () {
-  const $datepicker = $("#custom-cells");
+/*Календарь*/
+// var now = new Date();
+//         var year = now.getFullYear();
+//         var month = now.getMonth() + 1;
+//         var date = now.getDate();
+        
+// var data = [{
+//   date: year + '-' + month + '-' + (date - 1),
+//   value: 'hello'
+// }, {
+//   date: year + '-' + month + '-' + date,
+//   value: '上班'
+// }, {
+//   date: new Date(year, month - 1, date + 1),
+//   value: '吃饭睡觉打豆豆'
+// }, {
+//   date: '2016-10-31',
+//   value: '2016-10-31'
+// }];
 
-  let datepicker = $datepicker
-    .datepicker({
-      inline: true,
-      onSelect: function (formattedDate, date, inst) {
-        fillDate(date);
-      },
-    })
-    .data("datepicker");
-});
+// var $ca = $('#one').calendar({
+//   // view: 'month',
+//   width: 320,
+//   height: 320,
+//   // startWeek: 0,
+//   // selectedRang: [new Date(), null],
+//   data: data,
+//   monthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+//   date: new Date(2016, 9, 31),
+//   onSelected: function (view, date, data) {
+//       console.log('view:' + view)
+//       console.log('date:' + date)
+//       console.log('data:' + (data || '无'));
+//   },
+//   viewChange: function (view, y, m) {
+//       console.log(view, y, m)
+
+//   }
+// });
+  
+// function fillDate(date) {
+//   if (date.getDate() > 0 && date.getDate() < 10) {
+//     $(".calendar-block__day").text("0" + date.getDate());
+//   } else {
+//     $(".calendar-block__day").text(date.getDate());
+//   }
+
+//   if (date.getMonth() == 0) {
+//     $(".calendar-block__month").text("Январь");
+//   } else if (date.getMonth() == 1) {
+//     $(".calendar-block__month").text("Февраль");
+//   } else if (date.getMonth() == 2) {
+//     $(".calendar-block__month").text("Март");
+//   } else if (date.getMonth() == 3) {
+//     $(".calendar-block__month").text("Апрель");
+//   } else if (date.getMonth() == 4) {
+//     $(".calendar-block__month").text("Май");
+//   } else if (date.getMonth() == 5) {
+//     $(".calendar-block__month").text("Июнь");
+//   } else if (date.getMonth() == 6) {
+//     $(".calendar-block__month").text("Июль");
+//   } else if (date.getMonth() == 7) {
+//     $(".calendar-block__month").text("Август");
+//   } else if (date.getMonth() == 8) {
+//     $(".calendar-block__month").text("Сентябрь");
+//   } else if (date.getMonth() == 9) {
+//     $(".calendar-block__month").text("Октябрь");
+//   } else if (date.getMonth() == 10) {
+//     $(".calendar-block__month").text("Ноябрь");
+//   } else if (date.getMonth() == 11) {
+//     $(".calendar-block__month").text("Декабрь");
+//   }
+// }
+// $(document).ready(function () {
+//   const dateNow = new Date();
+//   fillDate(dateNow);
+// });
+// $(function () {
+
+//   const $datepicker = $("#custom-cells");
+
+//   let datepicker = $datepicker
+//     .datepicker({
+//       inline: true,
+//       onSelect: function (formattedDate, date, inst) {
+//         fillDate(date);
+//       },
+//     })
+//     .data("datepicker");
+// });
 /*Календарь Конец*/
 
 /*Галерея*/
