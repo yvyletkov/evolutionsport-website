@@ -40,6 +40,12 @@
     }
 }
 
+@media screen and (min-width: 412px) and (max-width: 500px){
+    .interactive-map {
+    margin-bottom: 120px !important;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .interactive-map {
         transform: scale(1.3) translateX(-19px) translateY(30px);
