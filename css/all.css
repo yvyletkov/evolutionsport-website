@@ -264,6 +264,17 @@ body {
     margin-bottom: 67px;
 }
 
+.blue-stripe-title {
+    border-left: 6px solid #4273b3;
+    padding-left: 17px;
+    margin-left: 60px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #171717;
+}
+
 .img-shadow {
     box-shadow: 0 0 15px #b9b9b9;
 }
