@@ -631,6 +631,14 @@ button {
     background-color: #f1f1f1;
 }
 
+.bannerWrap.banner_event-center-wrap {
+    background-color: #ffffff;
+}
+
+.avia__title {
+    margin-bottom: 20px;
+}
+
 .bannerWrap .banner {
     max-width: 1200px;
     padding: 0 16px;
@@ -667,6 +675,16 @@ button {
     top: 0;
     left: -151px;
     z-index: -1;
+}
+
+.bannerWrap .banner_children-camp .banner_event-center-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .bannerWrap .banner_children-camp .banner-desc__title {
@@ -3900,6 +3918,36 @@ span {
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
+}
+
+.banner-desc__title-event {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: none;
+    font-size: 64px;
+    font-weight: 700;
+    color: #0a2753;
+    position: relative;
+    z-index: 2;
+    margin: 16px 0 0 0;
+    line-height: 0.9;
+    margin:0 0 25px;
+}
+
+.event-slider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 75%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .gallery_fitnes .galeryGrid-col:nth-child(1) {
@@ -8776,6 +8824,10 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .otdyh-img-2 {
+        display: none;
+    }
+
     #sport .btn-group {
         margin: 0 auto;
         width: 440px;
@@ -9091,7 +9143,7 @@ span {
     }
 
     .calendar-block__absolut.calendar-block__absolut {
-        top: 265px;
+        top: 160px;
     }
 
     #news-index-slider-ow .tns-controls button[data-controls="prev"] {
@@ -9553,13 +9605,11 @@ span {
 }
 
 @media screen and (max-width: 424px) {
-    .calendar.calendar {
-        padding: 0px;
-        padding-left: 20px;
+    #one {
+        left:0 !important;
     }
-
-    .calendar .col-md-3 {
-        padding: 0;
+    .calendar.calendar {
+        padding: 0 20px;
     }
 
     .calendar .container.container {
@@ -10273,7 +10323,7 @@ span {
     }
 
     .baths .absolute-relax {
-        bottom:-30px;
+        bottom:-45px;
         font-size: 60px;
     }
     .baths .baths-padding {
@@ -10302,6 +10352,16 @@ span {
 
     .about-us.container .row {
         display: block;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .calendar.calendar {
+        padding:0 !important;
+    }
+    #one {
+        top:25px !important;
+        left:8px !important;
     }
 }
 

@@ -272,13 +272,13 @@
 .bany .supa{
     background: #e9e9e9;
 }
-.bany .supaSlider-insideSliderBlock{
+/* .bany .supaSlider-insideSliderBlock{
     left: auto;
     right: 24%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
-}
+} */
 .bany .supaSlider-item-desc-top__title{
     border-left: 4px solid #4273b3;
     padding-left: 17px;
@@ -693,17 +693,17 @@
     display: flex;
     justify-content: space-between;
 }
-.center .sea .sea__wrapper .sea-items .sea-item:first-child{
+/* .center .sea .sea__wrapper .sea-items .sea-item:first-child{
     width: 63.5%;
 }
 .center .sea .sea__wrapper .sea-items .sea-item:last-child{
     width: 36.5%;
-}
-.center .supaSlider-insideSliderBlock{
+} */
+/* .center .supaSlider-insideSliderBlock{
     right: auto;
     left: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
+} */
 /*Центр мероприятий Конец*/
