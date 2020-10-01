@@ -128,6 +128,10 @@
     color: #888;
 }
 
+.m {
+    display: none;
+}
+
 .calendar-views .days .old,
 .calendar-views .days .new {
     color: #ccc

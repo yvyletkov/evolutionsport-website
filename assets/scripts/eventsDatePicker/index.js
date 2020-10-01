@@ -1,10 +1,4 @@
 var now = new Date();
-var year = now.getFullYear();
-// var month = now.getMonth();
-var date = now.getDate();
-const monthRu = new Date().toLocaleString('ru', {       
-  month: 'long',
-}).toUpperCase();
 
 var data = [
   {
@@ -47,13 +41,51 @@ var $ca = $("#one").calendar({
     "Декабрь",
   ],
   date: now,
-  onSelected: function (view, date, data) {
-    console.log("view:" + view);
-    console.log("date:" + date);
-    console.log("data:" + (data || "hello"));
-  },
-  viewChange: function (view, y, m) {
-    console.log(view, y, m);
-  },
+  // onSelected: function (view, date, data) {
+  //   console.log("view:" + view);
+  //   console.log("date:" + date);
+  //   console.log("data:" + (data || "hello"));
+  // },
+  // viewChange: function (view, y, m) {
+  //   console.log(view, y, m);
+  // },
 });
-console.log(now)
+
+const monthArray = [
+  "Январь",
+  "Февраль",
+  "Март",
+  "Апрель",
+  "Май",
+  "Июнь",
+  "Июль",
+  "Август",
+  "Сентябрь",
+  "Октябрь",
+  "Ноябрь",
+  "Декабрь",
+];
+
+const loadMonth = +$(".m").text() - 1;
+$(".calendar-block__year span").text(monthArray[loadMonth]);
+console.log("load", loadMonth);
+
+$("#prev-month").on("click", function (event) {
+  event.preventDefault();
+  let text = +$(".m").text() - 2;
+  if(text === -1){
+    text = 11
+  }
+  console.log("func-prev", text);
+  $(".calendar-block__year span").text(monthArray[text]);
+});
+
+$("#next-month").on("click", function (event) {
+  event.preventDefault();
+  let text = +$(".m").text();
+  if(text === 12){
+    text = 0
+  }
+  console.log("func-next", text);
+  $(".calendar-block__year span").text(monthArray[text]);
+});
