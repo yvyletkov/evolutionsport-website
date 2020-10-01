@@ -68,7 +68,6 @@ const monthArray = [
 
 const loadMonth = +$(".m").text() - 1;
 $(".calendar-block__year span").text(monthArray[loadMonth]);
-console.log("load", loadMonth);
 
 $("#prev-month").on("click", function (event) {
   event.preventDefault();
@@ -76,7 +75,6 @@ $("#prev-month").on("click", function (event) {
   if(text === -1){
     text = 11
   }
-  console.log("func-prev", text);
   $(".calendar-block__year span").text(monthArray[text]);
 });
 
@@ -86,6 +84,5 @@ $("#next-month").on("click", function (event) {
   if(text === 12){
     text = 0
   }
-  console.log("func-next", text);
   $(".calendar-block__year span").text(monthArray[text]);
 });
