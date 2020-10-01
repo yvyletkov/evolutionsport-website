@@ -1,4 +1,4 @@
-const mainURL = "http://77.232.53.82:8051/erp/site/forms/";
+const mainURL = "https://evo-auto.ml/erp/site/forms/";
 
 //mainURL = "http://77.232.53.82:8051/erp/site/forms/";
 
@@ -288,7 +288,7 @@ $(document).ready(
 // -------- ЗАПРОС АЙФРЕЙМА С ОПРОСНИКОМ
 function getAndShowPopUpNewProgram() {
     let iframeEl = document.createElement("iframe");
-    iframeEl.src = 'http://95.181.172.100/erp/site/all-pages-quiz/';
+    iframeEl.src = 'https://evo-auto.ml/erp/site/all-pages-quiz/';
     iframeEl.style.cssText = "width: 100%; height: 100%; position: fixed; top:0; right: 0; z-index: 1";
     document.getElementsByTagName("body")[0].appendChild(iframeEl);
 };
