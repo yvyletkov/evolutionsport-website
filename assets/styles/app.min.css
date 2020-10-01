@@ -8824,6 +8824,9 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .calendar-block__year span {
+        top:16px !important;
+    }
     .otdyh-img-2 {
         display: none;
     }
@@ -10356,6 +10359,10 @@ span {
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
+    .calendar-block__year span {
+        top: 1px !important;
+        left: -215px !important;
+    }
     .calendar.calendar {
         padding:0 !important;
     }

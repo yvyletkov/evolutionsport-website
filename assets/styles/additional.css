@@ -540,10 +540,14 @@
 }
 .calendar-block__year span{
     display: block;
-    font-weight: 500;
-    color: #fff;
-    font-size: 30px;
+    font-weight: normal;
+    color: #ddd;
+    font-size: 27px;
     line-height: 38px;
+    position: absolute;
+    left: -200px;
+    top: 26px;
+    z-index: 10;
 }
 .calendar-block__day{
     color: #171717;
