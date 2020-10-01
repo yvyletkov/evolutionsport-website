@@ -22,7 +22,16 @@
     position: absolute;
     width: 2.3%;
     height: 3.5%;
-    background-color: rgba(255, 24, 0, 0.7);
+    background-color: rgba(255, 24, 0, 0.5);
+    border-radius: 50%;
+    border: 1px solid #101010;
+}
+
+.map-point:hover {
+    position: absolute;
+    width: 2.3%;
+    height: 3.5%;
+    background-color: rgba(255, 159, 38, 0.6);
     border-radius: 50%;
     border: 1px solid #101010;
 }
