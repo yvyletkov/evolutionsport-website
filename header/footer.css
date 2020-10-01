@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     footer .contacts-description.contacts-description {
         text-align: center;
         padding-top: 0px;
@@ -28,6 +28,7 @@
     }
 
     footer .row__subtitle {
+        margin-bottom: 15px;
         font-size: 16px !important;
         text-align: center;
     }
