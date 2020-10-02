@@ -2,7 +2,6 @@
     footer .contacts-description.contacts-description {
         text-align: center;
         padding-top: 0px;
-        width: 320px;
         margin: 0 auto;
     }
 
@@ -523,16 +522,7 @@ footer .footer-phone a {
     margin-top: 10px;
     text-decoration: none;
     display: block;
-    font-size: 30px;
-    color: #171717;
-    font-weight: 700;
-}
-
-footer .footer-phone a {
-    margin-top: 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 30px;
+    font-size: 26px;
     color: #171717;
     font-weight: 700;
 }
@@ -558,6 +548,7 @@ footer .footer-phone a {
 @media screen and (max-width: 1023px) {
     footer .about-us .row, .contacts .row {
         display: block;
+        margin:0;
     }
 }
 

@@ -102,7 +102,7 @@
 
 async function mainApiChildren(info) {
   try {
-      const res = await fetch(URL, {
+      const res = await fetch(mainURL, {
           method: "POST",
           headers: {
               "Content-Type": "application/json;charset=utf-8",
