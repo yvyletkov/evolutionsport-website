@@ -198,6 +198,10 @@ body {
     background-image: url(../img/event_center/event-center.jpg);
 }
 
+.event-center .container {
+    position: relative;
+}
+
 .event-center h1 {
     padding-top: 260px;
     font-size: 74px;
@@ -3418,6 +3422,7 @@ html {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
+    color:#171717;
 }
 
 .features-center .title-bold {

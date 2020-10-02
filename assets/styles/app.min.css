@@ -355,6 +355,10 @@ select {
     justify-content: center;
 }
 
+.resort-otdyh p {
+    text-align: justify;
+}
+
 .tabel p {
     font-weight: bold;
 }
@@ -8778,6 +8782,9 @@ span {
 /*Хедер*/
 
 @media screen and (max-width: 1200px) {
+    .otdyh-img-2 {
+        display: none;
+    }
     .infra .tns-controls button:first-child {
         left: -10px;
     }
@@ -10301,6 +10308,19 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .resort-otdyh .blue-stripe-title {
+        font-size: 32px;
+        margin: 0 auto;
+        text-transform: none;
+        text-align: center;
+        border:none;
+        padding: 0;
+        margin:0 0 20px;
+        line-height: 1;
+    }
+    .event-center {
+        background-image: url('../../img/event_center/event-center-mob.jpg');
+    }
     .bannerWrap .banner_children-camp .banner_event-center-bg-mob {
         display: block;
         position: absolute;
