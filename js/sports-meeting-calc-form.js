@@ -4,7 +4,7 @@ $(".price-form").submit( (e) => {
     // console.log(data)
     const promisel = new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve('13000');
+          resolve(Math.floor(10000 * (Math.random() + 1)));
         }, 300);
       });
         promisel.then( async (res) => {
@@ -27,6 +27,49 @@ $(".price-form").submit( (e) => {
                     $(".price-form").show();
                     $(".cost-content").css("display", "none");
                 })
+
+                $("#btn-booking").on("click", () => {
+                  swal({
+                      title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы поможем Вам забронировать выбранную программу</p>',
+                      html:
+                          '<input name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
+                          '<input name="email" type="email" id="swal-input2" class="header__popup__input" placeholder="Ваша почта">' +
+                          '<input name="phone" type="number" id="swal-input3" class="header__popup__input" placeholder="Номер телефона">',
+                      showCancelButton: true,
+                      confirmButtonColor: '#355b8e',
+                      cancelButtonColor: '#4a4a4a',
+                      confirmButtonText: '<span class="header__popup__btn">Далее</span>',
+                      cancelButtonText: '<span class="header__popup__btn">Закрыть</span>',
+                      preConfirm: function () {
+                          return new Promise(function (resolve) {
+                              resolve([
+                                  $('#swal-input1').val(),
+                                  $('#swal-input2').val(),
+                                  $('#swal-input3').val(),
+                                  $('#swal-textarea1').val()
+                              ])
+                          })
+                      },
+                  }).then(function () {
+                      let result = {};
+                      result["form-name"] = "default-contact-form";
+                      result["rus-form-name"] = `Контактная форма после рассчета стоимости спортсборов, спортсооружения "${$('.input-image option:selected').text()}"`;
+                      result.name = $('#swal-input1').val();
+                      result.email = $('#swal-input2').val();
+                      result.phone = $('#swal-input3').val();
+                      mainApi(result)
+                          .then((res) => {
+                              console.log(res);
+                              if (res.ok) {
+                                  swal({
+                                      type: 'success',
+                                      text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'
+                                  });
+                              }
+                          })
+
+                  })
+              })
             // if (res.ok) {
 
             //     let data = await res.json();
