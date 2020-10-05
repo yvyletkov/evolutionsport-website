@@ -4727,10 +4727,10 @@ html {
     width: max-content;
 }
 
-.slider-content-promo:hover {
+/* .slider-content-promo:hover {
     text-decoration: none;
     border-bottom: 2px solid #ffffff;
-}
+} */
 
 .slider-content-promo__icon {
     width: 40px;
