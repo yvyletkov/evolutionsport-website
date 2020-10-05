@@ -537,6 +537,22 @@ button {
     transform: rotate(45deg);
 }
 
+.button-orng {
+    background: #ffa42d;
+    color: #fff !important;
+    padding: 10px 25px;
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    margin:0 auto;
+}
+
+.button-white {
+    color:#fff !important;
+}
+
 .popup__btn,
 .popup__btn_submit {
     position: relative;
@@ -6607,6 +6623,10 @@ span {
     flex: 3;
 }
 
+.last-img {
+    height: 412px;
+}
+
 .group-slider-item-desc-col:nth-last-child(1) {
     font-weight: 700;
     -webkit-box-flex: 3;
@@ -8841,6 +8861,9 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .button-white {
+        margin:0 auto;
+    }
     .calendar-block__year span {
         top:16px !important;
     }
