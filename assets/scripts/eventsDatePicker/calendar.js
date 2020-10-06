@@ -637,13 +637,15 @@
             return new Date(y, m - 1, d);
         },
         showLabel: function (event, view, date, data) {
+            // const newDate = `${date.getDay()}${$('.m').text()}`;
             var $lbl = this.$label;
 
             $lbl.find('p').html(this.options.label.repeat({
                 m: view,
-                d: date.format(this.options.format),
+                // d: date.format(this.options.format),
                 v: data
-            }).replace(/\n/g, '<br>'));
+            }));
+            // }).replace(/\n/g, '<br>'));
 
             var w = $lbl.outerWidth(),
                 h = $lbl.outerHeight();
