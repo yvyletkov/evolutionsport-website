@@ -28,6 +28,7 @@
     />
     <!-- Подключаем слайдер-->
     <link type="text/css" rel="stylesheet" href="css/tiny-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- -->
     <link
             rel="stylesheet"
@@ -73,6 +74,7 @@
     <link rel="stylesheet" href="css/popup-styles.css"/>
     <link rel="stylesheet" href="css/interactive-map.css"/>
     <link rel="stylesheet" href="assets/scripts/eventsDatePicker/calendar.css">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <title>Центр Cпорта Эволюция | Крым | г. Евпатория - официальный сайт</title>
 </head>
@@ -784,7 +786,7 @@
                             <h3 class="blue-stripe-border mt-0">
                                 «Кешбэк на отдых»
                             </h3>
-                            <p>Ростуризм и карта «МИР» запустили программу туристического кешбэка! За каждый забронированный тур Вы можете получить кэшбэк. Узнайте подробности!</p>
+                            <p>Ростуризм и карта «МИР» запустили программу туристического кешбэка! За каждый забронированный тур Вы можете получить кешбэк. Узнайте подробности!</p>
                             <a href="http://evolutionsport.ru/cashback/" class="btn button-blue_card button-white">Узнать подробности</a>
                         </div>
                     </div>
@@ -1006,7 +1008,7 @@
                         <h2 class="blue-stripe blue-title">
                             Календарь событий<span>Выберите нужную дату</span>
                         </h2>
-                        <div id="calendar-index-slider" class="content-slider">
+                        <div id="calendar-slider" class="content-slider">
                             <div class="item">
                                 <a href="#"
                                 ><img
@@ -1249,7 +1251,8 @@
 <script src="js/interactive-map.js"></script>
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
 <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
-<script src="js/tiny-slider.js"></script>
+<!-- <script src="js/tiny-slider.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js/index.js"></script>
 <script src="js/requests.js"></script>
 <!--    <script src="js/watersport.js"></script>-->
@@ -1258,5 +1261,12 @@
 <script src="header/header.js"></script>
 <script src="./assets/scripts/eventsDatePicker/calendar.js"></script>
 <script src="assets/scripts/eventsDatePicker/index.js"></script>
+<script>
+    $("#calendar-slider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+</script>
 </body>
 </html>
