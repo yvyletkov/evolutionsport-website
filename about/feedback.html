@@ -551,10 +551,11 @@
     <form id="transfer-form" class="reviews-form">
         <p class="defaultTitle supaCard__title">Добавить отзыв</p>
         <div class="reviews-form-content">
-            <input type="hidden" value="default-contact-form">
-            <textarea placeholder="Введите отзыв" required></textarea>
-            <input type="text" placeholder="Введите имя" required>
-            <input type="email" placeholder="Введите адрес электронной почты" required>
+            <input type="hidden" name="form-name" value="default-contact-form">
+            <input type="hidden" name="rus-form-name" value="Форма 'Оставить отзыв' в разделе 'Отзывы'">
+            <textarea name="name" placeholder="Введите отзыв" required></textarea>
+            <input name="name" type="text" placeholder="Введите имя" required>
+            <input name="email" type="email" placeholder="Введите адрес электронной почты" required>
             <button type="submit">Отправить</button>
         </div>
     </form>

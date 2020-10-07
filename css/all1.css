@@ -86,6 +86,16 @@
 /*    font-style: normal;*/
 /*}*/
 
+.vacancy-block-tabs-tab-slider-item-info__btn {
+    margin-top: 20px;
+    display: block;
+}
+
+.vacancy-block-tabs-tab-slider-item-info__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .slider-content-promo {
     display: flex;
     flex-direction: column;

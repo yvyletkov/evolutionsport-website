@@ -329,8 +329,8 @@ $(document).ready(
             swal({
                 title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы Вам перезвоним</p>',
                 html:
-                    '<input name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
-                    '<input name="phone" type="number" id="swal-input2" class="header__popup__input" placeholder="Номер телефона">',
+                    '<input required name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
+                    '<input required name="phone" type="number" id="swal-input2" class="header__popup__input" placeholder="Номер телефона">',
                 showCancelButton: true,
                 confirmButtonColor: '#355b8e',
                 cancelButtonColor: '#4a4a4a',
