@@ -30,22 +30,22 @@ const dataNews = [
   {
     date: "2020-10-1",
     value: "Первенство крыма по водному поло",
-    desc: "01.10.2020 - 04.10.2020г.",
+    desc: "01.10.2020 - 04.10.2020г. Будет проходить в водно-спортивном комплексе",
   },
   {
     date: "2020-10-2",
     value: "Первенство крыма по водному поло",
-    desc: "01.10.2020 - 04.10.2020г.",
+    desc: "01.10.2020 - 04.10.2020г. Будет проходить в водно-спортивном комплексе",
   },
   {
     date: "2020-10-3",
     value: "Первенство крыма по водному поло",
-    desc: "01.10.2020 - 04.10.2020г.",
+    desc: "01.10.2020 - 04.10.2020г. Будет проходить в водно-спортивном комплексе",
   },
   {
     date: "2020-10-4",
     value: "Первенство крыма по водному поло",
-    desc: "01.10.2020 - 04.10.2020г.",
+    desc: "01.10.2020 - 04.10.2020г. Будет проходить в водно-спортивном комплексе",
   },
   {
     date: "2020-10-11",
@@ -276,79 +276,14 @@ var $ca = $("#one").calendar({
     const month = +date.getMonth();
     date.setMonth(month + 1);
     date = date.format("yyyy-mm-dd");
-    // if ($("#calendar-index-slider").length) {
-    //   tns({
-    //     container: "#calendar-index-slider",
-    //     disable: true,
-    //   });
-    // }
-    // const calendarSlider = tns({
-    //   container: ".content-slider",
-    //   disable:true,
-    //   preventScrollOnTouch: false,
-    // })
     console.log($("#calendar-slider .item").length);
     $("#calendar-slider").slick("removeSlide", null, null, true);
     $("#calendar-index-slider").html("");
     dataNews.map((e) => {
-      // console.log(date, e.date);
       if (e.date == date) {
-        // console.log(e.value, $('.news-details strong').text())
-
-        // $("#calendar-index-slider").html(`<div id="empty"></div>`);
-        // if ($("#calendar-index-slider").length === 0) {
-        // $("#calendar-index-slider").css("display", "none")
-        // }
-        // $("#calendar-index-slider").html(template);
         $("#calendar-slider").slick("slickAdd", templates(e.value, e.desc));
-        //   $("#calendar-slider").slick({
-        //     infinite: true,
-        //     slidesToShow: 3,
-        //     slidesToScroll: 3
-        // });
-        // $("#calendar-slider").append(templates(e.value));
-
-        // // $(".content-slider img").css("height", "auto");
-        // if($("#calendar-index-slider .item").length > 3){
-        //   const calendarSlider = tns({
-        //     container: ".content-slider",
-        //     disable:false,
-        //     items: 1,
-        //     gutter: 20,
-        //     loop: true,
-        //     nav: false,
-        //     navPosition: "bottom",
-        //     preventScrollOnTouch: false,
-        //     controlsText: [
-        //       '<img src="img/arrow-thin-left.png">',
-        //       '<img src="img/arrow-thin-right.png">',
-        //     ],
-        //     responsive: {
-        //       768: {
-        //         items: 1,
-        //       },
-        //       1024: {
-        //         items: 2,
-        //       },
-        //       1440: {
-        //         items: 3,
-        //       },
-        //       320: {
-        //         items: 1,
-        //       }
-        //     },
-        //   });
-        // } else {
-        //   const calendarSlider = tns({
-        //     container: ".content-slider",
-        //     disable:true,
-        //     preventScrollOnTouch: false,
-        //   })
-        // }
-        console.log(e.value);
       }
     });
-
     // console.log("data:" + (data || "hello"));
   },
   // viewChange: function (view, y, m) {

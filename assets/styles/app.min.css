@@ -8520,7 +8520,7 @@ span {
     }
 
     .tarifes-row-item.tarifes-row-item_disabled .tarifes-row-item__title {
-        width: 130px;
+        width: 150px;
     }
 
     .header-linklist__link:not(.header-linklist__link_menu):hover:after {
