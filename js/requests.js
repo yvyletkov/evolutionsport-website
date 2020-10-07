@@ -167,6 +167,32 @@ $(".tarifes-list").on("submit", function (event) {
 //     });
 // })
 
+// ---------- ФОРМА СО СТРАНИЦЫ ТРАНСФЕРА
+$("#transfer-form").on("submit", function (event) {
+    event.preventDefault();
+    const data = $("#transfer-form").serializeArray();
+    mainApi(data)
+        .then((res) => {
+            if (res.ok) {
+                swal({
+                    type: "success",
+                    title: "Спасибо!",
+                    text: "Совсем скоро наш менеджер с Вами свяжется",
+                });
+            }
+        })
+        .catch((err) => {
+            swal({
+                type: "error",
+                title: "Извините, ваша заявка не отправлена",
+                text: "Что-то пошло не так, мы уже работаем над ошибкой",
+            });
+            console.log(err);
+        });
+});
+// --------- КОНЕЦ ФОРМА СО СТРАНИЦЫ ТРАНСФЕРА
+
+
 
 // -------- САБМИТ ФОРМЫ РАССЧЕТА СТОИМОСТИ ЦЕНТРА ЗДОРОВЬЯ
 $(document).ready(() => {
