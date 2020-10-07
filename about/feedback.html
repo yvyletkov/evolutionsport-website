@@ -14,8 +14,8 @@
         
     <!-- End Google Tag Manager -->
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="shortcut icon" href="../apple-touch-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- Подключаем слайдер-->
@@ -548,9 +548,10 @@
         </div>
     </section>
 
-    <form class="reviews-form">
+    <form id="transfer-form" class="reviews-form">
         <p class="defaultTitle supaCard__title">Добавить отзыв</p>
         <div class="reviews-form-content">
+            <input type="hidden" value="default-contact-form">
             <textarea placeholder="Введите отзыв" required></textarea>
             <input type="text" placeholder="Введите имя" required>
             <input type="email" placeholder="Введите адрес электронной почты" required>
@@ -604,6 +605,7 @@
 <script src="../js/sbory1.js"></script>
 <script src="../js/main1.js"></script>
 <script src="../header/header.js"></script>
+<script src="../js/requests.js"></script>
 
 </body>
 </html>
