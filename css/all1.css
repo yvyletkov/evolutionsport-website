@@ -86,6 +86,26 @@
 /*    font-style: normal;*/
 /*}*/
 
+.slider-content-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 0;
+    width: max-content;
+}
+
+.button-orng {
+    background: #ffa42d;
+    color: #fff !important;
+    padding: 10px 25px;
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    margin:0 auto;
+}
+
 body {
     font-family:Roboto;
     font-size:14px;
