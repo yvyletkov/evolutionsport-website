@@ -143,6 +143,13 @@
     cursor: pointer;
 }
 
+.calendar-views .days li[data-calendar-day],
+.calendar-views .view-month li[data-calendar-month] {
+    width:42px !important;
+    height:42px !important;
+    line-height: 42px !important;
+}
+
 .calendar li[disabled] {
     cursor: not-allowed;
 }

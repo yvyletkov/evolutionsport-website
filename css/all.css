@@ -587,7 +587,7 @@ html {
     height: 540px;
     position: relative;
     margin-top: 95px;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 #main-slider:before {
