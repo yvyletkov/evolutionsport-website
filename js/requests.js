@@ -193,7 +193,6 @@ $("#transfer-form").on("submit", function (event) {
 // --------- КОНЕЦ ФОРМА СО СТРАНИЦЫ ТРАНСФЕРА
 
 
-
 // -------- САБМИТ ФОРМЫ РАССЧЕТА СТОИМОСТИ ЦЕНТРА ЗДОРОВЬЯ
 $(document).ready(() => {
     $("#health-center-bid-form").on("submit", function (event) {
@@ -311,17 +310,6 @@ $(document).ready(
 // --- КОНЕЦ ФОРМА ЗАЯВКИ ЦЕНТРА ЗДОРОВЬЯ
 
 
-// -------- ЗАПРОС АЙФРЕЙМА С ОПРОСНИКОМ
-function getAndShowPopUpNewProgram() {
-    let iframeEl = document.createElement("iframe");
-    iframeEl.src = 'https://evo-auto.ml/erp/site/all-pages-quiz/';
-    iframeEl.style.cssText = "width: 100%; height: 100%; position: fixed; top:0; right: 0; z-index: 1";
-    document.getElementsByTagName("body")[0].appendChild(iframeEl);
-};
-// setTimeout(getAndShowPopUpNewProgram,0);
-// --- КОНЕЦ ЗАПРОС АЙФРЕЙМА С ОПРОСНИКОМ
-
-
 // -------- КОНТАКТНАЯ ФОРМА С ХЕДЕРА
 $(document).ready(
     function () {
@@ -346,28 +334,37 @@ $(document).ready(
                     })
                 },
             }).then(function () {
-                let result = {};
-                result["form-name"] = "default-contact-form";
-                result["rus-form-name"] = "Контактная форма из шапки сайта";
-                result.name = $('#swal-input1').val();
-                result.phone = $('#swal-input2').val();
-                mainApi(result)
-                    .then((res) => {
-                        console.log(res);
-                        if (res.ok) {
+                if ($('#swal-input1').val().length && $('#swal-input2').val().length) {
+                    let result = {};
+                    result["form-name"] = "default-contact-form";
+                    result["rus-form-name"] = "Контактная форма из шапки сайта";
+                    result.name = $('#swal-input1').val();
+                    result.phone = $('#swal-input2').val();
+                    mainApi(result)
+                        .then((res) => {
+                            console.log(res);
+                            if (res.ok) {
+                                swal({
+                                    type: 'success',
+                                    text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'
+                                });
+                            }
+                        })
+                        .catch((err) => {
                             swal({
-                                type: 'success',
-                                text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'
+                                type: "error",
+                                title: "Извините, ваша заявка не отправлена",
+                                text: "Что-то пошло не так, мы уже работаем над ошибкой",
                             });
-                        }
-                    })
-                    .catch((err) => {
-                        swal({
-                            type: "error",
-                            title: "Извините, ваша заявка не отправлена",
-                            text: "Что-то пошло не так, мы уже работаем над ошибкой",
-                        });
-                    })
+                        })
+                }
+                else {
+                    swal({
+                        type: 'error',
+                        text: 'Пожалуйста, введите корректные данные'
+                    });
+                }
+
             })
         })
     }
