@@ -17,6 +17,10 @@ button.swal2-styled {   /* Стиль для кнопок всех свитАл�
   padding: 12px 24px;
 }
 
+.logo-white {
+  width: 200px;
+}
+
 .root {
   overflow: hidden;
 }
@@ -285,7 +289,7 @@ body {
     padding: 10px 0;
   }
   .logo-white {
-    width: 100px;
+    width: 200px;
   }
   .logo-dark {
     width: 130px;
@@ -331,7 +335,7 @@ body {
     display: flex;
   }
   .logo-white {
-    width: 90px;
+    width: 225px;
   }
   .navbar-black {
     padding: 5px 0;

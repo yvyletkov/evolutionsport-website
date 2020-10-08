@@ -210,32 +210,6 @@ $(function () {
       },
     });
   }
-  // if ($("#news-index-slider__sports").length) {
-  //   const newsSlider__sports = tns({
-  //     container: "#news-index-slider__sports",
-  //     items: 1,
-  //     gutter: 20,
-  //     loop: true,
-  //     nav: false,
-  //     navPosition: "bottom",
-  //     preventScrollOnTouch: false,
-  //     controlsText: [
-  //       '<img src="../img/arrow-thin-left.png">',
-  //       '<img src="../img/arrow-thin-right.png">',
-  //     ],
-  //     responsive: {
-  //       768: {
-  //         items: 1,
-  //       },
-  //       1024: {
-  //         items: 3,
-  //       },
-  //       1200: {
-  //         items: 4,
-  //       },
-  //     },
-  //   });
-  // }
   if ($("#news-index-slider__meeting").length) {
     const newsSlider = tns({
       container: "#news-index-slider__meeting",

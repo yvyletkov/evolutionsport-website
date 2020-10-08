@@ -185,17 +185,17 @@
 
 .calendar .days li[data-calendar-day]:hover,
 .calendar .view-month li[data-calendar-month]:hover {
-    background: #eee;
+    background: #d2f1e0;
 }
 
 .calendar .calendar-views .now {
     color: #fff;
-    background: #4273b3!important;
+    background: #c0cddf!important;
 }
 
 .calendar .calendar-views .selected {
-    color: #66be8c;
-    background: #CDE9D9!important;
+    color: #fff;
+    background: #4273b3!important;
 }
 
 .calendar .calendar-views .dot {
