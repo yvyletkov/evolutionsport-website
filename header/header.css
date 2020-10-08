@@ -21,6 +21,10 @@ button.swal2-styled {   /* Стиль для кнопок всех свитАл�
   overflow: hidden;
 }
 
+.fixed-width.nav-link {
+  width: 165px
+}
+
 a {
   text-decoration: none;
   color: #000;
