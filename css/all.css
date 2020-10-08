@@ -595,6 +595,27 @@ html {
     /* background-size: cover; */
 }
 
+@media screen and (max-width: 768px) {
+    #main-slider {
+        background-size: cover !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #main-slider {
+        height: calc(100vh) !important;
+    }
+
+    .evo-slider h3 {
+        font-size: 45px!important;
+        line-height: 45px!important;
+        margin-bottom: -19px!important;
+    }
+    #main-slider .slider-content {
+        padding-top: 72px!important;
+    }
+}
+
 #main-slider:before {
     position: absolute;
     content: "";
