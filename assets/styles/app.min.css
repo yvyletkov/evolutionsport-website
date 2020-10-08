@@ -6067,7 +6067,7 @@ img,
 }
 
 #calendar-slider .item {
-    margin:0 10px 0 0;
+    margin:0 5px;
 }
 
 .sales-row-item__sale {
@@ -8865,6 +8865,9 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .grey .blue-stripe.blue-title {
+        display: none;
+    }
     .button-white {
         margin:0 auto;
     }
@@ -9791,7 +9794,7 @@ span {
 
     .features .big-f {
         padding: 0 0 0 10px;
-        font-size: 50px;
+        font-size: 37px;
     }
 
     .features {
