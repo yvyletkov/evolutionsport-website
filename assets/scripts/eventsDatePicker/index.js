@@ -374,7 +374,7 @@ var $ca = $("#one").calendar({
   onSelected: function (view, date, data) {
     // console.log("view:" + view);
     // console.log("date:" + typeof date.format('yyyy-mm-dd'));
-    const month = +date.getMonth();
+    // const month = +date.getMonth();
     // console.log(month)
     // if (date.getMonth() !== 11) {
     //   date.setMonth(month + 1);
@@ -383,13 +383,17 @@ var $ca = $("#one").calendar({
     // if(date.getMonth() == 0){
     //   date.setMonth(12)
     // }
-    date.setMonth(month + 1)
+    // console.log(date.getMonth() + 1)
+    // date.setMonth(month + 1)
+    // console.log(date)
     date = date.format("yyyy-mm-dd");
-    console.log($("#calendar-slider .item").length);
+    // console.log($("#calendar-slider .item").length);
     $("#calendar-slider").slick("removeSlide", null, null, true);
     dataNews.map((e) => {
-      console.log(e.date, date)
-      if (e.date == date) {
+      const formatDate = (new Date(e.date)).format("yyyy-mm-dd");
+      // e.date.format("yyyy-mm-dd");
+      // console.log(e.date.format("yyyy-mm-dd"))
+      if (formatDate == date) {
         console.log(e.img);
         $("#calendar-slider").slick(
           "slickAdd",

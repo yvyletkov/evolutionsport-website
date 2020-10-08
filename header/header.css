@@ -10,6 +10,10 @@ button.swal2-styled {   /* Стиль для кнопок всех свитАл�
   display: none;
 }
 
+.logo-white {
+  width: 225px;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link.button-blue.button-blue {
   cursor: pointer;
   border-radius: 25px;
@@ -285,7 +289,7 @@ body {
     padding: 10px 0;
   }
   .logo-white {
-    width: 100px;
+    width: 225px;
   }
   .logo-dark {
     width: 130px;
@@ -331,7 +335,7 @@ body {
     display: flex;
   }
   .logo-white {
-    width: 120px;
+    width: 225px;
   }
   .navbar-black {
     padding: 5px 0;
