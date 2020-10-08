@@ -1,0 +1,637 @@
+@font-face {
+    font-family: 'Geometria Narrow';
+    src: url('../fonts/Geometria-Narrow.eot');
+    src: url('../fonts/Geometria-Narrow.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria-Narrow.woff') format('woff'),
+    url('../fonts/Geometria-Narrow.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria Narrow Heavy';
+    src: url('../fonts/Geometria-NarrowHeavy.eot');
+    src: url('../fonts/Geometria-NarrowHeavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria-NarrowHeavy.woff') format('woff'),
+    url('../fonts/Geometria-NarrowHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria Narrow Medium';
+    src: url('../fonts/Geometria-NarrowMedium.eot');
+    src: url('../fonts/Geometria-NarrowMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria-NarrowMedium.woff') format('woff'),
+    url('../fonts/Geometria-NarrowMedium.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueCyr-Light.eot');
+    src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueCyr-Black.eot');
+    src: url('../fonts/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('../fonts/Circe-Regular.eot');
+    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+/* Кэшбек */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ХЕДЕР*/
+
+.cashback_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 60px;
+}
+
+.cashback_header a {
+    cursor: pointer;
+}
+
+
+.cashback_header img {
+    width: 170px;
+    transition: all 200ms;
+}
+
+.cashback_header img:hover {
+    filter: brightness(0%);
+}
+
+
+.cashback-header__back-link {
+    font-size: 13px;
+    font-family: "Geometria Narrow", serif;
+    position: absolute;
+    left: 10%;
+    background-color: #fff;
+    padding: 5px 14px;
+}
+.cashback-header__back-link_mobile {
+    display: none;
+    font-size: 12px;
+    font-family: "Geometria Narrow", serif;
+    position: absolute;
+    left: 15px;
+    background-color: #fff;
+    padding: 3px 12px;
+    /*text-transform: uppercase;*/
+}
+.cashback-header__back-link a, .cashback-header__back-link a:visited, .cashback-header__back-link_mobile a, .cashback-header__back-link_mobile a:visited  {
+    color: #000;
+    text-decoration: none;
+}
+.cashback-header__back-link a:hover {
+    color: #20638f;
+}
+@media screen and (max-width: 768px) {
+    .cashback-header__back-link {
+        display: none;
+    }
+    .cashback-header__back-link_mobile {
+        display: block;
+    }
+}
+
+
+
+
+/*БАННЕР*/
+
+.cashback-banner {
+    position: relative;
+    font-family: "Geometria Narrow", serif;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    height: 567px;
+    background: url("../images/cashback-banner.png") center;
+    /*filter: brightness(80%);*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cashback-banner_dark-filter {
+    width: 100%;
+    height: 567px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.37);
+}
+
+.cashback-banner h1 {
+    font-family: "Geometria Narrow", serif;
+    font-size: 39px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.cashback-banner h1:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 18px;
+    background: #42b36a;
+    top: -36px;
+}
+
+
+.cashback-banner h2 {
+    font-family: "Geometria Narrow Heavy", serif;
+    font-size: 74px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.cashback-banner__MIR-block {
+    font-family: "Geometria Narrow Medium", serif;
+    font-size: 16px;
+    line-height: 1.2;
+    position: relative;
+    color: #000;
+    width: 580px;
+    height: 79px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.81);
+    padding: 10px 80px 10px 10px;
+    text-align: center;
+}
+
+.cashback-banner__MIR-block img {
+    position: absolute;
+    right: -35px;
+    top: -28px
+}
+
+@media screen and (max-width: 768px) {
+
+    .cashback-banner, .cashback-banner_dark-filter {
+        height: 100vh;
+    }
+
+    .cashback-banner h1 {
+        font-size: 26px;
+    }
+
+    .cashback-banner h2 {
+        font-size: 54px;
+        text-align: center;
+    }
+
+    .cashback-banner__MIR-block {
+        width: 93%;
+        padding: 10px 15px 0;
+        height: auto;
+        margin-top: 130px;
+    }
+
+    .cashback-banner__MIR-block img {
+        width: 100px;
+        top: -120px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+/*КАК ПОЛУЧИТЬ КЭШБЭК*/
+
+.cashback-instruction {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background: #f8f8f8;
+    padding: 60px 0 0 0;
+}
+
+.cashback-instruction h3 {
+    font-family: "Helvetica Neue", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.cashback-instruction p {
+    font-family: "Helvetica Neue", serif;
+    font-weight: 200;
+    color: #8e8e8e;
+    font-size: 18px;
+    line-height: 0.8;
+    margin-bottom: 48px;
+}
+
+
+.cashback-instruction__steps {
+    width: 1005px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cashback-instruction__steps__item {
+    position: relative;
+    width: 238px;
+    height: 238px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 41px -9px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 41px -9px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 41px -9px rgba(0, 0, 0, 0.36);
+    text-align: center;
+}
+
+.cashback-instruction__steps__item span {
+    font-family: "Helvetica Neue", serif;
+    font-weight: bold;
+    font-size: 39px;
+    color: #f7f7f7;
+    position: absolute;
+    top: 10px;
+    left: 17px;
+}
+
+.cashback-instruction__steps__item img {
+    margin: 47px auto 22px;
+}
+
+.cashback-instruction__steps__item p {
+    line-height: 20px;
+    font-family: 'Circe Regular', serif;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.cashback-instruction__steps__item__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    width: 180px;
+    height: 43px;
+    border: none 0px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.cashback-instruction__steps__item__button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cashback-instruction__steps__item__button a:visited {
+    color: #fff;
+}
+
+
+.cashback-instruction__steps__item__button.blue {
+    background: #4273b3;
+}
+
+.cashback-instruction__steps__item__button.blue:hover {
+    background: #335685;
+}
+
+.cashback-instruction__steps__item__button.green {
+    background: #42b36a;
+}
+
+.cashback-instruction__steps__item__button.green:hover {
+    background: #349054;
+}
+
+@media screen and (max-width: 1024px) {
+    .cashback-instruction {
+        height: auto;
+    }
+
+    .cashback-instruction__steps {
+        width: 503px;
+        flex-wrap: wrap;
+    }
+
+    .cashback-instruction__steps__item {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .cashback-instruction__steps {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .cashback-instruction__steps__item {
+        width: 80%;
+        margin: 0 auto 15px;
+    }
+}
+
+/*УСЛОВИЯ УЧАСТИЯ*/
+
+.cashback-terms {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cashback-terms__grid {
+    margin: 0 auto;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cashback-terms__text-block {
+    height: auto;
+    padding: 0 28px;
+}
+
+.cashback-terms__text-block h3 {
+    font-family: "Helvetica Neue", serif;
+    font-size: 25.5px;
+    text-transform: uppercase;
+}
+
+
+.cashback-terms__text-block h3 div {
+    position: relative;
+    font-family: "Helvetica Neue", serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    margin-top: 6px;
+}
+
+.cashback-terms__text-block h3 div:before {
+    content: "";
+    width: 74px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: -25px;
+    left: 250px;
+}
+
+.cashback-terms__text-block li {
+    word-wrap: break-word;
+    display: block;
+    font-family: "Geometria Narrow", serif;
+    font-size: 16px;
+    list-style: initial;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.cashback-terms__text-block li:before {
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ff6c39;
+    margin-right: 1em;
+    bottom: 3px;
+}
+
+.cashback-terms__MIR-card-image {
+    padding-right: 5px;
+}
+
+.cashback-terms__MIR-card-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .cashback-terms {
+        height: auto;
+    }
+
+    .cashback-terms__grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .cashback-terms__text-block h3 {
+        margin-top: 20px;
+    }
+
+    .cashback-terms__text-block {
+        width: 100%;
+    }
+
+    .cashback-terms__text-block li {
+        white-space: normal;
+    }
+
+    .cashback-terms__text-block h3 {
+        margin-top: 40px;
+    }
+}
+
+/*ПОЛУЧЕНИЕ КОМПЕНСАЦИИ*/
+.cashback-compensation {
+    width: 100%;
+    height: 825px;
+    background: #f8f8f8;
+    padding-top: 65px;
+}
+
+.cashback-compensation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cashback-compensation__image-block {
+    display: flex;
+    align-items: center;
+    background: #d7d7d7;
+    width: 538px;
+    height: 695px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.cashback-compensation__image-block img {
+    position: absolute;
+    right: 7px;
+}
+
+.cashback-compensation__text-block {
+    padding: 105px 0 0 52px;
+}
+
+.cashback-compensation__text-block h3 {
+    font-family: "Helvetica Neue", serif;
+    font-size: 25.5px;
+    text-transform: uppercase;
+}
+
+
+.cashback-compensation__text-block h3 div {
+    position: relative;
+    font-family: "Helvetica Neue", serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+    margin-top: 6px;
+}
+
+.cashback-compensation__text-block h3 div:before {
+    content: "";
+    width: 74px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: -25px;
+    left: 187px;
+}
+
+.cashback-compensation__text-block p {
+    line-height: 1;
+    font-family: 'Circe Regular', serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cashback-compensation__text-block p.bottom {
+    line-height: 1;
+    font-family: 'Circe Regular', serif;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.cashback-compensation__text-block li {
+    list-style: none;
+    font-family: "Helvetica Neue", serif;
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+
+.cashback-compensation__text-block li span {
+    font-weight: 900;
+}
+
+.cashback-compensation__text-block li:before {
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ff6c39;
+    margin-right: 1em;
+    bottom: 3px;
+}
+
+.cashback-compensation__button {
+    text-align: center;
+    cursor: pointer;
+    font-family: "Helvetica Neue", serif;
+    font-size: 17px;
+    padding: 0 20px;
+    color: #fff;
+    border: none 0px;
+    background: #4273b3;
+    width: 275px;
+    height: 63px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cashback-compensation__button a {
+    text-decoration: none;
+    color: #fff;
+}
+.cashback-compensation__button a:visited {
+    color: #fff
+}
+.cashback-compensation__button:hover {
+    background: #335685;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cashback-compensation {
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .cashback-compensation-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+
+    }
+
+    .cashback-compensation__image-block {
+        display: none;
+    }
+
+    .cashback-compensation__text-block {
+        padding: 30px 30px;
+    }
+
+    .cashback-compensation__text-block button {
+        margin: 0 auto;
+    }
+}
+
+
+
