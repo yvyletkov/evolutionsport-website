@@ -600,7 +600,7 @@
         updateMonthView: function (y) {
             this.updateDisMonth(y);
             this.setMonthAction(y);
-            this.setView('month');
+            // this.setView('month');
         },
         getDisDateValue: function () {
             var arr = this.$disDate.html().split('/'),
