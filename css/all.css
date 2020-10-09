@@ -3843,7 +3843,7 @@ html {
     z-index: 0;
 }
 
-#sport .hero.container-fluid__atletika {
+#sport .hero.container-fluid.container-fluid__atletika {
     background-image: url("../img/athletics/hero.jpg");
 }
 

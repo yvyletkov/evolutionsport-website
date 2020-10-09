@@ -9303,7 +9303,7 @@ span {
 
     .img__mobile {
         display: block;
-        margin: 20px 0;
+        margin: 20px auto;
     }
 
     .baths .tns-controls button:first-child {
@@ -9692,7 +9692,7 @@ span {
     }
 
     #sport .btn-group {
-        width: 290px;
+        width: 440px;
     }
 
     .hero h1 {
@@ -9807,6 +9807,12 @@ span {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #sport .btn-group {
+        width:220px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .news-block .blue-stripe.blue-title {
         text-align: left;
@@ -9814,6 +9820,9 @@ span {
     }
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
+        #sport .btn-group {
+            width:220px;
+        }
         .button__group-center {
             margin: 0 auto;
         }
