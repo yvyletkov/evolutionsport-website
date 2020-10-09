@@ -113,7 +113,7 @@ $(".tarifes-list").on("submit", function (event) {
         const daysNum = $("#days-num").text();
         obj = {
             "rus-form-name": `Форма с Дневного осеннего лагеря. Сумма ${sum}; Кол-во детей:${childNum}; Кол-во дней: ${daysNum}`,
-            "form-name": "autumn-camp-day",
+            "form-name": "default-contact-form",
         };
     } else {
         obj = {
