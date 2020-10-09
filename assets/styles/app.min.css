@@ -728,6 +728,10 @@ button {
     margin: 20px 0;
 }
 
+#tarifes__btn:hover {
+    color:#fff;
+}
+
 .bannerWrap .banner_children-camp .banner-desc__years {
     margin-bottom: 20px;
     color: #1c2852;
