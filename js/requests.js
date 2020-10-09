@@ -78,66 +78,10 @@ $(".map-form").on("submit", function (event) {
         });
 });
 
-// $(".price-form").on("submit", function (event) {
-//     event.preventDefault();
-//     const data = $(".price-form").serializeArray();
-//     mainApi(data)
-//         .then((res) => {
-//             console.log(res);
-//             res.map((e) => console.log(typeof e.value));
-//             if (res.ok) {
-//                 swal({
-//                     type: "success",
-//                     title: "Спасибо!",
-//                     text: "Ваша заявка будет обработана и наш менеджер с вами свяжется",
-//                 });
-//                 this.reset();
-//             }
-//         })
-//         .catch((err) => {
-//             swal({
-//                 type: "error",
-//                 title: "Извините, ваша заявка не отправлена",
-//                 text: "Что-то пошло не так мы уже работаем над ошибкой",
-//             });
-//             console.log(err);
-//         });
-// });
-
-// $(".tarifes-list").on("submit", function (event) {
-//     event.preventDefault();
-//     const sum = $("#new__price-first").text().match(/\d+/g).join("");
-//     let obj = {};
-//     if ($("p").is(".tarifes-list-item-row__item")) {
-//         const childNum = $("#child-num").text();
-//         const daysNum = $("#days-num").text();
-//         obj = {
-//             "rus-form-name": `Форма с Дневного осеннего лагеря. Сумма ${sum}; Кол-во детей:${childNum}; Кол-во дней: ${daysNum}`,
-//             "form-name": "default-contact-form",
-//         };
-//     } else {
-//         obj = {
-//             form_name: "autumn-camp",
-//             price: sum,
-//         };
-//     }
-//     console.log(obj);
-//     mainApi(obj)
-//         .then((res) => {
-//             console.log(res.data.sum);
-//             // $(".tarifes-list-item-prices__new").text(function{
-//             //   res.data.sum
-//             // })
-//             document.querySelector(".tarifes-list-item-prices__new").textContent = res.data.sum
-//         })
-//         .catch((err) => {
-//             console.log(err);
-//         });
-// });
-
 $("#btn-booking").on('click' , function(event) {
     const childNum = $("#child-num").text();
     const daysNum = $("#days-num").text();
+    const sum = $("#new__price-first").text().match(/\d+/g).join("");
     event.preventDefault();
     swal({
         title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы Вам перезвоним</p>',
@@ -192,36 +136,6 @@ $("#btn-booking").on('click' , function(event) {
 
     })
 })
-
-// $(".tarifes-list-item-row__plus, .tarifes-list-item-row__minus").on('click', function(event) {
-//   event.preventDefault();
-//   const sum = $("#new__price-first").text().match(/\d+/g).join("");
-//   let obj = {};
-//   if ($("p").is(".tarifes-list-item-row__item")) {
-//     const childNum = $("#child-num").text();
-//     const daysNum = $("#days-num").text();
-//     obj = {
-//       form_name: "autumn-camp-day",
-//       price: 1100,
-//       count_children: childNum,
-//       count_days: daysNum,
-//     };
-//   } else {
-//     obj = {
-//       form_name: "autumn-camp",
-//       price: sum,
-//     };
-//   }
-//   console.log(obj);
-//   mainApi(obj)
-//     .then((res) => {
-//       console.log(res.data.sum);
-//       document.querySelector(".tarifes-list-item-prices__new").textContent = res.data.sum
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// })
 
 // ---------- ФОРМА СО СТРАНИЦЫ ТРАНСФЕРА
 $("#transfer-form").on("submit", function (event) {
