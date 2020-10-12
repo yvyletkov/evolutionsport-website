@@ -72,7 +72,7 @@ $(document).ready(function () {
   $(".popup__close-btn").click(function () {
     $(".popup .quiz").addClass("hidden");
     $(".popup-wrapper").addClass("hidden");
-    document.cookie = 'YARIKVODILA=YARIKVODILA';
+    document.cookie = 'YARIKVODILA=YARIKVODILA;max-age=2600';
   });
   $(".popup__form").submit((e) => {
     e.preventDefault();
@@ -91,7 +91,7 @@ $(document).ready(function () {
             $(".popup-wrapper").addClass("hidden");
             $(".btn.btn_blue.advantages__order").css("display", "none");
           });
-          document.cookie = 'YARIKVODILA=YARIKVODILA';
+          document.cookie = 'YARIKVODILA=YARIKVODILA;max-age=2600';
         }
       })
       .catch((err) => {
