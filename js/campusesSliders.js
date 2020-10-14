@@ -90,4 +90,19 @@ $(function () {
             ],
         });
     }
+    if ($('#nomer-seventh').length) {
+        let nomerSeventh = tns({
+            container: '#nomer-seventh',
+            items: 1,
+            loop: true,
+            nav: false,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            navPosition: 'bottom',
+            controlsText: [
+                '<img src="../img/arrow-blue-left.png">',
+                '<img src="../img/arrow-blue-right.png">'
+            ],
+        });
+    }
 });
