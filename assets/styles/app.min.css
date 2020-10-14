@@ -61,6 +61,10 @@ article > * + * {
     margin-top: 1em;
 }
 
+input {
+    -webkit-appearance: none;
+}
+
 input,
 button,
 textarea,
@@ -6335,9 +6339,9 @@ span {
     font-weight: 300;
     position: relative;
     color: #626262;
-    margin: 0 0 24px 0;
+    margin: 0;
     max-width: 550px;
-    height: 240px;
+    /* height: 240px; */
 }
 
 .prices .supaSlider-insideSlider__item-block-row {
@@ -7298,7 +7302,7 @@ span {
     }
 
     .advantages-wrap {
-        padding: 0px 16px 40px;
+        padding: 20px 16px 40px;
     }
 
     .advantages-row-item__text {
@@ -7521,6 +7525,7 @@ span {
     }
 
     .children-supa .supa__title {
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -7557,6 +7562,7 @@ span {
         font-weight: bold;
         margin: 0;
         text-transform: none;
+        z-index: 1000;
     }
 
     .OD .bannerWrap .banner-desc__title span {
@@ -8873,6 +8879,33 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .infra {
+        padding: 50px 0 0;
+    }
+    .tarifes-wrap {
+        padding-top: 20px;
+    }
+    .children-form-select {
+        -webkit-appearance:none;
+    }
+    .map-wrap {
+        padding:0;
+    }
+    .map__title {
+        margin-top: 0;
+    }
+    .children-supa .supa__title {
+        margin-top: 0;
+    }
+    .carousel.children__carousel .carousel__title.full_time, .carousel.children__carousel .carousel__title.half_time {
+        margin-top: 0;
+    }
+    .carousel.children__carousel .carousel__title.half_time::before {
+        position: absolute;
+        left:5px;
+        width: 48px;
+        height: 48px;
+    }
     .grey .blue-stripe.blue-title {
         display: none;
     }
@@ -8923,8 +8956,8 @@ span {
 
     .video-wrap {
         max-width: 1200px;
-        padding: 50px 10px 45px;
-        margin: 0 auto;
+        padding: 1px 10px 45px;
+        margin: 20px auto;
     }
 
     .carousel.children__carousel {
@@ -8945,7 +8978,8 @@ span {
     }
 
     .icon-description .icon-title {
-        font-size: 16px;
+        font-size: 13px;
+        margin-bottom: 3px;
     }
 
     .icon-img-cont img {
@@ -9134,7 +9168,6 @@ span {
     }
 
     .features-center .title-bold {
-        margin-top: 40px;
         margin-bottom: 20px;
     }
 
@@ -9175,6 +9208,7 @@ span {
         color: #171717;
         text-align: center;
         line-height: 1;
+        margin-top: 0;
     }
 
     .active .active__wrapper .active__box .active__item-title:before {
@@ -9236,7 +9270,6 @@ span {
     .news-block .container {
         padding-left: 30px;
         padding-right: 30px;
-        height: 430px;
     }
 
     .news-block .blue-stripe.blue-title {
@@ -9390,26 +9423,26 @@ span {
 
     .bannerWrap .banner_children-camp .banner-item-img-small {
         display: flex;
-        bottom: 150px;
-        left: 60px;
+        bottom: 189px;
+        left: 210px;
     }
 
     .bannerWrap .banner_children-camp .banner-item-img-lg {
         display: flex;
-        left: 70px;
-        bottom: 326px;
+        left: 100px;
+        bottom: 410px;
     }
 
     .bannerWrap .banner_children-camp .banner-item-img-md {
         display: flex;
-        left: -80px;
-        bottom: 300px;
+        left: -54px;
+        bottom: 230px;
     }
 
     .bannerWrap .banner_children-camp .banner-item-img-mega {
         display: flex;
         position: absolute;
-        left: 180px;
+        left: 189px;
         top: -455px;
         z-index: -9;
     }
@@ -9425,7 +9458,7 @@ span {
     .banner_children-camp-mobile-bg {
         display: flex;
         width: 100%;
-        height: 430px;
+        height: 460px;
     }
 
     .textBlock-desc__title {
@@ -9797,7 +9830,8 @@ span {
     }
 
     .baths {
-        padding: 20px 0;
+        padding: 20px 0 0;
+        margin-bottom: 0;
     }
 
     .features .big-f {
@@ -9818,6 +9852,14 @@ span {
 @media screen and (min-width: 320px) and (max-width: 767px) {
     #sport .btn-group {
         width:220px;
+    }
+    .bannerWrap .banner_children-camp .banner-item-img-mega { 
+        display: none;
+    }
+    .bannerWrap .banner_children-camp .banner-item-img-small {
+        display: flex;
+        bottom: 189px;
+        left: 210px;
     }
 }
 
@@ -10355,6 +10397,24 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+    .bath-absolute {
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+    .event-center__description {
+        color:#0c2c5b;
+        text-align: justify;
+    }
+    .event-center h1 span {
+        font-size: 41px;
+    }
+    .icon-description .icon-subtitle {
+        font-size: 10px;
+        line-height: 1;
+    }
+    .resort-otdyh {
+        margin-bottom: 40px;
+    }
     .resort-otdyh .blue-stripe-title {
         font-size: 32px;
         margin: 0 auto;

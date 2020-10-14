@@ -198,6 +198,7 @@ $(document).ready(function () {
       items: 1,
       nav: true,
       pagination: false,
+      autoHeight:true,
     });
   }
 

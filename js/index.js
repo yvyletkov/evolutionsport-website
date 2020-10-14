@@ -113,8 +113,8 @@ $(function () {
       navPosition: "bottom",
       preventScrollOnTouch: false,
       controlsText: [
-        '<img src="../img/arrow-thin-left.png">',
-        '<img src="../img/arrow-thin-right.png">',
+        '<img src="img/arrow-thin-left.png">',
+        '<img src="img/arrow-thin-right.png">',
       ],
       responsive: {
         768: {
