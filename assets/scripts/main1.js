@@ -181,7 +181,8 @@ $(document).ready(function () {
         $(".supaSlider").owlCarousel({
             items: 1,
             nav: true,
-            pagination: false
+            pagination: false,
+            autoHeight:true,
         });
     }
 

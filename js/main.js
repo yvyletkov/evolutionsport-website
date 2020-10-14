@@ -1,25 +1,12 @@
-// ДАТАПИКЕР
-// $(".date-range")
-//     .datepicker({
-//         dateFormat: "mm-dd-yy",
-//         changeMonth: true,
-//         changeYear: true,
-//         yearRange: "1900:2100",
-//         autoclose: true,
-//     })
-//     .keyup(function () {
-//         this.value = this.value.replace(/[^\d]/g, "");
-//     });
-//КОНЕЦ ДАТАПИКЕР
-
-
 const start = $("input[name='date-from']");
 const end = $("input[name='date-to']");
+let dateStart;
+let dateEnd;
 
 
 start
 .datepicker({
-    format: "dd/mm/yyyy",
+    format: "dd.mm.yyyy",
     changeMonth: true,
     autoclose: true,
 })
@@ -27,24 +14,18 @@ start
     end.data('datepicker').update(start.val());
     start.blur();
     end.focus();
+    dateStart = +start.val().replace(/(\d{2}).(\d{2}).(\d{2})/, "$2$1$3");;
 })
-// start.datepicker({
-//     onSelect: function (fd, date) {
-//         end.data('datepicker')
-//                 .update('minDate', date);
-
-//         end.focus();
-//     }
-// })
 
 
-end.datepicker({
-    format: "dd/mm/yyyy",
-    startDate: start.val(),
+end.on('change', function(){
+    dateEnd = +end.val().replace(/(\d{2}).(\d{2}).(\d{2})/, "$2$1$3");
+    if(dateEnd < dateStart){
+        end.data('datepicker').update(start.val());
+    }
+})
+.datepicker({
+    format: "dd.mm.yyyy",
     changeMonth: true,
     autoclose: true,
-
 })
-// $( "input[name='date-from']").datepicker({
-
-// })
