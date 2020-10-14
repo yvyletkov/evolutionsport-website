@@ -1,0 +1,17 @@
+.textBlock-desc__title::after,
+.textBlock-images-img::after,
+.map-main-baloon__dot,
+.sea-title::before,
+.swim__title::before,
+.active__item-title::before,
+.carousel-slider-item:after,
+.carousel-slider__next,
+.carousel-slider__prev,
+.supaSlider-insideSliderBlock__next,
+.supaSlider-insideSliderBlock__prev,
+.gallery-left-desc::after {
+  background-color: #1e2953 !important;
+}
+.blue-stripe {
+  border-left: 4px solid #1e2953 !important;
+}
