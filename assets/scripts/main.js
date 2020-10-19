@@ -351,11 +351,6 @@ $(document).ready(function () {
       mouseDrag: false,
     });
   }
-
-  $(document).on("click", ".team-item__btn", function () {
-    $(this).fadeOut();
-    $(this).prev(".team-item-content").css("opacity", "1");
-  });
 });
 
 /*Вакансии*/

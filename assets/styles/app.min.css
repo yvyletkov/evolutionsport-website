@@ -6851,13 +6851,13 @@ span {
 }
 
 .team-item {
-    width: -webkit-calc(100% / 3 - 20px);
-    width: calc(100% / 3 - 20px);
+    width: 450px;
     margin: 15px 10px;
     height: 560px;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
+    margin:0 auto;
 }
 
 /* Кирилл */
@@ -8001,8 +8001,8 @@ span {
     }
 
     .team-item {
-        width: -webkit-calc(50% - 20px);
-        width: calc(50% - 20px);
+        width: -webkit-calc(100% - 20px);
+        width: calc(100% - 20px);
     }
 
     .team-item__btn {
@@ -8068,8 +8068,8 @@ span {
 
 @media screen and (max-width: 767px) {
     .team-item {
-        width: -webkit-calc(100% - 20px);
-        width: calc(100% - 20px);
+        width: 100%;
+        height:590px;
     }
 
     .newYear-row-item {
