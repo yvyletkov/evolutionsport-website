@@ -211,6 +211,6 @@
 
 @media screen and (max-width: 600px) {
   .circle-group__short {
-    max-width: 130px;
+    max-width: 100%;
   }
 }

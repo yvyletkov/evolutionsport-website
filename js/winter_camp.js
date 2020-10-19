@@ -149,11 +149,6 @@ if ($('.circle-group').length && screen.width < 600) {
       '<img src="../img/arrow-thin-left.png">',
       '<img src="../img/arrow-thin-right.png">',
     ],
-    responsive: {
-      0: {
-        items: 3,
-      },
-    },
   });
 };
 
