@@ -233,7 +233,7 @@ if (screen.width > 768) {
 
       // FF seems to just be able to handle like 50... 25 with rotation
       // Safari seems fine with 150+... 75 with rotation
-      var i = 50;
+      var i = 20;
       while (i--)
       {
           addFlake(true);
