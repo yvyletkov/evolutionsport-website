@@ -93,6 +93,19 @@
     padding: 30px 0 0;
 }
 
+.children-camp-about {
+  background-color: #fff;
+}
+
+.textBlock-images img {
+  box-shadow: none;
+}
+
+.textBlock_lager .textBlock-images .textBlock-images-img:first-child:after {
+  height:0;
+  width: 0;
+}
+
 .rectangle__time-desc {
     font-size: 25px;
     font-weight: 400;
@@ -214,7 +227,7 @@
   }
   .circle-group__description.active {
     font-size: 11px;
-    left:30px;
+    left:60px;
   }
   .circle-group__title {
     font-size: 16px;
