@@ -354,6 +354,7 @@ body {
   transition: 0.8s;
   height:70px;
   -webkit-transition: 0.8s;
+  z-index:1000;
 }
 
 .logo-dark {
