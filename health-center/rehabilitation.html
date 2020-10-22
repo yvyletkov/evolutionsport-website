@@ -53,6 +53,8 @@
     <link rel="stylesheet" href="../header/footer.css"/>
     <link rel="stylesheet" href="../css/popup-styles.css"/>
 
+    <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
+    <script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
     <script src="../assets/scripts/jquery.min.js"></script>
 
     <style>@media screen and (max-width: 1023px) {
@@ -545,6 +547,7 @@
             <div class="banner-desc">
                 <h1 class="banner-desc__title">Реабилитация</h1>
                 <p class="banner-desc__text">Восстановление утраченных функции и навыков</p>
+                <a href="/new/cashback.html" class="btn button-red cashback_btn">КЭШБЭК 20%</a>
             </div>
             <div class="banner-img"><img src="../assets/images/reabInd.png" alt="Реабилитация"/></div>
             <p class="banner__placeholder">Лечение</p>
@@ -621,12 +624,28 @@
                         <span class="cost-content-cost">10</span>
                         <span>₽</span>
                     </div>
-                    <button id="btn-booking" class="btn btn_accent banner-form__btn" style="margin-bottom: 10px"
+                    <button id="booking-btn" class="btn btn_accent banner-form__btn" style="margin-bottom: 10px"
                             type="submit">Забронировать программу
                     </button>
                     <button id="btn-reset" class="btn btn_accent banner-form__btn" type="submit">Рассчитать снова
                     </button>
-
+                    <div class="dropdown">
+                        <button class="dropdown-toggle tinkoff-btn TINKOFF_BTN_YELLOW" 
+                        type="button" 
+                        data-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="false"
+                        data-flip="false"
+                        style="width:100%">
+                          /рассрочку
+                        </button>
+                        <div id="about_center-list" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <button class="dropdown-item" id="buy-credit">Купить в кредит</button>
+                          <button class="dropdown-item" id="buy-012">Рассрочка 0 0 12</button>
+                          <button class="dropdown-item" id="buy-06">Рассрочка 0 0 6</button>
+                          <button class="dropdown-item" id="buy-04">Рассрочка 0 0 4</button>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1503,15 +1522,15 @@
 <!--scripts loaded here-->
 
 <script src="../assets/scripts/slick.min.js"></script>
-<!--<script src="../assets/scripts/fancybox/jquery.fancybox.min.js"></script>-->
+<script src="../assets/scripts/fancybox/jquery.fancybox.min.js"></script>
 <!--<script src="../assets/scripts/datepicker/datepicker.min.js"></script>-->
 <script src="../assets/scripts/owl.carousel.min.js"></script>
 <script src="../assets/scripts/sweetalert2.js"></script>
 <script src="../assets/scripts/main1.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="../js/tiny-slider.js"></script>
 <script src="../js/index1.js"></script>
 <!--<script src="../js/watersport1.js"></script>-->
