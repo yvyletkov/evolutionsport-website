@@ -82,7 +82,75 @@ window.onload = () => {
             $("#health-center-calc-form").show();
             $(".cost-content").css("display", "none");
           });
-          $("#btn-booking").on("click", () => {
+          $("#buy-credit").on("click", () => {
+            tinkoff.create({
+              shopId: "e891aeeb-4ce9-41d8-be57-d697cf1a07d7",
+              showcaseId: "ca0e3920-a934-428b-8383-6412e18cf459",
+              items: [
+                {
+                  name: `${$(".cost-content-direction-value").text()} : ${$(
+                    ".cost-content-program-value"
+                  ).text()}`,
+                  price: data.data.sum,
+                  quantity: 1,
+                },
+              ],
+              sum: data.data.sum,
+            });
+          });
+          $("#buy-012").on("click", () => {
+            tinkoff.create({
+              shopId: "e891aeeb-4ce9-41d8-be57-d697cf1a07d7",
+              showcaseId: "ca0e3920-a934-428b-8383-6412e18cf459",
+              items: [
+                {
+                  name: `${$(".cost-content-direction-value").text()} : ${$(
+                    ".cost-content-program-value"
+                  ).text()}`,
+                  price: data.data.sum,
+                  quantity: 1,
+                },
+              ],
+              promoCode: "installment_0_0_12_11",
+              sum: data.data.sum,
+            });
+          });
+          $("#buy-06").on("click", () => {
+            tinkoff.create({
+              shopId: "e891aeeb-4ce9-41d8-be57-d697cf1a07d7",
+              showcaseId: "ca0e3920-a934-428b-8383-6412e18cf459",
+              items: [
+                {
+                  name: `${$(".cost-content-direction-value").text()} : ${$(
+                    ".cost-content-program-value"
+                  ).text()}`,
+                  price: data.data.sum,
+                  quantity: 1,
+                },
+              ],
+              promoCode: "installment_0_0_6_6",
+              sum: data.data.sum,
+            });
+          });
+          $("#buy-04").on("click", () => {
+            tinkoff.create({
+              shopId: "e891aeeb-4ce9-41d8-be57-d697cf1a07d7",
+              showcaseId: "ca0e3920-a934-428b-8383-6412e18cf459",
+              items: [
+                {
+                  name: `${$(".cost-content-direction-value").text()} : ${$(
+                    ".cost-content-program-value"
+                  ).text()}`,
+                  price: data.data.sum,
+                  quantity: 1,
+                },
+              ],
+              promoCode: "installment_0_0_4_5",
+              sum: data.data.sum,
+            });
+          });
+
+          $("#booking-btn").on("click", () => {
             swal({
               title:
                 '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы поможем Вам забронировать выбранную программу</p>',

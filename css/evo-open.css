@@ -204,6 +204,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .textBlock-wrap {
+    padding-bottom: 20px;
+  }
   .circle {
     width: 70px;
     height: 70px;
@@ -227,7 +230,7 @@
   }
   .circle-group__description.active {
     font-size: 11px;
-    left:60px;
+    left:30px;
   }
   .circle-group__title {
     font-size: 16px;
