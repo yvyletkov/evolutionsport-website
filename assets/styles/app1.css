@@ -4751,6 +4751,35 @@ button {
     z-index: 1;
 }
 
+.immunity-banner {
+    height:135px;
+    width:200px;
+    background-color: rgba(247, 170, 21, 0.95);
+    position: absolute;
+    right:0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.immunity-banner__text {
+    color:#fff;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.immunity-banner__text strong {
+    font-family: "Geometria";
+    font-weight: 800;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
 .textBlock_lager .textBlock-images .textBlock-images-img:first-child:after {
     content: "";
     display: block;
@@ -7888,7 +7917,7 @@ button {
 
     .bannerWrap .banner-img {
         width: 100%;
-        height: 280px;
+        height: auto;
     }
 
     .bannerWrap .banner-form-wrapper {
