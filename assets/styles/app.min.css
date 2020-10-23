@@ -557,6 +557,14 @@ button {
     color:#fff !important;
 }
 
+.about-list__btn {
+    color:#fff;
+    text-decoration: none;
+    background-color: #f7aa15;
+    border-radius: 15px;
+    padding:0 10px;
+}
+
 .popup__btn,
 .popup__btn_submit {
     position: relative;
