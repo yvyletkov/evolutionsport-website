@@ -37,10 +37,10 @@ $(document).on("click", "#tarifes-item-third", function () {
     .join("");
   if ($("#tarifes-item-third").hasClass("tarifes-row-item_active")) {
     document.querySelector(".tarifes-list-item-prices__new").textContent = `${
-      sum + oldSum * 0.05
+      sum + oldSum * 0.1
     } руб`;
   } else {
-    $("#new__price-first").text(`${sum - oldSum * 0.05} руб`);
+    $("#new__price-first").text(`${sum - oldSum * 0.1} руб`);
   }
 });
 
