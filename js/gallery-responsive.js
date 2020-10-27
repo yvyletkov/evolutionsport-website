@@ -1,4 +1,4 @@
-window.onload = function () {
+$(document).ready(function () {
   $(document).ready(function () {
     $(".fancybox").fancybox();
   });
@@ -42,4 +42,4 @@ window.onload = function () {
   $(document).ready(function () {
     $(".fancybox").fancybox();
   });
-};
+})
