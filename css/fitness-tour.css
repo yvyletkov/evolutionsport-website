@@ -1,0 +1,336 @@
+.textBlock-desc__title::after,
+.textBlock-images-img::after,
+.map-main-baloon__dot,
+.sea-title::before,
+.swim__title::before,
+.active__item-title::before,
+.carousel-slider-item:after,
+.carousel-slider__next,
+.carousel-slider__prev,
+.gallery-left-desc::after {
+  background-color: #f22b3a !important;
+}
+
+.team-wrap .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.additiontally {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+}
+
+.features-box__content-desc {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+}
+
+.features-box__content-title {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.features-box__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.features .owl-nav {
+  position: relative;
+  top: 30px;
+}
+
+.features .owl-nav .owl-next {
+  position: relative;
+  left: 20px;
+}
+
+.features .owl-nav .owl-prev {
+  position: relative;
+  right: 20px;
+}
+
+.features .owl-stage-outer {
+  padding-top: 35px;
+}
+
+.subtitle {
+  font-size: 17px;
+  margin-bottom: 0;
+  margin: 20px auto 0 auto;
+  color: #888;
+  font-style: normal;
+  text-align: center;
+}
+
+.features-box__img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: -10%;
+  left: calc(50% - 30px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+}
+
+.features-box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 1.5rem;
+  position: relative;
+  height: 330px;
+}
+
+.additionally-title {
+  text-align: left;
+  margin: 0 0 30px;
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: none;
+}
+
+.additionally-img {
+  width: 50%;
+}
+
+.additionally-desc {
+  text-align: justify;
+  font-size: 16px;
+  color: #777;
+  line-height: 1.8;
+}
+
+.team-wrap .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.blue-stripe {
+  border-left: 4px solid #f22b3a !important;
+}
+
+.fitness-title h1 {
+  padding-top: 200px;
+  font-size: 30px;
+  color: #171717;
+  font-weight: lighter;
+  line-height: 2.2;
+  text-transform: uppercase;
+}
+
+.fitness-title__subtitle {
+  line-height: 0.7;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.fitness-title__subtitle span {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.fitness-title__desc {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.tarifes-list-item-ul__li {
+  list-style-type: none;
+  padding: 0 10px;
+  color: #171717;
+  font-weight: 500;
+}
+
+.tarifes-list-item__btn {
+  background-color: #f22b3a;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0;
+  box-shadow: none;
+  width: 235px;
+  margin: 0 auto;
+}
+
+.card-btn:hover,
+.tarifes-list-item__btn:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-btn {
+  background-color: #f22b3a;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0;
+  box-shadow: none;
+  width: 155px;
+  margin: 0 0 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.tarifes-list-item-prices__new {
+  font-size: 35px;
+  font-weight: 600;
+  color: #171717;
+}
+
+.features-item {
+  width:300px;
+  margin:0 15px;
+}
+
+.item {
+  margin: 0 auto;
+}
+
+.card-images {
+  margin: 0 auto;
+  position: relative;
+}
+
+.card-images__img {
+  position: relative;
+  z-index: 10;
+  height: 450px;
+  max-width: 100%;
+}
+
+.tarifes-fitness {
+  background-color: #e7e7e7;
+  padding: 40px 0;
+}
+
+.item {
+  background-color: #fff;
+}
+
+.card-images::before {
+  content: "";
+  display: block;
+  width: 107%;
+  height: 80%;
+  position: absolute;
+  background-color: #f3f3f3;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 5;
+  top: -10px;
+  left: -10px;
+}
+
+.bg-table {
+  background-color: #66b4ce;
+}
+
+.table-title {
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: none;
+  text-align: center;
+}
+
+.table-subtitle {
+  font-size: 17px;
+  line-height: 1.8em;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 0;
+  height: auto;
+  max-width: 760px;
+  margin: 20px auto;
+  color: #888;
+  letter-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+}
+
+.card {
+  border: none;
+  width: 100%;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+  min-height: auto;
+}
+
+.card-title {
+  color: #171717;
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.card__images {
+  position: relative;
+}
+
+.card-text {
+  color: #171717;
+  font-size: 13px;
+  margin: 0;
+}
+
+.title-line {
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: none;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.tarifes-list-item-body {
+  position: relative;
+  z-index: 1;
+}
+
+.tarifes-image {
+  z-index: 10;
+  background: transparent;
+  position: absolute;
+  left: -230px;
+  bottom: -115px;
+  z-index: 10;
+}
+
+.tinkoff-btn.tinkoff-btn {
+  width: 235px;
+}
+
+.tarifes-subtitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.tarifes-list-item__when {
+  font-size: 25px;
+  color: #171717;
+  text-align: center;
+  font-weight: 600;
+}
+
+.tarifes-list-item-ul__li::before {
+  content: "\2713";
+  color: green;
+  margin: 0 10px 0 -20px;
+}
