@@ -25,6 +25,7 @@ $(".features").owlCarousel({
   nav: true,
   pagination: true,
   loop: true,
+  autoplay: true,
   navText: [
     '<img src="../img/arrow-thin-left.png">',
     '<img src="../img/arrow-thin-right.png">',
@@ -49,6 +50,7 @@ if ($(".slider-training").length && screen.width < 600) {
     nav: false,
     dots:true,
     pagination: true,
+    autoplay: true,
     loop: true,
     navText: [
       '<img src="../img/arrow-thin-left.png">',
@@ -96,6 +98,10 @@ setTimeout(function(){
   $('#icons__about-ow .tns-controls button[data-controls="prev"] img').attr('src', '../img/arrow-thin-left.png');
   $('#icons__about-ow .tns-controls button[data-controls="next"] img').attr('src', '../img/arrow-thin-right.png')
 }, 1000)
+
+onscroll = function(){
+  if(window.scrollY+1000 >= document.documentElement.scrollHeight-document.documentElement.clientHeight) lazyload();
+};
 
 
 window.onload = function () {

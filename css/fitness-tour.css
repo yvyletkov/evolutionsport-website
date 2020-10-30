@@ -85,6 +85,21 @@
   position: absolute;
 }
 
+.img-popup {
+  max-width:100%;
+  margin: 10px auto;
+}
+
+.title-popup {
+  margin:10px 0;
+  text-align: left;
+}
+
+.desc-popup {
+  margin:10px 0;
+  text-align: justify;
+}
+
 .slider-training .owl-dots button {
   background: none repeat scroll 0 0 #869791;
   border-radius: 20px;
@@ -460,24 +475,38 @@
   .sea .sea__wrapper .sea-items .sea-item .sea-item-text,
   .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__text {
     text-align: justify;
-    height: 150px;
-    padding: 0 15px;
+    height:auto;
+    padding: 0 15px 15px;
+  }
+
+  .fitness-title__desc {
+    color:#fff;
+    text-align: center;
   }
 
   .fitness-title__subtitle {
     line-height: 1;
+    color:#fff;
+    text-align: center;
   }
   .fitness-title__subtitle span {
     font-size: 35px;
     line-height: 1;
     display: block;
+    color:#fff;
+    text-align: center;
   }
   #sport .hero h1 {
-    color: #171717;
+    color: #fff;
     width: 290px;
     margin: 0 auto;
     line-height: 1;
     margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #credit-btn-top {
+    width:235px;
   }
   #sport .hero.container-fluid.container-fluid__fitness-tour {
     background-image: url("../img/fitness-tour/main-mob.jpg");
