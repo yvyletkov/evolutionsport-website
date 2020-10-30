@@ -14,15 +14,22 @@
 .team-wrap .owl-nav .owl-next {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -25px;
 }
 
 .additiontally {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding: 20px;
   justify-content: center;
+  margin: 10px;
+  background-color: #e8e8e8;
+  height: 340px;
+}
+
+.team-item {
+  width: auto;
 }
 
 .features-box__content-desc {
@@ -63,6 +70,56 @@
   padding-top: 35px;
 }
 
+.slider-training .owl-nav {
+  top: 0;
+  position: relative;
+}
+
+.slider-training .owl-nav .owl-next {
+  right: 0;
+  position: absolute;
+}
+
+.slider-training .owl-nav .owl-prev {
+  left: 0;
+  position: absolute;
+}
+
+.img-popup {
+  max-width:100%;
+  margin: 10px auto;
+}
+
+.title-popup {
+  margin:10px 0;
+  text-align: left;
+}
+
+.desc-popup {
+  margin:10px 0;
+  text-align: justify;
+}
+
+.slider-training .owl-dots button {
+  background: none repeat scroll 0 0 #869791;
+  border-radius: 20px;
+  display: block;
+  height: 12px;
+  margin: 5px auto;
+  opacity: 0.5;
+  width: 12px;
+}
+
+.slider-training .owl-dots button.active {
+  background: none repeat scroll 0 0 #000000;
+}
+
+.slider-training .owl-dots {
+  display: flex;
+  margin: 20px auto;
+  width: 150px;
+}
+
 .subtitle {
   font-size: 17px;
   margin-bottom: 0;
@@ -82,6 +139,32 @@
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.6);
   background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-responsive-up.owl-carousel .gallery-responsive__img {
+  object-fit: cover;
+  object-position: top;
+  padding: 5px;
+  height: 300px;
+  box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.24);
+}
+
+.gallery-responsive-up .owl-nav {
+  padding: 0 17px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  display: flex;
+  left: 50%;
+  width: calc(100% + 30px);
+  justify-content: space-between;
+}
+
+.features-box__img-img {
+  width:50px;
+  margin:0 auto;
 }
 
 .features-box {
@@ -101,7 +184,8 @@
 }
 
 .additionally-img {
-  width: 50%;
+  width: 47%;
+  margin: 10px;
 }
 
 .additionally-desc {
@@ -114,7 +198,11 @@
 .team-wrap .owl-nav .owl-prev {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -25px;
+}
+
+#about_center-list {
+  width: 235px;
 }
 
 .blue-stripe {
@@ -191,8 +279,8 @@
 }
 
 .features-item {
-  width:300px;
-  margin:0 15px;
+  width: 300px;
+  margin: 0 15px;
 }
 
 .item {
@@ -243,6 +331,10 @@
   font-size: 34px;
   text-transform: none;
   text-align: center;
+}
+
+#sport .hero.container-fluid.container-fluid__fitness-tour {
+  background-image: url("../img/fitness-tour/fitness-tour.jpg");
 }
 
 .table-subtitle {
@@ -333,4 +425,125 @@
   content: "\2713";
   color: green;
   margin: 0 10px 0 -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-responsive-up.owl-carousel .gallery-responsive__img {
+    height:100px;
+  }
+  .gallery-responsive-up .owl-nav {
+    top:37%;
+  }
+  .additiontally {
+    position: relative;
+  }
+  .additiontally::after {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateX(-50%) rotate(-90deg);
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 15px 13px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+  .card-btn {
+    width:143px;
+  }
+  .additiontally {
+    margin:10px 0
+  }
+  .additionally-img {
+    width:100%;
+    margin:0;
+  }
+  .team-wrap .owl-nav .owl-prev {
+    top: auto;
+    left: 30%;
+    bottom: -15px;
+  }
+  .team-wrap .owl-nav .owl-next {
+    top: auto;
+    right: 30%;
+    bottom: -15px;
+  }
+  .textBlock-desc__text,
+  .sea .sea__wrapper .sea-items .sea-item .sea-item-text,
+  .swim .swim__wrapper .swim__box .swim__title-wrapper .swim__text {
+    text-align: justify;
+    height:auto;
+    padding: 0 15px 15px;
+  }
+
+  .fitness-title__desc {
+    color:#fff;
+    text-align: center;
+  }
+
+  .fitness-title__subtitle {
+    line-height: 1;
+    color:#fff;
+    text-align: center;
+  }
+  .fitness-title__subtitle span {
+    font-size: 35px;
+    line-height: 1;
+    display: block;
+    color:#fff;
+    text-align: center;
+  }
+  #sport .hero h1 {
+    color: #fff;
+    width: 290px;
+    margin: 0 auto;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #credit-btn-top {
+    width:235px;
+  }
+  #sport .hero.container-fluid.container-fluid__fitness-tour {
+    background-image: url("../img/fitness-tour/main-mob.jpg");
+  }
+  .features-item {
+    width: auto;
+  }
+  #timerc4b110327a4a6253544c0781a7c8b03b {
+    zoom: 80% !important;
+  }
+  .card-images {
+    display: none;
+  }
+  .textBlock-wrap {
+    padding: 0;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .row.slider-training {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  #timerc4b110327a4a6253544c0781a7c8b03b {
+    zoom: 60% !important;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 425px) {
+  #timerc4b110327a4a6253544c0781a7c8b03b {
+    zoom: 46% !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #timerc4b110327a4a6253544c0781a7c8b03b {
+    zoom: 40% !important;
+  }
 }

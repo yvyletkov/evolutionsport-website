@@ -507,10 +507,6 @@ html {
     background-image: url("../img/basketball/hero.jpg");
 }
 
-#sport .hero.container-fluid.container-fluid__fitness-tour {
-    background-image: url("../img/fitness-tour/fitness-tour.jpg");
-}
-
 #sport .hero h2 span {
     font-size: 72px;
 }
