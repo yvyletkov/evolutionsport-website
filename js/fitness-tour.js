@@ -2,6 +2,7 @@ $(".team-wrap").owlCarousel({
   items: 1,
   nav: true,
   pagination: true,
+  margin:10,
   navText: [
     '<img src="../img/arrow-thin-left.png">',
     '<img src="../img/arrow-thin-right.png">',
@@ -14,16 +15,41 @@ $(".team-wrap").owlCarousel({
       items: 2,
     },
     1000: {
-      items: 2,
+      items: 3,
     },
   },
 });
 
 $(".features").owlCarousel({
+  items: 1,
+  nav: true,
+  pagination: true,
+  loop: true,
+  navText: [
+    '<img src="../img/arrow-thin-left.png">',
+    '<img src="../img/arrow-thin-right.png">',
+  ],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
+
+if ($(".slider-training").length && screen.width < 600) {
+  $(".slider-training").addClass("owl-carousel");
+  $(".slider-training").owlCarousel({
     items: 1,
-    nav: true,
+    nav: false,
+    dots:true,
     pagination: true,
-    loop:true,
+    loop: true,
     navText: [
       '<img src="../img/arrow-thin-left.png">',
       '<img src="../img/arrow-thin-right.png">',
@@ -32,27 +58,8 @@ $(".features").owlCarousel({
       0: {
         items: 1,
       },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 3,
-      },
     },
-  });
-
-if ($(".circle-group").length && screen.width < 600) {
-  $(".circle-group").addClass("owl-carousel");
-  $(".circle-group").owlCarousel({
-    items: 1,
-    nav: true,
-    pagination: true,
-    dots: false,
-    navText: [
-      '<img src="../img/arrow-thin-left.png">',
-      '<img src="../img/arrow-thin-right.png">',
-    ],
-  });
+  })
 }
 
 $(document).on("click", ".team-item__btn_open", function () {
@@ -83,3 +90,43 @@ if (screen.width > 768) {
     }
   );
 }
+
+
+setTimeout(function(){
+  $('#icons__about-ow .tns-controls button[data-controls="prev"] img').attr('src', '../img/arrow-thin-left.png');
+  $('#icons__about-ow .tns-controls button[data-controls="next"] img').attr('src', '../img/arrow-thin-right.png')
+}, 1000)
+
+
+window.onload = function () {
+  if ($(".gallery-responsive-up").length) {
+      $(".gallery-responsive-up").addClass("owl-carousel");
+      $(".gallery-responsive-up").owlCarousel({
+        items: 3,
+        dots: false,
+        nav: true,
+        center: true,
+        loop: true,
+        gutter: 20,
+        navText: [
+          '<img src="../img/arrow-thin-left.png">',
+          '<img src="../img/arrow-thin-right.png">',
+        ],
+        responsive : {
+          0 : {
+            items: 3,
+          },
+          480 : {
+            items: 3,
+          },
+          768 : {
+            items: 7,
+          }
+      }
+      });
+  }
+
+  $(document).ready(function () {
+    $(".fancybox").fancybox();
+  });
+};
