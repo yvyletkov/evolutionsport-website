@@ -283,13 +283,30 @@
   margin: 0 15px;
 }
 
+.card-body {
+  margin:0;
+}
+
 .item {
   margin: 0 auto;
 }
 
 .card-images {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   position: relative;
+}
+
+.team-item__btn {
+  background-color: #f22b3a;
+}
+
+.description-right h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.table>thead>tr>th {
+  text-align: left;
 }
 
 .card-images__img {
@@ -380,6 +397,8 @@
   color: #171717;
   font-size: 13px;
   margin: 0;
+  width: 100%;
+  text-align: left;
 }
 
 .title-line {
@@ -428,6 +447,22 @@
 }
 
 @media screen and (max-width: 768px) {
+  .additiontally {
+    height:auto;
+  }
+  .team-item__btn_open {
+    border-radius: 0;
+  }
+  .card-title {
+    text-align: left;
+    width:100%;
+  }
+  .table-striped {
+    border:1px solid rgb(167, 167, 167);
+  }
+  .tarifes-image {
+    display: none;
+  }
   .gallery-responsive-up.owl-carousel .gallery-responsive__img {
     height:100px;
   }
@@ -463,12 +498,12 @@
   }
   .team-wrap .owl-nav .owl-prev {
     top: auto;
-    left: 30%;
+    left: 40%;
     bottom: -15px;
   }
   .team-wrap .owl-nav .owl-next {
     top: auto;
-    right: 30%;
+    right: 40%;
     bottom: -15px;
   }
   .textBlock-desc__text,
@@ -503,6 +538,9 @@
     line-height: 1;
     margin-bottom: 10px;
     text-align: center;
+  }
+  .about-list {
+    list-style: none !important;
   }
 
   #credit-btn-top {
