@@ -1,4 +1,4 @@
-const mainURL = "https://evo-auto.ml/erp/site/forms/";
+const mainURL = "https://erp-evo.ml/erp/site/forms/";
 
 //mainURL = "http://77.232.53.82:8051/erp/site/forms/";
 
