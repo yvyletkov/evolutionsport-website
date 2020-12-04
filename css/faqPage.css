@@ -1,0 +1,98 @@
+.ac *, p {
+    font-size: 16px !important;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+.ac {
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.ac:first-child {
+    border-top: 1px solid #c4c4c4;
+}
+
+.ac:last-child {
+    border-bottom: none;
+    margin-bottom: 2em;
+}
+
+.ac-label {
+    font-weight: 700;
+    position: relative;
+    padding: 1.8em 0;
+    margin-bottom: 0.5em;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.ac-input:not(:checked) + .ac-text, .ac-input:not(:checked) + .ac-sub-text {
+    margin-bottom: 0 !important;
+}
+
+.ac-label:after, .ac-input:checked + .ac-label:after {
+    content: "+";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    width: 2em;
+    height: 100%;
+    line-height: 2.25em;
+    /* text-align: center; */
+    transition: background-color 0.15s ease-in-out;
+}
+
+.ac-label:hover:after, .ac-input:checked + .ac-label:after {
+}
+
+.ac-input:checked + .ac-label:after {
+    content: "-";
+}
+
+.ac-input {
+    display: none;
+}
+
+.ac-text, .ac-sub-text {
+    opacity: 0;
+    height: 0;
+    margin-bottom: 0.5em;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.ac-input:checked ~ .ac-text, .ac-sub .ac-input:checked ~ .ac-sub-text {
+    opacity: 1;
+    height: auto;
+}
+
+.ac-sub .ac-label {
+    background: none;
+    font-weight: 600;
+    padding: 1em 2em;
+    margin-bottom: 0;
+}
+
+.ac-sub .ac-label:checked {
+    background: none;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.ac-sub .ac-label:after, .ac-sub .ac-input:checked + .ac-label:after {
+    left: 0;
+    background: none;
+}
+
+.ac-sub .ac-input:checked + label, .ac-sub .ac-label:hover {
+    background: none;
+}
+
+.ac-sub-text {
+    padding: 0 1em 0 2em;
+}
