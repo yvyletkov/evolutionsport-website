@@ -29,7 +29,7 @@ h2 {
     transition: background-color 0.15s ease-in-out;
 }
 
-.ac-input:not(:checked) + .ac-text, .ac-input:not(:checked) + .ac-sub-text {
+.ac-input:not(:checked) + .ac-label + .ac-text, .ac-input:not(:checked) + .ac-label + .ac-sub-text {
     margin-bottom: 0 !important;
 }
 
@@ -52,7 +52,7 @@ h2 {
 }
 
 .ac-input:checked + .ac-label:after {
-    content: "-";
+    content: "-" !important;
 }
 
 .ac-input {
