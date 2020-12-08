@@ -547,8 +547,12 @@
         <p>Наш Центр имеет огромное количество возможностей для организации заездов, турниров и проведения
             мероприятий.</p>
         <p style="margin-bottom: 2em">На данной странице мы собрали самые часто-задаваемые вопросы и ответы на них!</p>
-
-
+        <div class="form-group col-md-4 p-0">
+            <label for="searchInput">Поиск по вопросам</label>
+            <input type="text" class="form-control" id="searchInput" placeholder="Поиск...">
+            <small id="searchHelp" class="form-text text-muted">Начните вводить Ваш вопрос</small>
+        </div>
+        <div id="findQuestions"></div>
 
         <div class="ac">
 
@@ -947,6 +951,6 @@
 <script src="../js/main1.js"></script>
 <script src="../header/header.js"></script>
 <script src="../js/requests.js"></script>
-
+<script src="../js/faq.js"></script>
 </body>
 </html>
