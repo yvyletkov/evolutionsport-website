@@ -7,9 +7,9 @@ window.addEventListener('load', () => {
         .addEventListener('change', () => {
             findQuestionsPlaceholder.innerHTML = "";
             let findQuestions = listOfQuestions.filter(findQ => findQ.innerHTML.toLowerCase().indexOf(searchInput.value.toLowerCase()) !== -1)
+            if (!searchInput.value) findQuestions = []
             findQuestions.forEach((value, key, set) => {
                 let answerText = value.parentNode.getElementsByTagName('p')[0];
-                console.log(answerText)
                 findQuestionsPlaceholder.innerHTML += `
                 <div class="card mt-2">
                      <div class="card-body" style="min-height: auto;padding-top: 20px;">
