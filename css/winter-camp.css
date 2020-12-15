@@ -7,8 +7,6 @@
 .carousel-slider-item:after,
 .carousel-slider__next,
 .carousel-slider__prev,
-.supaSlider-insideSliderBlock__next,
-.supaSlider-insideSliderBlock__prev,
 .gallery-left-desc::after {
   background-color: #1e2953 !important;
 }
