@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     const findQuestionsPlaceholder = document.getElementById('findQuestions');
     const searchInput = document.querySelector('#searchInput');
     searchInput
-        .addEventListener('change', () => {
+        .addEventListener('keyup', () => {
             findQuestionsPlaceholder.innerHTML = "";
             let findQuestions = listOfQuestions.filter(findQ => findQ.innerHTML.toLowerCase().indexOf(searchInput.value.toLowerCase()) !== -1)
             if (!searchInput.value) findQuestions = []
