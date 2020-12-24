@@ -85,19 +85,19 @@ select {
     }
 }
 
-@keyframes pulse { 
-    0% { 
-        transform: scale(1); 
-    } 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
 
-    50% { 
-        transform: scale(1.1); 
-    } 
+    50% {
+        transform: scale(1.1);
+    }
 
     100% {
         transform: scale(1);
     }
-} 
+}
 
 .owl-carousel,
 .owl-carousel .owl-item {
@@ -688,10 +688,6 @@ button {
 
 .bannerWrap.banner_event-center-wrap {
     background-color: #ffffff;
-}
-
-.avia__title {
-    margin-bottom: 20px;
 }
 
 .bannerWrap .banner {
@@ -5894,7 +5890,7 @@ img,
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.52);
 }
 
-#calendar-slider> .slick-list > .slick-track {    
+#calendar-slider> .slick-list > .slick-track {
     margin-left:0;
 }
 
@@ -9888,7 +9884,7 @@ span {
     #sport .btn-group {
         width:220px;
     }
-    .bannerWrap .banner_children-camp .banner-item-img-mega { 
+    .bannerWrap .banner_children-camp .banner-item-img-mega {
         display: none;
     }
     .bannerWrap .banner_children-camp .banner-item-img-small {
