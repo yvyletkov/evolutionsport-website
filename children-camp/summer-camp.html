@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="../apple-touch-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <!-- Подключаем слайдер-->
     <link type="text/css" rel="stylesheet" href="../css/tiny-slider.css" />
     <!-- -->
@@ -40,9 +41,14 @@
     <link rel="stylesheet" href="../header/footer.css" />
     <link rel="stylesheet" href="../css/popup-styles.css" />
     <link rel="stylesheet" href="../css/summer-camp.css" />
+    <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../aviasales-booking/style.css?v_1207">
+
     <script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
     <script src="../assets/scripts/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../aviasales-booking/jquery.twidget.js?v_1207"></script>
 
     <title>Летний лагерь</title>
 
@@ -350,7 +356,7 @@
                                     </ul>
                                     <a class="tarifes-list-item__more" href="#">Подробнее</a>
                                     <div class="tarifes-list-item-prices">
-                                        <p class="tarifes-list-item-prices__old" id="first-tarif-old">24 050 руб</p>
+                                        <p class="tarifes-list-item-prices__old" id="first-tarif-old">46 200 руб</p>
                                         <p class="tarifes-list-item-prices__new" id="new__price-first">
                                             46 200&nbsp;<span>руб</span></p>
                                     </div>
@@ -426,7 +432,7 @@
                                     </ul>
                                     <a class="tarifes-list-item__more" href="#">Подробнее</a>
                                     <div class="tarifes-list-item-prices">
-                                        <p class="tarifes-list-item-prices__old" id="second-tarif-old">12 950 руб</p>
+                                        <p class="tarifes-list-item-prices__old" id="second-tarif-old">48 300 руб</p>
                                         <p class="tarifes-list-item-prices__new" id="new__price-second">
                                             48 300&nbsp;<span>руб</span></p>
                                     </div>
@@ -499,7 +505,7 @@
                                     </ul>
                                     <a class="tarifes-list-item__more" href="#">Подробнее</a>
                                     <div class="tarifes-list-item-prices">
-                                        <p class="tarifes-list-item-prices__old" id="second-tarif-old">12 950 руб</p>
+                                        <p class="tarifes-list-item-prices__old" id="second-tarif-old">50 400 руб</p>
                                         <p class="tarifes-list-item-prices__new" id="new__price-second">
                                             50 400&nbsp;<span>руб</span></p>
                                     </div>
@@ -572,7 +578,7 @@
                                     </ul>
                                     <a class="tarifes-list-item__more" href="#">Подробнее</a>
                                     <div class="tarifes-list-item-prices">
-                                        <p class="tarifes-list-item-prices__old" id="second-tarif-old">12 950 руб</p>
+                                        <p class="tarifes-list-item-prices__old" id="second-tarif-old">52 500 руб</p>
                                         <p class="tarifes-list-item-prices__new" id="new__price-second">
                                             52 500 &nbsp;<span>руб</span></p>
                                     </div>
@@ -649,6 +655,11 @@
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <section>
+                    <p class="defaultTitle avia__title">Поиск авиабилетов</p>
+                    <div class="twidget-container" id="twidget"></div>
                 </section>
 
                 <section class="advantages advantages_4 advantages_full">
@@ -1772,6 +1783,7 @@
     <script src="../header/header.js"></script>
     <script src="../js/interview-children-autumn.js"></script>
     <script src="../js/summer_camp.js"></script>
+    <script src="../js/event-center.js"></script>
 </body>
 
 </html>

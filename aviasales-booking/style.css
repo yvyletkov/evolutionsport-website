@@ -8,6 +8,9 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
     font: inherit;
     vertical-align: baseline;
 }
+.avia__title {
+    margin-bottom: 20px;
+}
 /* HTML5 display-role reset for older browsers */
 .twidget-container { line-height: 1;}
 .twidget-container ol, .twidget-container ul { list-style: none;}
@@ -88,9 +91,9 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-tab-content .twidget-tab-bottom{height:30px;}
 
 .twidget-form-list li.twidget-input-locked input[type="text"]{border:1px dashed #fff; color: transparent; background: transparent;}
-.twidget-form-list li.twidget-input-locked .twidget-pseudo-name, 
-.twidget-form-list li.twidget-input-locked .twidget-pseudo-country-name, 
-.twidget-form-list li.twidget-input-locked .twidget-destination-iata { color: white!important; font-weight: 600;} 
+.twidget-form-list li.twidget-input-locked .twidget-pseudo-name,
+.twidget-form-list li.twidget-input-locked .twidget-pseudo-country-name,
+.twidget-form-list li.twidget-input-locked .twidget-destination-iata { color: white!important; font-weight: 600;}
 
 /*datepicker*/
 .datepicker {border-radius: 0!important;}

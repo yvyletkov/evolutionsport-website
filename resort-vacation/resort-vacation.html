@@ -46,6 +46,7 @@
     <link rel="shortcut icon" href="../apple-touch-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <!-- Подключаем слайдер-->
     <link type="text/css" rel="stylesheet" href="../css/tiny-slider1.css"/>
     <!-- -->
@@ -61,7 +62,8 @@
     <link rel="stylesheet" href="../header/header.css"/>
     <link rel="stylesheet" href="../header/footer.css"/>
     <link rel="stylesheet" href="../css/popup-styles.css"/>
-
+    <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../aviasales-booking/style.css?v_1207">
 
     <script src="../assets/scripts/jquery.min.js"></script>
     <script src="../assets/scripts/slick.min.js"></script>
@@ -70,6 +72,9 @@
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
     <script src="../assets/scripts/main1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../aviasales-booking/jquery.twidget.js?v_1207"></script>
 
     <script type="text/javascript">
 (function ct_load_script() {
@@ -539,22 +544,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
             </div>
         </section>
 
-        <section id="cashback" class="textBlock-wrap" style="background: #e8e8e8;">
-            <div class="textBlock-images">
-                <div class="textBlock-images-img"><img class="textBlock-images__img"
-                                                       src="../img/cashback.jpg" alt=""/></div>
-            </div>
-            <div class="textBlock-desc">
-                <h2 class="textBlock-desc__title">«Кэшбэк на отдых»</h2>
-                <p class="textBlock-desc__text">
-                    Ростуризм и карта «МИР» запустили программу туристического кэшбэка! За каждый забронированный тур Вы
-                    можете получить кэшбэк. Узнайте подробности!
-                </p>
-                <a href="../cashback.html" style="margin-top:20px;height: unset" class="btn button-blue button-white">Узнать подробности</a>
-
-            </div>
-        </section>
-
         <section class="sea">
             <div class="sea__wrapper"><img class="sea__wrapper-bg" src="../assets/images/child_camp/sea/sea-bg.png"
                                            alt=""/>
@@ -774,7 +763,10 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                     </div>
                 </div>
             </div>
-
+        </section>
+        <section style="padding-bottom: 60px">
+            <p class="defaultTitle avia__title">Поиск авиабилетов</p>
+            <div class="twidget-container" id="twidget"></div>
         </section>
     </section>
 </main>
@@ -826,6 +818,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
 <script src="../header/header-menu.js"></script>
 <script src="../header/header.js"></script>
 <script src="../js/requests.js"></script>
+<script src="../js/event-center.js"></script>
 
 </body>
 </html>
