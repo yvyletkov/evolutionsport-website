@@ -1,6 +1,10 @@
 $(document).ready(function () {
   $(document).ready(function () {
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox(
+        {
+          groupAttr: 'data-fancybox-group'
+        }
+    );
   });
 
   if ($(".gallery-responsive").length) {
@@ -40,6 +44,10 @@ $(document).ready(function () {
   }
 
   $(document).ready(function () {
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox(
+        {
+          groupAttr: 'data-fancybox-group'
+        }
+    );
   });
 })
