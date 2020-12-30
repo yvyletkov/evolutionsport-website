@@ -8955,7 +8955,7 @@ span {
         width: 440px;
     }
 
-    .hero .about-list {
+    .hero .about-list, .hero .about-list li .mail-link {
         color: #ffffff;
     }
 
