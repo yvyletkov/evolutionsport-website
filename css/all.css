@@ -3178,10 +3178,11 @@ html {
     text-align: center;
 }
 
-.hero .about-list {
+.hero .about-list, .hero .about-list li .mail-link {
     color: #989898;
     margin-top: 30px;
     font-weight: 500;
+    max-width: 450px;
 }
 
 .hero-description {
