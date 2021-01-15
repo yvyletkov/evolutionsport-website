@@ -37,7 +37,7 @@ if ($('.circle-group').length && screen.width < 600) {
   });
 };
 
-const countDownDate = new Date("Jan 8, 2021 00:00:00").getTime();
+const countDownDate = new Date("Mar 27, 2021 00:00:00").getTime();
 const x = setInterval(function () {
   const now = new Date().getTime();
 
@@ -55,6 +55,6 @@ const x = setInterval(function () {
 
   if (distance < 0) {
     clearInterval(x);
-    $(".rectangle__time").html("Туринир уже начался");
+    $(".rectangle__time").html("Турнир уже начался");
   }
 }, 1000);
