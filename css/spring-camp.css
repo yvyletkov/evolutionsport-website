@@ -229,3 +229,144 @@
         max-width: 100%;
     }
 }
+
+/*Отзывы*/
+.reviews .supaCard{
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+}
+.reviews .supaCard:before{
+    content: '';
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #f8f8f8;
+}
+.reviews .supaCard > span{
+    position: absolute;
+    font-family: 'Geometria';
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 87px;
+    bottom: 0;
+    left: 50px;
+    text-transform: uppercase;
+}
+.reviews .supaCard .supaSlider-insideSlider__item{
+    height: 260px;
+}
+.reviews .supaCard .supaSlider-insideSlider__item:before,
+.reviews .supaCard .supaSlider-insideSlider__item:after{
+    display: none;
+}
+.reviews .supaCard .children-supa__suptitle,
+.reviews .supaCard .children-supa__text{
+    color: #474747;
+    font-size: 14px;
+    line-height: 18px;
+}
+.reviews .supaCard .children-supa__suptitle{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.reviews .supaCard .children-supa__text{
+    font-weight: normal;
+}
+.reviews .supaSlider-insideSlider_chainHead .slick-sprev{
+    transform: translate3d(-450px, 0, -40px) !important;
+}
+.reviews .supaSlider-insideSlider_chainHead .slick-snext {
+    transform: translate3d(450px, 0, -40px) !important;
+}
+.reviews-form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 510px;
+    margin: 60px auto 100px;
+}
+.reviews-form-content textarea{
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.08);
+    border: none;
+    resize: none;
+    padding: 20px 15px;
+    height: 240px;
+}
+.reviews-form-content input{
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.08);
+    height: 50px;
+    padding: 0 15px;
+    border: none;
+}
+.reviews-form-content textarea:focus{
+    outline: none;
+}
+.reviews-form-content textarea,
+.reviews-form-content textarea::placeholder,
+.reviews-form-content input,
+.reviews-form-content input::placeholder{
+    font-size: 18px;
+}
+.reviews-form-content button{
+    margin: 25px auto 0;
+    background-color: rgb(65, 113, 175);
+    box-shadow: 0px 0px 16px 0px rgba(23, 23, 23, 0.48);
+    height: 50px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #fff;
+    width: 310px;
+}
+
+@media screen and (max-width: 767px) {
+    .reviews-form-content{
+        margin-top: 30px;
+        width: 100%;
+        padding: 30px 15%;
+        background: #e8e8e8;
+        max-width: none;
+        margin-bottom: 0;
+    }
+    .reviews-form-content textarea,
+    .reviews-form-content textarea::placeholder,
+    .reviews-form-content input,
+    .reviews-form-content input::placeholder{
+        font-size: 12px;
+    }
+    .reviews-form-content input {
+        margin-top: 15px;
+    }
+    .reviews-form-content button {
+        width: 100%;
+        margin: 15px auto 0;
+    }
+    .supaCard .supaSlider-insideSlider__item-content {
+        border-radius: 0 !important;
+
+    }
+    .reviews .supaCard .children-supa__suptitle, .reviews .supaCard .children-supa__text {
+        font-size: 12px;
+    }
+    .reviews .supaCard .children-supa__suptitle,
+    .reviews .supaCard .children-supa__text{
+        margin-bottom: 10px;
+    }
+    .reviews .supaCard > span {
+        display: none;
+    }
+    .reviews .supaCard:before {
+        display: none;
+    }
+    .reviews .supaCard {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+}
+/*Отзывы Конец*/
