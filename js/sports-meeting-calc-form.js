@@ -1,7 +1,7 @@
 $(".price-form").submit((e) => {
   e.preventDefault();
-  // const data = $('.price-form').serializeArray();
-  // console.log(data)
+  const data = $('.price-form').serializeArray();
+  console.log(data)
   const promisel = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(

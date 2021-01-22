@@ -71,27 +71,6 @@ $(document).on("click", "#tarifes-item-second", function () {
   }
 });
 
-$(".team-wrap").owlCarousel({
-    items: 1,
-    nav: true,
-    pagination: true,
-    navText: [
-        '<img src="../img/arrow-thin-left.png">',
-        '<img src="../img/arrow-thin-right.png">',
-    ],
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 2,
-        },
-        1000: {
-            items: 2,
-        },
-    },
-});
-
 $(document).on("click", ".team-item__btn_open", function () {
     let content = $(this).prev(".team-item-content");
     content.css("backdrop-filter", "brightness(40%)");
