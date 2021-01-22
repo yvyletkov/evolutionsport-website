@@ -48,14 +48,25 @@
   width: 100px;
   height: 100px;
   background: #fff;
-  border-radius: 50%;
-  border: 1px solid #cccccc;
-  margin: 0 auto;
-  position: relative;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    margin: 0 auto;
+    position: relative;
 }
 
 .circle.active {
-  background: #f22b3a;
+    background: #f22b3a;
+}
+
+.btn-red {
+    background-color: #f22b3a;
+    color: #fff;
+    max-width: 280px;
+    width: 100%;
+}
+
+.btn-red:hover {
+    color: #fff;
 }
 
 #sport .hero h1 span {
@@ -76,11 +87,11 @@
 }
 
 .rectangle {
-    height:250px;
-    background-image: -moz-linear-gradient( 46deg, rgb(79,136,205) 0%, rgb(35,62,95) 100%);
-    background-image: -webkit-linear-gradient( 46deg, rgb(79,136,205) 0%, rgb(35,62,95) 100%);
-    background-image: -ms-linear-gradient( 46deg, rgb(79,136,205) 0%, rgb(35,62,95) 100%);
-    box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);  
+    height: 250px;
+    background-image: -moz-linear-gradient(46deg, rgb(79, 136, 205) 0%, rgb(35, 62, 95) 100%);
+    background-image: -webkit-linear-gradient(46deg, rgb(79, 136, 205) 0%, rgb(35, 62, 95) 100%);
+    background-image: -ms-linear-gradient(46deg, rgb(79, 136, 205) 0%, rgb(35, 62, 95) 100%);
+    box-shadow: 0px 0px 27px 0px rgba(23, 23, 23, 0.92);
 }
 
 .rectangle__title {
@@ -202,16 +213,21 @@
 }
 
 @media screen and (max-width: 768px) {
-  .textBlock-wrap {
-    padding-bottom: 20px;
-  }
-  .circle {
-    width: 70px;
-    height: 70px;
-  }
+    .btn-red {
+        margin:0 auto;
+    }
 
-  .circle.active h3 {
-    font-size: 20px;
+    .textBlock-wrap {
+        padding-bottom: 20px;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .circle.active h3 {
+        font-size: 20px;
     top: 22px;
     left: 9px;
   }
