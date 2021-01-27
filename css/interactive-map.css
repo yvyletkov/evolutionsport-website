@@ -33,11 +33,10 @@
 
 .map-point {
     position: absolute;
-    width: 2.3%;
-    height: 3.5%;
+    width: 1.4%;
+    height: 2.05%;
     background-color: #c82430;
     border-radius: 50%;
-    border: 1px solid #101010;
 }
 
 .map-point:hover {
