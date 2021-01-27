@@ -1,6 +1,6 @@
 var purecookieTitle = "Cookies 🍪";
 var purecookieDesc = "Пользуясь настоящим веб-сайтом, Вы даете свое согласие на использование файлов cookies.";
-var purecookieLink = '1234';
+var purecookieLink = '';
 var purecookieButton = "ОК";
 
 
