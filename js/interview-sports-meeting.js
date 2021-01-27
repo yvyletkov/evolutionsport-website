@@ -4,8 +4,9 @@ $(document).ready(function () {
     $(".popup .quiz").removeClass("hidden");
     $(".popup-wrapper").removeClass("hidden");
   };
-  if (!document.cookie.includes("YARIKVODILA")) {
-    setTimeout(showQuiz, 15000);
+  // if (!document.cookie.includes("YARIKVODILA")) {
+  if (true) {
+    setTimeout(showQuiz, 1000);
   }
 
   $(".btn.btn_blue.advantages__order").on("click", (e) => {
