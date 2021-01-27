@@ -5,7 +5,8 @@ $(document).ready(function () {
     $(".popup-wrapper").removeClass("hidden");
   };
   if (!document.cookie.includes("YARIKVODILA")) {
-    setTimeout(showQuiz, 15000);
+  // if (true) {
+    setTimeout(showQuiz, 8000);
   }
 
   $(".btn.btn_blue.advantages__order").on("click", (e) => {
