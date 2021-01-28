@@ -1,6 +1,6 @@
 var purecookieTitle = "Cookies 🍪";
 var purecookieDesc = "Пользуясь настоящим веб-сайтом, Вы даете свое согласие на использование файлов cookies.";
-var purecookieLink = '1234';
+var purecookieLink = '';
 var purecookieButton = "ОК";
 
 
@@ -49,8 +49,8 @@ function getCookie(name) {
     }
     return null;
 }
-function eraseCookie(name) {   
-    document.cookie = name+'=; Max-Age=-99999999;';  
+function eraseCookie(name) {
+    document.cookie = name+'=; Max-Age=-99999999;';
 }
 
 function cookieConsent() {
