@@ -15,14 +15,13 @@ $(document).ready(function () {
   });
 });
 
-$("#phone").mask("+7(999)999-9999");
 $(document).ready(function () {
-  $(".popup__btn").click(function () {
+  $(".popup__btn").on('click', function () {
     $(".popup__btn").off("click");
 
     if ($("#yes-checkbox").prop("checked")) {
       $(".popup__content p").html(
-        "Мы рады что Вы снова с нами! Хотите узнать цены"
+        "Мы рады что Вы снова с нами! Хотите узнать цены?"
       );
       $("#yes-checkbox + label").html("Да, подскажите");
       $("#no-checkbox + label").html("Нет, не хочу знать");
@@ -34,11 +33,11 @@ $(document).ready(function () {
           $(".popup__btn").addClass("hidden");
           $(".popup__form-wrapper").removeClass("hidden");
           $(".popup__content p").html(
-            "Оставляйте свои контакты,<br/>и мы с радостью подскажем преимущества программы:"
+            "Оставляйте свои контакты,<br/>и мы с радостью подскажем Вам наши преимущества:"
           );
         } else {
           $(".popup__content p").html(
-            "Это бесплатно и займет несколько минут,<br/>разрешите помочь Вам в выборе?"
+            "Это бесплатно и займет буквально пару минут,<br/>разрешите помочь Вам в выборе?"
           );
           $("#yes-checkbox + label").html("Да, давайте");
           $("#no-checkbox + label").html("Нет, спасибо");
