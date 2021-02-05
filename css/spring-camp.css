@@ -62,6 +62,8 @@
     color: #a8a8a8;
     text-align: center;
     width: 50px;
+    font-size: 30px;
+    line-height: 1.2;
 }
 
 .circle.active h3 {
@@ -203,7 +205,8 @@
     }
     .circle-group__description.active {
         font-size: 11px;
-        left:30px;
+        left:50%;
+        transform: translateX(-50%);
     }
     .circle-group__title {
         font-size: 16px;

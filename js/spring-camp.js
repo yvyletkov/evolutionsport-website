@@ -44,6 +44,45 @@ $(document).on("click", "#tarifes-item-first", function () {
 //     }
 // });
 
+$(".circle").hover(
+    function () {
+        if (
+            $("#open-arrow").hasClass("active") &&
+            $("#circle-active").hasClass("active") &&
+            $("#title-active").hasClass("active")
+        ) {
+            $("#circle-active").removeClass("active");
+            $("#title-active").removeClass("active");
+            $("#open-arrow").removeClass("active");
+            $("#open-desc").removeClass("active");
+        }
+        $(this).addClass("active");
+        $(this).parent().find(".circle-group__arrow-down").addClass("active");
+        $(this).parent().find(".circle-group__description").addClass("active");
+        $(this).parent().find(".circle-group__title").addClass("active");
+    },
+    function () {
+        $(this).removeClass("active");
+        $(this).parent().find(".circle-group__arrow-down").removeClass("active");
+        $(this).parent().find(".circle-group__description").removeClass("active");
+        $(this).parent().find(".circle-group__title").removeClass("active");
+    }
+);
+
+if ($('.circle-group').length && screen.width < 600) {
+    $(".circle-group").addClass("owl-carousel")
+    $(".circle-group").owlCarousel({
+        items: 1,
+        nav: true,
+        pagination: true,
+        dots: false,
+        navText: [
+            '<img src="../img/arrow-thin-left.png">',
+            '<img src="../img/arrow-thin-right.png">',
+        ],
+    });
+};
+
   // second button click
 $(document).on("click", "#tarifes-item-second", function () {
   if (
