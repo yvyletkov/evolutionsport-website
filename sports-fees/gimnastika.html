@@ -123,31 +123,32 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                 <h1><span>Гимнастика</span></h1>
                 <p class="hero-description title__ed"></p>
                 <div class="btn-group d-md-flex d-block button__title">
-                    <a href="#" class="btn button-red">Профессиональный</a>
-                    <a href="#" class="btn button-red">Детский</a>
+                    <a href="#sport-desc" class="btn button-red">Профессиональный</a>
+                    <a href="#sport-desc" class="btn button-red">Детский</a>
                 </div>
             </div>
         </section>
 
-        <div class="main-content">
+        <div class="main-content" id="sport-desc">
             <section class="container-fluid baths">
                 <div class="container">
                     <div class="row relative">
                         <div class="col-md-6 col-12">
                             <img src="../img/sbory/gymnastyc.png" class="img-fluid img-shadow img-full__hd"
-                                alt="Гимнастика">
+                                 alt="Гимнастика">
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <div class="baths-title">
                                 <h3 class="blue-stripe-border">Cпортивные сборы<span>по гимнастике</span></h3>
                                 <img src="../img/sbory/gymnastyc.png" class="img-fluid img-shadow img__mobile"
-                                    alt="Гимнастика">
-                                <p class="baths__desctiption">Учебно-тренировочные сборы по гимнастике можно провести в Крыму на территории центра
-                                    спорта «Эволюция». Внушительные размеры спортивных залов способны вместить в себя
-                                    большое количество любителей и профессионалов гимнастов. Также залы оборудованы
-                                    музыкальной системой и кондиционерами. <strong>На осенние, зимние и весенние периоды
-                                        действуют пониженные
-                                        тарифы.</strong></p>
+                                     alt="Гимнастика">
+                                <p class="baths__desctiption">
+                                    Учебно-тренировочные сборы по гимнастике для детей и взрослых можно провести в Крыму
+                                    на территории центра спорта «Эволюция». Внушительные размеры спортивных залов
+                                    способны вместить в себя большое количество любителей и профессионалов гимнастов.
+                                    Также залы оборудованы музыкальной системой и кондиционерами. <strong>На осенние, зимние и
+                                    весенние периоды действуют пониженные тарифы.</strong>
+                                </p>
                             </div>
                             <div class="col-12 red-form ml-md-3 mt-md-0 mt-xl-5 pl-0 pr-0">
                                 <form class="price-form calc-form">
@@ -665,15 +666,448 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                                   <p class="supaSlider-item-desc-main__text"></p>
                                   <div class="supaSlider-item-desc-main__price">Цена за сутки:&nbsp;<span>от 2 500 РУБ.</span>
                                   </div>
-                                  <a href="../resort-vacation/shtormovoi.html" class="button-blue pr-4 pl-4 pt-1 pb-2">Перейти на страницу
-                                    корпуса</a>
+                                  <a href="../resort-vacation/shtormovoi.html" class="button-blue pr-4 pl-4 pt-1 pb-2">Перейти
+                                      на страницу
+                                      корпуса</a>
                               </div>
                               <div class="supaSlider-item-desc__placeholder">Проживание</div>
                           </div>
                       </div>
-                      </div>
                   </div>
-              </section>
+                </div>
+            </section>
+
+            <section class="call mt-5">
+                <div class="call__wrap">
+                    <h3 class="call-title">разрешите менеджеру вам помочь?</h3>
+                    <p class="call-text">Введите свой номер телефона, и мы перезвоним.</p>
+                    <form class="children-form order-form" name="form__callback">
+                        <input
+                                type="hidden"
+                                name="form-name"
+                                value="default-contact-form"
+                        />
+                        <input
+                                type="hidden"
+                                name="rus-form-name"
+                                value="Детский лагерь"
+                        />
+                        <input
+                                class="children-form-input"
+                                type="tel"
+                                name="phone"
+                                pattern="^(\+7(\([0-9]{3}\) *[0-9]{3}-[0-9]{2}-[0-9]{2}| [0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}|[0-9]{10})|8[0-9]{10})$"
+                                minlength="11"
+                                maxlength="18"
+                                required
+                                placeholder="+7 999 999 99 99"
+                        />
+                        <div class="children-form-select-wrap">
+                            <select class="children-form-select" name="name" required>
+                                <option disabled hidden selected>Выберите удобное для вас время</option>
+                                <option value="Перезвонить сейчас">Прямо сейчас</option>
+                                <option value="Перезвонить завтра">Завтра</option>
+                            </select>
+                        </div>
+                        <button class="children-form-btn" type="submit">
+                            Жду звонка
+                        </button>
+                    </form>
+                    <div class="call-text-down">Нажимая на кнопку «Жду звонка», Вы принимаете условия</div>
+                    <a class="call-text-down-link" href="#">Пользовательского соглашения</a>
+                </div>
+            </section>
+
+            <section class="new-content reviews">
+                <div class="children-supa supaCard supaFitnes">
+                    <div class="supa-wrap supa-1200">
+                        <p class="defaultTitle supaCard__title">Отзывы</p>
+                        <p class="defaultSubtitle supaCard__subtitle">Центр спорта</p>
+                        <div class="supaSlider-insideSlider-wrap supaSlider-item">
+                            <div class="supaSlider-insideSliderBlock">
+                                <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);"
+                                                                                     src="../assets/images/arrowSlider.png">
+                                </div>
+                                <div class="supaSlider-insideSliderBlock__next"><img
+                                        src="../assets/images/arrowSlider.png">
+                                </div>
+                            </div>
+                            <div class="supaSlider-insideSlider supaSlider-insideSlider_chainHead">
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Ольга:</p>
+                                        <p class="children-supa__text">
+                                            Понравилось: Наличие крытого бассейна, много спортивных мероприятий,
+                                            культурная
+                                            программа, доброжелательный персонал, отзывчивые, веселые и всегда готовые
+                                            прийти на
+                                            помощь вожатые, хорошая мебель в комнате, ухоженная территория комплекса.
+                                            Спасибо всем
+                                            работникам комплекса "Эволюция"!! Не понравилось: нет такого. Мнение
+                                            ребенка: Все
+                                            отлично, хочу приехать еще уже летом. Хочется пиццы и пельменей.
+                                        </p>
+                                        <p class="children-supa__text">14.01.2021</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Максим:</p>
+                                        <p class="children-supa__text">Центр спорта "Эволюция" - одно из лучших мест для
+                                            отдыха или физической активности во всей России. Я ездил сюда в составе
+                                            спортивной
+                                            команды по плаванию далеко не один раз. Мы всегда останавливались в
+                                            Штормовом, качество
+                                            питания всегда было на высоте, в лагере шведский стол, еда вкусная и всегда
+                                            горячая, на
+                                            обед давали свежие фрукты. Жилищные условия тоже были на высоте, в номере
+                                            кондиционер,
+                                            розетки, нет насекомых, чудесный вид на море из окна. 2 пятидесяти метровых
+                                            бассейна под
+                                            открытым небом. Рекомендую каждому!
+                                        </p>
+                                        <p class="children-supa__text">11.08.2020</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Катерина:</p>
+                                        <p class="children-supa__text">Это райское место! Мы с семьёй второй год
+                                            приезжаем
+                                            сюда и здесь есть всё необходимое для реабилитации людей с ограниченными
+                                            возможностями.
+                                            Мы ещё сюда вернемся!
+                                        </p>
+                                        <p class="children-supa__text">15.09.2020</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Надежда:</p>
+                                        <p class="children-supa__text">Хорошо, что есть такой Центр для лечения и отдыха
+                                            пациентов.
+                                            Необходимое поддерживающее лечение присутствует. Красивое чистое море, не
+                                            глубокое,
+                                            песок. Замечательный воздух. Рядом находится бассейн, спортзал, можно так же
+                                            походить.
+                                            Но главное, что есть качественный комплекс реабилитационных мероприятий.
+                                        </p>
+                                        <p class="children-supa__text">28.07.2018</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Наталья:</p>
+                                        <p class="children-supa__text">Это место, просто сказка для всех! Но особенно
+                                            для лиц,
+                                            передвигающихся на инвалидных колясках. Всё продумано, предусмотрено и
+                                            удобно! Море в 50
+                                            метрах от корпуса! Приветливый и профессиональный персонал.
+                                        </p>
+                                        <p class="children-supa__text">21.11.2020</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Вячеслав:</p>
+                                        <p class="children-supa__text">Сейчас здесь нахожусь и всем доволен ➕😇 <br>Соблюдается
+                                            масочный режим и без теста на отрицательные показания по ковид сюда не
+                                            попасть. Но эти
+                                            препятствия стоят того, какую пользу здоровью здесь можно получить.</p>
+                                        <p class="children-supa__text">15.12.2020</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Виталий:</p>
+                                        <p class="children-supa__text">Это без преувеличения самый большой спортивный
+                                            центр для
+                                            подготовки спортсменов и паралимпийцев в Крыму. Спортивная база на высоком
+                                            уровне.
+                                            Большой водный центр с открытым и закрытым спортивным бассейном.
+                                            Спортивные закрытые и открытые площадки. Только для того чтоб оббежать
+                                            территорию Вам
+                                            понадобится минут 30-40.
+                                            Собственный песчаный пляж протяженностью около 2-х километров.
+                                        </p>
+                                        <p class="children-supa__text">18.08.2020</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Оксана:</p>
+                                        <p class="children-supa__text">Ребенок в восторге от отдыха в "Эволюции" в
+                                            зимнем лагере, и
+                                            нам есть с чем сравнить. Мы были в различных детских лагерях, начиная от
+                                            государственных
+                                            бесплатных для отличников, заканчивая лагерями Terra Uniqe.<br/>
+                                            Екатерина теперь хочет приехать к вам отдыхать на летнюю смену.<br/>
+                                            В связи с этим интересует, есть ли компенсации путевки для жителей Крыма?
+                                            Или быть может
+                                            есть какие-то скидки для детей из многодетных семей.
+                                        </p>
+                                        <p class="children-supa__text">12.01.2021</p>
+                                    </div>
+                                </div>
+                                <div class="supaSlider-insideSlider__item">
+                                    <div class="supaSlider-insideSlider__item-content">
+                                        <p class="children-supa__suptitle">Елена:</p>
+                                        <p class="children-supa__text">
+                                            Мы вернулись домой и от всей нашей команды выражаем Вам огромную
+                                            благодарность за помощь
+                                            и комфортные условия нашего зимнего сбора в Эволюции! Весь коллектив СЦ
+                                            "Эволюция" -
+                                            увлеченные профессионалы! Спасибо!
+                                        </p>
+                                        <p class="children-supa__text">11.01.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="children-supa">
+                <div class="supa-wrap mb-0 mt-5">
+                    <p class="defaultTitle supa__title">Также для комфортного отдыха</p>
+                    <!--            <p class="defaultSubtitle">Доступные услуги</p>-->
+                    <div class="supaSlider-insideSlider-wrap supaSlider-item">
+                        <p class="children-supa__placeholder">Услуги</p>
+                        <div class="supaSlider-insideSliderBlock">
+                            <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);"
+                                                                                 src="../assets/images/arrowSlider.png">
+                            </div>
+                            <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrowSlider.png">
+                            </div>
+                        </div>
+                        <div class="supaSlider-insideSlider">
+
+                            <div class="supaSlider-insideSlider__item">
+                                <p class="children-supa__text">Трансфер</p><a class="btn btn_accent children-supa__btn"
+                                                                              href="../services/transfer.html">Подробнее<img
+                                    src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                                    data-lazy="../img/services/transfer.jpg" alt="Трансфер"/>
+                            </div>
+
+                            <div class="supaSlider-insideSlider__item">
+                                <p class="children-supa__text">Анимация</p><a class="btn btn_accent children-supa__btn"
+                                                                              href="../services/animation.html">Подробнее<img
+                                    src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                                    data-lazy="../img/services/animation.jpg" alt="Анимация"/>
+                            </div>
+
+                            <div class="supaSlider-insideSlider__item">
+                                <p class="children-supa__text">Серфинг</p><a class="btn btn_accent children-supa__btn"
+                                                                             href="../services/surfing.html">Подробнее<img
+                                    src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                                    data-lazy="../img/services/surfing.jpg" alt="Виндсёрфинг"/>
+                            </div>
+
+                            <div class="supaSlider-insideSlider__item">
+                                <p class="children-supa__text">Экскурсии</p><a class="btn btn_accent children-supa__btn"
+                                                                               href="../services/excursions.html">Подробнее<img
+                                    src="../assets/images/arrow-right.png" alt="arrow-right"/></a><img
+                                    data-lazy="../img/services/excursions.jpg" alt="Экскурсии"/>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="map">
+                <div class="map-wrap">
+                    <h2 class="defaultTitle map__title">Откуда к нам едут</h2>
+                    <div class="map-main"><img class="lazyload map-main__img"
+                                               data-src="../assets/images/child_camp/map.png"
+                                               src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                               alt="карта"/>
+                        <div class="map-main-baloon" data-top="25" data-left="14.5">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Санкт-Петербург</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="36.5" data-left="8.5">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Смоленск</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="41" data-left="12">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Москва</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="52.5" data-left="12.5">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Пенза</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="57.5" data-left="12.5">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Саратов</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="60.5" data-left="9.5">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Волгоград</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="44" data-left="36">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Салехард</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="80" data-left="85">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Хабаровск</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="44" data-left="85">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Магадан</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="64" data-left="70">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Якутск</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="85" data-left="57">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Иркутск</p>
+                            </div>
+                        </div>
+                        <div class="map-main-baloon" data-top="73" data-left="44">
+                            <div class="map-main-baloon__dot"></div>
+                            <div class="map-main-baloon-main">
+                                <p class="map-main-baloon-main__title">Новосибирск</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="map-form" name="map">
+                        <p class="map-form__subtitle">А вы из какого региона?</p>
+                        <div class="map-form-row">
+                            <div class="form-group">
+                                <select name="region" id="input-select" class="form-control"
+                                        x-placement="bottom-start" required>
+                                    <option value="" selected disabled hidden>Выберите регион</option>
+                                    <option value="Адыгея">Республика Адыгея</option>
+                                    <option value="Алтай">Республика Алтай</option>
+                                    <option value="Башкортостан">Республика Башкортостан</option>
+                                    <option value="Бурятия">Республика Бурятия</option>
+                                    <option value="Дагестан">Республика Дагестан</option>
+                                    <option value="Ингушетия">Республика Ингушетия</option>
+                                    <option value="Кабардино-Балкария">Кабардино-Балкарская Республика</option>
+                                    <option value="Калмыкия">Республика Калмыкия</option>
+                                    <option value="Карачаево-Черкессия">Карачаево-Черкесская Республика</option>
+                                    <option value="Карелия">Республика Карелия</option>
+                                    <option value="Коми">Республика Коми</option>
+                                    <option value="Марий Эл">Республика Марий Эл</option>
+                                    <option value="Мордовия">Республика Мордовия</option>
+                                    <option value="Саха (Якутия)">Республика Саха (Якутия)</option>
+                                    <option value="Северная Осетия - Алания">Республика Северная Осетия - Алания
+                                    </option>
+                                    <option value="Татарстан">Республика Татарстан</option>
+                                    <option value="Тыва">Республика Тыва</option>
+                                    <option value="Удмуртская">Удмуртская Республика</option>
+                                    <option value="Хакасия">Республика Хакасия</option>
+                                    <option value="Чеченская">Чеченская Республика</option>
+                                    <option value="Чувашская Республика">Чувашская Республика</option>
+                                    <option value="Алтайский край">Алтайский край</option>
+                                    <option value="Забайкальский край">Забайкальский край</option>
+                                    <option value="Камчатский край">Камчатский край</option>
+                                    <option value="Краснодарский край">Краснодарский край</option>
+                                    <option value="Красноярский край">Красноярский край</option>
+                                    <option value="Пермский край">Пермский край</option>
+                                    <option value="Приморский край">Приморский край</option>
+                                    <option value="Ставропольский край">Ставропольский край</option>
+                                    <option value="Хабаровский край">Хабаровский край</option>
+                                    <option value="Амурская область">Амурская область</option>
+                                    <option value="Архангельская область">Архангельская область</option>
+                                    <option value="Астраханская область">Астраханская область</option>
+                                    <option value="Белгородская область">Белгородская область</option>
+                                    <option value="Брянская область">Брянская область</option>
+                                    <option value="Владимирская область">Владимирская область</option>
+                                    <option value="Волгоградская область">Волгоградская область</option>
+                                    <option value="Вологодская область">Вологодская область</option>
+                                    <option value="Воронежская область">Воронежская область</option>
+                                    <option value="Ивановская область">Ивановская область</option>
+                                    <option value="Иркутская область">Иркутская область</option>
+                                    <option value="Калининградская область">Калининградская область</option>
+                                    <option value="Калужская область">Калужская область</option>
+                                    <option value="Кемеровская область">Кемеровская область</option>
+                                    <option value="Кировская область">Кировская область</option>
+                                    <option value="Костромская область">Костромская область</option>
+                                    <option value="Курганская область">Курганская область</option>
+                                    <option value="Курская область">Курская область</option>
+                                    <option value="Ленинградская область">Ленинградская область</option>
+                                    <option value="Липецкая область">Липецкая область</option>
+                                    <option value="Магаданская область">Магаданская область</option>
+                                    <option value="Московская область">Московская область</option>
+                                    <option value="Мурманская область">Мурманская область</option>
+                                    <option value="Нижегородская область">Нижегородская область</option>
+                                    <option value="Новгородская область">Новгородская область</option>
+                                    <option value="Новосибирская область">Новосибирская область</option>
+                                    <option value="Омская область">Омская область</option>
+                                    <option value="Оренбургская область">Оренбургская область</option>
+                                    <option value="Орловская область">Орловская область</option>
+                                    <option value="Пензенская область">Пензенская область</option>
+                                    <option value="Псковская область">Псковская область</option>
+                                    <option value="Ростовская область">Ростовская область</option>
+                                    <option value="Рязанская область">Рязанская область</option>
+                                    <option value="Самарская область">Самарская область</option>
+                                    <option value="Саратовская область">Саратовская область</option>
+                                    <option value="Сахалинская область">Сахалинская область</option>
+                                    <option value="Свердловская область">Свердловская область</option>
+                                    <option value="Смоленская область">Смоленская область</option>
+                                    <option value="Тамбовская область">Тамбовская область</option>
+                                    <option value="Тверская область">Тверская область</option>
+                                    <option value="Томская область">Томская область</option>
+                                    <option value="Тульская область">Тульская область</option>
+                                    <option value="Тюменская область">Тюменская область</option>
+                                    <option value="Ульяновская область">Ульяновская область</option>
+                                    <option value="Челябинская область">Челябинская область</option>
+                                    <option value="Ярославская область">Ярославская область</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                    <option value="Еврейская АО">Еврейская АО</option>
+                                    <option value="Ненецкий АО">Ненецкий АО</option>
+                                    <option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+                                    <option value="Чукотский АО">Чукотский АО</option>
+                                    <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="map-form__title">Оставьте след на карте, приезжай к нам на спортивные сборы</p>
+                        <div class="map-form-row">
+                            <div class="map-form-input">
+                                <input id="phone__where-from" type="tel" name="phone"
+                                       pattern="^(\+7(\([0-9]{3}\) *[0-9]{3}-[0-9]{2}-[0-9]{2}| [0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}|[0-9]{10})|8[0-9]{10})$"
+                                       minlength="11" maxlength="18" required placeholder="+7 999 999 99 99"/>
+                            </div>
+                            <div class="map-form-input">
+                                <input name="email" type="email" placeholder="Введите почту" required
+                                       id="emailWhereFrom"/>
+                            </div>
+                            <div class="map-form-input map-form-input_btn">
+                                <button class="btn" type="submit" id="goToPlace">Поеду к вам</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
             <section class="container-fluid grey baths">
                 <div class="container">
