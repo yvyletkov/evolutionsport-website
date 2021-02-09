@@ -548,6 +548,9 @@ body {
   box-sizing: border-box;
 }
 
+.navbar {
+  z-index: 999 !important;
+}
 
 /* СТИЛИ МОДУЛЯ БРОНИРОВАНИЯ */
  #block-search {
