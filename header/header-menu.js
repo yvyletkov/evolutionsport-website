@@ -146,6 +146,9 @@ const header =
                                     <a class="norm-menu-items-item-list__item" href="../children-camp/spring-camp.html">
                                         Весенний лагерь
                                     </a>
+                                    <a class="norm-menu-items-item-list__item" href="../children-camp/vacation-with-children.html">
+                                        Отдых с детьми
+                                    </a>
                                 </div>
                             </div>
 
