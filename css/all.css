@@ -7276,6 +7276,10 @@ span {
     flex-direction: column;
 }
 
+.news-details p {
+    height: 30px;
+}
+
 .news-subtitle {
     display: block;
     font-weight: 300;
