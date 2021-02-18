@@ -56,6 +56,55 @@
     <link rel="stylesheet" href="../header/header.css"/>
     <link rel="stylesheet" href="../header/footer.css"/>
     <link rel="stylesheet" href="../css/popup-styles.css"/>
+    <style>
+        .swal2-popup {
+            width: 50em;
+        }
+        .swal2-confirm {
+            max-width: 45%;
+        }
+        .swal2-cancel {
+            max-width: 45%;
+        }
+
+        a:focus {
+            outline: none;
+        }
+        .contact-us p {
+            color:#545454;
+            font-size: 14px;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        .contact-us__icon {
+            width: 45px;
+            height: 45px;
+            transition: all .2s;
+            margin: 0 30px;
+        }
+
+        .contact-us__icon:hover {
+            filter: brightness(.8);
+        }
+        .contact-us {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-us p {
+                margin: 0 0 20px;
+            }
+            .contact-us__icon {
+                margin: 0 auto;
+            }
+        }
+    </style>
 
     <script type="text/javascript">
         (function ct_load_script() {
@@ -579,7 +628,39 @@
 <script src="../js/requests.js"></script>
 <script src="../header/header-menu.js"></script>
 <script src="../header/header.js"></script>
-<script src="../js/interview-sports-meeting.js"></script>
+<!--<script src="../js/interview-sports-meeting.js"></script>-->
 <script src="../assets/scripts/purecookie.js"></script>
+<script>
+    setTimeout(() => {
+        swal({
+            imageUrl: '../img/pools-popup.jpeg',
+            imageAlt: 'banner',
+            showCancelButton: false,
+            showCloseButton: true,
+            showConfirmButton: false,
+            html:
+                '<h4 class="text-center mb-3" style="font-size: 20px">Тренировки <b>в открытом подогреваемом бассейне 50 метров уже в марте!</b></h4>' +
+                '<div class="text-justify px-4" style="font-size: 16px; text-align:left">' +
+                '<p class="text-center my-2">Мы открываем его для Вас!</p>' +
+                '<b><p class="text-center my-2">Проведите сборы по плаванию в бассейне олимпийского размера по выгодным ценам в марте!</p></b>' +
+                '<p class="text-center my-2">Заявку на проведение сборов можно направить сюда <a href="mailto:sales@evolutionsport.ru">sales@evolutionsport.ru</a></p>' +
+                '</div>' +
+                '<div class="contact-us">' +
+                '    <p>Свяжитесь с нами</p>' +
+                '    <div class="d-flex align-items-center">' +
+                '        <a href="https://tlgg.ru/@A_Novih">' +
+                '            <img class="contact-us__icon" src="../img/icons/telegram.svg"/>' +
+                '        </a>' +
+                '        <a href="https://wapp.click/79214001231">' +
+                '            <img class="contact-us__icon mx-3 mx-lg-0 my-lg-3" src="../img/icons/whatsapp.svg"/>' +
+                '        </a>' +
+                '        <a href="https://viber.click/79214002131">' +
+                '            <img class="contact-us__icon" src="../img/icons/viber.svg"/>' +
+                '        </a>' +
+                '    </div>' +
+                '</div>',
+        })
+    }, 1000)
+</script>
 </body>
 </html>
