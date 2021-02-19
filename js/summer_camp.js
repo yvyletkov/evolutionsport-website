@@ -13,7 +13,7 @@ if ($(".tarifes-list").length) {
     ],
     responsive: {
       1024: {
-        items: 4,
+        items: 3,
       },
       768: {
         items: 2,
