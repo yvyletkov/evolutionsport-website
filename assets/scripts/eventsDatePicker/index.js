@@ -2,9 +2,9 @@ var now = new Date();
 let dataNews = [];
 
 
-function templates(e, desc, img) {
+function templates(e, desc, img, link) {
   return `<div class="item">
-              <a href="#">
+              <a href="${link ? link : '#'}">
                 <img class="img-fluid" src="${BD_SERVER_URL}${img}" alt=""/>
               </a>
               <div class="news-details"><strong>${e}</strong><span class="news-subtitle">
@@ -81,7 +81,7 @@ const getEvents = async () => {
           if (formatDate == date) {
             $("#calendar-slider").slick(
                 "slickAdd",
-                templates(e.value, e.desc, e.img)
+                templates(e.value, e.desc, e.img, e.link)
             );
           }
         });
