@@ -1,7 +1,5 @@
 const mainURL = "https://erp-evo.ml/erp/site/forms/";
 
-//mainURL = "http://77.232.53.82:8051/erp/site/forms/";
-
 function objectifyForm(data) {
     if (data["form-name"]) return data; // если объект уже норм, то оставляем как есть
 
@@ -31,6 +29,26 @@ async function mainApi(info) {
         console.log(err);
     }
 }
+
+async function requestInfo(url) {
+    try {
+        const res = await fetch(url, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+        });
+
+        if (!res.ok) {
+            throw new Error(`error ${res.status}`);
+        }
+        console.log(res);
+        return await res.json();
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 
 $(".children-form").on("submit", function (event) {
     event.preventDefault();
