@@ -16,7 +16,7 @@ window.addEventListener('load', async () => {
 
         json.forEach(function (item) {
 
-            if (item.unactive !== 'true') document.querySelectorAll("#news-index-slider, #page-news").forEach( (el) => {
+            if (item.inactive !== true) document.querySelectorAll("#news-index-slider, #page-news").forEach( (el) => {
                 el.insertAdjacentHTML('afterbegin', `
                     <div class="item" data-id="${item._id}">
                         <img
