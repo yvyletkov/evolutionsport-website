@@ -230,15 +230,15 @@
                 <div class="row" id="about__features-sports">
                     <div class="col" style="z-index: -1;">
                         <p class="small-f">проведено сборов</p>
-                        <h2 class="big-f">632</h2>
+                        <h2 class="big-f" id="stat-meeting">632</h2>
                     </div>
                     <div class="col" style="z-index: -1;">
                         <p class="small-f">посетило спортсменов</p>
-                        <h2 class="big-f">15376</h2>
+                        <h2 class="big-f" id="stat-athletes">15376</h2>
                     </div>
                     <div class="col" style="z-index: -1;">
                         <p class="small-f">проведено турниров</p>
-                        <h2 class="big-f">342</h2>
+                        <h2 class="big-f" id="stat-tournaments">342</h2>
                     </div>
                 </div>
             </section>
@@ -630,6 +630,7 @@
 <script src="../header/header.js"></script>
 <!--<script src="../js/interview-sports-meeting.js"></script>-->
 <script src="../assets/scripts/purecookie.js"></script>
+<script src="../js/requests/sports-statistic.js"></script>
 <script>
     setTimeout(() => {
         swal({
