@@ -42,7 +42,6 @@ async function requestInfo(url) {
         if (!res.ok) {
             throw new Error(`error ${res.status}`);
         }
-        console.log(res);
         return await res.json();
     } catch (err) {
         console.log(err);
