@@ -1,6 +1,6 @@
-const mainPageUrl = "http://erp-evo.ml:1337/resort-prices";
+const roomsPricesUrl = "http://erp-evo.ml:1337/resort-prices";
 
-requestInfo(mainPageUrl)
+requestInfo(roomsPricesUrl)
     .then((res) => {
         $("#peaceful-price").text(`от ${res[0].peaceful} руб.`);
         $("#borderline-price").text(`от ${res[0].borderline} руб.`);
