@@ -1,12 +1,14 @@
 const mainPageUrl = "http://erp-evo.ml:1337/main-page";
 
-// (async function YarikVodila () {
-//     const data = await requestInfo(mainPageUrl)
-//     .then((res) => res)
-//     .catch((err) => console.log(err));
-//     console.log('data', data)
-// })()
-
 requestInfo(mainPageUrl)
-    .then((res) => console.log(res.gallery))
+    .then((res) => {
+        res.gallery.forEach((img) => {
+            $(`<a class="fancybox" data-fancybox-group="gallery" rel="group1" href=http://erp-evo.ml:1337${img.url}>` +
+                `<img class="gallery-responsive__img" src=http://erp-evo.ml:1337${img.url} alt=""/>` +
+                `</a>`).appendTo('.gallery-responsive')
+        })
+        $(".fancybox").fancybox(
+            {groupAttr: 'data-fancybox-group'}
+        );
+    })
     .catch((err) => console.log(err))
