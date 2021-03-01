@@ -1,6 +1,4 @@
-const sportsStatisticUrl = "http://erp-evo.ml:1337/statistics-sports-fees";
-
-requestInfo(sportsStatisticUrl)
+requestInfo('statistics-sports-fees')
     .then((res) => {
         $("#stat-meeting").text(res[0].meeting);
         $("#stat-athletes").text(res[0].athletes);

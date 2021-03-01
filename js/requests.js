@@ -32,7 +32,7 @@ async function mainApi(info) {
 
 async function requestInfo(url) {
     try {
-        const res = await fetch(url, {
+        const res = await fetch(`http://erp-evo.ml:1337/${url}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
