@@ -1,6 +1,4 @@
-const mainPageUrl = "http://erp-evo.ml:1337/main-page";
-
-requestInfo(mainPageUrl)
+requestInfo('main-page')
     .then((res) => {
         res.gallery.forEach((img) => {
             $(`<a class="fancybox" data-fancybox-group="gallery" rel="group1" href=http://erp-evo.ml:1337${img.url}>` +

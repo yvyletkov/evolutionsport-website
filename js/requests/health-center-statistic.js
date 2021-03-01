@@ -1,6 +1,4 @@
-const healthCenterStatisticUrl = "http://erp-evo.ml:1337/stat-healths";
-
-requestInfo(healthCenterStatisticUrl)
+requestInfo('stat-healths')
     .then((res) => {
         $("#stat-sanatorium_resort").text(res[0].sanatorium_resort);
         $("#stat-rehabilitation").text(res[0].rehabilitation);
