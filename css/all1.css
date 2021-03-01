@@ -1058,6 +1058,27 @@ a.article:hover {
     font-size: 15px;
 }
 
+.feedback-btn {
+    max-width: 375px;
+    width: 100%;
+    background-color: #f9dd3f;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin: 20px auto;
+}
+
+.feedback-btn:hover {
+    color:#000
+}
+
+.banner-form__btn:hover {
+    color:#fff
+}
 
 .fitnes-club-rent-banner-mobile img {
     width: 100%;

@@ -1177,6 +1177,28 @@ html {
     margin-bottom: 100px;
 }
 
+.feedback-btn {
+    max-width: 375px;
+    width: 100%;
+    background-color: #f9dd3f;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin: 20px auto;
+}
+
+.banner-form__btn:hover {
+    color:#fff
+}
+
+.feedback-btn:hover {
+    color:#000
+}
+
 .about-btn {
     color: #fff;
 }
