@@ -18,7 +18,6 @@ async function requestInfo(url) {
 
 requestInfo('contacts-blocks')
     .then((res) => {
-        console.log(res)
         res.forEach((contact) => {
             $(`
             <div class="contacts-page-item">
