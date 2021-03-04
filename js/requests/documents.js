@@ -1,6 +1,6 @@
 async function requestInfo(url) {
     try {
-        const res = await fetch(`http://erp-evo.ml:1337/${url}`, {
+        const res = await fetch(`https://admin.evolutionsport.ml/${url}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
@@ -25,12 +25,12 @@ requestInfo('documents')
             <div class="supaSlider-insideSlider__item">
                 <div class="supaSlider-insideSlider__item-content">
                     <p>${doc.name}</p>
-                    <img src="http://erp-evo.ml:1337${doc.file[0].url}" alt="">
+                    <img src="https://admin.evolutionsport.ml${doc.file[0].url}" alt="">
                     ${doc.file[1] ?
-                    `<a href="http://erp-evo.ml:1337${doc.file[1].url}"
+                    `<a href="https://admin.evolutionsport.ml${doc.file[1].url}"
                       target="_blank">Подробнее</a>`
                     :
-                    `<a href="http://erp-evo.ml:1337${doc.file[0].url}"
+                    `<a href="https://admin.evolutionsport.ml${doc.file[0].url}"
                       data-fancybox="documents">Подробнее</a>`}
                 </div>
             </div>
@@ -41,12 +41,12 @@ requestInfo('documents')
                 <div class="documents-slider-mobile__item-content">
                     <p>${doc.name}</p>
                     ${doc.file[1] ?
-                    `<a style="width: 80%" target="_blank" href="http://erp-evo.ml:1337${doc.file[1].url}">
-                        <img src="http://erp-evo.ml:1337${doc.file[0].url}" alt="">
+                    `<a style="width: 80%" target="_blank" href="https://admin.evolutionsport.ml${doc.file[1].url}">
+                        <img src="https://admin.evolutionsport.ml${doc.file[0].url}" alt="">
                     </a>`
                     :
-                    `<a class="fancybox" rel="group" href="http://erp-evo.ml:1337${doc.file[0].url}">
-                        <img src="http://erp-evo.ml:1337${doc.file[0].url}" alt="">
+                    `<a class="fancybox" rel="group" href="https://admin.evolutionsport.ml${doc.file[0].url}">
+                        <img src="https://admin.evolutionsport.ml${doc.file[0].url}" alt="">
                     </a>`}
                 </div>
             </div>
@@ -55,7 +55,7 @@ requestInfo('documents')
             if (doc.type === 'local') {
                 $(`
                 <div class="col-md-4 col-12">
-                    <a href="http://erp-evo.ml:1337${doc.file[0].url}" class="card">
+                    <a href="https://admin.evolutionsport.ml${doc.file[0].url}" class="card">
                         <div class="card-body p-3 d-flex" style="min-height: auto">
                             <img style="height: 30px" src="../img/icons/icon-pdf.svg" alt="icon">
                             <p class="card-text ml-3" style="color:unset;margin:0;align-self:center">${doc.name}</p>
@@ -63,6 +63,18 @@ requestInfo('documents')
                     </a>
                 </div>
                 `).appendTo('#local-docs');
+            }
+            if (doc.type === 'medical') {
+                $(`
+                <div class="col-md-4 col-12">
+                    <a href="https://admin.evolutionsport.ml${doc.file[0].url}" class="card">
+                        <div class="card-body p-3 d-flex" style="min-height: auto">
+                            <img style="height: 30px" src="../img/icons/icon-pdf.svg" alt="icon">
+                            <p class="card-text ml-3" style="color:unset;margin:0;align-self:center">${doc.name}</p>
+                        </div>
+                    </a>
+                </div>
+                `).appendTo('#medical-docs');
             }
         })
         $(".fancybox").fancybox(

@@ -1,8 +1,8 @@
 requestInfo('main-page')
     .then((res) => {
         res.gallery.forEach((img) => {
-            $(`<a class="fancybox" data-fancybox-group="gallery" rel="group1" href=http://erp-evo.ml:1337${img.url}>` +
-                `<img class="gallery-responsive__img" src=http://erp-evo.ml:1337${img.url} alt=""/>` +
+            $(`<a class="fancybox" data-fancybox-group="gallery" rel="group1" href=https://admin.evolutionsport.ml${img.url}>` +
+                `<img class="gallery-responsive__img" src=https://admin.evolutionsport.ml${img.url} alt=""/>` +
                 `</a>`).appendTo('.gallery-responsive')
         })
         $(".fancybox").fancybox(
