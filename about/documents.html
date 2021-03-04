@@ -48,7 +48,7 @@
     <!--    <script src="../assets/scripts/datepicker/datepicker.min.js"></script>-->
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
-    <script src="../assets/scripts/main1.js"></script>
+    <script src="../js/requests/documents.js"></script>
 
     <script type="text/javascript">
         (function ct_load_script() {
@@ -116,9 +116,7 @@
 </noscript>
 <!-- /Yandex.Metrika counter -->
 
-<header
-        class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution"
->
+<header class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution">
     <div class="container">
         <div class="collapse navbar-collapse justify-content-between"
              id="navbarToggle">
@@ -152,7 +150,7 @@
                 <li class="nav-item">
                     <div class="nav-link button-blue__mobile"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     <div class="nav-link button-blue">
-                        <i class="fa fa-phone"></i> Перезвоните мне
+                        <i class="fa fa-phone"></i> Консультация
                     </div>
                 </li>
             </ul>
@@ -176,137 +174,51 @@
                     <div class="supaSlider-insideSliderBlock__next"><img src="../img/documents/arr-next.png" alt="">
                     </div>
                 </div>
-                <div class="supaSlider-insideSlider supaSlider-insideSlider_chainHead">
-                    <div class="supaSlider-insideSlider__item">
-                        <div class="supaSlider-insideSlider__item-content">
-                            <p>Свидетельство о постановке на налоговый учет </p>
-                            <img src="../img/documents/св-во-о-постан.-на-учет-в-налоговои.jpg" alt="">
-                            <a href="../img/documents/св-во-о-постан.-на-учет-в-налоговои.jpg"
-                               data-fancybox="documents">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="supaSlider-insideSlider__item">
-                        <div class="supaSlider-insideSlider__item-content">
-                            <p>Санитарно-эпидемиологическое заключение</p>
-                            <img src="../img/documents/san-epidem.jpg" alt="">
-                            <a href="../img/documents/san-epidem.jpg" data-fancybox="documents">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="supaSlider-insideSlider__item">
-                        <div class="supaSlider-insideSlider__item-content">
-                            <p>Санитарно-эпидемиологическое заключение</p>
-                            <img src="../img/documents/san-epidem-01.jpg" alt="">
-                            <a href="../img/documents/san-epidem-01.jpg" data-fancybox="documents">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="supaSlider-insideSlider__item">
-                        <div class="supaSlider-insideSlider__item-content">
-                            <p>Медицинская лицензия</p>
-                            <img src="../img/documents/Мед.лицензия0001.jpg" alt="">
-                            <a href="../img/documents/Мед.лицензия0001.jpg" data-fancybox="documents">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="supaSlider-insideSlider__item">
-                        <div class="supaSlider-insideSlider__item-content">
-                            <p>Cвидетельство о государственной регистрации</p>
-                            <img src="../img/documents/св-во-о-госрегистрации-ЮЛ-НЦП.jpg" alt="">
-                            <a href="../img/documents/св-во-о-госрегистрации-ЮЛ-НЦП.jpg" data-fancybox="documents">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="supaSlider-insideSlider__item">
-                        <div class="supaSlider-insideSlider__item-content">
-                            <p>Лицензия на осуществление перевозок</p>
-                            <img src="../img/documents/license.jpg" alt="">
-                            <a href="../img/documents/license.jpg" data-fancybox="documents">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="supaSlider-insideSlider__item">
-                        <div class="supaSlider-insideSlider__item-content">
-                            <p>Договор оферты</p>
-                            <img src="../img/documents/oferta-review.png" alt="">
-                            <a href="../img/documents/oferta-20-06-2020.pdf" data-fancybox="documents">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="supaSlider-insideSlider supaSlider-insideSlider_chainHead"></div>
             </div>
         </section>
     </div>
 
-    <section class="documents-slider-mobile">
-        <div class="documents-slider-mobile__item">
-            <div class="documents-slider-mobile__item-content">
-                <p>Свидетельство о постановке на налоговый учет </p>
-                <a class="fancybox" rel="group" href="../img/documents/св-во-о-постан.-на-учет-в-налоговои.jpg">
-                    <img src="../img/documents/св-во-о-постан.-на-учет-в-налоговои.jpg" alt="">
-                </a>
+    <section class="documents-slider-mobile"></section>
+<!--    <section class="container text-center">-->
+<!--        <div style="margin-top:20px; margin-bottom: 20px;" class="btn-group">-->
+<!--            <button style="box-shadow: none; width: 325px" type="button" class="btn btn-light dropdown-toggle mx-auto"-->
+<!--                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                Основные документы списком-->
+<!--            </button>-->
+<!--            <div style="left: -32px; width: 325px" class="dropdown-menu">-->
+<!--                <a class="dropdown-item fancybox" href="../img/documents/св-во-о-постан.-на-учет-в-налоговои.jpg">Cвидетельство-->
+<!--                    о государственной регистрации</a>-->
+<!--                <a class="dropdown-item fancybox" href="../img/documents/san-epidem-01.jpg">Санитарно-эпидемиологическое-->
+<!--                    заключение</a>-->
+<!--                <a class="dropdown-item fancybox" href="../img/documents/Мед.лицензия0001.jpg">Медицинская лицензия"</a>-->
+<!--                <a class="dropdown-item fancybox" href="../img/documents/св-во-о-госрегистрации-ЮЛ-НЦП.jpg">Cвидетельство-->
+<!--                    о государственной регистрации</a>-->
+<!--                <a class="dropdown-item fancybox" href="../img/documents/license.jpg">Лицензия на осуществление перевозок</a>-->
+<!--                <a class="dropdown-item fancybox" href="../img/documents/oferta-20-06-2020.pdf">Договор оферты</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section class="py-5">
+        <div class="children-supa supaCard supaFitnes">
+            <div class="supa-wrap supa-1200">
+                <p class="defaultTitle supaCard__title">Локальные акты отдела дополнительного образования</p>
             </div>
         </div>
-        <div class="documents-slider-mobile__item">
-            <div class="documents-slider-mobile__item-content">
-                <p>Санитарно-эпидемиологическое заключение</p>
-                <a class="fancybox" rel="group" href="../img/documents/san-epidem.jpg">
-                    <img src="../img/documents/san-epidem.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="documents-slider-mobile__item">
-            <div class="documents-slider-mobile__item-content">
-                <p>Санитарно-эпидемиологическое заключение</p>
-                <a class="fancybox" rel="group" href="../img/documents/san-epidem-01.jpg">
-                    <img src="../img/documents/san-epidem-01.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="documents-slider-mobile__item">
-            <div class="documents-slider-mobile__item-content">
-                <p>Медицинская лицензия</p>
-                <a class="fancybox" rel="group" href="../img/documents/Мед.лицензия0001.jpg">
-                    <img src="../img/documents/Мед.лицензия0001.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="documents-slider-mobile__item">
-            <div class="documents-slider-mobile__item-content">
-                <p>Cвидетельство о государственной регистрации</p>
-                <a class="fancybox" rel="group" href="../img/documents/св-во-о-госрегистрации-ЮЛ-НЦП.jpg">
-                    <img src="../img/documents/св-во-о-госрегистрации-ЮЛ-НЦП.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="documents-slider-mobile__item">
-            <div class="documents-slider-mobile__item-content">
-                <p>Лицензия на осуществление перевозок</p>
-                <a class="fancybox" rel="group" href="../img/documents/license.jpg">
-                    <img src="../img/documents/license.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="documents-slider-mobile__item">
-            <div class="documents-slider-mobile__item-content">
-                <p>Договор оферты</p>
-                <a class="fancybox" rel="group" href="../img/documents/oferta-20-06-2020.pdf">
-                    <img src="../img/documents/oferta-review.png" alt="">
-                </a>
-            </div>
+        <div class="container">
+            <div class="row" id="local-docs"></div>
         </div>
     </section>
-    <section class="container text-center">
-        <div style="margin-top:20px; margin-bottom: 20px;" class="btn-group">
-            <button style="box-shadow: none; width: 325px" type="button" class="btn btn-light dropdown-toggle mx-auto"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Основные документы списком
-            </button>
-            <div style="left: -32px; width: 325px" class="dropdown-menu">
-                <a class="dropdown-item fancybox" href="../img/documents/св-во-о-постан.-на-учет-в-налоговои.jpg">Cвидетельство
-                    о государственной регистрации</a>
-                <a class="dropdown-item fancybox" href="../img/documents/san-epidem-01.jpg">Санитарно-эпидемиологическое
-                    заключение</a>
-                <a class="dropdown-item fancybox" href="../img/documents/Мед.лицензия0001.jpg">Медицинская лицензия"</a>
-                <a class="dropdown-item fancybox" href="../img/documents/св-во-о-госрегистрации-ЮЛ-НЦП.jpg">Cвидетельство
-                    о государственной регистрации</a>
-                <a class="dropdown-item fancybox" href="../img/documents/license.jpg">Лицензия на осуществление перевозок</a>
-                <a class="dropdown-item fancybox" href="../img/documents/oferta-20-06-2020.pdf">Договор оферты</a>
+
+    <section class="py-5">
+        <div class="children-supa supaCard supaFitnes">
+            <div class="supa-wrap supa-1200">
+                <p class="defaultTitle supaCard__title">Правила, оферты, договора</p>
             </div>
+        </div>
+        <div class="container">
+            <div class="row" id="pact-docs"></div>
         </div>
     </section>
 
@@ -319,8 +231,7 @@
                         <h2 class="mb-0">
                             <button style="white-space: unset" class="btn btn-danger btn-smbtn-danger" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Локальные
-                                акты отдела дополнительного образования <i class="fa ml-2 fa-arrow-circle-o-down"
+                                Локальные акты отдела дополнительного образования <i class="fa ml-2 fa-arrow-circle-o-down"
                                                                            aria-hidden="true"></i></button>
                         </h2>
                     </div>
@@ -590,5 +501,6 @@
 <script src="../header/header-menu.js"></script>
 <script src="../header/header.js"></script>
 <script src="../assets/scripts/purecookie.js"></script>
+<script src="../assets/scripts/main1.js"></script>
 </body>
 </html>

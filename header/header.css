@@ -70,6 +70,24 @@ body {
   width: 320px;
   opacity: 1;
   visibility: visible;
+  z-index: 100;
+}
+
+.hello-alert {
+  z-index:10;
+  text-align:center;
+  border-radius:0;
+  margin:0;
+  position:absolute;
+  bottom:-47px;
+  left:0;
+  width:100%;
+}
+
+.hello-alert .close {
+  position: absolute;
+  right: 10px;
+  top:5px;
 }
 
 .norm-menu {
@@ -568,7 +586,10 @@ body {
 @media screen and (max-width: 768px) {
   #block-search {
     width: 80%;
-
+  }
+  .hello-alert {
+    bottom: -68px;
+    padding: .75rem 1.5rem;
   }
 }
 /* КОНЕЦ СТИЛИ МОДУЛЯ БРОНИРОВАНИЯ */
