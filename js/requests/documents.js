@@ -64,6 +64,18 @@ requestInfo('documents')
                 </div>
                 `).appendTo('#local-docs');
             }
+            if (doc.type === 'pact') {
+                $(`
+                <div class="col-md-4 col-12">
+                    <a href="https://admin.evolutionsport.ml${doc.file[0].url}" class="card">
+                        <div class="card-body p-3 d-flex" style="min-height: auto">
+                            <img style="height: 30px" src="../img/icons/icon-pdf.svg" alt="icon">
+                            <p class="card-text ml-3" style="color:unset;margin:0;align-self:center">${doc.name}</p>
+                        </div>
+                    </a>
+                </div>
+                `).appendTo('#pact-docs');
+            }
             if (doc.type === 'medical') {
                 $(`
                 <div class="col-md-4 col-12">
