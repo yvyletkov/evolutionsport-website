@@ -43,9 +43,10 @@ function template(vacancy) {
             vacancy.duties.demads.map((e) => `<li>${e}</li>`).join("")
             : ''}
                                             </ul>
-                                            <a class="btn btn-primary"
-                                               style="background-color:#4273b3;border-color:#4273b3;"
-                                               href="#">Оставить резюме</a>
+                                            <button  class="btn btn-primary"
+                                                id="vacancy-feedback"
+                                                style="background-color:#4273b3;border-color:#4273b3">
+                                                Оставить резюме</button>
                                         </div>
 
                                     </div>
@@ -103,3 +104,11 @@ requestInfo('vacancies')
         })
     })
     .catch((err) => console.log(err))
+
+$(document).on("click", "#vacancy-feedback", () => {
+    $(".popup-wrapper").css("display", "flex");
+})
+
+$('.popup__close-btn').click(() => {
+    $(".popup-wrapper").css("display", "none");
+})
