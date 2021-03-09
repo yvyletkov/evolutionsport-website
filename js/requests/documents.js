@@ -18,7 +18,6 @@ async function requestInfo(url) {
 
 requestInfo('documents')
     .then((res) => {
-        console.log(res);
         res.forEach((doc) => {
             if (doc.type === 'official') {
                 $(`

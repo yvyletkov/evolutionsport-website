@@ -3,7 +3,7 @@ let dataNews = [];
 
 
 function templates(e, desc, img, link) {
-  return `<div class="item">d
+  return `<div class="item">
               <a href="${link ? link : '#'}">
                 <img class="img-fluid" src="${BD_SERVER_URL}${img}" alt=""/>
               </a>
