@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Google Tag Manager -->
 
-    <script>(function (w, d, s, l, i) {
+    <script>
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
         });
         var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
         j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5M69JNW');</script>
+      })(window, document, "script", "dataLayer", "GTM-5M69JNW");
+    </script>
 
     <!-- End Google Tag Manager -->
 
-    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-    <link rel="shortcut icon" href="../apple-touch-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link
+      rel="shortcut icon"
+      href="../apple-touch-icon.png"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <!-- Подключаем слайдер-->
-    <link type="text/css" rel="stylesheet" href="../css/tiny-slider1.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/tiny-slider1.css" />
     <!-- -->
-    <link rel="stylesheet" href="../assets/scripts/fancybox/jquery.fancybox.min.css"/>
-    <link rel="stylesheet" href="../assets/scripts/datepicker/datepicker.min.css"/>
-    <link rel="stylesheet" href="../css/all1.css">
-    <link rel="stylesheet" href="../css/popup-styles.css"/>
+    <link
+      rel="stylesheet"
+      href="../assets/scripts/fancybox/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/scripts/datepicker/datepicker.min.css"
+    />
+    <link rel="stylesheet" href="../css/all1.css" />
+    <link rel="stylesheet" href="../css/popup-styles.css" />
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
-          rel="stylesheet"/>
-    <link rel="stylesheet" href="../assets/styles/sweetalert2.css"/>
-    <link rel="stylesheet" href="../assets/styles/app1.css"/>
-    <link rel="stylesheet" href="../assets/styles/additional1.css"/>
-    <link rel="stylesheet" href="../header/header.css"/>
-    <link rel="stylesheet" href="../header/footer.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/sweetalert2.css" />
+    <link rel="stylesheet" href="../assets/styles/app1.css" />
+    <link rel="stylesheet" href="../assets/styles/additional1.css" />
+    <link rel="stylesheet" href="../header/header.css" />
+    <link rel="stylesheet" href="../header/footer.css" />
 
     <script src="../assets/scripts/jquery.min.js"></script>
     <script src="../assets/scripts/slick.min.js"></script>
@@ -49,198 +65,296 @@
     <script src="../assets/scripts/datepicker/datepicker.min.js"></script>
     <script src="../assets/scripts/owl.carousel.min.js"></script>
     <script src="../assets/scripts/sweetalert2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript">
-(function ct_load_script() {
-var ct = document.createElement('script'); ct.type = 'text/javascript';
-ct.src = document.location.protocol+'//cc.calltracking.ru/phone.f16a1.8472.async.js?nc='+Math.floor(new Date().getTime()/300000);
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
-})();
-</script>
-<title>Вакансии</title>
+      (function ct_load_script() {
+        var ct = document.createElement("script");
+        ct.type = "text/javascript";
+        ct.src =
+          document.location.protocol +
+          "//cc.calltracking.ru/phone.f16a1.8472.async.js?nc=" +
+          Math.floor(new Date().getTime() / 300000);
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ct, s);
+      })();
+    </script>
+    <title>Вакансии</title>
 
-<link rel="stylesheet" href="../assets/scripts/purecookie.css"/>
- </head>
-<body>
-<!-- Google Tag Manager (noscript) -->
+    <link rel="stylesheet" href="../assets/scripts/purecookie.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
 
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M69JNW"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5M69JNW"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
 
-<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () {
-            (m[i].a = m[i].a || []).push(arguments)
-        };
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
         m[i].l = 1 * new Date();
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-    ym(67541794, "init", {
+      ym(67541794, "init", {
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true,
-        webvisor: true
-    });
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/67541794" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/67541794"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
-<header
-        class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution"
->
-    <div class="container">
-        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-            <ul class="navbar-nav left-menu">
-                <li class="nav-item">
-                    <a id="sidebarCollapse">
-                        <span></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://evolutionsport.ru/">Старая версия сайта</a>
-                </li>
-                <li class="nav-item">
-                    <a class="fixed-width nav-link" href="../about/news.html">Новости</a>
-                </li>
-            </ul>
+    <header
+      class="navbar navbar-expand-lg fixed-top navbar-dark bg-white menu-evolution"
+    >
+      <div class="container">
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarToggle"
+        >
+          <ul class="navbar-nav left-menu">
+            <li class="nav-item">
+              <a id="sidebarCollapse">
+                <span></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://evolutionsport.ru/"
+                >Старая версия сайта</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="fixed-width nav-link" href="../about/news.html"
+                >Новости</a
+              >
+            </li>
+          </ul>
 
-            <a class="navbar-brand d-none d-lg-block" href="../index.html">
-                <div class="logo-dark"></div>
-                <img src="../img/logo-small.png"
-                     class="logo-white"
-                     alt="logo-white"/>
-            </a>
+          <a class="navbar-brand d-none d-lg-block" href="../index.html">
+            <div class="logo-dark"></div>
+            <img
+              src="../img/logo-small.png"
+              class="logo-white"
+              alt="logo-white"
+            />
+          </a>
 
-            <ul class="navbar-nav right-menu">
-                <li class="nav-item">
-                    <a class="nav-link phone-menu" href="tel:88007771826">8 (800) 777-18-26</a>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link button-blue__mobile"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                    <div class="nav-link button-blue">
-                        <i class="fa fa-phone"></i> Консультация
-                    </div>
-                </li>
-            </ul>
+          <ul class="navbar-nav right-menu">
+            <li class="nav-item">
+              <a class="nav-link phone-menu" href="tel:88007771826"
+                >8 (800) 777-18-26</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="nav-link button-blue__mobile">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="nav-link button-blue">
+                <i class="fa fa-phone"></i> Консультация
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-
-<main class="new-content vacancy">
-    <div class="children-supa supaCard supaFitnes">
+    <main class="new-content vacancy">
+      <div class="children-supa supaCard supaFitnes">
         <div class="supa-wrap supa-1200">
-            <p class="defaultTitle supaCard__title">Вакансии</p>
-            <p class="defaultSubtitle supaCard__subtitle">Работа в Эволюции</p>
-            <section class="vacancy-block">
-                <p>
-                    Команда Центра спорта «Эволюция» любит свою работу, гордится достижениями гостей и команд, которые
-                    выбирают объект в качестве тренировочной площадки.<br><br>
+          <p class="defaultTitle supaCard__title">Вакансии</p>
+          <p class="defaultSubtitle supaCard__subtitle">Работа в Эволюции</p>
+          <section class="vacancy-block">
+            <p>
+              Команда Центра спорта «Эволюция» любит свою работу, гордится
+              достижениями гостей и команд, которые выбирают объект в качестве
+              тренировочной площадки.<br /><br />
 
-                    Мы приглашаем в команду единомышленников, умеющих работать на результат, мотивированных на развитие
-                    и решение непростых, но очень интересных задач.
-                    Мы гарантируем : стабильную заработную плату, официальное трудоустройство, работу в дружной команде
-                    профессионалов, скидки для сотрудников на пользование инфраструктурой центра, возможность
-                    бесплатного проживания и питания.
-                </p>
-                <div class="vacancy-block-tabs tabs">
-                    <div class="vacancy-block-tabs-navigation">
-                        <a href="#tab1" class="vacancy-block-tabs-navigation__item tabs-navigation-item active">Служба
-                            питания</a>
-                        <a href="#tab2" class="vacancy-block-tabs-navigation__item tabs-navigation-item">Хозяйственная
-                            служба</a>
-                        <a href="#tab3" class="vacancy-block-tabs-navigation__item tabs-navigation-item">Тренеры</a>
-                    </div>
-                    <div class="vacancy-block-tabs-tab tabs-tab active" id="tab1">
-                        <div class="supaSlider-insideSliderBlock">
-                            <div class="supaSlider-insideSliderBlock__prev">
-                                <img style="transform: rotate(180deg);" src="../assets/images/arrowSlider.png">
-                            </div>
-                            <div class="supaSlider-insideSliderBlock__next">
-                                <img src="../assets/images/arrowSlider.png">
-                            </div>
-                        </div>
-                        <div class="vacancy-block-tabs-tab-slider" id="food"></div>
-                    </div>
-                    <div class="vacancy-block-tabs-tab tabs-tab" id="tab2">
-                        <div class="supaSlider-insideSliderBlock">
-                            <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);"
-                                                                                 src="../assets/images/arrowSlider.png">
-                            </div>
-                            <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrowSlider.png">
-                            </div>
-                        </div>
-                        <div class="vacancy-block-tabs-tab-slider" id="housekeeping"></div>
-                    </div>
-                    <div class="vacancy-block-tabs-tab tabs-tab" id="tab3">
-                        <div class="supaSlider-insideSliderBlock">
-                            <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);"
-                                                                                 src="../assets/images/arrowSlider.png">
-                            </div>
-                            <div class="supaSlider-insideSliderBlock__next"><img src="../assets/images/arrowSlider.png">
-                            </div>
-                        </div>
-                        <div class="vacancy-block-tabs-tab-slider" id="trainers"></div>
-                    </div>
+              Мы приглашаем в команду единомышленников, умеющих работать на
+              результат, мотивированных на развитие и решение непростых, но
+              очень интересных задач. Мы гарантируем : стабильную заработную
+              плату, официальное трудоустройство, работу в дружной команде
+              профессионалов, скидки для сотрудников на пользование
+              инфраструктурой центра, возможность бесплатного проживания и
+              питания.
+            </p>
+            <div class="vacancy-block-tabs tabs">
+              <div class="vacancy-block-tabs-navigation">
+                <a
+                  href="#tab1"
+                  class="vacancy-block-tabs-navigation__item tabs-navigation-item active"
+                  >Служба питания</a
+                >
+                <a
+                  href="#tab2"
+                  class="vacancy-block-tabs-navigation__item tabs-navigation-item"
+                  >Хозяйственная служба</a
+                >
+                <a
+                  href="#tab3"
+                  class="vacancy-block-tabs-navigation__item tabs-navigation-item"
+                  >Тренеры</a
+                >
+              </div>
+              <div class="vacancy-block-tabs-tab tabs-tab active" id="tab1">
+                <div class="supaSlider-insideSliderBlock">
+                  <div class="supaSlider-insideSliderBlock__prev">
+                    <img
+                      style="transform: rotate(180deg)"
+                      src="../assets/images/arrowSlider.png"
+                    />
+                  </div>
+                  <div class="supaSlider-insideSliderBlock__next">
+                    <img src="../assets/images/arrowSlider.png" />
+                  </div>
                 </div>
-            </section>
+                <div class="vacancy-block-tabs-tab-slider" id="food"></div>
+              </div>
+              <div class="vacancy-block-tabs-tab tabs-tab" id="tab2">
+                <div class="supaSlider-insideSliderBlock">
+                  <div class="supaSlider-insideSliderBlock__prev">
+                    <img
+                      style="transform: rotate(180deg)"
+                      src="../assets/images/arrowSlider.png"
+                    />
+                  </div>
+                  <div class="supaSlider-insideSliderBlock__next">
+                    <img src="../assets/images/arrowSlider.png" />
+                  </div>
+                </div>
+                <div
+                  class="vacancy-block-tabs-tab-slider"
+                  id="housekeeping"
+                ></div>
+              </div>
+              <div class="vacancy-block-tabs-tab tabs-tab" id="tab3">
+                <div class="supaSlider-insideSliderBlock">
+                  <div class="supaSlider-insideSliderBlock__prev">
+                    <img
+                      style="transform: rotate(180deg)"
+                      src="../assets/images/arrowSlider.png"
+                    />
+                  </div>
+                  <div class="supaSlider-insideSliderBlock__next">
+                    <img src="../assets/images/arrowSlider.png" />
+                  </div>
+                </div>
+                <div class="vacancy-block-tabs-tab-slider" id="trainers"></div>
+              </div>
+            </div>
+          </section>
         </div>
-    </div>
-</main>
+      </div>
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="popup__header">
+            <div class="popup__close-btn"><span>Скрыть</span>×</div>
+          </div>
+          <div class="popup__form-wrapper">
+            <form class="popup__form">
+              <input type="hidden" name="Откуда форма" value="Резюме со страницы Вакансии" />
+              <input required class="popup__form__input" placeholder="Ваше имя*" id="name" name="Имя" type="text"/>
+              <input required class="popup__form__input" 
+                     placeholder="Ваш телефон*"
+                     name="Телефон"
+                     type="tel"
+                     id="phone"
+              />
+              <input class="popup__form__input" 
+                     placeholder="Вставте ссылку на резюме" 
+                     pattern="https://.*"
+                     id="url"
+                     name="Ссылка на резюме"
+                     type="url"
+              />
+              <button class="popup__btn_submit">Отправить</button>
+              <span class="popup__form__footer-text">*поля, обязательные для заполнения</span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<footer class="container contacts nopadding-top">
-    <div class="row">
-        <h2 class=row__title>Контакты</h2>
-        <p class=row__subtitle>Центра спорта</p>
+    <footer class="container contacts nopadding-top">
+      <div class="row">
+        <h2 class="row__title">Контакты</h2>
+        <p class="row__subtitle">Центра спорта</p>
         <div class="col-md-6 col-xs-12">
-            <div id="YaMaps" style="position: relative; overflow: hidden;"></div>
+          <div id="YaMaps" style="position: relative; overflow: hidden"></div>
         </div>
         <div class="col-md-6 col-xs-12 contacts-right">
-            <div class="blue-stripe blue-title">
-                Контакты<span>нашего центра</span>
-            </div>
-            <div class="contacts-description">
-                г. Евпатория, Крым
-                <span
-                >297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул.
-                Аллея Дружбы, 1</span
-                >
-            </div>
-            <div class="icons-footer">
-                <a href="https://vk.com/evolutionsportcenter"><img src="../img/icons/vk.png" alt="vk"/></a>
-                <a href="https://www.instagram.com/evolution.sportcenter/"><img src="../img/icons/inst.png"
-                                                                                alt="instagram"/></a>
-                <a href="https://www.facebook.com/evolutioncentrsport"><img src="../img/icons/fb.png"
-                                                                            alt="facebook"/></a>
-            </div>
-            <div class="footer-phone">
-                Звонить по номеру телефона
-                <a href="tel:88007771826">8 (800) 777-18-26</a>
-            </div>
+          <div class="blue-stripe blue-title">
+            Контакты<span>нашего центра</span>
+          </div>
+          <div class="contacts-description">
+            г. Евпатория, Крым
+            <span
+              >297493, Республика Крым, г. Евпатория, пгт. Заозерное, ул. Аллея
+              Дружбы, 1</span
+            >
+          </div>
+          <div class="icons-footer">
+            <a href="https://vk.com/evolutionsportcenter"
+              ><img src="../img/icons/vk.png" alt="vk"
+            /></a>
+            <a href="https://www.instagram.com/evolution.sportcenter/"
+              ><img src="../img/icons/inst.png" alt="instagram"
+            /></a>
+            <a href="https://www.facebook.com/evolutioncentrsport"
+              ><img src="../img/icons/fb.png" alt="facebook"
+            /></a>
+          </div>
+          <div class="footer-phone">
+            Звонить по номеру телефона
+            <a href="tel:88007771826">8 (800) 777-18-26</a>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!--scripts loaded here-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="../js/tiny-slider.js"></script>
-<script src="../js/index1.js"></script>
-<script src="../js/watersport1.js"></script>
-<script src="../js/campusesSliders.js"></script>
-<script src="../js/resort1.js"></script>
-<script src="../js/sbory1.js"></script>
-<script src="../header/header-menu.js"></script>
-<script src="../header/header.js"></script>
-<script src="../assets/scripts/purecookie.js"></script>
-<script src="../js/requests/vacancies.js"></script>
-</body>
+    <!--scripts loaded here-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/index1.js"></script>
+    <script src="../js/watersport1.js"></script>
+    <script src="../js/campusesSliders.js"></script>
+    <script src="../js/resort1.js"></script>
+    <script src="../js/sbory1.js"></script>
+    <script src="../header/header-menu.js"></script>
+    <script src="../header/header.js"></script>
+    <script src="../assets/scripts/purecookie.js"></script>
+    <script src="../js/requests/vacancies.js"></script>
+  </body>
 </html>
