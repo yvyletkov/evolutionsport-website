@@ -56,10 +56,7 @@ function template(vacancy) {
                         <ul>
                             ${vacancy.duties.demads ? vacancy.duties.demads.map((e) => `<li>${e}</li>`).join("") : ''}
                         </ul>
-                        <button class="btn btn-primary"
-                                id="vacancy-feedback"
-                                style="background-color:#4273b3;border-color:#4273b3">
-                        Оставить резюме</button>
+                        <button class="btn btn-primary" id="vacancy-feedback" style="background-color:#4273b3;border-color:#4273b3">Оставить резюме</button>
                     </div>
                 </div>
             </div>

@@ -158,19 +158,18 @@
           <p class="defaultTitle supaCard__title">Вакансии</p>
           <p class="defaultSubtitle supaCard__subtitle">Работа в Эволюции</p>
           <section class="vacancy-block">
-            <p>
-              Команда Центра спорта «Эволюция» любит свою работу, гордится
-              достижениями гостей и команд, которые выбирают объект в качестве
-              тренировочной площадки.<br /><br />
-
-              Мы приглашаем в команду единомышленников, умеющих работать на
-              результат, мотивированных на развитие и решение непростых, но
-              очень интересных задач. Мы гарантируем : стабильную заработную
-              плату, официальное трудоустройство, работу в дружной команде
-              профессионалов, скидки для сотрудников на пользование
-              инфраструктурой центра, возможность бесплатного проживания и
-              питания.
+            <p class="mb-3" style="font-size: 16px;">
+              Команда Центра спорта «Эволюция» любит свою работу, гордится достижениями своих гостей и спортивных
+              команд, которые выбирают Центр для тренировок и отдыха.
+              <br/>
+              <br/>
+              Мы приглашаем в нашу команду единомышленников, умеющих работать и добиваться результатов, мотивированных
+              на развитие и решение непростых, но очень интересных задач. Мы гарантируем: стабильную заработную плату,
+              официальное трудоустройство, работу в дружной команде профессионалов, скидки для сотрудников на
+              пользование инфраструктурой центра, возможность бесплатного проживания и питания в комфортных номерах.
             </p>
+            <p class="mb-3" style="font-size: 16px;"><strong>Телефон отдела персонала: <a href="tel:88007771826">8 (800) 777-18-26</a></strong></p>
+            <p class="mb-3" style="font-size: 16px;"><strong>Адрес электронной почты: <a href="mailto:ok@evolutionsport.ru">ok@evolutionsport.ru</a></strong></p>
             <div class="vacancy-block-tabs tabs">
               <div class="vacancy-block-tabs-navigation">
                 <a href="#tab1" class="vacancy-block-tabs-navigation__item tabs-navigation-item active">
@@ -224,21 +223,25 @@
           </div>
           <div class="popup__form-wrapper">
             <form class="popup__form">
-              <input type="hidden" name="Откуда форма" value="Резюме со страницы Вакансии" />
+              <input type="hidden" name="Откуда форма" value="Резюме со страницы Вакансии"/>
               <input required class="popup__form__input" placeholder="Ваше имя*" id="name" name="Имя" type="text"/>
-              <input required class="popup__form__input"
-                     placeholder="Ваш телефон*"
-                     name="Телефон"
-                     type="tel"
-                     id="phone"
-              />
-              <input class="popup__form__input"
-                     placeholder="Вставте ссылку на резюме"
-                     pattern="https://.*"
-                     id="url"
-                     name="Ссылка на резюме"
-                     type="url"
-              />
+              <input required class="popup__form__input" placeholder="Дата рождения*" id="date" name="Дата рождения"
+                     type="text"/>
+              <input required class="popup__form__input" placeholder="Название вакансии*" id="vacancy"
+                     name="Название вакансии" type="text"/>
+              <input required class="popup__form__input" placeholder="Ваш телефон*" name="Телефон" type="tel"
+                     id="phone"/>
+              <input class="popup__form__input" placeholder="Ваш email" name="Email" type="tel" id="email"/>
+              <textarea class="popup__form__input"
+                        placeholder="Несколько слов об опыте работы*"
+                        id="about"
+                        name="Несколько слов о вакансии"
+                        required></textarea>
+              <select class="popup__form__input" id="habitation" name="Нужно ли проживание">
+                <option value="Нужно ли проживание" hidden selected>Нужно ли проживание*</option>
+                <option value="Необходимо проживание">Да</option>
+                <option value="Проживание не нужно">Нет</option>
+              </select>
               <button class="popup__btn_submit">Отправить</button>
               <span class="popup__form__footer-text">*поля, обязательные для заполнения</span>
             </form>
