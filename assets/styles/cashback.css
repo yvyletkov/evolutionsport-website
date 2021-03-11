@@ -196,7 +196,7 @@
     position: relative;
     color: #000;
     width: 580px;
-    height: 79px;
+    height: 102px;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.81);
     padding: 10px 80px 10px 10px;
@@ -276,12 +276,12 @@
 .cashback-instruction__steps__item {
     position: relative;
     width: 238px;
-    height: 238px;
     background: #fff;
     -webkit-box-shadow: 0px 0px 41px -9px rgba(0, 0, 0, 0.36);
     -moz-box-shadow: 0px 0px 41px -9px rgba(0, 0, 0, 0.36);
     box-shadow: 0px 0px 41px -9px rgba(0, 0, 0, 0.36);
     text-align: center;
+    padding: 20px;
 }
 
 .cashback-instruction__steps__item span {
@@ -394,9 +394,14 @@
     padding: 0 28px;
 }
 
+.cashback-terms__desc {
+    padding: 0 28px;
+    font-size: 12px;
+}
+
 .cashback-terms__text-block h3 {
     font-family: "Helvetica Neue", serif;
-    font-size: 25.5px;
+    font-size: 29.5px;
     text-transform: uppercase;
 }
 
@@ -500,7 +505,6 @@
     align-items: center;
     background: #d7d7d7;
     width: 538px;
-    height: 695px;
     position: relative;
     border-radius: 5px;
 }
@@ -541,11 +545,17 @@
     left: 187px;
 }
 
+.cashback-compensation__desc {
+    font-size: 12px !important;
+    margin: 0 !important;
+    text-align: justify;
+}
+
 .cashback-compensation__text-block p {
     line-height: 1;
-    font-family: 'Circe Regular', serif;
-    font-size: 20px;
-    margin-bottom: 40px;
+    font-family: 'Helvetica Neue', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .cashback-compensation__text-block p.bottom {
@@ -608,6 +618,13 @@
 
 
 @media screen and (max-width: 768px) {
+    .cashback-terms__text-block h3 div:before {
+        left:200px;
+        top:-22px;
+    }
+    .cashback-terms__text-block h3 {
+        font-size: 20px;
+    }
     .cashback-compensation {
         height: auto;
         padding-top: 10px;
@@ -625,7 +642,7 @@
     }
 
     .cashback-compensation__text-block {
-        padding: 30px 30px;
+        padding: 20px !important;
     }
 
     .cashback-compensation__text-block button {
