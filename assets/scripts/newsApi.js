@@ -29,7 +29,7 @@ window.addEventListener('load', async () => {
                             <span class="news-subtitle">
                                 ${cutTags(item.content).slice(0, 100)}
                             </span>
-                            <a href="/new/news.html?id=${item._id}" class="btn button-blue">Подробнее</a>
+                            <a href="/news.html?id=${item._id}" class="btn button-blue">Подробнее</a>
                         </div>
                     </div>    
     
