@@ -184,7 +184,7 @@ $(document).ready(function () {
     };
     // if (!document.cookie.includes("YARIKVODILA")) {
     if (true) {
-        setTimeout(showQuiz, 2000);
+        setTimeout(showQuiz, 8000);
     }
 
     $(".btn.btn_blue.advantages__order").on("click", (e) => {
