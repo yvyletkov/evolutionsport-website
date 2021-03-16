@@ -370,15 +370,15 @@ $(document).on("click", ".tabs-navigation-item", function (e) {
     slidesToScroll: 1,
   });
 });
-$(document).ready(function () {
-  $(".vacancy-block-tabs-tab-slider").slick({
-    arrows: false,
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  });
-});
+// $(document).ready(function () {
+//   $(".vacancy-block-tabs-tab-slider").slick({
+//     arrows: false,
+//     dots: false,
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//   });
+// });
 
 $(document).on(
   "click",
@@ -437,7 +437,7 @@ $(document).ready(function () {
 //         var year = now.getFullYear();
 //         var month = now.getMonth() + 1;
 //         var date = now.getDate();
-        
+
 // var data = [{
 //   date: year + '-' + month + '-' + (date - 1),
 //   value: 'hello'
@@ -471,7 +471,7 @@ $(document).ready(function () {
 
 //   }
 // });
-  
+
 // function fillDate(date) {
 //   if (date.getDate() > 0 && date.getDate() < 10) {
 //     $(".calendar-block__day").text("0" + date.getDate());

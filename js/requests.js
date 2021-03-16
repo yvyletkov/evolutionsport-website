@@ -1,7 +1,5 @@
 const mainURL = "https://erp-evo.ml/erp/site/forms/";
 
-//mainURL = "http://77.232.53.82:8051/erp/site/forms/";
-
 function objectifyForm(data) {
     if (data["form-name"]) return data; // если объект уже норм, то оставляем как есть
 
@@ -31,6 +29,25 @@ async function mainApi(info) {
         console.log(err);
     }
 }
+
+async function requestInfo(url) {
+    try {
+        const res = await fetch(`https://admin.evolutionsport.ml/${url}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+        });
+
+        if (!res.ok) {
+            throw new Error(`error ${res.status}`);
+        }
+        return await res.json();
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 
 $(".children-form").on("submit", function (event) {
     event.preventDefault();
@@ -284,58 +301,59 @@ $(document).ready(
 $(document).ready(
     function () {
         $(".nav-link.button-blue__mobile, .nav-link.button-blue, #call-me-btn").click(() => {
-            swal({
-                title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы Вам перезвоним</p>',
-                html:
-                    '<input required name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
-                    '<input required name="phone" type="number" id="swal-input2" class="header__popup__input" placeholder="Номер телефона">',
-                showCancelButton: true,
-                confirmButtonColor: '#355b8e',
-                cancelButtonColor: '#4a4a4a',
-                confirmButtonText: '<span class="header__popup__btn">Перезвоните мне</span>',
-                cancelButtonText: '<span class="header__popup__btn">Закрыть окно</span>',
-                preConfirm: function () {
-                    return new Promise(function (resolve) {
-                        resolve([
-                            $('#swal-input1').val(),
-                            $('#swal-input2').val(),
-                            $('#swal-textarea1').val()
-                        ])
-                    })
-                },
-            }).then(function () {
-                if ($('#swal-input1').val().length && $('#swal-input2').val().length) {
-                    let result = {};
-                    result["form-name"] = "default-contact-form";
-                    result["rus-form-name"] = "Контактная форма из шапки сайта";
-                    result.name = $('#swal-input1').val();
-                    result.phone = $('#swal-input2').val();
-                    mainApi(result)
-                        .then((res) => {
-                            console.log(res);
-                            if (res.ok) {
-                                swal({
-                                    type: 'success',
-                                    text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'
-                                });
-                            }
-                        })
-                        .catch((err) => {
-                            swal({
-                                type: "error",
-                                title: "Извините, ваша заявка не отправлена",
-                                text: "Что-то пошло не так, мы уже работаем над ошибкой",
-                            });
-                        })
-                }
-                else {
-                    swal({
-                        type: 'error',
-                        text: 'Пожалуйста, введите корректные данные'
-                    });
-                }
-
-            })
+            window.open('https://wapp.click/79811120645');
+            // swal({
+            //     title: '<p class="header__popup__title">Пожалуйста, укажите свои контактные данные,<br/>и мы Вам перезвоним</p>',
+            //     html:
+            //         '<input required name="name" id="swal-input1" class="header__popup__input" placeholder="Ваше имя">' +
+            //         '<input required name="phone" type="number" id="swal-input2" class="header__popup__input" placeholder="Номер телефона">',
+            //     showCancelButton: true,
+            //     confirmButtonColor: '#355b8e',
+            //     cancelButtonColor: '#4a4a4a',
+            //     confirmButtonText: '<span class="header__popup__btn">Перезвоните мне</span>',
+            //     cancelButtonText: '<span class="header__popup__btn">Закрыть окно</span>',
+            //     preConfirm: function () {
+            //         return new Promise(function (resolve) {
+            //             resolve([
+            //                 $('#swal-input1').val(),
+            //                 $('#swal-input2').val(),
+            //                 $('#swal-textarea1').val()
+            //             ])
+            //         })
+            //     },
+            // }).then(function () {
+            //     if ($('#swal-input1').val().length && $('#swal-input2').val().length) {
+            //         let result = {};
+            //         result["form-name"] = "default-contact-form";
+            //         result["rus-form-name"] = "Контактная форма из шапки сайта";
+            //         result.name = $('#swal-input1').val();
+            //         result.phone = $('#swal-input2').val();
+            //         mainApi(result)
+            //             .then((res) => {
+            //                 console.log(res);
+            //                 if (res.ok) {
+            //                     swal({
+            //                         type: 'success',
+            //                         text: 'Спасибо! Наши менеджеры свяжутся с Вами в самое ближайшее время'
+            //                     });
+            //                 }
+            //             })
+            //             .catch((err) => {
+            //                 swal({
+            //                     type: "error",
+            //                     title: "Извините, ваша заявка не отправлена",
+            //                     text: "Что-то пошло не так, мы уже работаем над ошибкой",
+            //                 });
+            //             })
+            //     }
+            //     else {
+            //         swal({
+            //             type: 'error',
+            //             text: 'Пожалуйста, введите корректные данные'
+            //         });
+            //     }
+            //
+            // })
         })
     }
 );

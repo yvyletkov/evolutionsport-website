@@ -125,7 +125,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                 <li class="nav-item">
                     <div class="nav-link button-blue__mobile"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     <div class="nav-link button-blue">
-                        <i class="fa fa-phone"></i> Перезвоните мне
+                        <i class="fa fa-phone"></i> Консультация
                     </div>
                 </li>
             </ul>
@@ -195,32 +195,32 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">4 посещения</p>
                                     <p class="group-slider-item-desc-col">30 дней</p>
-                                    <p class="group-slider-item-desc-col">1 200 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="4-visits-fitness-price">1 200 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">8 посещений</p>
                                     <p class="group-slider-item-desc-col">30 дней</p>
-                                    <p class="group-slider-item-desc-col">1 800 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="8-visits-fitness-price">1 800 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">12 посещений</p>
                                     <p class="group-slider-item-desc-col">30 дней</p>
-                                    <p class="group-slider-item-desc-col">2 400 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="12-visits-fitness-price">2 400 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">Разовое посещение групповых занятий</p>
                                     <p class="group-slider-item-desc-col">7 дней</p>
-                                    <p class="group-slider-item-desc-col">350 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="7-days-fitness-price">350 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">Разовое занятие <br>с тренером</p>
                                     <p class="group-slider-item-desc-col">45 минут</p>
-                                    <p class="group-slider-item-desc-col">500 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="45-minutes-fitness-price">500 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">Разовое парное (сплит) занятие с тренером</p>
                                     <p class="group-slider-item-desc-col">45 минут</p>
-                                    <p class="group-slider-item-desc-col">800 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="45-minutes-fitness-price-split">800 руб.</p>
                                 </div>
                             </div>
                         </div>
@@ -267,32 +267,32 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">4 посещения</p>
                                     <p class="group-slider-item-desc-col">30 дней</p>
-                                    <p class="group-slider-item-desc-col">1 200 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="4-visits-yoga-price">1 200 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">8 посещений</p>
                                     <p class="group-slider-item-desc-col">30 дней</p>
-                                    <p class="group-slider-item-desc-col">1 800 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="8-visits-yoga-price">1 800 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">12 посещений</p>
                                     <p class="group-slider-item-desc-col">30 дней</p>
-                                    <p class="group-slider-item-desc-col">2 400 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="12-visits-yoga-price">2 400 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">Разовое посещение групповых занятий</p>
                                     <p class="group-slider-item-desc-col">7 дней</p>
-                                    <p class="group-slider-item-desc-col">350 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="7-days-yoga-price">350 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">Разовое занятие <br>с тренером</p>
                                     <p class="group-slider-item-desc-col">45 минут</p>
-                                    <p class="group-slider-item-desc-col">500 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="45-minutes-yoga-price">500 руб.</p>
                                 </div>
                                 <div class="group-slider-item-desc-row">
                                     <p class="group-slider-item-desc-col">Разовое парное (сплит) занятие с тренером</p>
                                     <p class="group-slider-item-desc-col">45 минут</p>
-                                    <p class="group-slider-item-desc-col">800 руб.</p>
+                                    <p class="group-slider-item-desc-col" id="45-minutes-yoga-price-split">800 руб.</p>
                                 </div>
                             </div>
                         </div>
@@ -354,5 +354,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
 <script src="../header/header-menu.js"></script>
 <script src="../header/header.js"></script>
 <script src="../assets/scripts/purecookie.js"></script>
+<script src="../js/requests/group-programm.js"></script>
 </body>
 </html>

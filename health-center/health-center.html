@@ -130,7 +130,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                 <li class="nav-item">
                     <div class="nav-link button-blue__mobile"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     <div class="nav-link button-blue">
-                        <i class="fa fa-phone"></i> Перезвоните мне
+                        <i class="fa fa-phone"></i> Консультация
                     </div>
                 </li>
             </ul>
@@ -226,9 +226,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
                         <span class="cost-content-cost">10</span>
                         <span>₽</span>
                     </div>
-                    <button id="booking-btn" class="btn btn_accent banner-form__btn" style="margin-bottom: 10px"
-                            type="submit">Забронировать программу
-                    </button>
+<!--                    <button id="booking-btn" class="btn btn_accent banner-form__btn" style="margin-bottom: 10px"-->
+<!--                            type="submit">Забронировать программу-->
+<!--                    </button>-->
+                    <a class="btn btn_accent banner-form__btn"
+                       style="margin-bottom: 10px"
+                       href="https://wapp.click/79811120645"
+                       target="_blank">Чат с менеджером</a>
                     <button id="btn-reset" class="btn btn_accent banner-form__btn" type="submit">Рассчитать снова
                     </button>
 
@@ -277,15 +281,15 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
     <section class="stat">
         <div class="stat-wrap">
             <div class="stat-item">
-                <p class="stat-item__big">4584</p>
+                <p class="stat-item__big" id="stat-sanatorium_resort">4584</p>
                 <p class="stat-item__small">гостей прошли курсы<br>Санаторно-Курортных<br>программ</p>
             </div>
             <div class="stat-item">
-                <p class="stat-item__big">9167</p>
+                <p class="stat-item__big" id="stat-rehabilitation">9167</p>
                 <p class="stat-item__small">гостей прошли<br>курсы программ<br>Реабилитации</p>
             </div>
             <div class="stat-item">
-                <p class="stat-item__big">90%</p>
+                <p class="stat-item__big" id="stat-comeback">90%</p>
                 <p class="stat-item__small">гостей<br>возвращаются<br>к нам</p>
             </div>
         </div>
@@ -475,6 +479,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct
     <script src="../header/header.js"></script>
     <script src="../js/requests.js"></script>
     <script src="../js/gallery-responsive.js"></script>
-<script src="../assets/scripts/purecookie.js"></script>
+    <script src="../assets/scripts/purecookie.js"></script>
+    <script src="../js/requests/health-center-statistic.js"></script>
 </body>
 </html>
