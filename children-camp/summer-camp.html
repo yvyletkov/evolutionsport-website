@@ -114,7 +114,7 @@
                             <div class="nav-link button-blue__mobile"><i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
                             <div class="nav-link button-blue">
-                                <i class="fa fa-phone"></i> Перезвоните мне
+                                <i class="fa fa-phone"></i> Консультация
                             </div>
                         </li>
                     </ul>
@@ -217,15 +217,15 @@
                 <section class="stat stat_with">
                     <div class="stat-wrap children-stat">
                         <div class="stat-item">
-                            <h2 class="stat-item__big">978</h2>
+                            <h2 class="stat-item__big" id="stat-children">978</h2>
                             <p class="stat-item__small">и более детей были<br>в детском лагере<br>«Эволюция»</p>
                         </div>
                         <div class="stat-item">
-                            <p class="stat-item__big">527</p>
+                            <p class="stat-item__big" id="stat-quests">527</p>
                             <p class="stat-item__small">и более игр,<br>квестов,<br>дискотек</p>
                         </div>
                         <div class="stat-item">
-                            <p class="stat-item__big">90%</p>
+                            <p class="stat-item__big" id="stat-comeback">90%</p>
                             <p class="stat-item__small">детей<br> возвращаются<br>к нам </p>
                         </div>
                         <div class="stat-links"><a class="btn stat-links__link" href="#">Другие смены</a><a
@@ -668,14 +668,14 @@
                 <section class="call call_dark">
                     <div class="call__wrap">
                         <h2 class="call-title">разрешите менеджеру вам помочь?</h2>
-                        <p class="call-text">Введите свой номер телефона, и наш менеджер свяжется с Вами в ближайшее время</p>
-                        <form class="children-form order-form" name="form__callback">
-                            <input type="hidden" name="form-name" value="default-contact-form" />
-                            <input type="hidden" name="rus-form-name"
-                                value="Страница осеннего лагеря-Разрешите вам помочь" />
-                            <input class="children-form-input" type="tel" name="phone"
-                                pattern="^(\+7(\([0-9]{3}\) *[0-9]{3}-[0-9]{2}-[0-9]{2}| [0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}|[0-9]{10})|8[0-9]{10})$"
-                                minlength="11" maxlength="18" required placeholder="+7 999 999 99 99" />
+                        <p class="call-text">Если у вас остались вопросы, наш менеджер обязательно поможет</p>
+<!--                        <form class="children-form order-form" name="form__callback">-->
+<!--                            <input type="hidden" name="form-name" value="default-contact-form" />-->
+<!--                            <input type="hidden" name="rus-form-name"-->
+<!--                                value="Страница осеннего лагеря-Разрешите вам помочь" />-->
+<!--                            <input class="children-form-input" type="tel" name="phone"-->
+<!--                                pattern="^(\+7(\([0-9]{3}\) *[0-9]{3}-[0-9]{2}-[0-9]{2}| [0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}|[0-9]{10})|8[0-9]{10})$"-->
+<!--                                minlength="11" maxlength="18" required placeholder="+7 999 999 99 99" />-->
 <!--                            <div class="children-form-select-wrap">-->
 <!--                                <select class="children-form-select" name="time" required>-->
 <!--                                    <option disabled hidden selected>Выберете удобное для вас время</option>-->
@@ -683,12 +683,14 @@
 <!--                                    <option value="tomorrow">Завтра</option>-->
 <!--                                </select>-->
 <!--                            </div>-->
-                            <button class="children-form-btn" type="submit">
-                                Жду звонка
-                            </button>
-                        </form>
-                        <p class="call-text-down">Нажимая на кнопку «Жду звонка», Вы принимаете условия</p><a
-                            class="call-text-down-link" href="#">Пользовательского соглашения</a>
+<!--                            <button class="children-form-btn" type="submit">-->
+<!--                                Жду звонка-->
+<!--                            </button>-->
+<!--                        </form>-->
+                        <a class="feedback-btn" href="https://wapp.click/79811120645"
+                           target="_blank">Задать вопрос менеджеру в WhatsApp</a>
+<!--                        <p class="call-text-down">Нажимая на кнопку, Вы принимаете условия</p>-->
+<!--                        <a class="call-text-down-link" href="#">Пользовательского соглашения</a>-->
                     </div>
                 </section>
 
@@ -1753,7 +1755,9 @@
     <script src="../header/header.js"></script>
     <script src="../js/interview-children-autumn.js"></script>
     <script src="../js/summer_camp.js"></script>
-    <script src="../js/event-center.js"></script><script src="../assets/scripts/purecookie.js"></script>
+    <script src="../js/event-center.js"></script>
+    <script src="../assets/scripts/purecookie.js"></script>
+    <script src="../js/requests/children-camp-statistic.js"></script>
 </body>
 
 </html>
