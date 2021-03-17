@@ -516,6 +516,9 @@ $(document).ready(function () {
 
 });
 
+const closeAlert = () => $('.hello-alert').css('opacity', '0');
+
+
 
 
 

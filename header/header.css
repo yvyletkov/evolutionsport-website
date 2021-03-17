@@ -4,9 +4,11 @@ button.swal2-styled {   /* Стиль для кнопок всех свитАл�
 }
 
 .menu-evolution {
-  transition: all 300ms;
+  /*transition: all 300ms;*/
   padding: 28px 0 !important;
 }
+
+
 
 .navbar-expand-lg .navbar-collapse {
   display: flex !important;
@@ -85,7 +87,7 @@ body {
   border-radius:0;
   margin:0;
   position:absolute;
-  bottom:-40px;
+  bottom:-37px;
   left:0;
   width:100%;
 }
@@ -477,6 +479,12 @@ body {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .menu-evolution.navbar-black {
+    padding: 0 !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .row__title {
     font-size: 40px;
@@ -594,7 +602,14 @@ body {
     width: 80%;
   }
   .hello-alert {
-    bottom: -68px;
+    bottom: -37px;
+    padding: .75rem 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hello-alert {
+    bottom: -55px;
     padding: .75rem 1.5rem;
   }
 }
