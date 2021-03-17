@@ -205,8 +205,9 @@
 
 .cashback-banner__MIR-block img {
     position: absolute;
-    right: -35px;
-    top: -28px
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .cashback-banner__MIR-block p {
@@ -562,21 +563,22 @@
 }
 
 .cashback-compensation__text-block p {
-    line-height: 1;
+    line-height: 1.2;
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
 .cashback-compensation__text-block p.bottom {
     line-height: 1;
     font-family: 'Circe Regular', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .cashback-compensation__text-block li {
+    line-height: 1.2;
     list-style: none;
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 200;
