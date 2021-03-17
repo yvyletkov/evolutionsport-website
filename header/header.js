@@ -20,14 +20,14 @@ $(document).ready(function () {
                     </li>
                    
                     <li class="nav-item ml-5">
-                        <a class="nav-link" style="white-space: nowrap" href="/about/news.html">Новости "Эволюции"</a>
+                        <a class="nav-link" style="white-space: nowrap" href="/cashback.html">Кэшбэк на отдых по карте МИР</a>
                     </li>
                 </ul>
 
                 <a class="navbar-brand d-none d-lg-block" style="position: absolute; left: 50%; transform: translateX(-50%)" href="/">
                     <div class="logo-dark"></div>
                     <img
-                            src="img/main-logo-fix.jpg"
+                            src="../img/main-logo-fix.jpg"
                             class="logo-white"
                             alt="logo-white"
                     />
@@ -515,6 +515,9 @@ $(document).ready(function () {
     lazyload();
 
 });
+
+const closeAlert = () => $('.hello-alert').css('opacity', '0');
+
 
 
 

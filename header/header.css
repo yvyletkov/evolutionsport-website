@@ -1,11 +1,14 @@
 button.swal2-styled {   /* Стиль для кнопок всех свитАлертов*/
-  padding: 7px 23px!important;
+  padding: 8px 28px!important;
+  border-radius: 50px !important;
 }
 
 .menu-evolution {
-  transition: all 300ms;
+  /*transition: all 300ms;*/
   padding: 28px 0 !important;
 }
+
+
 
 .navbar-expand-lg .navbar-collapse {
   display: flex !important;
@@ -84,7 +87,7 @@ body {
   border-radius:0;
   margin:0;
   position:absolute;
-  bottom:-40px;
+  bottom:-37px;
   left:0;
   width:100%;
 }
@@ -428,7 +431,7 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.phone-menu {
-  font-size: 24px;
+  font-size: 17px !important;
   font-weight: 400;
   margin-right: 20px;
 }
@@ -473,6 +476,12 @@ body {
   .navbar-expand-lg .navbar-nav .nav-link.button-blue {
     padding: 8px 20px;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-evolution.navbar-black {
+    padding: 0 !important;
   }
 }
 
@@ -548,7 +557,7 @@ body {
 }
 
 .menu_close {
-  width: 13px;
+  width: 18px;
 }
 
 .url__pages {
@@ -593,7 +602,14 @@ body {
     width: 80%;
   }
   .hello-alert {
-    bottom: -68px;
+    bottom: -37px;
+    padding: .75rem 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hello-alert {
+    bottom: -55px;
     padding: .75rem 1.5rem;
   }
 }
