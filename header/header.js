@@ -20,7 +20,7 @@ $(document).ready(function () {
                     </li>
                    
                     <li class="nav-item ml-5">
-                        <a class="nav-link" style="white-space: nowrap" href="/about/news.html">Новости "Эволюции"</a>
+                        <a class="nav-link" style="white-space: nowrap" href="/cashback.html">Кэшбэк на отдых по карте МИР</a>
                     </li>
                 </ul>
 
