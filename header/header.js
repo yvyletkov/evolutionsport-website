@@ -27,7 +27,7 @@ $(document).ready(function () {
                 <a class="navbar-brand d-none d-lg-block" style="position: absolute; left: 50%; transform: translateX(-50%)" href="/">
                     <div class="logo-dark"></div>
                     <img
-                            src="img/main-logo-fix.jpg"
+                            src="../img/main-logo-fix.jpg"
                             class="logo-white"
                             alt="logo-white"
                     />

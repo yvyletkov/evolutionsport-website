@@ -1,3 +1,3 @@
 RewriteEngine on
 RewriteCond %{REQUEST_URI} ^/new/$
-RewriteRule ^.*$ https://evolutionsport.ru/? [R=301,L]
+RewriteRule ^.*$ https://evolutionsport.ru? [R=301,L]

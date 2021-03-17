@@ -1,5 +1,6 @@
 button.swal2-styled {   /* Стиль для кнопок всех свитАлертов*/
-  padding: 7px 23px!important;
+  padding: 8px 28px!important;
+  border-radius: 50px !important;
 }
 
 .menu-evolution {
@@ -428,7 +429,7 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.phone-menu {
-  font-size: 24px;
+  font-size: 21px !important;
   font-weight: 400;
   margin-right: 20px;
 }
@@ -548,7 +549,7 @@ body {
 }
 
 .menu_close {
-  width: 13px;
+  width: 18px;
 }
 
 .url__pages {
