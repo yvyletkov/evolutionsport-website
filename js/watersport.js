@@ -73,6 +73,7 @@ $(function () {
   if ($("#infra").length) {
     var sboryInfra = tns({
       container: "#infra",
+      autoHeight: true,
       items: 1,
       gutter: 15,
       loop: true,
