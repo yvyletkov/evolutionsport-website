@@ -1,11 +1,10 @@
-# Evolution WEB
-### Доступы на тестовый стенд
-IP - 95.181.172.100
+## Сайт "Эволюции Спорта"
+https://evolutionsport.ru/
 
-URI к репозиторию - /evolution_web/
+### Стек
 
-USERS: dev_y, dev_a
+- JavaScript
+- HTML
+- CSS
 
-PASSWORDS: qwerty01
 
-#### При первом вхождении рекоммендую заменить пароль
